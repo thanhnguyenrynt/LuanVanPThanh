@@ -1,0 +1,3 @@
+pdflatex the.tex
+
+makeindex -s the.ist -t the.glg -o the.gls the.glo

@@ -1,0 +1,14 @@
+# Fdb version 4
+["pdflatex"] 1712075148.84678 "f:/CodeProject/LaTex/LuanVanPThanh/in.tex" "in.pdf" "in" 1712075149.226 2
+  "../the.tex" 0 -1 0 ""
+  "C:/Users/thanh/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1711471443 24219122 6d964e5fc1ee31316ebc222e1deed230 ""
+  "F:/MiTex/tex/latex/import/import.sty" 1585736816 6201 0ad8b5da8e12f60a88d546b2198a56f2 ""
+  "F:/MiTex/tex/latex/subfiles/subfiles.cls" 1606222980 1507 57de335d88fde4e5c924dfed577fdb74 ""
+  "f:/CodeProject/LaTex/LuanVanPThanh/in.tex" 1712075147 1257 476cdaaee3aa3e3c681ae15f1c3251bf ""
+  "in.aux" 1712075148 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "in.tex" 1712075147 1257 476cdaaee3aa3e3c681ae15f1c3251bf ""
+  (generated)
+  "in.aux"
+  "in.log"
+  "in.pdf"
+  (rewritten before read)

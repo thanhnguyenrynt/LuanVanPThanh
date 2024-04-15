@@ -1,0 +1,232 @@
+\documentclass[a4paper,12pt,oneside]{report}
+\usepackage[utf8]{vietnam}
+\usepackage{amssymb}
+\usepackage[top=3cm,bottom=3cm,left=3.5cm,right=2cm]{geometry}		
+\usepackage{graphicx}			% Dùng để chèn hình ảnh
+\graphicspath{ {images/} }		% Folder chứa hình ảnh
+\usepackage{subfiles}			% Dùng để chia thành các files nhỏ
+\usepackage{fancyhdr}			% Dùng để tạo header và footer
+\usepackage{emptypage}			% Không đánh số trang, header, footer với các trang trắng
+\usepackage{tabularx}			% Dùng để chèn bảng
+\usepackage{pdflscape}			% Một vài trang nằm ngang (landscape) thay vì dọc (portrait) (bảng, biểu đồ)
+% \usepackage[square]{natbib}							% Dùng cho tài liệu tham khảo
+\usepackage[square,sort,comma,numbers]{natbib}
+% \setcitestyle{super}								% Ký hiệu tài liệu tham khảo dạng superscript
+
+\usepackage{url}									% Dùng cho URL
+\usepackage{longtable}								% Dùng cho các bảng dài, nhiều trang
+\usepackage{amsmath}								% Dùng để chèn các công thức Toán
+\usepackage{makecell}								% Dùng để làm nổi bật header của bảng
+\usepackage{float}								% Dùng để thiết đặt thuộc tính H (here) cho ảnh
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage {fancybox}
+\usepackage{adjustbox}
+\usepackage{float}
+\usepackage{sectsty}
+\usepackage{mathptmx}
+\usepackage{etoolbox}
+\usepackage{titlesec}
+\usepackage{xspace}
+\linespread{1.2} 
+\usepackage{algorithm} 
+\usepackage{algorithmic}  
+\usepackage[algo2e]{algorithm2e} 
+% \usepackage{algpseudocode}
+
+\usepackage{mathdots}
+\usepackage{yhmath}
+\usepackage{cancel}
+\usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usetikzlibrary{fadings}
+% Load the package
+\usepackage[toc]{glossaries}
+\usepackage{pgfplots}
+\pgfplotsset{width=15cm,compat=1.8}
+
+%\usepackage{showframe}% http://ctan.org/pkg/showframe
+
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+\patchcmd{\@makechapterhead}{\vspace*{0\p@}}{}{}{}%
+\patchcmd{\@makeschapterhead}{\vspace*{0\p@}}{}{}{}%
+\makeatother
+
+
+\makeatletter
+\renewcommand{\ALG@name}{Thuật toán}
+\renewcommand{\listalgorithmname}{DANH SÁCH THUẬT TOÁN}
+\makeatother
+
+\SetKwInput{KwData}{Đầu vào}
+\SetKwInput{KwResult}{Đầu ra}
+
+\newcommand{\SubItem}[1]{
+    {\setlength\itemindent{12pt} \item[-] #1}
+}
+ 
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\renewcommand\theadfont{\bfseries}				% Định dạng cho header của bảng
+
+\newcommand*{\etal}{\emph{et~al.}\@\xspace}
+\makeatletter
+\patchcmd{\tableofcontents}{\contentsname}{\fontsize{14}{12} \selectfont \MakeUppercase\contentsname}{}{}
+\patchcmd{\listoffigures}{\listfigurename}{\fontsize{14}{12} \selectfont \MakeUppercase\listfigurename}{}{}
+\patchcmd{\listoftables}{\listtablename}{\fontsize{14}{12} \selectfont \MakeUppercase\listtablename}{}{}
+\patchcmd{\printglossary}{\glossarytitle}{\fontsize{14}{12} \selectfont \MakeUppercase\glossarytitle}{}{}
+\makeatother
+
+\newcolumntype{b}{X}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
+
+\usepackage{setspace}
+
+\makeatletter
+\titleformat{\chapter}{\normalfont\large\bfseries\centering}{CHƯƠNG \thechapter: }{14pt}{\large}
+\titleformat{\section}{\fontsize{13}{12} \selectfont\bfseries}{\thesection}{13pt}{}
+\titleformat{\subsection}{\fontsize{13}{12} \selectfont\bfseries}{\thesubsection}{13pt}{}
+\titleformat{\subsubsection}{\fontsize{13}{12} \selectfont\bfseries}{\thesubsubsection}{13pt}{}
+\makeatother
+
+\makeatletter
+\titlespacing*{\chapter}{0pt}{-15pt}{15pt}
+%\titlespacing*{\section}{0pt}{0pt}{0pt}{0pt}
+%\titlespacing*{\subsection}{0pt}{0pt}{0pt}{0pt}
+%\titlespacing*{\subsubsection}{0pt}{0pt}{0pt}{0pt}
+\makeatother
+
+
+\renewcommand{\bibsection}{\chapter*{TÀI LIỆU THAM KHẢO}}
+
+\setcounter{secnumdepth}{4}
+% Định dạng cho code
+\usepackage{fancyvrb}			% Phiên bản nâng cao của verbatim, dùng để chèn code
+\fvset{
+	tabsize=4,					% Định tabsize 
+% 	frame=single,				% Khung
+}
+
+% Hiển thị dòng kẻ để viết tay (phần Nhận xét của giảng viên)
+\usepackage{pgffor, ifthen}
+\newcommand{\notes}[3][\empty]{
+	\noindent \vspace{15pt}\\
+	\foreach \n in {1,...,#2}{
+		\ifthenelse{
+			\equal{#1}{\empty}
+		}
+		{\rule{#3}{0.5pt}\vspace{15pt}\\}
+		{\rule{#3}{0.5pt}\vspace{15pt}\\}
+	}
+}
+
+
+
+ % Generate the glossary
+\makeglossaries 
+
+% Acronym definitions
+% \newglossaryentry{rnn}{name=RNN, description={Recurrent Neural Network}}
+\newglossaryentry{ai}{name=AI, description={Artificial Intelligence}}
+\newglossaryentry{bn}{name=BN, description={Batch Normalization}}
+\newglossaryentry{cad}{name=CAD, description={Computer-Aided Design}}
+\newglossaryentry{cnn}{name=CNN, description={Convolutional Neural Network}}
+\newglossaryentry{cv}{name=CV, description={Computer Vision}}
+\newglossaryentry{csp}{name=CSP, description={Cross Stage Partial}}
+\newglossaryentry{ct}{name=CT, description={Computed Tomography}}
+\newglossaryentry{dl}{name=DL, description={Deep Learning}}
+\newglossaryentry{fcn}{name=FCN, description={Fully Convolutional Networks }}
+\newglossaryentry{gd}{name=GD, description={Gradient Descent}}
+\newglossaryentry{hog}{name=HOG, description={Histogram of Oriented Gradients}}
+\newglossaryentry{iou}{name=IoU, description={Intersection over Union}}
+\newglossaryentry{itl}{name=IT, description={Inferior Temporal Gyrus}}
+\newglossaryentry{ml}{name=ML, description={Machine Learning}}
+\newglossaryentry{mri}{name=MRI, description={Magnetic Resonance Imaging}}
+\newglossaryentry{nms}{name=NMS, description={Non-maximum Suppression}}
+\newglossaryentry{panet}{name=PANet, description={Path Aggregation Network}}
+\newglossaryentry{rpn}{name=RPN, description={Region Proposal Network}}
+\newglossaryentry{rgb}{name=RGB, description={Red-Green-Blue}}
+\newglossaryentry{roi}{name=ROI, description={Region of Interests}}
+\newglossaryentry{sam}{name=SAM, description={Spatial Attention Module}}
+\newglossaryentry{sgd}{name=SGD, description={Stochastic Gradient Descent}}
+\newglossaryentry{svm}{name=SVM, description={Support Vector Machine}}
+\newglossaryentry{spp}{name=SPP, description={Spatial Pyramid Pooling}}
+\newglossaryentry{v1}{name=V1, description={Primary Visual Cortex}}
+\newglossaryentry{v2}{name=V2, description={Secondary Visual Cortex}}
+\newglossaryentry{yolo}{name=YOLO, description={You Only Look Cnce}} 
+
+
+
+\title{Hệ thống nhận dạng và phân loại rác thải trên đường phố ở một số tỉnh Đồng bằng sông Cửu Long}						% Tiêu đề luận văn
+\author{Nguyễn Phương Thanh}				% Người thực hiện 
+
+% Header và footer 
+
+
+
+\begin{document}
+\subfile{out}		% Gọi file bìa ngoài
+\subfile{in}		% Gọi file bìa trong
+
+\pagenumbering{roman}	% Kiểu số trang: i, ii, iii, iv, v,...
+
+% \chapter*{CHẤP THUẬN CỦA HỘI ĐỒNG}
+% \subfile{chapters/hoi-dong}
+
+\chapter*{\centering LỜI CẢM ƠN}
+\subfile{chapters/loi-cam-on}
+
+% \chapter*{\centering NHẬN XÉT CỦA GIẢNG VIÊN}
+% \subfile{chapters/nhan-xet-gv}
+
+\chapter*{\centering TÓM TẮT}
+\subfile{chapters/tom-tat} 
+
+\chapter*{\centering ABSTRACT}
+\subfile{chapters/abstract} 
+
+% \chapter*{\centering LỜI CAM ĐOAN}
+% \subfile{chapters/loi-cam-doan}
+
+\tableofcontents
+\listoffigures
+\listoftables
+% \listofalgorithms
+\glsaddall
+
+\printglossary[title=DANH MỤC TỪ VIẾT TẮT]
+
+
+\clearpage
+\pagenumbering{arabic}			% Kiểu số trang: 1, 2, 3,...
+
+\chapter{\centering GIỚI THIỆU}
+\subfile{chapters/chapter01}	% Gọi file chương 1, tương tự gọi các chương khác
+
+\chapter{\centering CƠ SỞ LÝ THUYẾT}
+\subfile{chapters/chapter02}
+
+% \chapter{\centering PHƯƠNG PHÁP NGHIÊN CỨU}
+% \subfile{chapters/chapter03}
+
+% \chapter{\centering KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}
+% \subfile{chapters/chapter04}
+
+% \chapter{\centering KẾT LUẬN VÀ ĐỀ XUẤT}
+% \subfile{chapters/chapter05}
+
+
+
+\bibliographystyle{IEEEtran}{unsrt}
+\bibliography{refs.bib}
+
+
+
+\chapter*{\centering DANH MỤC CÁC NGHIÊN CỨU ĐÃ CÔNG BỐ}
+\subfile{pubs}
+
+\end{document}

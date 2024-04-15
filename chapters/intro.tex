@@ -1,0 +1,84 @@
+\documentclass[../the.tex]{subfiles}
+\begin{document}
+
+\renewcommand*\thesection{\arabic{section}}
+
+\section{Đặt vấn đề} 
+\label{dat_van_de}
+{\fontsize{13}{12} \selectfont
+Học sâu là thuật ngữ xuất hiện rất thường xuyên khi đề cập đến học máy, trí tuệ nhân tạo hay những cuộc bàn luận về phân tích dữ liệu lớn. Đây cũng là một bước nhảy vọt, đẩy sự thông minh nhân tạo đến một giai đoạn mới và đầy hứa hẹn. Bên cạnh đó, công nghệ ngày càng phát triển, giá thành sản phẩm cũng giảm theo và tốc độ xử lý của máy tính cũng ngày một mạnh hơn, do đó các hệ thống học sâu cũng không ngừng được phát triển và dần dần đẩy tên tuổi mạng nơ-ron lên cao hơn so với các loại giải thuật thủ công cổ điển, tiêu biểu có mạng nơ-ron tích chập.   
+
+Mạng nơ-ron tích chập đã đạt được những thành công nhất định từ lĩnh vực thị giác máy tính trong thời gian gần đây như phát hiện và phân loại đối tượng. Trong lĩnh vực thị giác máy tính còn có một chủ đề vô cùng khó và thu hút sự nghiên cứu của các nhà khoa học suốt mấy năm gần đây bởi vì tính hữu hiệu của nó và đã đem lại nhiều giá trị rất bất ngờ, đó là phân vùng ngữ nghĩa của đối tượng trong ảnh. 
+
+Phân vùng ngữ nghĩa làm cho máy tính có thể nhận biết và tự xây dựng nhận thức về môi trường của đối tượng trong khu vực quan sát. Chúng đem lại thành công về hệ thống xe tự lái, một hướng tiếp cận mới thay vì phải nhận dạng làn đường thì chúng được cung cấp nhận thức cần thiết về môi trường của chúng và có thể hòa nhập vào làn đường với những phương pháp hỗ trợ cao cấp khác, hoặc là thành công về phân vùng ngữ nghĩa ảnh trong y học khi làm nổi bật các bộ phận trong cơ thể con người như tim, gan, phổi,... từ ảnh X-quang, hoặc là những tính năng và những hiệu ứng độc đáo của máy ảnh được tích hợp trên những chiếc điện thoại thông minh đem lại những trải nghiệm rất thú vị cho người dùng.
+
+Chính vì sự độc đáo trong cả về cách tổ chức tính toán cũng như khác với các cách chúng ta hay nghĩ về sự đơn giản của các mối quan hệ giữa các điểm ảnh, tác giả quyết định chọn đề tài "Phân vùng ngữ nghĩa đối tượng người trong ảnh" để hoàn thành bài báo cáo này.  }
+
+\section{Những nghiên cứu liên quan}
+\label{nhung_nghien_cuu_lien_quan}
+{\fontsize{13}{12} \selectfont
+Có thể nói, sự xuất hiện họ \gls{fcn} (FCN-8s, FCN-16s, FCN-32s)\cite{long_shelhamer_fcn} đã ươm mầm cho sự ra đời của những phương pháp nghiên cứu về phân vùng ngữ nghĩa và sự xuất hiện họ DeepLab (DeepLab-v1, DeepLab-v2, DeepLab-v3)\cite{DBLP:journals/pami/ChenPKMY18} đã đẩy sự thành công của phân vùng ngữ nghĩa lên cao. Bên cạnh đó sự ra đời của SegNet\cite{DBLP:journals/corr/BadrinarayananK15}, UNet\cite{DBLP:journals/corr/RonnebergerFB15}, Mask-RCNN\cite{DBLP:journals/corr/HeGDG17},... đã cho thấy sự thu hút các nhà nghiên cứu đối với lĩnh vực có phần mơ hồ về tính ứng dụng của chúng.  
+
+	Vì sự thiếu hiệu quả của \gls{fcn} khi thực hiện độc lập và sự phức tạp vốn có của DeepLab cũng như các giải thuật khác với kiến trúc lên đến hàng trăm lớp, tác giả quyết định sử dụng kết hợp kiến trúc đơn giản của FCN-8s và khả năng tối ưu trường điều kiện ngẫu nhiên (\gls{crfs}) bên trong DeepLab vẫn đáp ứng được mục tiêu đề ra cũng như thời gian và cấu hình máy chủ huấn luyện.}
+	
+\section{Mục tiêu đề tài}
+\label{muc_tieu_de_tai}
+{\fontsize{13}{12} \selectfont
+Xây dựng một hệ thống có khả năng phân vùng ngữ nghĩa đối tượng người, khả năng thay đổi các thông số sử dụng và hiển thị kết quả sau khi đã tách phông.
+
+	Trình bày nội dung lý thuyết của phân vùng ngữ nghĩa ảnh, kiến trúc \gls{fcn} và sự so sánh giữa chúng với những kỹ thuật phân vùng ảnh khác.}
+
+
+
+\section{Đối tượng và phạm vi nghiên cứu}
+\label{doi_tuong_pvnc}
+\subsection{Đối tượng nghiên cứu:}
+\label{doi_tuong}
+{\fontsize{13}{12} \selectfont
+Đối tượng được xác định đầu tiên là tính năng phân tách đối tượng người độc lập và xóa phông cũng như khả năng thực hiện được liên tục của hệ thống.  
+
+	Đối tượng kế tiếp là tập dữ liệu, được thu thập hữu hạn và có được độ phức tạp nhất định để ràng buộc các giá trị xác suất cũng như lột tả một phần sự chân thật của thực tế.
+	
+	Đối tượng tiếp theo là mô hình mạng tích chập đầy đủ (\gls{fcn}) để phân vùng ngữ nghĩa đối tượng người trong tập dữ liệu và khả năng tối ưu bằng trường điều kiện ngẫu nhiên (\gls{crfs}).
+	
+	Đối tượng cuối cùng là việc xây dựng các tính năng cần thiết của hệ thống.}
+
+\subsection{Phạm vi nghiên cứu}
+{\fontsize{13}{12} \selectfont
+Phạm vi nghiên cứu được xác định cụ thể là xây dựng phục vụ cho mục đích mô phỏng và học tập cũng như đáp ứng nhu cầu cho việc ứng dụng mô hình học sâu phức tạp nhằm tạo ra tính năng độc đáo đã nêu trên.}
+
+\bigskip
+
+\section{Phương pháp nghiên cứu}
+{\fontsize{13}{12} \selectfont
+ Đối với tập dữ liệu ảnh, tác giả thu thập trực tiếp trên mạng với nguồn được công khai và tiến hành xử lý các điểm ảnh theo từng loại nhãn đã đề ra.
+\bigskip
+ 
+ Đối với giải thuật được thực hiện trên nền tảng Keras và ngôn ngữ Python vì:
+  
+\begin{itemize}
+    \begin{item}
+		Python là ngôn ngữ lập trình cấp cao, hỗ trợ tương tác thông dịch, có thể sử dụng để viết hướng đối tượng.
+    \end{item}
+    \begin{item}
+		Python gây ấn tượng rất mạnh khi lần đầu tiên sử dụng và ngôn ngữ lập trình này có thể sử dụng cho cả việc nghiên cứu và phát triển một hệ thống.
+    \end{item}
+    \begin{item}
+		Python có khá nhiều thư viện được xây dựng để làm việc chung với máy học. Python cũng là ngôn ngữ phổ biến được dùng để giao tiếp với máy tính trên lĩnh vực trí tuệ nhân tạo nói chung và học máy, học sâu nói riêng.
+    \end{item}
+\end{itemize}}
+
+\section{Bố cục của bài báo cáo luận văn}
+{\fontsize{13}{12} \selectfont
+Bố cục bài báo cáo gồm 2 phần, phần một giới thiệu sơ lược đề tài, phần hai gồm 4 chương:
+
+	Chương 1: Đặc tả yêu cầu
+	
+	Chương 2: Cơ sở lý thuyết
+	
+	Chương 3: Kết quả thực hiện
+	
+	Chương 4: Kết luận và hướng phát triển}
+	
+
+\end{document}

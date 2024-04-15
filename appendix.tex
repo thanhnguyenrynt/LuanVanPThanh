@@ -1,0 +1,34 @@
+\documentclass[../the.tex]{subfiles}
+
+\begin{document}
+\thispagestyle{empty}
+\section*{1. Cài đặt thư viện:}
+\label{set_lib}
+{\fontsize{13}{12} \selectfont
+Các thư viện sử dụng đều được tạo trên hệ điều hành Windows 7 và python 3.6 hoặc lớn hơn, tải về qua liên kết https://www.python.org/ .
+\bigskip
+
+\begin{itemize}
+    \begin{item}
+		Sử dụng câu lệnh python để biên dịch và chạy một tập tin theo ngôn ngữ python.
+    \end{item}
+    \begin{item}
+		Cài đặt câu lệnh pip và sử dụng chúng để tải các nội dung khác.
+    \end{item}
+    \begin{item}
+		Các câu lệnh trực tiếp được chạy trên cửa sổ dòng lệnh:
+		\SubItem{python -m pip install -U pip setuptools}
+		\SubItem{python -m pip install --upgrade matplotlib numpy pandas scipy scikit-learn opencv-python tensorflow keras imutils}
+    \end{item}
+\end{itemize}
+
+\bigskip
+
+	Một trong những lỗi tốn thời gian nhất khi cài đặt thư viện opencv-python trên Windows là "import cv2 importerror dll load failed the specified module could not be found". Quá trình giải quyết thông thường là bổ sung các phần mềm hỗ trợ Microsoft Visual Studio để biên dịch opencv nhưng nếu vẫn không thể giải quyết thì cần cập nhật bổ sung Windows bằng chính chức năng Windows Update từ Control Panel của hệ điều hành hoặc giảm phiên bản opencv-python sẽ giải quyết vấn đề trên.}
+\bigskip
+
+\section*{2. Sử dụng chương trình:}
+\label{use_prog}
+
+
+\end{document}
