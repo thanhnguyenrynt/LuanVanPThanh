@@ -16,45 +16,45 @@ Database file #1: refs.bib
 Warning--empty journal in Papert1966TheSV
 
 Done.
-You've used 35 entries,
+You've used 36 entries,
             4087 wiz_defined-function locations,
-            988 strings with 13315 characters,
-and the built_in function-call counts, 20132 in all, are:
-= -- 1502
-> -- 616
+            991 strings with 13443 characters,
+and the built_in function-call counts, 20606 in all, are:
+= -- 1531
+> -- 637
 < -- 81
-+ -- 310
-- -- 138
-* -- 890
-:= -- 3041
-add.period$ -- 72
-call.type$ -- 35
-change.case$ -- 33
++ -- 320
+- -- 143
+* -- 909
+:= -- 3109
+add.period$ -- 74
+call.type$ -- 36
+change.case$ -- 34
 chr.to.int$ -- 168
-cite$ -- 36
-duplicate$ -- 1565
-empty$ -- 1727
-format.name$ -- 164
-if$ -- 4630
+cite$ -- 37
+duplicate$ -- 1604
+empty$ -- 1771
+format.name$ -- 170
+if$ -- 4738
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 341
-newline$ -- 136
-num.names$ -- 35
-pop$ -- 941
+int.to.str$ -- 36
+missing$ -- 352
+newline$ -- 139
+num.names$ -- 36
+pop$ -- 975
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1555
+skip$ -- 1590
 stack$ -- 0
-substring$ -- 481
-swap$ -- 1109
+substring$ -- 482
+swap$ -- 1133
 text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 35
+type$ -- 36
 warning$ -- 1
-while$ -- 67
-width$ -- 37
-write$ -- 318
+while$ -- 68
+width$ -- 38
+write$ -- 325
 (There was 1 warning)

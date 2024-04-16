@@ -26,4 +26,5 @@
 \contentsline {subsubsection}{\numberline {2.6.1.6}Yolov7}{21}{subsubsection.2.6.1.6}%
 \contentsline {subsubsection}{\numberline {2.6.1.7}Yolov8}{22}{subsubsection.2.6.1.7}%
 \contentsline {subsection}{\numberline {2.6.2}Mô hình SSD}{23}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Tóm tắt các thuật toán phát hiện đối tượng một giai đoạn}{25}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.3}Mô hình RetinaNet}{25}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Tóm tắt các thuật toán phát hiện đối tượng một giai đoạn}{26}{subsection.2.6.4}%

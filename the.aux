@@ -21,6 +21,7 @@
 \citation{wang2022yolov7}
 \citation{Liu_2016}
 \citation{Liu_2016}
+\citation{lin2018focal}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}\centering  GIỚI THIỆU}{1}{chapter.1}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -150,13 +151,18 @@
 \citation{Liu_2016}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.20}{\ignorespaces Ví dụ về các hộp mặc định thủ công từ bản đồ đặc trưng ở SSD \cite  {Liu_2016}}}{24}{figure.2.20}\protected@file@percent }
 \newlabel{fig:ssd}{{2.20}{24}{Ví dụ về các hộp mặc định thủ công từ bản đồ đặc trưng ở SSD \cite {Liu_2016}}{figure.2.20}{}}
-\bibstyle{IEEEtran}
-\bibdata{refs.bib}
+\citation{lin2018focal}
+\citation{lin2018focal}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.21}{\ignorespaces Kiến trúc mô hình SSD \cite  {Liu_2016}}}{25}{figure.2.21}\protected@file@percent }
 \newlabel{fig:ssd2}{{2.21}{25}{Kiến trúc mô hình SSD \cite {Liu_2016}}{figure.2.21}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Tóm tắt các thuật toán phát hiện đối tượng một giai đoạn}{25}{subsection.2.6.3}\protected@file@percent }
-\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Thuật toán NMS}}{26}{algorithm.1}\protected@file@percent }
-\newlabel{alg:1}{{1}{26}{Mô hình SSD}{algorithm.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.3}Mô hình RetinaNet}{25}{subsection.2.6.3}\protected@file@percent }
+\bibstyle{IEEEtran}
+\bibdata{refs.bib}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.22}{\ignorespaces Ví dụ về sự mất cân bằng giữa foreground và background\cite  {lin2018focal}}}{26}{figure.2.22}\protected@file@percent }
+\newlabel{fig:focal_loss}{{2.22}{26}{Ví dụ về sự mất cân bằng giữa foreground và background\cite {lin2018focal}}{figure.2.22}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.6.4}Tóm tắt các thuật toán phát hiện đối tượng một giai đoạn}{26}{subsection.2.6.4}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Thuật toán NMS}}{27}{algorithm.1}\protected@file@percent }
+\newlabel{alg:1}{{1}{27}{Mô hình RetinaNet}{algorithm.1}{}}
 \bibcite{girshick2014rich}{{1}{}{{}}{{}}}
 \bibcite{girshick2015fast}{{2}{}{{}}{{}}}
 \bibcite{He_2014}{{3}{}{{}}{{}}}
@@ -168,31 +174,32 @@
 \bibcite{s22020464}{{9}{}{{}}{{}}}
 \bibcite{wang2022yolov7}{{10}{}{{}}{{}}}
 \bibcite{Liu_2016}{{11}{}{{}}{{}}}
-\bibcite{yang2016classification}{{12}{}{{}}{{}}}
-\bibcite{shah2022method}{{13}{}{{}}{{}}}
-\bibcite{simonyan2014very}{{14}{}{{}}{{}}}
-\bibcite{ahmad2020intelligent}{{15}{}{{}}{{}}}
-\bibcite{nhung2021nghien}{{16}{}{{}}{{}}}
-\bibcite{Papert1966TheSV}{{17}{}{{}}{{}}}
-\bibcite{hubel1962receptive}{{18}{}{{}}{{}}}
-\bibcite{lecun1998gradient}{{19}{}{{}}{{}}}
-\bibcite{nair2010rectified}{{20}{}{{}}{{}}}
-\bibcite{caruana2000overfitting}{{21}{}{{}}{{}}}
-\bibcite{krizhevsky2012imagenet}{{22}{}{{}}{{}}}
-\bibcite{dalal2005histograms}{{23}{}{{}}{{}}}
-\bibcite{uijlings2013selective}{{24}{}{{}}{{}}}
-\bibcite{redmon2016look}{{25}{}{{}}{{}}}
-\bibcite{lin2017feature}{{26}{}{{}}{{}}}
-\bibcite{simonyan2015deep}{{27}{}{{}}{{}}}
-\bibcite{he2015deep}{{28}{}{{}}{{}}}
-\bibcite{xie2017aggregated}{{29}{}{{}}{{}}}
-\bibcite{huang2018densely}{{30}{}{{}}{{}}}
-\bibcite{wang2019cspnet}{{31}{}{{}}{{}}}
-\bibcite{liu2018path}{{32}{}{{}}{{}}}
-\bibcite{woo2018cbam}{{33}{}{{}}{{}}}
-\bibcite{li2022yolov6}{{34}{}{{}}{{}}}
-\bibcite{yolov72023}{{35}{}{{}}{{}}}
+\bibcite{lin2018focal}{{12}{}{{}}{{}}}
+\bibcite{yang2016classification}{{13}{}{{}}{{}}}
+\bibcite{shah2022method}{{14}{}{{}}{{}}}
+\bibcite{simonyan2014very}{{15}{}{{}}{{}}}
+\bibcite{ahmad2020intelligent}{{16}{}{{}}{{}}}
+\bibcite{nhung2021nghien}{{17}{}{{}}{{}}}
+\bibcite{Papert1966TheSV}{{18}{}{{}}{{}}}
+\bibcite{hubel1962receptive}{{19}{}{{}}{{}}}
+\bibcite{lecun1998gradient}{{20}{}{{}}{{}}}
+\bibcite{nair2010rectified}{{21}{}{{}}{{}}}
+\bibcite{caruana2000overfitting}{{22}{}{{}}{{}}}
+\bibcite{krizhevsky2012imagenet}{{23}{}{{}}{{}}}
+\bibcite{dalal2005histograms}{{24}{}{{}}{{}}}
+\bibcite{uijlings2013selective}{{25}{}{{}}{{}}}
+\bibcite{redmon2016look}{{26}{}{{}}{{}}}
+\bibcite{lin2017feature}{{27}{}{{}}{{}}}
+\bibcite{simonyan2015deep}{{28}{}{{}}{{}}}
+\bibcite{he2015deep}{{29}{}{{}}{{}}}
+\bibcite{xie2017aggregated}{{30}{}{{}}{{}}}
+\bibcite{huang2018densely}{{31}{}{{}}{{}}}
+\bibcite{wang2019cspnet}{{32}{}{{}}{{}}}
+\bibcite{liu2018path}{{33}{}{{}}{{}}}
+\bibcite{woo2018cbam}{{34}{}{{}}{{}}}
+\bibcite{li2022yolov6}{{35}{}{{}}{{}}}
+\bibcite{yolov72023}{{36}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\newlabel{tab:mc_frac}{{2}{30}{\centering DANH MỤC CÁC NGHIÊN CỨU ĐÃ CÔNG BỐ}{chapter*.8}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Các công bố có liên quan}}{30}{table.2.1}\protected@file@percent }
-\gdef \@abspage@last{38}
+\newlabel{tab:mc_frac}{{2}{31}{\centering DANH MỤC CÁC NGHIÊN CỨU ĐÃ CÔNG BỐ}{chapter*.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Các công bố có liên quan}}{31}{table.2.1}\protected@file@percent }
+\gdef \@abspage@last{39}
