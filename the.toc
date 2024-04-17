@@ -27,4 +27,6 @@
 \contentsline {subsubsection}{\numberline {2.6.1.7}Yolov8}{22}{subsubsection.2.6.1.7}%
 \contentsline {subsection}{\numberline {2.6.2}Mô hình SSD}{23}{subsection.2.6.2}%
 \contentsline {subsection}{\numberline {2.6.3}Mô hình RetinaNet}{25}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Tóm tắt các thuật toán phát hiện đối tượng một giai đoạn}{26}{subsection.2.6.4}%
+\contentsline {section}{\numberline {2.7}Các phương pháp đánh giá mô hình}{27}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Phương pháp đánh giá IoU (Intersection over Union)}{27}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Tóm tắt các thuật toán phát hiện đối tượng một giai đoạn}{28}{subsection.2.7.2}%
