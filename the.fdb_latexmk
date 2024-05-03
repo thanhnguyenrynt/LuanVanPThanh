@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex the"] 1713261873.1068 "the.aux" "the.bbl" "the" 1713262024.48926 0
+["bibtex the"] 1713261873.1068 "the.aux" "the.bbl" "the" 1714707290.70998 0
   "./refs.bib" 1713261787.70165 14678 3815af83dc3d269c31f336cd220d216f ""
   "D:/LaTex/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "the.aux" 1713262022.95927 14818 db7fbb19a39f7ccbb308ecbfca18c6e4 "pdflatex"
+  "the.aux" 1714707288.23598 14818 db7fbb19a39f7ccbb308ecbfca18c6e4 "pdflatex"
   (generated)
   "the.bbl"
   "the.blg"
   (rewritten before read)
-["pdflatex"] 1713262015.7547 "d:/Thanh/LaTex/LuanVanPThanh/the.tex" "the.pdf" "the" 1713262024.4912 0
+["pdflatex"] 1714707279.36832 "d:/Thanh/LaTex/LuanVanPThanh/the.tex" "the.pdf" "the" 1714707290.71121 0
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1713259966.72468 89997 61e9ca8c55c47218293899912efaa0ce ""
   "C:/Users/Admin/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1704856908.7048 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/Admin/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1704855649.05842 24208091 33b77623edd9d9dd756abdd12b45d3cc ""
@@ -295,9 +295,9 @@
   "D:/LaTex/tex/latex/yhmath/yhmath.sty" 1584531306 4974 781520532e2758ee5c0cb9fe28b8aa9d ""
   "chapters/abstract.tex" 1713238124.00454 1401 2360d7d0030323a4608fd60b4d190074 ""
   "chapters/chapter01.tex" 1713238124.01053 7528 476c86527028738dc9e8e956416eaaab ""
-  "chapters/chapter02.tex" 1713262013.10076 58119 e7e382d6f88b745693b1296b1d338525 ""
+  "chapters/chapter02.tex" 1713262093.5624 58119 e7e382d6f88b745693b1296b1d338525 ""
   "chapters/loi-cam-on.tex" 1713238124.02054 1778 cad0b570585e0e214fd7b1886c087f99 ""
-  "chapters/tom-tat.tex" 1713238124.02054 1390 59d8f1452886932be1407c99d7bdf9e1 ""
+  "chapters/tom-tat.tex" 1714707175.77473 1469 0785ad26deb75d057adcfe8f4ec9a3b1 ""
   "d:/Thanh/LaTex/LuanVanPThanh/the.tex" 1713238124.18454 8296 60c07f4c6bef514182cf38ab3ca8efbd ""
   "images/RPN.png" 1713238124.03154 16274 e798212bac85d07422c5ed631a4871bd ""
   "images/computer_vision.PNG" 1713238124.03854 55398 0632b69748692f3dde660f3334203da6 ""
@@ -324,13 +324,13 @@
   "in.tex" 1713238124.15954 1306 404b71f4f1f87eb46090ad02841fbd87 ""
   "out.tex" 1713238124.16153 1485 587b061b806de7597f84ec99bffae1be ""
   "pubs.tex" 1713238124.16153 1023 d1dfdea6b2330b713e05c4d1f00ae274 ""
-  "the.aux" 1713262022.95927 14818 db7fbb19a39f7ccbb308ecbfca18c6e4 "pdflatex"
+  "the.aux" 1714707288.23598 14818 db7fbb19a39f7ccbb308ecbfca18c6e4 "pdflatex"
   "the.bbl" 1713261873.55936 8242 ff0d2fb393790b7c29353ebfd522b7ec "bibtex the"
   "the.gls" 0 -1 0 ""
-  "the.lof" 1713262022.99927 2814 88bf03d0b6c39f5643cb86eb54c12619 "pdflatex"
-  "the.lot" 1713262022.99927 143 0edf7c6a9a8668231a65314e95c7b2d5 "pdflatex"
-  "the.out" 1713262022.98627 4669 ceb6eea955ff9a2ff5231b3897376561 "pdflatex"
-  "the.toc" 1713262022.99927 2832 48619c311c7e4df06e9db859b7ba6cc9 "pdflatex"
+  "the.lof" 1714707288.26798 2814 88bf03d0b6c39f5643cb86eb54c12619 "pdflatex"
+  "the.lot" 1714707288.26798 143 0edf7c6a9a8668231a65314e95c7b2d5 "pdflatex"
+  "the.out" 1714707288.25298 4669 ceb6eea955ff9a2ff5231b3897376561 "pdflatex"
+  "the.toc" 1714707288.26798 2832 48619c311c7e4df06e9db859b7ba6cc9 "pdflatex"
   (generated)
   "the.aux"
   "the.glo"
