@@ -10,6 +10,8 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: refs.bib
+Warning--I didn't find a database entry for "deterseong"
+Warning--I didn't find a database entry for "detectiongao2021"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -18,7 +20,7 @@ Warning--empty journal in Papert1966TheSV
 Done.
 You've used 36 entries,
             4087 wiz_defined-function locations,
-            991 strings with 13443 characters,
+            993 strings with 13469 characters,
 and the built_in function-call counts, 20606 in all, are:
 = -- 1531
 > -- 637
@@ -57,4 +59,4 @@ warning$ -- 1
 while$ -- 68
 width$ -- 38
 write$ -- 325
-(There was 1 warning)
+(There were 3 warnings)

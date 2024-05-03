@@ -367,7 +367,7 @@ Hình \ref{fig:yolov2} dưới đây mô tả kiến trúc cụ thể của Dark
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{yolov2.png}
-	\caption{Kiến trúc mạng Darknet-19 \cite{redmon2016yolo9000}}
+	\caption{Kiến trúc mạng Darknet-19 \cite{deterseong}}
 	\label{fig:yolov2}
 \end{figure}
 \bigskip
@@ -385,7 +385,7 @@ Yolov3 sử dụng các lớp tích chập có kích thước $3 \times 3 $ và 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{yolov3.png}
-	\caption{Kiến trúc mạng Darknet-53 \cite{redmon2018yolov3}}
+	\caption{Kiến trúc mạng Darknet-53 \cite{detectiongao2021}}
 	\label{fig:yolov3}
 \end{figure}
 \bigskip
@@ -489,12 +489,12 @@ Việc thực hiện tăng cường dữ liệu mosiac đã cho thấy làm gi�
 }
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=9cm,height=9cm,keepaspectratio]{mosiac.png}
-	\caption{Tăng cường dữ liệu mosaic}
+	\includegraphics[width=1\textwidth]{mosiac.png}
+	\caption[]{Tangw cường dữ liệu mosiac\footnotemark}
 	\label{fig:mosaic}
 \end{figure}
 \bigskip
-
+\footnotetext{\url{http://wandb.ai/}}
 \subsection{Mô hình SSD} 
 {\fontsize{13}{12} \selectfont 
 Tương tự như các mô hình họ Yolo, mô hình SSD \cite{Liu_2016} (Single Shot MultiBox Detector) là thuật toán phát hiện đối tượng một giao đoạn nên tỏ ra nhanh hơn so với các mô hình họ R-CNN. 
@@ -540,62 +540,68 @@ bằng cách sử dụng hàm focal loss thay cho cross entropy.
 
 Những mô hình phát hiện đối tượng trước đó điều phải đối mặt với vấn đề mất cân bằng lớp (class imbalance) và luôn phải đối mặt với việc đánh giá khoảng $10^4 - 10^5$ vị trí ứng viên cho mỗi ảnh nhưng chỉ có một vài vị trí chứa vật thể.
 Điều này dẫn đến việc huấn luyện không hiệu quả vì hầu hết dữ liệu là các lớp âm \cite{lin2018focal}. Focal loss là hàm loss function lần đầu được giới thiệu trong RetinaNet. Hàm mất mát này đã chứng minh được tính hiệu quả trong các bài toán object detection.
-Như hình \ref{fig:focal_loss} chỉ có 4 hộp giới hạn thuộc lớp dương (các đường viền in đậm), tất cả trường hợp còn lại đều là lớp âm. Hàm focal loss có công thức như sau
+Như hình \ref{fig:focal_loss} chỉ có 4 hộp giới hạn thuộc lớp dương (các đường viền in đậm), tất cả trường hợp còn lại đều là lớp âm. Công thức của hàm cross entropy tại các nhãn bằng 0 giá trị đóng góp vào hàm mất mát bằng 0 nên có công thức:
 \begin{equation}
-		FL(P_t) = -\alpha(1-\rho_t)^\gamma \log(\rho_t)
+	CE(p,y) = C(p_t) =  -\log(p_t)
 \end{equation}
-}\begin{figure}[H]
+Và hàm focal loss có công thức như sau:
+\begin{equation}
+		FL(p_t) = -\alpha(1-p_t)^\gamma \log(p_t)
+\end{equation}
+Khi sử dụng hàm focal loss cần có hai tham số cần điều chỉnh, $\alpha \in$ cho lớp là $1$ và $1 - \alpha$ cho lớp $-1$. 
+Bình thường $\alpha > 0.5$ thì model sẽ tập trung học những dự liệu có lớp là $1$. Tham số $\gamma$ điều chỉnh mất mát,
+nếu $\gamma$ tăng thì mất mát sẽ nhỏ hơn cho dữ liệu dễ học (foreground), cao hơn cho dữ liệu khó học (background) của dữ liệu học khó 
+và do đó tập trung hơn vào những trường hợp khó dự báo. Nhờ đó cải thiện được độ chính xác.
+}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=9cm,height=9cm,keepaspectratio]{focal_loss.png}
 	\caption{Ví dụ về sự mất cân bằng giữa  foreground và background\cite{lin2018focal}}
 	\label{fig:focal_loss}
 \end{figure}
 \bigskip
+{\fontsize{13}{12} \selectfont  
 
-\begin{algorithm}
-	\caption{Thuật toán NMS}\label{alg:1}
-	\KwData{
-	$B = {b_1, ..., b_n}, P = {p_1, ..., p_n}, \lambda_p, \lambda_{IoU}$ \\
-	$B$ là danh sách các hộp giới hạn \\
-	$P$ chứa điểm đối tượng tương ứng \\
-	$\lambda_p$ xác định ngưỡng đối tượng \\
-	$\lambda_{IoU}$ là ngưỡng IoU\\
-	}
-	\KwResult{
-		$B_r = \{\}, P_r = \{\}$ \\
-		$B_r$ là danh sách các hộp không triệt tiêu tối đa \\
-		$P_r$ chứa điểm đối tượng tương ứng \\
-	}
-	\Begin{
-		$B_r \gets \{\}$\\
-		$P_r \gets \{\}$\
+RetinaNet là sự kết hợp giữa các mạng bao gồm backbone và mạng con. Dữ 
+liệu đầu vào của RetinaNet được đưa qua mô hình mạng có tên là FPN \cite{lin2017feature} nhằm rút trích các ma trận đặc trưng với 
+cùng một tỉ lệ nhưng theo nhiều kích thước khác nhau. Sau đó từ ma trận đặc trưng mới bắt đầu tính toán các vùng để 
+xuất. Cuối cùng các vùng đề xuất được đưa qua hai mạng phụ để tính ra vị trí của các hộp giới và lớp của đối 
+tượng mà hộp đó bao quanh. Hình \ref{fig:retinanet} mô tả kiến trúc của Retinanet gồm hai phần. Phần backbone là
+là một trích xuất đặc trưng kết hợp giữa Resnet + FPN. Phần mạng con dùng để phân lớp và 
+xác định vị trí hộp giới hạn.
+}
 
-		\For{$b_i$ in $B$}
-		{
-			\If{$b_i < \lambda_p$}{
-				$B \gets B - b_i$\\
-				$P \gets P - p_i$
-			}
-		}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{retinanet.png}
+	\caption{Cấu trúc mạng Retinanet \cite{lin2018focal}}
+	\label{fig:retinanet}
+\end{figure}
+\bigskip
 
-		\While{$B \neq \emptyset$}{
-			$P_{max} \gets max(P)$ \\
-			$B_{max} \gets max(b_{P_{max}})$ \\
-			$B_r \gets B_r + B_{max}$ \\
-			$P_r \gets P_r + P_{max}$ \\
-			$B \gets B - B_{max}$ \\
-			$P \gets P - P_{max}$ \\
-			\For{$b_i$ in $B$}
-			{
-				\If{$IoU(B_{max}, b_i) > \lambda_{IoU}$}{
-					$B \gets B - b_i$\\
-					$P \gets P - p_i$
-				}
-			}
-		}
-		\Return {$B_r, P_r$}
-	}
-\end{algorithm}
+
+\section{Các phương pháp đánh giá mô hình} 
+\subsection{Phương pháp đánh giá IoU (Intersection over Union)}
+{\fontsize{13}{12} \selectfont  
+IoU là chỉ số đánh giá các mô hình phát hiện vật thể. IoU là tỉ lệ giữa vùng giao và hợp của kết quả dự đoán và kết quả thực tế (Hình \ref{fig:iou}). 
+Giá trị của IoU dao động
+từ 0 đến 1, với 0 nghĩa là không có sự chồng chéo giữa kết quả dự đoán và kết quả
+thực tế và 1 nghĩa là hai kết quả này hoàn toàn trùng khớp
+Tỉ lệ này càng lớn đồng nghĩa hôp giới hạn dự đoán ra càng giống hộp thực của dữ liệu.
+}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{iou.jpg}
+	\caption{Chỉ số đánh giá IoU}
+	\label{fig:iou}
+\end{figure}
+\bigskip
+
+{\fontsize{13}{12} \selectfont  
+Trong hình \ref{fig:iou} có khung màu đỏ là nhãn thực hay còn gọi là hộp giới hạn
+được gán nhãn, khung màu xanh là nhãn dự đoán hay còn gọi là hộp giới hạn được mô hình dự đoán. Thông thường với các mô hình phát hiện đôi tượng, chỉ số $IoU > 50\%$ được xem là dự đoán có đối tượng. 
+}
 
 % \begin{algorithm}
 % \caption{Thuật toán NMS}\label{alg:1}

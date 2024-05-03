@@ -45,12 +45,6 @@ F.~F. L. . J. J. .~S. Yeung, ``Detection and segmentation,''
 S.~Ren, K.~He, R.~Girshick, and J.~Sun, ``Faster r-cnn: Towards real-time
   object detection with region proposal networks,'' 2016.
 
-\bibitem{redmon2016yolo9000}
-J.~Redmon and A.~Farhadi, ``Yolo9000: Better, faster, stronger,'' 2016.
-
-\bibitem{redmon2018yolov3}
-------, ``Yolov3: An incremental improvement,'' 2018.
-
 \bibitem{bochkovskiy2020yolov4}
 A.~Bochkovskiy, C.-Y. Wang, and H.-Y.~M. Liao, ``Yolov4: Optimal speed and
   accuracy of object detection,'' 2020.
@@ -151,6 +145,12 @@ J.~R. Uijlings, K.~E. Van De~Sande, T.~Gevers, and A.~W. Smeulders, ``Selective
 \bibitem{redmon2016look}
 J.~Redmon, S.~Divvala, R.~Girshick, and A.~Farhadi, ``You only look once:
   Unified, real-time object detection,'' 2016.
+
+\bibitem{redmon2016yolo9000}
+J.~Redmon and A.~Farhadi, ``Yolo9000: Better, faster, stronger,'' 2016.
+
+\bibitem{redmon2018yolov3}
+------, ``Yolov3: An incremental improvement,'' 2018.
 
 \bibitem{lin2017feature}
 T.-Y. Lin, P.~Dollár, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
