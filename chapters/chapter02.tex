@@ -490,7 +490,7 @@ Việc thực hiện tăng cường dữ liệu mosiac đã cho thấy làm gi�
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{mosiac.png}
-	\caption[]{Tangw cường dữ liệu mosiac\footnotemark}
+	\caption[]{Tăng cường dữ liệu mosiac\footnotemark}
 	\label{fig:mosaic}
 \end{figure}
 \bigskip
@@ -600,9 +600,65 @@ Tỉ lệ này càng lớn đồng nghĩa hôp giới hạn dự đoán ra càng
 
 {\fontsize{13}{12} \selectfont  
 Trong hình \ref{fig:iou} có khung màu đỏ là nhãn thực hay còn gọi là hộp giới hạn
-được gán nhãn, khung màu xanh là nhãn dự đoán hay còn gọi là hộp giới hạn được mô hình dự đoán. Thông thường với các mô hình phát hiện đôi tượng, chỉ số $IoU > 50\%$ được xem là dự đoán có đối tượng. 
+được gán nhãn, khung màu xanh là nhãn dự đoán hay còn gọi là hộp giới hạn được mô hình dự đoán.
+Kết quả của Iou sẽ có giá trị trong khoảng 0 đến 1 với mỗi lần phát hiện có giá trị riêng. Để xác định là phát hiện đúng hoặc phát hiện sai, chúng ta phải dựa vào ngưỡng cho trước.
+Thông thường với các mô hình phát hiện đôi tượng, chỉ số $IoU > 50\%$ được xem là dự đoán có đối tượng. Dựa vào khái niệm trên ta có các định nghĩa sau:
+\begin{itemize}
+	\item True Positive (TP): IoU lớn hơn hoặc bằng ngưỡng, là một dự đoán đúng.
+	\item False Positive (FP): IoU bé hơn ngưỡng, là một dự đoán sai.
+	\item False Negative (FN): trường hợp mà hộp giới hạn đúng nhưng không có hộp dự đoán.
+\end{itemize}
 }
 
+\subsection{Phương pháp đánh giá độ chính xác, độ nhạy, độ chính xác trung bình}
+{\fontsize{13}{12} \selectfont 
+Độ chính xác (precision) đo lường tỷ lệ các dự đoán tích cực mà hệ thống phân loại đưa ra 
+mà thực tế là đúng có công thức \ref{equa:P}.
+Độ nhạy (recall) đo lường tỷ lệ của các hộp giới hạn mà mô hình dự đoán đúng so với tổng số các hộp giới hạn dữ liệu thực tế đúng có công thức \ref{equa:R}.
+Giá tri TP của mô hình sẽ phụ thuộc vào việc chọn ngưỡng IoU. 
+Như hình \ref{fig:nguong_iou} nếu ngưỡng IoU là 0.5, IoU cho dự đoán là 0.7 khi đó chúng ta có TP - dự đoán đúng. Ngược lại nếu IoU là 0.3, chúng ta có FP - dự đoán sai.
+\begin{equation}
+	Precision = \frac{TP}{TP+FP}\
+	\label{equa:P}
+\end{equation}
+\begin{equation}
+	Precision = \frac{TP}{TP+FN}\ 
+	\label{equa:R}
+\end{equation}
+}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{nguong_iou.jpg}
+	\caption{Ví dụ về việc thay đổi ngưỡng IoU}
+	\label{fig:nguong_iou}
+\end{figure}
+\bigskip
+
+{\fontsize{13}{12} \selectfont 
+Khi bắt đầu thay đổi ngưỡng IoU, các giá trị precision và recall sẽ được tính để tạo ra đường cong được gọi là Precision Recall Curve tương tự hình \ref{fig:ap}.
+Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tích vùng màu xanh ở hình \ref{fig:ap}. AP càng lớn thể hiện việc precision và recall càng cao với các ngưỡng IoU khác nhau, đồng nghĩa với mô hình tốt.
+
+mAP (mean average precision) là trung bình của AP. Trong một số trường hợp chúng ta tính AP cho mỗi lớp và lấy trung bình. Nhưng trong một số trường hợp khác AP và mAP lại giống nhau phụ thuộc vào từng bài toán.
+Trong PASCAL VOC2007, AP cho một lớp được tính cho một ngưỡng IoU. Do đó mAP là trung bình của AP trên toàn bộ các lớp.
+Còn trong COCO 2017, mAP là trung bình trên toàn bộ các lớp và với mười ngưỡng IoU.
+}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{AP.png}
+	\caption{Precision Recall Curve được vẽ với ngưỡng IoU chạy từ 0 đến 1}
+	\label{fig:ap}
+\end{figure}
+\subsection{Phương pháp đánh giá bằng tốc độ, thông số, độ lớn của mô hình}
+{\fontsize{13}{12} \selectfont  
+Khung hình trên giây (FPS) biểu thị số lượng khung hình mà mô hình phát hiện đối tượng có thể xử lý mỗi giây. Nó là thước đo tốc độ và hiệu quả của mô hình, cho biết mô hình có thể xử lý các hình ảnh đến và tạo ra kết quả phát hiện đối tượng nhanh như thế nào.
+Với việc mở rộng phát triển mô hình sau này của bài toán, việc chọn FPS cao sẽ giúp cải thiện trải nghiệm người dùng và thuận tiện cho việc xử lí thời gian thực.
+
+Thông số cho biết số lượng tham số có thể học được trong một mô hình. Đó là thước đo độ phức tạp của mô hình và dung lượng bộ nhớ. Việc phát hiện rác cần các dữ liệu bổ sung để cải thiện độ chính xác của mô hình, vì vậy việc tiếp tục huấn luyện dựa trên các hình ảnh được người dùng cung cấp là rất quan trọng.
+Thời gian huấn luyện mô hình nhanh dựa vào các tham số trong mô hình giúp việc cải thiện hệ thống nhanh hơn.
+
+Kích thước thể hiện kích thước tệp hoặc mức tiêu thụ bộ nhớ của mô hình. Nó đo lường tính di động của mô hình và khả năng triển khai dễ dàng. 
+kích thước nhỏ hơn sẽ dễ dàng lưu trữ và truyền tải hơn, yêu cầu tài nguyên trên thiết bị thấp hơn, có khả năng tải xuống và triển khai nhanh hơn. Hệ thống với việc triển khai trên thiết bị di động nên việc chọn các mô hình có kích thước nhỏ là việc ưu tiên. 
+}
 % \begin{algorithm}
 % \caption{Thuật toán NMS}\label{alg:1}
 % \begin{algorithmic}
@@ -622,11 +678,4 @@ Trong hình \ref{fig:iou} có khung màu đỏ là nhãn thực hay còn gọi l
 % \EndWhile
 % \end{algorithmic}
 % \end{algorithm}
-
-\subsection{Tóm tắt các thuật toán phát hiện đối tượng một giai đoạn}
-
-{\fontsize{13}{12} \selectfont
-	Thuật toán phát hiện đối tượng trong một lần chụp hiện là thuật toán phát hiện đối tượng theo thời gian thực nhanh nhất. So với các thuật toán hai giai đoạn, chủ yếu có ba cải tiến. Đầu tiên, thuật toán chụp một lần chuyển nhiệm vụ phát hiện đối tượng thành một bài toán hồi quy, đơn giản hóa quá trình phát hiện đối tượng, cải thiện đáng kể tốc độ phát hiện và đề xuất ý tưởng phát hiện đầu cuối. Thứ hai, thuật toán này đề xuất một phương pháp huấn luyện đa quy mô linh hoạt hơn các thuật toán hai giai đoạn và có thể thích ứng với các bộ dữ liệu khác nhau. Thứ ba, thuật toán chụp một lần cải thiện thiết kế neo của các thuật toán hai giai đoạn và tìm ra cài đặt neo tối ưu bằng cách sử dụng phân cụm.
-}
-
 \end{document}

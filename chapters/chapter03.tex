@@ -1,101 +1,28 @@
 \documentclass[../the.tex]{subfiles}
 \begin{document}
 
-Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv4 và so sánh với mô hình U-Net. Mô hình này được đề xuất trong nghiên cứu của Bochkovskiy \etal \cite{Bochkovskiy2020YOLOv4OS} và Lindsey \etal \cite{Lindsey1806905115}. Trong các phần tiếp theo, nghiên cứu này giải thích lý do về việc sử dụng, cũng như chi tiết cụ thể của các phương pháp này. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng. Mục \ref{sec:dataset} mô tả về tập dữ liệu, và phương pháp đánh giá mô hình được trình bày trong Mục \ref{sec:eval}
-
-
-\section{Các mô hình được sử dụng}
-\label{sec:model}
-
-\subsection{Mô hình U-Net}
-
-{\fontsize{13}{12} \selectfont
-Cách tiếp cận phù hợp và hiện đại nhất để phát hiện gãy xương cổ tay được mô tả trong nghiên cứu của Lindsey \etal \cite{Lindsey1806905115}. Trong nghiên cứu của mình, các tác giả đã đề xuất một phương pháp mới dựa trên mô hình mạng U-net (NN) \cite{Ronneberger2015UNetCN,FridAdar2018ImprovingTS,BOUSLAMA2020100306,Liu2022}. Vì tập dữ liệu của họ không được công bố rộng rãi nên nghiên cứu đã điều chỉnh và huấn luyện phương pháp của họ trên tập dữ liệu tìm được.
-
-Mô hình U-Net, như được mô tả trong Hình \ref{fig:unet} và Hình \ref{fig:model_unet}, bao gồm hai phần chính:
-
-\begin{itemize}
-  \item Phần đầu tiên tạo ra một bản đồ nhiệt thông minh điểm ảnh đại diện cho xác suất để mỗi điểm ảnh thuộc về một vết đứt gãy. Phần này là mô hình U-net với đặc điểm kỹ thuật lớp tương tự như được mô tả trong bài báo gốc (kích thước hạt nhân tích hợp, phần đệm, số lượng bộ lọc, v.v.).
-  
-  \item Phần thứ hai tính toán xác suất hình ảnh X-quang đầu vào có chứa vết gãy. Nó bao gồm một lớp tổng hợp tối đa toàn cục, theo sau là một lớp bỏ học (dropdown layer) với xác suất bỏ học là 0.5. Bởi vì không có thông tin liên quan đến lớp được kết nối đầy đủ, nghiên cứu này đặt số lượng tế bào thần kinh là 4.096 với chức năng kích hoạt ReLU (lấy cảm hứng từ đầu mô hình VGG19 \cite{2014arXiv1409.1556S}).
- 
-\end{itemize}
-
-}
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width=1\textwidth]{images/unet.PNG}
-	\caption{Minh họa về cấu trúc liên kết mô hình U-Net NN được sử dụng \cite{Lindsey1806905115}}
-	\label{fig:unet}
-\end{figure}
-
-{\fontsize{13}{12} \selectfont
-
-Để đạt được sự ổn định trong quá trình huấn luyện, đảm bảo hội tụ hàm mất mát trên tập dữ liệu, bên cạnh việc chính quy hóa L2 được đề xuất ban đầu $(\lambda = 10^{-5})$, nghiên cứu này đã áp dụng kích hoạt ReLU sau mỗi lớp tích chập (thay vì mọi lớp tích chập khác). Hơn nữa, sau mỗi lớp chập, thêm một lớp chuẩn hóa hàng loạt cũng giúp mô hình hội tụ trong quá trình huấn luyện. \cite{10.5555/3327144.3327174}.
-
-Do giới hạn phần cứng, kích thước đầu vào của hình ảnh được đặt thành 512 × 512 (thay vì 1024 × 512). Kích thước lô được đặt thành 8. Hàm mất mát là tổng của hai hàm cross-entropy nhị phân (bản đồ nhiệt và xác suất đứt gãy) và bộ tối ưu hóa là Adam với tốc độ học $\alpha = 10^{-4}$ \cite{Buja2005LossFF}.
-
-
-\begin{figure}[H]
-\centering
-	\includegraphics[width=0.4\textwidth]{images/model_unet.png}
-	\caption{Mô tả chi tiết về các lớp của mô hình U-Net}
-	\label{fig:model_unet}
-\end{figure}
-
-}
-
-\subsection{Mô hình Yolov4}
-
-{\fontsize{13}{12} \selectfont
-Chi tiết về kiến trúc, quá trình xử lý của mô hình Yolov4 đã được mô tả ở Mục \ref{sec:yolov4}. Ở phần này sẽ trình bày thêm những chi tiết sau.
-
-Bochkovskiy \etal. \cite{Bochkovskiy2020YOLOv4OS} đã tiến hành một cuộc so sánh rộng rãi - tiêu tốn thời gian và tài nguyên - của YOLOv4 với các mô hình hiện đại khác nhau để phát hiện đối tượng và thực hiện một cuộc tìm kiếm mở rộng cho cấu trúc liên kết tốt nhất của phương pháp đề xuất của họ. Do đó, nghiên cứu đã xem xét các phát hiện và sử dụng mô hình đạt được kết quả tốt nhất trong nghiên cứu của họ. Hơn nữa, nhiều bài báo đang so sánh YOLOv4 với các phương pháp phát hiện đối tượng có sẵn khác trong đó YOLOv4 đạt được hiệu suất tương tự hoặc tốt hơn \cite{s20174938,WU2020105742,9079965,Aly2021YOLOVA}. Điều này thúc đẩy việc sử dụng mô hình YOLOv4 trong nghiên cứu này. Quá trình phát hiện gãy xương trên ảnh X-quang với mô hình Yolov4 được trình bày trong Hình \ref{fig:yolov4_pro}.
-
-\begin{itemize}
-  \item Dữ liệu đầu vào - Bước này bao gồm việc nâng cấp và xử lý trước dữ liệu đầu vào (XAOM với tỷ lệ hình ảnh thành 512 × 512 và 608 × 608 điểm ảnh). Trong nghiên cứu này sử dụng các phương pháp tăng cường dữ liệu và kích thước hình ảnh tương tự như trong cấu hình của YOLOv4.
-
-  \item Trích xuất đặc trưng - Trong nghiên cứu YOLOv4, các tác giả đã so sánh hiệu năng của một số mô hình CNN, trong đó mô hình CSPDarknet53 cho kết quả tốt nhất \cite{9150780}.
- 
-   \item Tổng hợp đặc trưng - Các tác giả đã thảo luận về một số kiến trúc mô hình để tổng hợp đặc trưng và quyết định sử dụng mô hình PANet \cite{8579011}. Trong nghiên cứu này cũng sử dụng PANet cho phần tổng hợp đặc trưng.
-   
-   \item Bộ phát hiện gãy xương - Tạo ra một véc tơ đại diện cho các đối tượng. Mỗi đối tượng được xác định với một mỏ neo (tọa độ của hộp giới hạn dự đoán: tâm, chiều cao, chiều rộng) và xác suất lớp.
-\end{itemize}
-}
-
-\begin{figure}[ht!]
-\centering
-	\includegraphics[width=1\textwidth]{images/yolov4_pro.png}
-	\caption{Các bộ phận chính của YOLOv4. (a) Dữ liệu đầu vào được xử lý trước và tăng cường. (b) Mô hình CSPDarknet53 để trích xuất đặc trưng. (c) PANet để tổng hợp các đặc trưng. (d) Bộ phát hiện gãy xương}
-	\label{fig:yolov4_pro}
-\end{figure}
-
-{\fontsize{13}{12} \selectfont
-Ta có thể tăng độ chính xác của dự đoán lớp và diện tích hộp giới hạn ước tính bằng cách thiết lập các ước tính ban đầu về kích thước của mỏ neo. Ước tính kích thước của neo được hoàn thành bằng cách chạy thuật toán phân cụm k-means trên tập dữ liệu huấn luyện với số lượng cụm là 9 \cite{Likas2003}. Do đó, tổng cộng, đã huấn luyện và thử nghiệm bốn mô hình YOLOv4 để phát hiện gãy xương:
-
-\begin{itemize}
-  \item Mô hình YOLO 512 có kích thước hình ảnh đầu vào được đặt thành 512 × 512 và kích thước neo ban đầu: (12, 16), (19, 36), (40, 28), (36, 75), (76, 55), (72, 146), (142, 110), (192, 243), (459, 401).
-
-  \item Mô hình neo YOLO 512 có kích thước hình ảnh đầu vào được đặt thành 512 × 512 và kích thước neo ước tính: (23, 22), (44, 27), (35, 40), (73, 31), (55, 41), (61, 62), (84, 47), (101, 67), (92, 115).
-   
-  \item Mô hình YOLO 608 có kích thước hình ảnh đầu vào được đặt thành 608 × 608 và kích thước neo ban đầu: (12, 16), (19, 36), (40, 28), (36, 75), (76, 55), (72, 146), (142, 110), (192, 243), (459, 401).
-  
-  \item Mô hình neo YOLO 608 có kích thước hình ảnh đầu vào được đặt thành 608 × 608 và kích thước neo ước tính: (40, 41), (70, 51), (109, 58), (82, 82), (157, 70), ( 122, 94), (114,155), (176,111), (206,176).
-\end{itemize}
-
-Tất cả các siêu tham số khác đều được sử dụng giống như trong nghiên cứu gốc ngoại trừ tốc độ học $\alpha$. Các siêu tham số như sau: trình tối ưu hóa là một đường đi xuống dốc ngẫu nhiên (SGD) với tốc độ học $\alpha = 0,0013$ được chọn giữa các giá trị được đề xuấtc: từ 0,01 đến 0,00261, và được nhân với hệ số 0,1 ở 80 lần huấn luyện, quán tính 0,949, phân rã 0,0005. Kích thước lô được đặt là 64 và phương pháp chính quy hóa là dropBlock với xác suất bỏ 0,1. PANet (mô-đun SPP) đã sử dụng các lớp tổng hợp tối đa với kích thước nhân $k \times k$, trong đó k = 1, 5, 9, 13. Hơn nữa, tất cả các mô hình được thử nghiệm đã được huấn luyện cho đến khi không có cải thiện đáng kể về độ chính xác. Thông thường, điều này xảy ra sau 100 đến 150 lần huấn luyện lặp đi lặp lại.
-}
-
+Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SSD MobiNet và FasterRCNN. Mô hình này được đề xuất trong nghiên cứu của Bochkovskiy \etal \cite{Bochkovskiy2020YOLOv4OS} và Lindsey \etal \cite{Lindsey1806905115}. Trong các phần tiếp theo, nghiên cứu này giải thích lý do về việc sử dụng, cũng như chi tiết cụ thể của các phương pháp này. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng. Mục \ref{sec:dataset} mô tả về tập dữ liệu, và phương pháp đánh giá mô hình được trình bày trong Mục \ref{sec:eval}
 
 \section{Tập dữ liệu}
 \label{sec:dataset}
 
 {\fontsize{13}{12} \selectfont
-Trong phạm vi nghiên cứu này sử dụng tập dữ liệu được chia sẻ từ nghiên cứu của Nagy \etal \cite{Nagy2022}. Tập dữ liệu bao gồm 20,327 hình ảnh X-quang cổ tay trẻ em được thu thập từ 6,091 bệnh nhân nhi. Tập dữ liệu được gán nhãn bởi nhiều sinh viên và bác sĩ thông qua công cụ trực tuyến Supervisely (Deep Systems LLC, Moscow, Nga) bằng cách khoanh vùng các vùng gãy xương. Ba bác sĩ nhi khoa được chứng nhận đã xác nhận tất cả các nhãn đã được gán chính xác. Các vị phát gán nhãn được điều chỉnh cho đến khi đạt được sự đồng thuận giữa các bác sĩ. Các bác sĩ X-quang nhi khoa được hội đồng chứng nhận có kinh nghiệm từ 6 đến 29 năm trong lĩnh vực X-quang cơ xương khớp đã xác nhận tất cả các vùng gãy xương trên hình ảnh X-quang là chính xác.
+Trong phạm vi nghiên cứu, các tập dữ liệu sử dụng sẽ là TrashNet \cite{yang2016classification}, Taco và bổ sung tập dữ liệu tự thu thập được ở ĐBSCL.
+Tham khảo việc phân loại rác của Yan \cite{yang2016classification} và quá trình thu thập dữ liệu thực tế nhận thấy các loại rác bằng thủy tinh ở môi trường bên ngoài rất thường là các mảnh kính trong suốt nhìn thấy nên hoặc có độ phản chiếu ánh sáng cao nên rất khó phát hiện, vì vậy các thủy tinh sẽ được gom vào các loại rác khác.
+Các giấy và thùng giấy sẽ được gom lại vì cùng chất liệu. Cuối cùng mô hình sẽ phân các loại ra làm các lớp:
+\begin{itemize}
+	\item Kim loại gồm chủ yếu là các nắp bia, các vỏ bình làm bằng kim loại.
+	\item Nhựa - nilong rất phổ biến, gồm các vật liệu làm từ nhựa như ly nhựa, các túi nilong.
+	\item Giấy gồm các vật liệu từ giấy, các thùng giấy, vỏ gói thuốc lá, hộp giấy.
+	\item Rác khác là các loại rác còn lại với từng loại xuất hiện ít hoặc khó phát hiện như thủy tinh, các vỏ bánh snack,
+	mút, vải,\dots
+\end{itemize}
 
-Trong Bảng \ref{tab:dataset} trình bày tổng quan về các đặc điểm của tập dữ liệu. Độ tuổi trung bình của bệnh nhân từ $10,09$, phân bố theo giới tính: 2.688 nữ, 3.402 nam, 1 chưa xác định.
-
+\subsection{TrashNet}
+{\fontsize{13}{12} \selectfont 
+TrashNet là tập dữ liệu đươc giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như bảng. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình.
+Do mục đích ban đầu của tập dữ liệu dùng để phân lớp nên nghiên cứu phải thực hiện gán hộp giới hạn cho bộ dữ liệu để phù hợp với nhu cầu phát hiện đối tượng. Tập dữ liệu TrashNet bao gồm các đối tượng có kích thước lớn và rõ ràng, mục đích sử dụng tăng độ nhận dạng cho mô hình.
+}
 }
 
 \begin{table}[!ht]
@@ -105,68 +32,44 @@ Trong Bảng \ref{tab:dataset} trình bày tổng quan về các đặc điểm 
 		\hline
 		\multicolumn{1}{|l|}{
 		\textbf{\#}} 
-		& \multicolumn{1}{c|}{\textbf{Mô tả}} 
+		& \multicolumn{1}{c|}{\textbf{Lớp}} 
 		& \multicolumn{1}{c|}{\textbf{Số lượng}} \\
 		\hline
 	
 		 1
-		& Mã phân loại AO 
-		& 14.158 (69,65\%)\\
+		& Cardboard 
+		& 403\\
 		\hline
 		
 		 2
-		& Hình ảnh có bó bột 
-		& 5.776 (28,42\%)\\
+		& Paper
+		& 594\\
 		\hline
 		
 		 3
-		& Các hình ảnh chẩn đoán chưa chắc chắn 
-		& 537 (2,64\%) \\
+		& Glass
+		& 501\\
         \hline
         
 		 4
-		& Biểu hiện chấn thương ban đầu
-		& 10.861 (53,43\%) \\
+		& Plastic
+		& 482 \\
         \hline
         
 		 5
-		& Có cấy ghép kim loại
-		& 708 (3,48\%) \\
+		& Metal
+		& 410\\
         \hline
         
 		 6
-		& Có dấu hiệu loãng xương
-		& 2.473 (12,17\%) \\
+		& Trash
+		& 137 \\
         \hline
-        
-		 7
-		& Chế độ chụp AP
-		& 10.086 (49,62\%) \\
-        \hline
-        
-		 8
-		& Chế độ chụp LAT
-		& 10.148 (49,92\%) \\
-        \hline
-        
-		 9
-		& Chế độ chụp xiên
-		& 93 (0,46\%) \\
-        \hline
-        
-		 10
-		& Hình chụp từ bên trái
-		& 11.135 (54,78\%) \\
-        \hline
-        
-		 11
-		& Hình chụp từ bên phải
-		& 9.192 (45,22\%) \\
-        \hline
+  
         
 		 \textbf{Tổng cộng}
 		& 
-		& 20.327 (100,00\%) \\
+		& 2524 \\
 		\hline
 	\end{tabular}
 	

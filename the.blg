@@ -12,6 +12,11 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: refs.bib
 Warning--I didn't find a database entry for "deterseong"
 Warning--I didn't find a database entry for "detectiongao2021"
+Warning--I didn't find a database entry for "Bochkovskiy2020YOLOv4OS"
+Warning--I didn't find a database entry for "Lindsey1806905115"
+Warning--I didn't find a database entry for "HRZIC2021104300"
+Warning--I didn't find a database entry for "McNemar1947"
+Warning--I didn't find a database entry for "10.1145/235815.235821"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -20,7 +25,7 @@ Warning--empty journal in Papert1966TheSV
 Done.
 You've used 36 entries,
             4087 wiz_defined-function locations,
-            993 strings with 13469 characters,
+            1002 strings with 13622 characters,
 and the built_in function-call counts, 20606 in all, are:
 = -- 1531
 > -- 637
@@ -59,4 +64,4 @@ warning$ -- 1
 while$ -- 68
 width$ -- 38
 write$ -- 325
-(There were 3 warnings)
+(There were 8 warnings)
