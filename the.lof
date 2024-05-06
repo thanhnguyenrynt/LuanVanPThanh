@@ -27,9 +27,10 @@
 \contentsline {figure}{\numberline {2.25}{\ignorespaces Ví dụ về việc thay đổi ngưỡng IoU}}{28}{figure.2.25}%
 \contentsline {figure}{\numberline {2.26}{\ignorespaces Precision Recall Curve được vẽ với ngưỡng IoU chạy từ 0 đến 1}}{29}{figure.2.26}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang không chứa vết gãy xương.}}{33}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang có chứa một vết gãy xương.}}{34}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang có chứa hai vết gãy xương.}}{35}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang có chứa ba vết gãy xương}}{36}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Định nghĩa của IoU}}{38}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Minh họa về quy trình đánh giá mô hình.}}{40}{figure.3.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Ví dụ về hình ảnh của tập dữ liệu TrashNet}}{32}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Ví dụ về hình ảnh của tập dữ liệu TrashNet được gán hộp giới hạn}}{33}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ví dụ về bộ dữ liệu Taco \cite {proença2020taco}}}{34}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Thống kê số danh mục lớn bộ dữ liệu Taco \cite {proença2020taco}}}{35}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Biểu đồ về tỉ lệ các loại nền của bộ dữ liệu Taco \cite {proença2020taco}}}{36}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Định nghĩa của IoU}}{38}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Minh họa về quy trình đánh giá mô hình.}}{40}{figure.3.7}%

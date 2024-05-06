@@ -7,7 +7,7 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SS
 \label{sec:dataset}
 
 {\fontsize{13}{12} \selectfont
-Trong phạm vi nghiên cứu, các tập dữ liệu sử dụng sẽ là TrashNet \cite{yang2016classification}, Taco và bổ sung tập dữ liệu tự thu thập được ở ĐBSCL.
+Trong phạm vi nghiên cứu, các tập dữ liệu sử dụng sẽ là TrashNet \cite{yang2016classification}, Taco \cite{proença2020taco} và bổ sung tập dữ liệu tự thu thập được ở ĐBSCL.
 Tham khảo việc phân loại rác của Yan \cite{yang2016classification} và quá trình thu thập dữ liệu thực tế nhận thấy các loại rác bằng thủy tinh ở môi trường bên ngoài rất thường là các mảnh kính trong suốt nhìn thấy nên hoặc có độ phản chiếu ánh sáng cao nên rất khó phát hiện, vì vậy các thủy tinh sẽ được gom vào các loại rác khác.
 Các giấy và thùng giấy sẽ được gom lại vì cùng chất liệu. Cuối cùng mô hình sẽ phân các loại ra làm các lớp:
 \begin{itemize}
@@ -20,20 +20,22 @@ Các giấy và thùng giấy sẽ được gom lại vì cùng chất liệu. C
 
 \subsection{TrashNet}
 {\fontsize{13}{12} \selectfont 
-TrashNet là tập dữ liệu đươc giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như bảng. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình.
-Do mục đích ban đầu của tập dữ liệu dùng để phân lớp nên nghiên cứu phải thực hiện gán hộp giới hạn cho bộ dữ liệu để phù hợp với nhu cầu phát hiện đối tượng. Tập dữ liệu TrashNet bao gồm các đối tượng có kích thước lớn và rõ ràng, mục đích sử dụng tăng độ nhận dạng cho mô hình.
+TrashNet là tập dữ liệu đươc giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như bảng \ref{tab:dataset}. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình, một số hình ảnh ở tập Trashnet ở hình 
+\ref{fig:dataset_0}.
+Do mục đích ban đầu của tập dữ liệu dùng để phân lớp nên nghiên cứu phải thực hiện gán hộp giới hạn cho bộ dữ liệu để phù hợp với nhu cầu phát hiện đối tượng. Tập dữ liệu TrashNet bao gồm các đối tượng có kích thước lớn và rõ ràng, mục đích sử dụng tăng độ nhận dạng cho mô hình. Bảng \ref{tab:dataset1} thể hiện số lượng đối tượng sau khi đã gán hộp giới hạn cho tập dữ liệu, hình 
+\ref{fig:dataset_1} giói thiệu tập dữ liệu khi có hộp.
 }
 }
 
 \begin{table}[!ht]
 	\centering
-	\caption{Thuộc tính của tập dữ liệu}
+	\caption{Thuộc tính của tập dữ liệu TrashNet}
 	\begin{tabular}{|p{2cm}|p{4cm}|p{3.5cm}|p{2cm}|}
 		\hline
 		\multicolumn{1}{|l|}{
 		\textbf{\#}} 
 		& \multicolumn{1}{c|}{\textbf{Lớp}} 
-		& \multicolumn{1}{c|}{\textbf{Số lượng}} \\
+		& \multicolumn{1}{c|}{\textbf{Số lượng ảnh}} \\
 		\hline
 	
 		 1
@@ -76,58 +78,113 @@ Do mục đích ban đầu của tập dữ liệu dùng để phân lớp nên 
 	\label{tab:dataset}
 \end{table}
 
-{\fontsize{13}{12} \selectfont
-Hơn nữa, trong Bảng \ref{tab:dataset} trình bày sự phân bố của các đặc điểm khác được trình bày trong hình ảnh, chẳng hạn như hình chiếu, mặt bên, sự hiện diện của vật đúc và sự hiện diện của kim loại. Chúng ta nên lưu ý rằng 9,573 nghiên cứu (94,3\%) có cả hình chiếu trước và sau. Không loại trừ bất kỳ loại hình ảnh nào, làm cho tập dữ liệu được sử dụng trở thành thách thức cho việc lập mô hình, nhưng vẫn thực tế trong thực hành lâm sàng thông thường.
-
-Từ các hình ảnh có sẵn trong tập dữ liệu, nghiên cứu đã tạo bốn tập con rời rạc được lấy mẫu ngẫu nhiên:
-
-\begin{itemize}
-  \item Tập dữ liệu huấn luyện bao gồm 15,327 hình ảnh.
-
-  \item Tập dữ liệu xác thực bao gồm 4,000 hình ảnh.
-   
-  \item Tập dữ liệu kiểm tra \#1, bao gồm 1,000 hình ảnh, được sử dụng để kiểm tra lần cuối các thuộc tính tổng quát hóa của mô hình.
-  
-\end{itemize}
-
-Tóm lại, để đánh giá hiệu năng của phương pháp được đề xuất so với mô hình U-Net, nghiên cứu đã sử dụng tập hợp con dữ liệu huấn luyện, xác thực và thử nghiệm \#1 (tổng cộng 20,327 hình ảnh).
-
-Để tiền xử lý dữ liệu, căn chỉnh hình ảnh sao cho các ngón tay luôn trỏ vào đường viền trên cùng của hình ảnh,  nghiên cứu đã tuân theo các nguyên tắc được đưa ra trong nghiên cứu của Lindsey \etal  \cite{Lindsey1806905115}. Phương pháp này này xuất hiện trong nhiều nghiên cứu liên quan đến phát hiện gãy xương cổ tay. Căn chỉnh và định hướng hình ảnh tia X được thực hiện bằng cách sử dụng XAOM \cite{HRZIC2021104300}. Vì hình ảnh có chất lượng cao, nên  nghiên cứu này không áp dụng phương pháp làm nhiễu nào.
-
-Một vài hình ảnh ví dụ của tập dữ liệu được hiển thị trong các Hình \ref{fig:dataset_0}, \ref{fig:dataset_1}, \ref{fig:dataset_2}, và \ref{fig:dataset_3}.
-}
 
 \begin{figure}[H]
 \centering
-	\includegraphics[width=1\textwidth]{images/dataset_0.png}
-	\caption{Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang không chứa vết gãy xương.}
+	\includegraphics[width=1\textwidth]{trashnet_sample.png}
+	\caption{Ví dụ về hình ảnh của tập dữ liệu TrashNet}
 	\label{fig:dataset_0}
 \end{figure}
 
+\begin{table}[!ht]
+	\centering
+	\caption{Thuộc tính của tập dữ liệu TrashNet khi được gán hộp giới hạn}
+	\begin{tabular}{|p{2cm}|p{4cm}|p{3.5cm}|p{2cm}|}
+		\hline
+		\multicolumn{1}{|l|}{
+		\textbf{\#}} 
+		& \multicolumn{1}{c|}{\textbf{Lớp}} 
+		& \multicolumn{1}{c|}{\textbf{Số lượng vật thể}} \\
+		\hline
+	
+		 1
+		& Cardboard 
+		& 404\\
+		\hline
+		
+		 2
+		& Paper
+		& 601\\
+		\hline
+		
+		 3
+		& Glass
+		& 509\\
+        \hline
+        
+		 4
+		& Plastic
+		& 479 \\
+        \hline
+        
+		 5
+		& Metal
+		& 410\\
+        \hline
+        
+		 6
+		& Trash
+		& 149 \\
+        \hline
+  
+        
+		 \textbf{Tổng cộng}
+		& 
+		& 2552 \\
+		\hline
+	\end{tabular}
+	
+	\label{tab:dataset1}
+\end{table}
+
 
 \begin{figure}[H]
-\centering
-	\includegraphics[width=1\textwidth]{images/dataset_1.png}
-	\caption{Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang có chứa một vết gãy xương.}
-	\label{fig:dataset_1}
-\end{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{trashnet_sample2.png}
+		\caption{Ví dụ về hình ảnh của tập dữ liệu TrashNet được gán hộp giới hạn}
+		\label{fig:dataset_1}
+	\end{figure}
+	
+
+
+\subsection{Taco}
+
+{\fontsize{13}{12} \selectfont 
+Taco là một tập dữ liệu hình ảnh mở về chất thải trong tự nhiên. Tập dữ liệu chứa các hình ảnh về rác được chụp trong nhiều môi trường khác nhau, từ những bãi biển đến đường phố London. Những hình ảnh này được gắn nhãn và phân đoạn thủ công để đào tạo và đánh giá các thuật toán phát hiện đối tượng.
+Bộ dữ liệu được cung cấp 
+theo chuẩn json của COCO. Hiện tại bộ dữ liệu có 1.500 ảnh với 4.784 vật thể 
+và 3918 ảnh mới cần được gán nhãn.
+}
 
 \begin{figure}[H]
-\centering
-	\includegraphics[width=1\textwidth]{images/dataset_2.png}
-	\caption{Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang có chứa hai vết gãy xương.}
-	\label{fig:dataset_2}
-\end{figure}
+	\centering
+		\includegraphics[width=1\textwidth]{Taco.png}
+		\caption{Ví dụ về bộ dữ liệu Taco \cite{proença2020taco}}
+		\label{fig:dataset_taco}
+	\end{figure}
+{\fontsize{13}{12} \selectfont 
 
+Bộ dữ liệu gồm 28 danh mục lớn  (Hình \ref{fig:dataset_taco1}) và 60 danh mục nhỏ với 
+6 loại nền là rác, thảm cỏ, nước, trong nhà, vỉa hè, cát đá (Hình \ref{fig:dataset_taco2}). Do 
+điều kiện đường phố ở một số tỉnh ĐBSCL nên nghiên cứu chỉ giữ lại ngữ cảnh 
+là thảm cỏ, vỉa hè, cát đá phục vụ cho mục đích huấn luyện mô hình. Các danh 
+mục nhỏ được gom nhóm phù hợp thành bốn loại rác đề ra của nghiên cứu
+}
 \begin{figure}[H]
-\centering
-	\includegraphics[width=1\textwidth]{images/dataset_3.png}
-	\caption{Ví dụ về hình ảnh gãy xương trong tập dữ liệu - hình ảnh X-quang có chứa ba vết gãy xương}
-	\label{fig:dataset_3}
-\end{figure}
-
+	\centering
+		\includegraphics[width=1\textwidth]{taco_super.png}
+		\caption{Thống kê số danh mục lớn bộ dữ liệu Taco \cite{proença2020taco}}
+		\label{fig:dataset_taco1}
+	\end{figure}
+	\begin{figure}[H]
+		\centering
+			\includegraphics[width=1\textwidth]{taco_bg.png}
+			\caption{Biểu đồ về tỉ lệ các loại nền của bộ dữ liệu Taco \cite{proença2020taco}}
+			\label{fig:dataset_taco2}
+		\end{figure}
 \section{Đánh giá hiệu năng}
 \label{sec:eval}
+
 
 \subsection{Các chỉ số để so sánh hiệu năng}
 

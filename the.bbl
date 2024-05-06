@@ -73,6 +73,10 @@ W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.-Y. Fu, and A.~C. Berg,
 T.-Y. Lin, P.~Goyal, R.~Girshick, K.~He, and P.~Dollár, ``Focal loss for dense
   object detection,'' 2018.
 
+\bibitem{proença2020taco}
+P.~F. Proença and P.~Simões, ``Taco: Trash annotations in context for litter
+  detection,'' 2020.
+
 \bibitem{yang2016classification}
 M.~Yang and G.~Thung, ``Classification of trash for recyclability status,''
   \emph{CS229 project report}, vol. 2016, no.~1, p.~3, 2016.

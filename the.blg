@@ -14,7 +14,6 @@ Warning--I didn't find a database entry for "deterseong"
 Warning--I didn't find a database entry for "detectiongao2021"
 Warning--I didn't find a database entry for "Bochkovskiy2020YOLOv4OS"
 Warning--I didn't find a database entry for "Lindsey1806905115"
-Warning--I didn't find a database entry for "HRZIC2021104300"
 Warning--I didn't find a database entry for "McNemar1947"
 Warning--I didn't find a database entry for "10.1145/235815.235821"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
@@ -23,45 +22,45 @@ Warning--I didn't find a database entry for "10.1145/235815.235821"
 Warning--empty journal in Papert1966TheSV
 
 Done.
-You've used 36 entries,
+You've used 37 entries,
             4087 wiz_defined-function locations,
-            1002 strings with 13622 characters,
-and the built_in function-call counts, 20606 in all, are:
-= -- 1531
-> -- 637
+            1003 strings with 13697 characters,
+and the built_in function-call counts, 20978 in all, are:
+= -- 1557
+> -- 646
 < -- 81
-+ -- 320
-- -- 143
-* -- 909
-:= -- 3109
-add.period$ -- 74
-call.type$ -- 36
-change.case$ -- 34
++ -- 324
+- -- 145
+* -- 921
+:= -- 3168
+add.period$ -- 76
+call.type$ -- 37
+change.case$ -- 35
 chr.to.int$ -- 168
-cite$ -- 37
-duplicate$ -- 1604
-empty$ -- 1771
-format.name$ -- 170
-if$ -- 4738
+cite$ -- 38
+duplicate$ -- 1637
+empty$ -- 1809
+format.name$ -- 173
+if$ -- 4822
 int.to.chr$ -- 0
-int.to.str$ -- 36
-missing$ -- 352
-newline$ -- 139
-num.names$ -- 36
-pop$ -- 975
+int.to.str$ -- 37
+missing$ -- 360
+newline$ -- 142
+num.names$ -- 37
+pop$ -- 1000
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1590
+skip$ -- 1620
 stack$ -- 0
-substring$ -- 482
-swap$ -- 1133
+substring$ -- 483
+swap$ -- 1151
 text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 36
+type$ -- 37
 warning$ -- 1
-while$ -- 68
-width$ -- 38
-write$ -- 325
-(There were 8 warnings)
+while$ -- 69
+width$ -- 39
+write$ -- 332
+(There were 7 warnings)
