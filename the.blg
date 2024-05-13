@@ -21,45 +21,45 @@ Warning--I didn't find a database entry for "10.1145/235815.235821"
 Warning--empty journal in Papert1966TheSV
 
 Done.
-You've used 38 entries,
+You've used 37 entries,
             4087 wiz_defined-function locations,
-            1003 strings with 13690 characters,
-and the built_in function-call counts, 21372 in all, are:
-= -- 1589
-> -- 655
+            1001 strings with 13651 characters,
+and the built_in function-call counts, 20978 in all, are:
+= -- 1557
+> -- 646
 < -- 81
-+ -- 328
-- -- 147
-* -- 937
-:= -- 3240
-add.period$ -- 78
-call.type$ -- 38
-change.case$ -- 36
++ -- 324
+- -- 145
+* -- 921
+:= -- 3168
+add.period$ -- 76
+call.type$ -- 37
+change.case$ -- 35
 chr.to.int$ -- 168
-cite$ -- 39
-duplicate$ -- 1673
-empty$ -- 1846
-format.name$ -- 176
-if$ -- 4910
+cite$ -- 38
+duplicate$ -- 1637
+empty$ -- 1809
+format.name$ -- 173
+if$ -- 4822
 int.to.chr$ -- 0
-int.to.str$ -- 38
-missing$ -- 366
-newline$ -- 145
-num.names$ -- 38
-pop$ -- 1017
+int.to.str$ -- 37
+missing$ -- 360
+newline$ -- 142
+num.names$ -- 37
+pop$ -- 1000
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1651
+skip$ -- 1620
 stack$ -- 0
-substring$ -- 484
-swap$ -- 1170
+substring$ -- 483
+swap$ -- 1151
 text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 38
+type$ -- 37
 warning$ -- 1
-while$ -- 70
-width$ -- 40
-write$ -- 340
+while$ -- 69
+width$ -- 39
+write$ -- 332
 (There were 6 warnings)

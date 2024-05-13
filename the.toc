@@ -36,6 +36,6 @@
 \contentsline {subsection}{\numberline {3.1.1}TrashNet}{30}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Taco}{33}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Dữ liệu tự thu thập}{35}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Đánh giá hiệu năng}{36}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Các chỉ số để so sánh hiệu năng}{36}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Các phương pháp đánh giá}{38}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.2}Đánh giá hiệu năng}{37}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Các chỉ số để so sánh hiệu năng}{37}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Các phương pháp đánh giá}{39}{subsection.3.2.2}%

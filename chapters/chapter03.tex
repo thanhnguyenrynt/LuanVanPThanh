@@ -227,8 +227,8 @@ tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít d�
 \subsection{Dữ liệu tự thu thập}
 {\fontsize{13}{12} \selectfont
 Hình \ref{fig:dataset_own} là bộ dữ liệu được thực hiện lấy mẫu ở các tỉnh thành ở ĐBSCL như Cần Thơ, Vĩnh Long và chủ yếu ở Trà Vinh nhầm phản ánh thực tế tình trạng rác ở địa phương. 
-Dữ liệu thu thập gồm 663 hình ảnh với 1766 đối tượng được chia cho bốn lớp kim loại, nhựa - nilon, giấy, rác khác với trung bình 2.6 đối tượng mỗi hình ảnh (bảng ).
-Phần lớn là các hộp thức ăn giấy, các bọc nilon, ly nhựa, túi rác, khẩu trang giấy và các phần nilon cũ không có hình dạng cố định. 
+Dữ liệu thu thập gồm 663 hình ảnh với 1766 đối tượng được chia cho bốn lớp kim loại, nhựa - nilon, giấy, rác khác với trung bình 2.6 đối tượng mỗi hình ảnh (bảng \ref{tab:datasetown}).
+Phần lớn là các hộp thức ăn giấy, các bọc nilon, ly nhựa, túi rác, khẩu trang giấy và các phần rác cũ không có hình dạng cố định. 
 Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải thiện khả năng phát hiện đúng thực tế. Trong quá trình thực hiện thu thập dữ liệu gặp những vấn đề như sau:
 \begin{itemize}
 	\item Các rác chồng chéo khó xác định hộp giới hạn.
@@ -237,10 +237,47 @@ Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải
 	\item Phần rác kim loại xuất hiện ít, vì hầu hết được người dân xử lí chủ động trước. Tuy nhiên phần rác kim loại vẫn có đặc tính dễ phát hiện và bổ sung dữ liệu từ Taco \cite{proença2020taco} và TrashNet.
 	\item Các loại còn lại được gom vào rác khác sẽ giảm khả năng phân lớp vì độ đa dạng cao.
 \end{itemize}
-\bigskip
 
+\bigskip
+}
+{\fontsize{13}{12} \selectfont
+\begin{table}[!ht]
+	\centering
+	\caption{Thuộc tính của tập dữ liệu tự thu thập}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		 \multicolumn{1}{|c|}{\textbf{Lớp}}
+		 & \multicolumn{1}{c|}{\textbf{Số hình}} 
+		 & \multicolumn{1}{c|}{\textbf{Số vật thể}}
+		 & \multicolumn{1}{c|}{\textbf{Tỉ lệ}}
+		  \\
+		\hline
+
+		  Nhựa - Nilon & 392 & 761 & 43.1\%  \\
+		\hline
+
+			Giấy & 339 & 552   & 31.3\%                                        \\
+		\hline
+
+		 Rác khác & 209 & 350   & 19,8\%                                        \\
+		\hline
+
+		 Kim loại & 60 & 103    & 5,8\%                                         \\
+		\hline
+		 Ảnh không vật thể & 200 & 0   & 0                                         \\
+		\hline
+
+	\end{tabular}
+
+	\label{tab:datasetown}
+\end{table}
+Bảng \ref{tab:datasetown} thể hiện các rác thải nhựa-nilon chiếm phần lớn các loại rác ở đường phố hiện nay và các rác kim loại rất ít chỉ khoảng 5,8\% dữ liệu thu thập được.
+Việc mất cân bằng dữ liệu ở tập dữ liệu tự thu thập sẽ được bổ sung bằng các tập dữ liệu của Taco và TrashNet, từ đó tạo ra bộ dữ liệu để huấn luyện và kiểm thử.
+Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng cường dữ liệu, đặt ra vấn đề các ảnh nền không chứa đối tượng nào (background) có tăng khả năng nhận diện của mô hình bằng cách giảm việc nhận dạng sai các đối tượng không phải là rác hay không.
 
 }
+
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{data_own.png}
