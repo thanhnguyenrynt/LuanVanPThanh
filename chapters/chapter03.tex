@@ -12,9 +12,9 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SS
 	Các giấy và thùng giấy sẽ được gom lại vì cùng chất liệu. Cuối cùng mô hình sẽ phân các loại ra làm các lớp:
 	\begin{itemize}
 		\item Kim loại gồm chủ yếu là các nắp bia, các vỏ bình làm bằng kim loại.
-		\item Nhựa - nilong rất phổ biến, gồm các vật liệu làm từ nhựa như ly nhựa, các túi nilong.
+		\item Nhựa - nilon rất phổ biến, gồm các vật liệu làm từ nhựa như ly nhựa, các túi nilon.
 		\item Giấy gồm các vật liệu từ giấy, các thùng giấy, vỏ gói thuốc lá, hộp giấy.
-		\item Rác khác là các loại rác còn lại với từng loại xuất hiện ít hoặc khó phát hiện như thủy tinh, các vỏ bánh snack,
+		\item Rác khác là các loại rác còn lại với từng loại xuất hiện ít hoặc khó phát hiện như thủy tinh, các vỏ gói đa sắc,
 		      mút, vải,\dots
 	\end{itemize}
 
@@ -166,10 +166,11 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SS
 Bộ dữ liệu gồm 28 danh mục lớn  (Hình \ref{fig:dataset_taco_1_a}) và 60 danh mục nhỏ (Hình \ref{fig:dataset_taco_1_b}) với
 6 loại nền là rác, thảm cỏ, nước, trong nhà, vỉa hè, cát đá (Hình \ref{fig:dataset_taco_1_c}). Do
 điều kiện đường phố ở một số tỉnh ĐBSCL nên nghiên cứu loại bỏ ngữ cảnh trong nhà, cát đá và nước phục vụ cho mục đích huấn luyện mô hình. Các danh
-mục nhỏ được gom nhóm phù hợp thành bốn loại rác đề ra của nghiên cứu như Bảng \ref{tab:taco_map}
+mục nhỏ được gom nhóm phù hợp thành bốn loại rác đề ra của nghiên cứu như Bảng \ref{tab:taco_map}. Bộ dữ liệu Taco thể hiện sự đa dạng trong từng loại rác,
+tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít dữ liệu như Carded blister pack (1 đối tượng), Battery (2 đối tượng), và các lớp có quá nhiều đối tượng như Cigarette (667 đối tượng) và Unlabeled litter (516 đối tượng).
 }
 
-\begin{figure}[H]
+\begin{figure}[H]	
 	\centering
 	\subfloat[\centering {\fontsize{11}{10} \selectfont Danh mục lớn }]{{\includegraphics[width=7cm]{taco_super.png} \label{fig:dataset_taco_1_a}}}%
 	\qquad
@@ -206,7 +207,7 @@ mục nhỏ được gom nhóm phù hợp thành bốn loại rác đề ra củ
         Toilet tube & giay & Spread tub & nhua\_nilon \\ \hline
         Other carton & giay & Tupperware & nhua\_nilon \\ \hline
         Egg carton & giay & Disposable food container & nhua\_nilon \\ \hline
-        Drink carton & giay & Foam food container & khac \\ \hline
+        Drink carton & giay & Foam food container & giay \\ \hline
         Corrugated carton & giay & Other plastic container & nhua\_nilon \\ \hline
         Meal carton & giay & Plastic glooves & nhua\_nilon \\ \hline
         Pizza box & giay & Plastic utensils & nhua\_nilon \\ \hline
@@ -223,6 +224,29 @@ mục nhỏ được gom nhóm phù hợp thành bốn loại rác đề ra củ
     \end{tabular}
 	\label{tab:taco_map}
 \end{table}
+\subsection{Dữ liệu tự thu thập}
+{\fontsize{13}{12} \selectfont
+Hình \ref{fig:dataset_own} là bộ dữ liệu được thực hiện lấy mẫu ở các tỉnh thành ở ĐBSCL như Cần Thơ, Vĩnh Long và chủ yếu ở Trà Vinh nhầm phản ánh thực tế tình trạng rác ở địa phương. 
+Dữ liệu thu thập gồm 663 hình ảnh với 1766 đối tượng được chia cho bốn lớp kim loại, nhựa - nilon, giấy, rác khác với trung bình 2.6 đối tượng mỗi hình ảnh (bảng ).
+Phần lớn là các hộp thức ăn giấy, các bọc nilon, ly nhựa, túi rác, khẩu trang giấy và các phần nilon cũ không có hình dạng cố định. 
+Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải thiện khả năng phát hiện đúng thực tế. Trong quá trình thực hiện thu thập dữ liệu gặp những vấn đề như sau:
+\begin{itemize}
+	\item Các rác chồng chéo khó xác định hộp giới hạn.
+	\item Tình trạng các rác cũ, rác nhỏ bị ẩn vào nền, rất khó xác định nhãn.
+	\item Xuất hiện các đối tượng rác có thể gồm nhiều nhãn. Ví dụ như túi nilon chứa bọc giấy, lon kim loại, các gói sắc nét hộp thức ăn nhựa trong suốt chứa rác hữu cơ.
+	\item Phần rác kim loại xuất hiện ít, vì hầu hết được người dân xử lí chủ động trước. Tuy nhiên phần rác kim loại vẫn có đặc tính dễ phát hiện và bổ sung dữ liệu từ Taco \cite{proença2020taco} và TrashNet.
+	\item Các loại còn lại được gom vào rác khác sẽ giảm khả năng phân lớp vì độ đa dạng cao.
+\end{itemize}
+\bigskip
+
+
+}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{data_own.png}
+	\caption{Ví dụ về bộ dữ liệu thu thập}
+	\label{fig:dataset_own}
+\end{figure}
 \section{Đánh giá hiệu năng}
 \label{sec:eval}
 
