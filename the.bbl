@@ -21,6 +21,14 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{proença2020taco}
+P.~F. Proença and P.~Simões, ``Taco: Trash annotations in context for litter
+  detection,'' 2020.
+
+\bibitem{yang2016classification}
+M.~Yang and G.~Thung, ``Classification of trash for recyclability status,''
+  \emph{CS229 project report}, vol. 2016, no.~1, p.~3, 2016.
+
 \bibitem{girshick2014rich}
 R.~Girshick, J.~Donahue, T.~Darrell, and J.~Malik, ``Rich feature hierarchies
   for accurate object detection and semantic segmentation,'' 2014.
@@ -73,28 +81,20 @@ W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.-Y. Fu, and A.~C. Berg,
 T.-Y. Lin, P.~Goyal, R.~Girshick, K.~He, and P.~Dollár, ``Focal loss for dense
   object detection,'' 2018.
 
-\bibitem{proença2020taco}
-P.~F. Proença and P.~Simões, ``Taco: Trash annotations in context for litter
-  detection,'' 2020.
-
-\bibitem{yang2016classification}
-M.~Yang and G.~Thung, ``Classification of trash for recyclability status,''
-  \emph{CS229 project report}, vol. 2016, no.~1, p.~3, 2016.
-
 \bibitem{shah2022method}
 J.~Shah and S.~Kamat, ``A method for waste segregation using convolutional
   neural networks,'' in \emph{2022 Second International Conference on Advances
   in Electrical, Computing, Communication and Sustainable Technologies
   (ICAECT)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2022, pp. 1--5.
 
-\bibitem{simonyan2014very}
-K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
-  large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
-
 \bibitem{ahmad2020intelligent}
 K.~Ahmad, K.~Khan, and A.~Al-Fuqaha, ``Intelligent fusion of deep features for
   improved waste classification,'' \emph{IEEE access}, vol.~8, pp.
   96\,495--96\,504, 2020.
+
+\bibitem{simonyan2014very}
+K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
+  large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
 
 \bibitem{nhung2021nghien}
 {\DJ}.~T. Nhung, N.~T.~D. My, P.~V. Mạnh, P.~V. {\DJ}{\^o}ng, B.~Q.
@@ -103,6 +103,15 @@ K.~Ahmad, K.~Khan, and A.~Al-Fuqaha, ``Intelligent fusion of deep features for
   bay kh{\^o}ng người l{\'a}i v{\`a} mạng nơ-ron t{\'\i}ch chập
   s{\^a}u,'' \emph{Tạp ch{\'\i} Khoa học {\DJ}o {\dj}ạc v{\`a} Bản
   {\dj}ồ}, no.~49, pp. 21--29, 2021.
+
+\bibitem{Majchrowska_2022}
+\BIBentryALTinterwordspacing
+S.~Majchrowska, A.~Mikołajczyk, M.~Ferlin, Z.~Klawikowska, M.~A. Plantykow,
+  A.~Kwasigroch, and K.~Majek, ``Deep learning-based waste detection in natural
+  and urban environments,'' \emph{Waste Management}, vol. 138, p. 274–284,
+  Feb. 2022. [Online]. Available:
+  \url{http://dx.doi.org/10.1016/j.wasman.2021.12.001}
+\BIBentrySTDinterwordspacing
 
 \bibitem{Papert1966TheSV}
 \BIBentryALTinterwordspacing
@@ -197,5 +206,10 @@ C.~Li, L.~Li, H.~Jiang, K.~Weng, Y.~Geng, L.~Li, Z.~Ke, Q.~Li, M.~Cheng,
 \bibitem{yolov72023}
 G.~Al-refai, H.~ElMoaqet, M.~Ryalat, and M.~Al-refai, ``Object detection in
   low-light environment using yolov7,'' 09 2023.
+
+\bibitem{lee2019energy}
+Y.~Lee, J.~won Hwang, S.~Lee, Y.~Bae, and J.~Park, ``An energy and
+  gpu-computation efficient backbone network for real-time object detection,''
+  2019.
 
 \end{thebibliography}

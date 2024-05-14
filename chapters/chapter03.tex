@@ -320,7 +320,7 @@ Nghiên cứu sẽ sử dụng các bộ dữ liệu như sau:
 \end{itemize}
 \bigskip
 
-Tóm lại việc gán nhãn cho dữ liệu ảnh hưởng đến mô hình rất nhiều, vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần từ các lớp của bộ dữ liệu Taco (bảng \ref{tab:taco_map}).
+Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần. Ví dụ như các lớp được chuyển đổi từ bộ dữ liệu Taco (bảng \ref{tab:taco_map}).
 Ngoài ra bộ dữ liệu Taco là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
 Tập dữ liệu để đánh giá mô hình ở bộ dữ liệu \#2 và \#3 sẽ chỉ gồm dữ liệu của \ref{sec:Taco} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình.
 }
@@ -330,114 +330,31 @@ Tập dữ liệu để đánh giá mô hình ở bộ dữ liệu \#2 và \#3 s
 % \usepackage{multirow}
 
 
-{\fontsize{13}{12} \selectfont  }
 \section{Các mô hình sử dụng}
-\label{sec:eval}
+\label{sec:model} 
+\subsection{Mô hình Yolov7}
+{\fontsize{13}{12} \selectfont  
+Mô hình Yolov7 được trình bày cở bản ở phần \ref{sec:yolov7}, trong phần này sẽ giới thiệu kiến trúc được sử dụng trong nghiên cứu. Mô hình cài đặt sẽ nhận ảnh kích thước đầu vào là 640x640, sử dụng phiên bản Yolov7-p5. Kiến trúc Yolov7 (Hình \ref{fig:yolov7_kientruc}) sử dụng:
+\begin{itemize}
+	\item Backbone: ELAN giải quyết vấn đề hội tụ khi thực hiện model scaling. ELAN được tạo từ các khối ELANBlock chịu ảnh hưởng từ CSPNet \cite{wang2019cspnet} và VoVNet \cite{lee2019energy}, các ELANBlock sẽ được kết nối với nhau thông qua Transition Block để giảm kích cỡ của bản đồ đặc trưng xuống hai lần.
+	\item Neck: SPPCSPC + PANet.
+	\item Head: YOLOR
+\end{itemize}
+\bigskip
+}
+\subsection{Mô hình Yolov8}
+{\fontsize{13}{12} \selectfont 
 
-
-
-\subsection{Các chỉ số để so sánh hiệu năng}
-
-{\fontsize{13}{12} \selectfont
-	Độ chính xác của mô hình phát hiện gãy xương được xác định bởi chất lượng của việc khoanh vùng và phân loại đối tượng. Trong nghiên cứu này sử dụng các độ đo: độ chính xác, độ nhạy, F$_1$ và AUC-ROC. Ngoài ra, so sánh giữa giá trị dự đoán và nhãn để xác định vùng gãy xương, nghiên cứu cũng sử dụng độ đo IoU (Intersection over Union).
 }
 
-\subsubsection*{Độ chính xác, độ nhạy và F$_1$}
-
-{\fontsize{13}{12} \selectfont
-	Xét các định nghĩa sau:
-	\begin {itemize}
-	\item True Positive (TP) thể hiện những giá trị dự đoán chính xác gãy xương.
-	\item True Negative (TN) thể hiện các dự đoán chính xác không gãy xương.
-	\item False Positive (FP) thể hiện các dự đoán nhầm về không gãy xương.
-	\item False Negative (FN) thể hiện các dự đoán nhầm về gãy xương.
-	\end {itemize}
-
-	Công thức toán học của Precision và Recall được thể hiện lần lượt theo Công thức \ref{eq:precision} và Công thức \ref{eq:recall}. Precision và Recall có ý nghĩa khác nhau trong bài toán phát hiện đối tượng. Trong trường hợp muốn phát hiện nhiều đối tượng trong ảnh, chúng ta cần quan tâm đến giá trị Recall. Ngược lại, nếu muốn phát đối tượng chính xác hơn, ta nên cố gắng làm cho giá trị Precision càng lớn càng tốt. Do đó, hai giá trị này bị ràng buộc lẫn nhau. Điều đó có nghĩa là, khi giá tị Recall tăng lên, Precision sẽ giảm lại và ngược lại. Ngoài ra, giá trị F$_1$ là mức trung bình hài hòa giữa Precision và Recall (như trong Công thức \ref{eq:f1}).
-}
-
-\begin{equation}
-	Precision = \frac{TP}{TP + FP}
-	\label{eq:precision}
-\end{equation}
-
-\begin{equation}
-	Recall = \frac{TP}{TP + FN}
-	\label{eq:recall}
-\end{equation}
-
-\begin{equation}
-	F_1 = 2 \times \frac{Precision \times Recall}{Precision + Recall} = \frac{2TP}{2TP + FP + FN}
-	\label{eq:f1}
-\end{equation}
-
-\subsubsection*{IoU}
-
-{\fontsize{13}{12} \selectfont
-	Số liệu IoU đo lường mức độ chính xác của một hộp giới hạn được dự đoán so với nhãn thật sự.
-
-	Hình chữ nhật phía trên bên trái là nhãn và hình chữ nhật phía dưới bên phải là phần dự đoán. Vì kết quả phát hiện luôn khác với nhãn, IoU được xác định bằng cách chia giao điểm của phần dự đoán và nhãn cho phần kết hợp của chúng. Trong Yolo, ngưỡng IoU luôn được đặt là 0.5. Có nghĩa là, khi giá trị IoU của kết quả phát hiện lớn hơn 0.5, nó sẽ được coi là một TP. Khi giá trị IoU của kết quả phát hiện nhỏ hơn 0.5, nó sẽ được coi là một TN. Bằng cách điều chỉnh ngưỡng IoU, chúng ta có thể kiểm soát tỷ lệ TP và TN.
-}
-
-\begin{figure}[ht!]
+\begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{images/IoU.PNG}
-	\caption{Định nghĩa của IoU}
-	\label{fig:IoU}
+	\includegraphics[width=0.8\textwidth]{yolov7_kientruc.jpg}
+	\caption{Kiến trúc mô hình Yolov7}
+	\label{fig:yolov7_kientruc}
 \end{figure}
 
-\subsubsection*{Thử nghiệm McNemar}
 
-Thử nghiệm McNemar \cite{McNemar1947} là một thử nghiệm đối với dữ liệu được ghép nối, như trong trường hợp bảng dự phòng $2 \times 2$ có đặc điểm lưỡng phân. Thử nghiệm McNemar xác định xem tần số hàng và cột biên có bằng nhau hay không, còn được gọi là tính đồng nhất biên. Thử nghiệm McNemar được thiết kế để tập trung chủ yếu vào sự khác biệt giữa hai mô hình, cụ thể là mỗi mô hình có thể sẽ cho một kết quả dự đoán khác nhau trên cùng dữ liệu đầu vào . Xét bảng dự phòng $2 \times 2$ với bốn ô trong đó mỗi ô và vị trí của nó được biểu thị bằng $n_{rc}$ trong đó $r$ là số hàng và $c$ là số cột. Giả sử ta có 2 mô hình A và B, xét các định nghĩa sau.
-
-\begin {itemize}
-\item $n_{11}$ số lượng kết quả được phân loại sai bởi cả A và B.
-\item $n_{12}$ số lượng kết quả được phân loại sai bởi A nhưng không sai bởi B.
-\item $n_{21}$ số lượng kết quả được phân loại sai bởi B nhưng không sai bởi A.
-\item $n_{22}$ số lượng kết quả được phân loại đúng bởi cả A và B.
-\item Giả thuyết không ($H_0$): $n_{12}$ = $n_{21}$, có nghĩa là cả 2 mô hình A và B có tỉ lệ lỗi giống nhau.
-\end {itemize}
-
-Thử nghiệm McNemar về cơ bản là một dạng kiểm tra chi bình phương được ghép nối, vì vậy, tiếp theo chúng ta cần tính giá trị $X^2$ bằng Công thức \ref{eq:McNemar}.
-
-\begin{equation}
-	X^2 = \frac{(|n_{12} - n_{21}| - 1)^2}{n_{12} + n_{21}}
-	\label{eq:McNemar}
-\end{equation}
-
-Khi kích thước mẫu của các ô $n_{12}$ hoặc $n_{21}$ nhỏ (thường được giả định là $n < 30$), một phép thử nhị thức có thể được sử dụng để tính toán thử nghiệm McNemar. Đây được gọi là bài kiểm tra điều kiện chính xác McNemar. Thử nghiệm một phía được định nghĩa theo Công thức \ref{eq:p_exact}
-
-\begin{equation}
-	p_{exact} = \sum_{i=n_{12}}^{n} \binom{n}{i} \frac{1}{2}^i (1 - \frac{1}{2})^{n-i}
-	\label{eq:p_exact}
-\end{equation}
-
-\subsection{Các phương pháp đánh giá}
-
-{\fontsize{13}{12} \selectfont
-	Để đánh giá hiệu suất mô hình một cách công bằng, nghiên cứu đã sử dụng ba cách đánh giá khác nhau trong tập thử nghiệm \#1.
-
-	\begin{itemize}
-		\item Tiêu chuẩn đánh giá đầu tiên liên quan đến nhiệm vụ phân loại sự hiện diện gãy xương nhị phân (có / không). Do đó, gọi là đánh giá nhị phân. Đánh giá này được thiết kế theo nghiên cứu của Lindsey Lindsey \etal  \cite{Lindsey1806905115}. Bởi vì mô hình YOLOv4 xuất ra xác suất cho mỗi vết gãy được phát hiện,  nghiên cứu sẽ lấy xác suất gãy được phát hiện cao nhất trong một hình ảnh làm giá trị đầu ra. Đối với mô hình U-Net, chỉ cần lấy đầu ra từ phần thứ hai của nó. Để có được hiệu suất tốt nhất của các mô hình, nghiên cứu đã sử dụng ngưỡng xác suất chứa vết nứt $\gamma$ - nếu xác suất thấp hơn giá trị ngưỡng $\gamma$, nghiên cứu xác định không có vết gãy nào được trình bày trong hình ảnh.
-
-		\item Tiêu chuẩn đánh giá thứ hai là đánh giá dựa trên hình ảnh. Trong thử nghiệm này sẽ đếm số lượng gãy xương được phát hiện trong hình ảnh. Cụ thể, một giá trị TP có nghĩa là số lượng vết gãy được phát hiện bởi mô hình giống với số lượng vết gãy thực tế trong hình ảnh. Nếu mô hình phát hiện nhiều hơn số lượng gãy xương thực tế, thì đó là một kết quả FP. Mặt khác, nếu nó phát hiện ra ít gãy xương hơn số gãy xương thực tế, thì đó là FN (nếu hình ảnh không có bất kỳ vết gãy nào và mô hình dự đoán số lượng gãy xương bằng không thì đó là TN). Đối với mô hình YOLOv4, đánh giá dựa trên hình ảnh rất đơn giản bởi vì sẽ thu được các hộp giới hạn, bao gồm các xác suất mà mỗi hộp giới hạn chứa một vết đứt gãy. Đối với mô hình U-Net, nghiên cứu phải phát triển một thuật toán để trích xuất hộp giới hạn (vùng). Thuật toán đầu tiên đặt bản đồ nhiệt thành ảnh trống đen (không có vết đứt gãy, xác suất bằng 0) nếu phần thứ hai của mô hình U-Net (xác suất chứa vết nứt) thấp hơn giá trị ngưỡng $\gamma$. Thứ hai, bản đồ nhiệt còn lại đại diện cho xác suất điểm ảnh của vết nứt được phân tích hai chiều bằng cách sử dụng một giá trị ngưỡng khác $\theta$. Cuối cùng, nghiên cứu ước tính các hộp giới hạn tối thiểu của các vết đứt gãy dựa trên các vùng còn lại của điểm ảnh màu trắng, sử dụng thuật toán lồi\cite{10.1145/235815.235821}. Mỗi hộp giới hạn đại diện cho một vết đứt gãy, điều này cho phép chúng ta đếm các vết đứt gãy bằng cách chỉ cần đếm các hộp giới hạn. Đánh giá dựa trên hình ảnh hoạt động đối với mô hình YOLOv4, nhưng nó không đánh giá đúng mô hình U-Net do các vấn đề được minh họa trong Hình. Cụ thể, sau khi áp dụng cả hai giá trị ngưỡng ($\gamma$ và $\theta$), một bản đồ nhiệt đôi khi sẽ được chia thành hai hộp giới hạn riêng biệt. Trường hợp ngược lại cũng xuất hiện khi dựa trên bản đồ nhiệt, chỉ phát hiện một hộp giới hạn, trong khi nhiều vết đứt gãy xuất hiện gần nhau. Một vấn đề khác là hộp giới hạn (sau khi áp dụng các giá trị ngưỡng) đôi khi sẽ khá nhỏ so với toàn bộ vùng bản đồ nhiệt, mặc dù toàn bộ bản đồ nhiệt hoàn toàn phù hợp với hộp giới hạn thực của một vết nứt. Do đó, đánh giá dựa trên hình ảnh nhằm mục đích cung cấp cho nghiên cứu ước tính sơ bộ về hiệu suất của các mô hình trong quá trình huấn luyện. Đối với hiệu suất của mô hình một cách chính xác nhất, nghiên cứu đề xuất đánh giá thứ ba.
-
-		\item Thứ ba, và tiêu chuẩn đánh giá khắt khe nhất là đánh giá dựa trên gãy xương. Nếu hình ảnh có hai vết gãy, nghiên cứu sẽ có hai đánh giá cho hình ảnh cụ thể đó (một đánh giá cho mỗi vết gãy). Hình ảnh được xem là gãy xương nếu điểm IoU của hộp giới hạn dự đoán theo mô hình YOLOv4 và hộp giới hạn đứt gãy thực sự là cao hơn hoặc bằng 0.5, hoặc nếu bản đồ nhiệt được tạo ra bởi mô hình U-Net bị trùng lặp trên 50\% với vùng đứt gãy thực tế (bản đồ nhiệt không bị nhòe hơn 50\% đối với hộp giới hạn). Đối với đánh giá này, nghiên cứu cũng sử dụng ngưỡng $\theta$, bất kỳ vết gãy nào có xác suất nhỏ hơn giá trị ngưỡng đã đặt đều không được xem xét.
-
-	\end{itemize}
-
-	\begin{figure}[ht!]
-		\centering
-		\includegraphics[width=1\textwidth]{images/eval.png}
-		\caption{Minh họa về quy trình đánh giá mô hình.}
-		\label{fig:model_eval}
-	\end{figure}
-
-	Hình \ref{fig:model_eval} mô tả một bản tóm tắt của quá trình đánh giá mô hình được thực hiện trong luận văn này.
-
-
-
-}
 
 
 \end{document}
