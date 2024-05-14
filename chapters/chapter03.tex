@@ -18,7 +18,8 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SS
 		      mút, vải,\dots
 	\end{itemize}
 
-	\subsection{TrashNet}
+\subsection{TrashNet}
+\label{sec:trashnet}
 	{\fontsize{13}{12} \selectfont
 		TrashNet là tập dữ liệu đươc giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như bảng \ref{tab:dataset}. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình, một số hình ảnh ở tập Trashnet ở hình
 		\ref{fig:dataset_0}.
@@ -147,7 +148,7 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SS
 
 
 \subsection{Taco}
-
+\label{sec:Taco}
 {\fontsize{13}{12} \selectfont
 	Taco là một tập dữ liệu hình ảnh mở về chất thải trong tự nhiên. Tập dữ liệu chứa các hình ảnh về rác được chụp trong nhiều môi trường khác nhau, từ những bãi biển đến đường phố London. Những hình ảnh này được gắn nhãn và phân đoạn thủ công để đào tạo và đánh giá các thuật toán phát hiện đối tượng.
 	Bộ dữ liệu được cung cấp
@@ -225,6 +226,7 @@ tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít d�
 	\label{tab:taco_map}
 \end{table}
 \subsection{Dữ liệu tự thu thập}
+\label{sec:own}
 {\fontsize{13}{12} \selectfont
 Hình \ref{fig:dataset_own} là bộ dữ liệu được thực hiện lấy mẫu ở các tỉnh thành ở ĐBSCL như Cần Thơ, Vĩnh Long và chủ yếu ở Trà Vinh nhầm phản ánh thực tế tình trạng rác ở địa phương. 
 Dữ liệu thu thập gồm 663 hình ảnh với 1766 đối tượng được chia cho bốn lớp kim loại, nhựa - nilon, giấy, rác khác với trung bình 2.6 đối tượng mỗi hình ảnh (bảng \ref{tab:datasetown}).
@@ -274,7 +276,6 @@ Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải
 Bảng \ref{tab:datasetown} thể hiện các rác thải nhựa-nilon chiếm phần lớn các loại rác ở đường phố hiện nay và các rác kim loại rất ít chỉ khoảng 5,8\% dữ liệu thu thập được.
 Việc mất cân bằng dữ liệu ở tập dữ liệu tự thu thập sẽ được bổ sung bằng các tập dữ liệu của Taco và TrashNet, từ đó tạo ra bộ dữ liệu để huấn luyện và kiểm thử.
 Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng cường dữ liệu, đặt ra vấn đề các ảnh nền không chứa đối tượng nào (background) có tăng khả năng nhận diện của mô hình bằng cách giảm việc nhận dạng sai các đối tượng không phải là rác hay không.
-
 }
 
 
@@ -284,7 +285,53 @@ Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng 
 	\caption{Ví dụ về bộ dữ liệu thu thập}
 	\label{fig:dataset_own}
 \end{figure}
-\section{Đánh giá hiệu năng}
+
+\subsection{Dữ liệu sử dụng cho mô hình}
+{\fontsize{13}{12} \selectfont 
+Trong phạm vi nghiên cứu sẽ sử dụng kết hợp giữa các bộ dữ liệu được nêu ở mục \ref{sec:trashnet}, \ref{sec:Taco}, \ref{sec:own} để tạo ra các bộ dữ liệu phù hợp với các mục đích huấn luyện.
+Nghiên cứu ban đầu sẽ tìm ra mô hình phù hợp với phát hiện rác, sau đó sẽ đề xuất điều chỉnh các thông số và bổ sung dữ liệu nền để cải thiện mô hình.
+Bảng \ref{tab:datasetmain} trình bày sự kết hợp của cả ba bộ dữ liệu. 
+}
+\begin{table}[!ht]
+	\centering
+	\caption{Thuộc tính của tập dữ liệu của nghiên cứu}
+	\begin{tabular}{|c|c|c|c|c|ccccc}
+	\cline{1-5}
+	\textbf{Lớp}                           &            & \textbf{TrashNet} & \textbf{Taco} & \textbf{Thu thập} &  &  &  &  &  \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Nhựa - nilon}} & Hình ảnh   & 495               & 604           & 392               &  &  &  &  &  \\ \cline{2-5}
+										   & Đối tượng  & 496               & 1252          & 761               &  &  &  &  &  \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Giấy}}         & Hình ảnh   & 591               & 349           & 339               &  &  &  &  &  \\ \cline{2-5}
+										   & Đối tượng  & 591               & 488           & 552               &  &  &  &  &  \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Kim loại}}   & Hình ảnh   & 409               & 221           & 60                &  &  &  &  &  \\ \cline{2-5}
+										   & Đối tượng  & 410               & 346           & 103               &  &  &  &  &  \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Rác khác}}     & Hình   ảnh & 587               & 365           & 209               &  &  &  &  &  \\ \cline{2-5}
+										   & Đối tượng  & 612               & 547           & 350               &  &  &  &  &  \\ \cline{1-5}
+	\end{tabular}
+	\label{tab:datasetmain}
+\end{table}
+
+{\fontsize{13}{12} \selectfont
+Nghiên cứu sẽ sử dụng các bộ dữ liệu như sau:
+\begin{itemize}
+	\item Bộ dữ liệu \#1 kết hợp của dữ liệu Taco và tự thu thập gồm một lớp là rác, giúp đánh giá và chọn ra mô hình phù hợp trong các mô hình phát hiện đối tượng một giai đoạn.
+	\item Bộ dữ liệu \#2 kết hợp của dữ liệu Taco, tự thu thập và bổ sung dữ liệu TrashNet để giải quyết vấn đề mất cân bằng dữ liệu. 
+	Trong đó, lớp "Unlabeled litter" của bộ dữ liệu Taco sẽ được gán lại nhãn thủ công để phù hợp với dữ liệu của nghiên cứu. Bảng \ref{tab:datasetmain} mô tả chi tiết các hình ảnh và đối tượng được sử dụng trong nghiên cứu được lấy từ việc kết hợp ba bộ dữ liệu.\label{item:dataset}
+	\item Bộ dữ liệu \#2 nhưng bổ sung 200 hình nền không có đối tượng.
+\end{itemize}
+\bigskip
+
+Tóm lại việc gán nhãn cho dữ liệu ảnh hưởng đến mô hình rất nhiều, vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần từ các lớp của bộ dữ liệu Taco (bảng \ref{tab:taco_map}).
+Ngoài ra bộ dữ liệu Taco là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
+Tập dữ liệu để đánh giá mô hình ở bộ dữ liệu \#2 và \#3 sẽ chỉ gồm dữ liệu của \ref{sec:Taco} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình.
+}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+
+
+{\fontsize{13}{12} \selectfont  }
+\section{Các mô hình sử dụng}
 \label{sec:eval}
 
 
