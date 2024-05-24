@@ -528,6 +528,7 @@ Nhưng mô hình R-CNN bị hạn chế bơi khả năng phức tạp ở tính 
 \bigskip
 \footnotetext{\url{http://wandb.ai/}}
 \subsection{Mô hình SSD}
+\label{sec:ssd}
 {\fontsize{13}{12} \selectfont
 	Tương tự như các mô hình họ Yolo, mô hình SSD \cite{Liu_2016} (Single Shot MultiBox Detector) là thuật toán phát hiện đối tượng một giao đoạn nên tỏ ra nhanh hơn so với các mô hình họ R-CNN.
 	Mô hình SSD là sự kết hợp của trích xuất các bản đồ đặc trưng từ mạng CNN và áp dụng bộ lọc để phát hiện vật thể ở các độ phân giải khác nhau. SSD nhận đầu vào là các tọa độ hộp giới hạn của vật thể và nhãn của vật thể chứa trong các hộp giới hạn đó.
@@ -544,7 +545,7 @@ Nhưng mô hình R-CNN bị hạn chế bơi khả năng phức tạp ở tính 
 
 {\fontsize{13}{12} \selectfont
 	Bằng việc tính toán các hộp giới hạn trên các bản đồ đặc trưng khác nhau, tại mỗi tầng chứa bản đồ đặc trưng, mỗi hộp giới hạn sẽ xác định được một phần hình ảnh với kích thước khác nhau. Như trên Hình, con mèo và con chó có thể được phát hiện ở hai tầng khác nhau với kích thước thước lần lượt là 8x8 và 4x4. Thay vì sử dụng một hộp giới hạn và thay đổi kích thước để phù hợp với vật thể thì SSD sử dụng nhiều box trên nhiều tầng, từ đó tổng hợp ra vị trí và kích thước của hộp cần xác định. Với việc loại bỏ đi vùng đề xuất khu vực, SSD sẽ đạt tốc độ xử lí cao hơn các Faster-RCNN.
-	SSD sử dụng mô mạng CNN duy nhất, kiến trúc gồm hai phần với một mạng cơ sở có thể là VGG16, ResNet hay Mobinet được loại bỏ tầng kết nối đầy đủ có nhiệm vụ trích xuất ra các bản đồ đặc trưng.
+	SSD sử dụng mô mạng CNN duy nhất, kiến trúc gồm hai phần với một mạng cơ sở có thể là VGG16, ResNet hay MobileNet được loại bỏ tầng kết nối đầy đủ có nhiệm vụ trích xuất ra các bản đồ đặc trưng.
 	Một tập hợp các tầng tích chập phụ trợ để thay thế cho tầng kết nối bị loại bỏ. Các lớp này giảm dần kích thước không gian trong khi tăng số lượng kênh (kênh đặc trưng). hiết kế này cho phép SSD tạo ra các bản đồ đặc trưng ở nhiều tỷ lệ. Bản đồ đặc trưng của mỗi thang đo phù hợp để phát hiện các vật thể có kích thước khác nhau.
 	Sau đó SSD liên kết các hộp neo mặc định được xác định trước với các bản đồ đặc trưng như đã đề cập ở trên.
 	Kiến trúc được thể hiện ở hình \ref{fig:ssd2}

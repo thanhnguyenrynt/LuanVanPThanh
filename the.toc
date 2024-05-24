@@ -40,3 +40,7 @@
 \contentsline {section}{\numberline {3.2}Các mô hình sử dụng}{38}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Mô hình Yolov7}{38}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Mô hình Yolov8}{39}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Mô hình SSD MobileNetV2}{40}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{41}{section.3.3}%
+\contentsline {chapter}{\numberline {4}\centering KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Phân tích kết quả của mô hình}{43}{section.4.1}%

@@ -1,7 +1,7 @@
 \documentclass[../the.tex]{subfiles}
 \begin{document}
 
-Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SSD MobiNet và FasterRCNN. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng. Mục \ref{sec:dataset} mô tả về tập dữ liệu, và phương pháp đánh giá mô hình được trình bày trong Mục \ref{sec:eval}
+Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SSD MobileNet và FasterRCNN. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng. Mục \ref{sec:dataset} mô tả về tập dữ liệu, và phương pháp đánh giá mô hình được trình bày trong Mục \ref{sec:eval}
 
 \section{Tập dữ liệu}
 \label{sec:dataset}
@@ -372,12 +372,12 @@ Như phần \ref{sec:yolov8} đã trình bày những thay đổi mới của yo
 \bigskip
 }
 
-% \begin{figure}[H]
-% 	\centering
-% 	\includegraphics[width=0.8\textwidth]{yolov8_kientruc.jpg}
-% 	\caption{Kiến trúc mô hình Yolov8 trên github được đóng góp bởi RangeKing}
-% 	\label{fig:yolo8_kientruc}
-% \end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{yolov8_kientruc.jpg}
+	\caption{Kiến trúc mô hình Yolov8 trên github được đóng góp bởi RangeKing}
+	\label{fig:yolo8_kientruc}
+\end{figure}
 
 
 {\fontsize{13}{12} \selectfont 
@@ -385,4 +385,43 @@ Với nhưng cải tiến của Yolov8 mang lại như giảm kích thước m�
 tận dụng các kỹ thuật tăng cường dữ liệu khác nhau để cải thiện khả năng tổng quát hóa và giảm tình trạng trang bị quá mức, sử dụng hàm mất mát được sửa đổi (tác giả không giới thiệu) tập trung vào hộp giới hạn và độ tin cậy khi phân lớp. 
 Nghiên cứu sử dụng Yolov7 và Yolov8 để so sánh độ hiệu quả của hai mô hình mới nhất của họ Yolo, hai mô hình có sự khác biệt về kiến trúc mạng, hàm mất mát và việc sử dụng hay không sử dụng hộp neo.
 }
+
+\subsection{Mô hình SSD MobileNetV2}
+{\fontsize{13}{12} \selectfont 
+Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô hình SSD. Trong nghiên cứu sử dụng MobiNetv2 \cite{sandler2019mobilenetv2} làm mạng cơ sở thay vì VGG-16 như Hình \ref{fig:ssd2} giúp tối ưu hóa cho các thiết bị di động. SSD MobileNetv2 sử dụng MobileNetv2 để trích xuất các tính năng từ ảnh, sau đó được xử lí thông qua các lớp dự đoán của SSD để giảm kích thước hình ảnh, giúp nhận ra các đối tượng ở tỉ lệ khác nhau (Hình \ref{fig:mobinet}).
+Mô hình MobiNet ra đời dựa vào như cầu tăng cao về các mô hình có trọng số nhẹ, giải quyết bài toán sử dụng trên các thiết bị hạn chế về tài nguyên tính toán như mobile, IoT. MobiNet có độ chính xác không chênh lệch so với mạng cơ sở VGG, nên việc thay thế trong kiến trúc của SSD giúp cho mô hình vừa nhỏ gọn vừa đạt độ chính xác cao.
+Điểm cải tiến của MobiNet là việc sử dụng tích chập tách biệt chiều sâu thay vì tích chập thông thường. Quá trình được phân chia làm hai bước tuần tự là tích chập chiều sâu và tích chập điểm.
+MobiNetv2 được nhóm tác giả giới thiệu với module mới được gọi là Inverted Residual Block đi ngược lại với các Residual Block thông thường vì nó tăng độ sâu trước khi học các đặc trưng, MobileNetv2 còn sử dụng hàm kích hoạt tuyến tính thay vì hàm kích hoạt phi tuyến.
+
+
+}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{mobinet.png}
+	\caption{Kiến trúc mô hình SSD MobileNetv2}
+	\label{fig:mobinet}
+\end{figure}
+
+\section{Sơ đồ hệ thống}
+
+{\fontsize{13}{12} \selectfont 
+Các bước xây dựng hệ thống được chia làm hai giai đoạn được mô tả ở Hình \ref{fig:sodo}:
+\begin{itemize}
+	\item Tiến hành thu thập dữ liệu và kết hợp dữ liệu như đã đề ra ở phần \ref{sec:dataset}, sau đó dữ liệu được huấn luyện và đánh giá với các mô hình ở phần \ref{sec:model} để tìm ra mô hình tối ưu cho hệ thống.
+	Qua trình huấn luyện mô hình thực hiện đựa trên các thư viện, dự án như ultralytics cho Yolov8, mmdetection cho SSD MobileNetv2 và tài nguyên trên github của chính tác giả Yolov7.
+	\item Mô hình tối ưu sẽ được sử dụng cho việc xây dựng API, các hình ảnh đầu vào phải đảm bảo có thông tin tọa độ, thông qua mô hình sẽ dự đoán thông tin các loại rác. Từ đó lưu trữ thông tin nhãn và tọa độ giúp bản đồ hiển thị thông tin cần thiết. 
+	API sẽ được xây dựng trên thư viện FastApi và dữ liệu được lưu trữ ở MongoDB.
+\end{itemize}
+}
+\bigskip
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{sodo.png}
+	\caption{Sơ đồ hệ thống}
+	\label{fig:sodo}
+\end{figure}
 \end{document}
+
+

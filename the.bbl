@@ -212,4 +212,18 @@ Y.~Lee, J.~won Hwang, S.~Lee, Y.~Bae, and J.~Park, ``An energy and
   gpu-computation efficient backbone network for real-time object detection,''
   2019.
 
+\bibitem{cachuayol7}
+\BIBentryALTinterwordspacing
+M.~Nguyễn~Văn, A.~Lê~Văn, L.~Trần~Đức, T.~Nguyễn~Tuấn,
+  H.~Nguyễn Thị~Thanh, T.~Ngô Thị~Bích, and C.~Nguyễn~Thái, ``10.
+  nghiÊn cỨu vÀ Ứng dỤng thuẬt toÁn yolov7 ĐỂ phÂn loẠi cÀ
+  chua,'' \emph{Tạp chí khoa học Tài nguyên và Môi trường}, no.~50,
+  p. 102–112, tháng 3 2024. [Online]. Available:
+  \url{https://tapchikhtnmt.hunre.edu.vn/index.php/tapchikhtnmt/article/view/569}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sandler2019mobilenetv2}
+M.~Sandler, A.~Howard, M.~Zhu, A.~Zhmoginov, and L.-C. Chen, ``Mobilenetv2:
+  Inverted residuals and linear bottlenecks,'' 2019.
+
 \end{thebibliography}
