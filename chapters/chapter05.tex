@@ -5,11 +5,23 @@
 
 \section{Kết luận}
 
+% {\fontsize{13}{12} \selectfont
+% Nghiên cứu của chúng tôi cho thấy rằng các mô hình dựa trên YOLOv4 có thể hoạt động tốt hơn mô hình U-Net trên một tập dữ liệu phức tạp về hình ảnh X-quang cho mục đích phát hiện gãy xương cổ tay. Phân tích về kết quả đầu ra của các phương pháp đã chỉ ra rằng bản đồ nhiệt có thể bị mờ trong khi các hộp giới hạn chính xác hơn trong việc cung cấp vùng đứt gãy chính xác. Do đó, có thể nếu hợp nhất hai mô hình để tạo ra hộp giới hạn xung quanh vết nứt cũng như bản đồ nhiệt của vết nứt. Bằng cách đó, chúng tôi sẽ có thể thu được những điều tốt nhất của cả hai mô hình: số lượng vết gãy chính xác từ các hộp giới hạn và phát hiện vết gãy thông minh theo pixel bên trong hộp giới hạn. Một cách tiếp cận khác là phát triển một mô hình duy nhất sẽ thực hiện đồng thời cả hai. Hơn nữa, sự kết hợp giữa U-Net và YOLOv4, cùng với việc xử lý ngôn ngữ tự nhiên sẽ giúp chúng ta xây dựng một hệ thống CAD để chẩn đoán gãy xương cổ tay có thể tạo ra các báo cáo chi tiết, và có thể được sử dụng trong thực hành lâm sàng.
+% }
+% \bigskip
 {\fontsize{13}{12} \selectfont
-Nghiên cứu của chúng tôi cho thấy rằng các mô hình dựa trên YOLOv4 có thể hoạt động tốt hơn mô hình U-Net trên một tập dữ liệu phức tạp về hình ảnh X-quang cho mục đích phát hiện gãy xương cổ tay. Phân tích về kết quả đầu ra của các phương pháp đã chỉ ra rằng bản đồ nhiệt có thể bị mờ trong khi các hộp giới hạn chính xác hơn trong việc cung cấp vùng đứt gãy chính xác. Do đó, có thể nếu hợp nhất hai mô hình để tạo ra hộp giới hạn xung quanh vết nứt cũng như bản đồ nhiệt của vết nứt. Bằng cách đó, chúng tôi sẽ có thể thu được những điều tốt nhất của cả hai mô hình: số lượng vết gãy chính xác từ các hộp giới hạn và phát hiện vết gãy thông minh theo pixel bên trong hộp giới hạn. Một cách tiếp cận khác là phát triển một mô hình duy nhất sẽ thực hiện đồng thời cả hai. Hơn nữa, sự kết hợp giữa U-Net và YOLOv4, cùng với việc xử lý ngôn ngữ tự nhiên sẽ giúp chúng ta xây dựng một hệ thống CAD để chẩn đoán gãy xương cổ tay có thể tạo ra các báo cáo chi tiết, và có thể được sử dụng trong thực hành lâm sàng.
-}
+Nghiên cứu cho thấy mô hình họ Yolo hoạt động tốt hơn so với SSD, tốt nhất với mô hình Yolov8 trên tập dữ liệu phức tạp về hình ảnh rác ở tự nhiên, điển hình là rác trên đường phố.
+Mô hình nhận dạng tốt các vật thể là kim loại và có kết quả không khả quan với lớp rác khác do ảnh hưởng bởi nền xung quanh vật thể và sự đa dạng trong lớp.
+So với các nghiên cứu trước đây chủ yếu thực hiện việc phân lớp có đặc tính dữ liệu được chụp ở môi trường có ánh sáng, nền lí tưởng nên không thể áp dụng với các hình ảnh được chụp trực tiếp ngoài tự nhiên, thì nghiên cứu này đạt được độ chính xác bằng 67.4\% trên tập dữ liệu xác thực.
+Kết quả trên của mô hình Yolov8 được áp dụng để xây dụng lên hệ thống phát hiện và phân loại rác thải trên đường phố, lập ra bản đồ phân bố bốn loại rác thải.
+\selectfont }
+
 \bigskip
 
+{\fontsize{13}{12} \selectfont 
+Việc kết hợp các tập dữ liệu Taco, TrashNet, tự thu thập giúp hạn chế việc mất cân bằng dữ liệu, tăng tính đa dạng cho việc huấn luyện.
+Sau qua trình tìm hiểu và thực nghiệm, nghiên cứu cho thấy việc áp dụng các ảnh nền không chứa vật thể giúp cải thiện mô hình. Ngoài ra việc phân chia thành các lớp có thể ảnh hưởng đến kết quả của việc phân loại.
+}
 \section{Hạn chế và đề xuất}
 
 {\fontsize{13}{12} \selectfont

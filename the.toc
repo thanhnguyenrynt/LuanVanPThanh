@@ -43,4 +43,8 @@
 \contentsline {subsection}{\numberline {3.2.3}Mô hình SSD MobileNetV2}{40}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{41}{section.3.3}%
 \contentsline {chapter}{\numberline {4}\centering KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{43}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Phân tích kết quả của mô hình}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{44}{section.4.2}%
+\contentsline {chapter}{\numberline {5}\centering KẾT LUẬN VÀ ĐỀ XUẤT}{46}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kết luận}{46}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{46}{section.5.2}%

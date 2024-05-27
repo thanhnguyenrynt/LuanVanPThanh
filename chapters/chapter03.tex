@@ -297,15 +297,15 @@ Bảng \ref{tab:datasetmain} trình bày sự kết hợp của cả ba bộ d�
 	\caption{Thuộc tính của tập dữ liệu của nghiên cứu}
 	\begin{tabular}{|c|c|c|c|c|ccccc}
 	\cline{1-5}
-	\textbf{Lớp}                           &            & \textbf{TrashNet} & \textbf{Taco} & \textbf{Thu thập} &  &  &  &  &  \\ \cline{1-5}
-	\multirow{2}{*}{\textbf{Nhựa - nilon}} & Hình ảnh   & 495               & 604           & 392               &  &  &  &  &  \\ \cline{2-5}
-										   & Đối tượng  & 496               & 1252          & 761               &  &  &  &  &  \\ \cline{1-5}
-	\multirow{2}{*}{\textbf{Giấy}}         & Hình ảnh   & 591               & 349           & 339               &  &  &  &  &  \\ \cline{2-5}
-										   & Đối tượng  & 591               & 488           & 552               &  &  &  &  &  \\ \cline{1-5}
-	\multirow{2}{*}{\textbf{Kim loại}}   & Hình ảnh   & 409               & 221           & 60                &  &  &  &  &  \\ \cline{2-5}
-										   & Đối tượng  & 410               & 346           & 103               &  &  &  &  &  \\ \cline{1-5}
-	\multirow{2}{*}{\textbf{Rác khác}}     & Hình   ảnh & 587               & 365           & 209               &  &  &  &  &  \\ \cline{2-5}
-										   & Đối tượng  & 612               & 547           & 350               &  &  &  &  &  \\ \cline{1-5}
+	\textbf{Lớp}                           &            & \textbf{TrashNet} & \textbf{Taco} & \textbf{Thu thập} \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Nhựa - nilon}} & Hình ảnh   & 495               & 604           & 392                \\ \cline{2-5}
+										   & Đối tượng  & 496               & 1252          & 761                 \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Giấy}}         & Hình ảnh   & 591               & 349           & 339                \\ \cline{2-5}
+										   & Đối tượng  & 591               & 488           & 552               \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Kim loại}}   & Hình ảnh   & 409               & 221           & 60                  \\ \cline{2-5}
+										   & Đối tượng  & 410               & 346           & 103                \\ \cline{1-5}
+	\multirow{2}{*}{\textbf{Rác khác}}     & Hình   ảnh & 587               & 365           & 209                 \\ \cline{2-5}
+										   & Đối tượng  & 612               & 547           & 350                 \\ \cline{1-5}
 	\end{tabular}
 	\label{tab:datasetmain}
 \end{table}
@@ -392,8 +392,6 @@ Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô
 Mô hình MobiNet ra đời dựa vào như cầu tăng cao về các mô hình có trọng số nhẹ, giải quyết bài toán sử dụng trên các thiết bị hạn chế về tài nguyên tính toán như mobile, IoT. MobiNet có độ chính xác không chênh lệch so với mạng cơ sở VGG, nên việc thay thế trong kiến trúc của SSD giúp cho mô hình vừa nhỏ gọn vừa đạt độ chính xác cao.
 Điểm cải tiến của MobiNet là việc sử dụng tích chập tách biệt chiều sâu thay vì tích chập thông thường. Quá trình được phân chia làm hai bước tuần tự là tích chập chiều sâu và tích chập điểm.
 MobiNetv2 được nhóm tác giả giới thiệu với module mới được gọi là Inverted Residual Block đi ngược lại với các Residual Block thông thường vì nó tăng độ sâu trước khi học các đặc trưng, MobileNetv2 còn sử dụng hàm kích hoạt tuyến tính thay vì hàm kích hoạt phi tuyến.
-
-
 }
 
 \begin{figure}[H]
