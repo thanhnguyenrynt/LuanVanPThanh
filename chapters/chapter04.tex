@@ -41,9 +41,9 @@ Các tham số còn lại cài đặt theo mặc định của mô hình, như t
     \begin{tabular}{|l|c|c|c|}
         \hline
         \textbf{Mô hình}  & \textbf{Precision} & \textbf{Recall} & \textbf{mAP50} \\ \hline
-        SSD   MobileNetv2 & 0.75               & 0.618           & 0.672          \\ \hline
+        SSD   MobileNetv2 & 0.841               & 0.595           & 0.657          \\ \hline
         Yolov7-tiny       & 0.81               & 0.699           & 0.788          \\ \hline
-        Yolov8n           & \textbf{0.871}     & \textbf{0.738}  & \textbf{0.828} \\ \hline
+        Yolov8n           & \textbf{0.873}     & \textbf{0.727}  & \textbf{0.842} \\ \hline
     \end{tabular}
     \label{tab:thucnghiem1.1}
 \end{table}
@@ -54,17 +54,22 @@ Các tham số còn lại cài đặt theo mặc định của mô hình, như t
     \begin{tabular}{|l|c|c|c|c|}
         \hline
         \textbf{Mô hình}  & \textbf{Precision} & \textbf{Recall} & \textbf{mAP50} & \multicolumn{1}{l|}{\textbf{FPS}} \\ \hline
-        SSD   MobileNetv2 & 0.68               & 0.501           & 0.591          & 105                               \\ \hline
-        Yolov7-tiny       & 0.714              & 0.522           & 0.631          & \textbf{136}                      \\ \hline
-        Yolov8n           & \textbf{0.793}     & \textbf{0.563}  & \textbf{0.707} & 125                               \\ \hline
+        SSD MobileNetv2 & 0.712               & 0.364           & 0.427          & 105                               \\ \hline
+        Yolov7-tiny       & 0.723              & 0.515           & 0.62          & \textbf{136}                      \\ \hline
+        Yolov8n           & \textbf{0.73}     & \textbf{0.606}  & \textbf{0.713} & 125                               \\ \hline
     \end{tabular}
     \label{tab:thucnghiem1.2}
 \end{table}
 
 {\fontsize{13}{12} \selectfont
-    Các mô hình được huấn luyện bằng phương pháp học chuyển giao dựa trên tập dữ liệu coco, quá trình huấn luyện là 100 kỷ nguyên.
-    Kết quả đánh giá của Thực nghiệm 1 được thể hiện ở Bảng \ref{tab:thucnghiem1.1} và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập dữ liệu thực nghiệm cho thấy mô hình Yolov8 đạt kết quả tốt đối với việc phát hiện đối tượng,
-    tuy nhiên tốc độ không bằng Yolov7, mô hình SSD MobileNetv2 tỏ ra không hiệu quả bằng hai mô hình còn lại. Kết quả chênh lệch giữa tập dữ liệu xác thực và tập dữ liệu thực nghiệm khoảng 10 - 15 \% cho thấy việc phát hiện rác ở tự nhiên khó hơn điều kiện lí tưởng bởi chịu ảnh hưởng của môi trường xung quanh vật thể.
+    Các mô hình được huấn luyện bằng phương pháp học chuyển giao dựa trên tập dữ liệu coco, quá trình huấn luyện là 100 kỷ nguyên, ngưỡng tin cậy để đánh giá là 0.3.
+    Kết quả đánh giá của Thực nghiệm 1 được thể hiện ở Bảng \ref{tab:thucnghiem1.1} 
+    và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập dữ liệu thực nghiệm cho thấy mô hình 
+    Hình \ref{fig:thucnghiem1} cho thấy Yolov8 đạt kết quả tốt hơn so với hai mô hình còn lại. Đối với tập xác thực, mô hình SSD MobileNetv2 có khả năng nhận dạng đúng đối tượng tốt hơn so với Yolov7-tiny, tuy nhiên Recall của mô hình lại kém so với hai mô hình họ Yolo.
+    Đối với tập dữ liệu thử nghiệm, mô hình Yolov8n vẫn vượt rội so với những mô hình còn lại, chỉ số Precision của các mô hình không có sự chênh lệnh lớn (khoảng 2\%), tuy nhiên chỉ số Recall của tất cả giảm đáng kể, giảm nhiều nhất là mô hình SSD MobileNetv2 chỉ còn 36.4\%. 
+    Kết quả chênh lệch giữa tập dữ liệu xác thực và tập dữ liệu thực nghiệm khoảng 10 - 20\% cho thấy việc phát hiện rác ở tự nhiên khó hơn điều kiện lí tưởng bởi chịu ảnh hưởng của môi trường xung quanh vật thể.
+    Các Hình \ref{fig:thucnghiem1.2} và Hình \ref{fig:thucnghiem1.3} thể hiện khả năng nhận dạng của mô hình Yolov8.
+
 }
 
 \begin{figure}[H]
@@ -74,7 +79,19 @@ Các tham số còn lại cài đặt theo mặc định của mô hình, như t
     \label{fig:thucnghiem1}
 \end{figure}
 
-\bigskip
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{matrix_tn1.png}
+	\caption{Ma trận nhầm lẫn trên tập dữ liệu xác thực của mô hình Yolov8n}
+	\label{fig:thucnghiem1.2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{th1_data.png}
+	\caption{Kết quả dự đoán trên tập xác thực của mô hình Yolov8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}
+	\label{fig:thucnghiem1.3}
+\end{figure}
 
 \section{Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}
  {\fontsize{13}{12} \selectfont
@@ -85,6 +102,7 @@ Các tham số còn lại cài đặt theo mặc định của mô hình, như t
 \bigskip
 
 {\fontsize{13}{12} \selectfont
+    Mô hình SSD MobileNetv2 tỏ ra không hiệu quả so với hai mô hình còn lại trong Thực nghiệm 1, vì vậy trong Thực nghiệm 2 và 3, nghiên cứu tập trung vào Yolov7-tiny và Yolov8n.
     Các mô hình nhận dạng tốt ở lớp kim loại và thấp nhất ở lớp khác,
     điều này có thể giải thích bằng tính đặc trưng của lớp khác quá nhiều, đa dạng về hình thể, đa phần là các rác nhỏ và khó xác định.
     Trong khi đó lớp kim loại dễ xác định vì chủ yếu là các lon nước với kích thước và hình dạng đặc trưng. (... note Bổ sung thêm đặc tính các lớp khác).
@@ -96,7 +114,7 @@ Các tham số còn lại cài đặt theo mặc định của mô hình, như t
     \begin{tabular}{|l|c|c|c|l|l|}
         \hline
         \textbf{Mô hình}  & \textbf{Kim loại}          & \textbf{Giấy}              & \textbf{Nhựa - nilon}      & \multicolumn{1}{c|}{\textbf{Khac}} & \multicolumn{1}{c|}{\textbf{Tất cả}} \\ \hline
-        SSD   MobileNetv2 & 0.711                      & 0.707                      & 0.601                      & 0.459                              & 0.6195                               \\ \hline
+        SSD   MobileNetv2 & 0.711                      & 0.707                      & 0.601                      & 0.459                              & 0.62                               \\ \hline
         Yolov7-tiny       & 0.721                      & 0.716                      & 0.598                      & 0.498                              & 0.633                                \\ \hline
         Yolov8n           & 0.759                      & 0.703                      & 0.652                      & 0.581                              & 0.674                                \\ \hline
     \end{tabular}

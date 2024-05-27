@@ -44,10 +44,10 @@
 \contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{41}{section.3.3}%
 \contentsline {chapter}{\numberline {4}\centering KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{43}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{43}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{44}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Thảo luận}{45}{section.4.3}%
-\contentsline {chapter}{\numberline {5}\centering KẾT LUẬN VÀ ĐỀ XUẤT}{46}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kết luận}{46}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{46}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{46}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{46}{subsection.5.2.2}%
+\contentsline {section}{\numberline {4.2}Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{45}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Thảo luận}{46}{section.4.3}%
+\contentsline {chapter}{\numberline {5}\centering KẾT LUẬN VÀ ĐỀ XUẤT}{47}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kết luận}{47}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{47}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{47}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{47}{subsection.5.2.2}%

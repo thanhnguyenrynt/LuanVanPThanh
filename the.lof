@@ -40,4 +40,6 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Sơ đồ hệ thống}}{42}{figure.caption.46}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả thực nghiệm 1}}{44}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu xác thực của mô hình Yolov8n}}{45}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Kết quả dự đoán trên tập xác thực của mô hình Yolov8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{45}{figure.caption.52}%
 \addvspace {10\p@ }
