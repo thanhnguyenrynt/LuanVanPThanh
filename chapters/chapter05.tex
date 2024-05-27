@@ -11,8 +11,9 @@
 % \bigskip
 {\fontsize{13}{12} \selectfont
 Nghiên cứu cho thấy mô hình họ Yolo hoạt động tốt hơn so với SSD, tốt nhất với mô hình Yolov8 trên tập dữ liệu phức tạp về hình ảnh rác ở tự nhiên, điển hình là rác trên đường phố.
+Yolov8 thể hiện sự vượt trội trong nhiệm vụ phát hiện và song song cả nhiệm vụ phát hiện và phân loại rác theo thành phần.
 Mô hình nhận dạng tốt các vật thể là kim loại và có kết quả không khả quan với lớp rác khác do ảnh hưởng bởi nền xung quanh vật thể và sự đa dạng trong lớp.
-So với các nghiên cứu trước đây chủ yếu thực hiện việc phân lớp có đặc tính dữ liệu được chụp ở môi trường có ánh sáng, nền lí tưởng nên không thể áp dụng với các hình ảnh được chụp trực tiếp ngoài tự nhiên, thì nghiên cứu này đạt được độ chính xác bằng 67.4\% trên tập dữ liệu xác thực.
+So với các nghiên cứu trước đây chủ yếu thực hiện việc phân lớp có đặc tính dữ liệu được chụp ở môi trường có ánh sáng, nền lí tưởng nên không thể áp dụng với các hình ảnh được chụp trực tiếp ngoài tự nhiên, thì nghiên cứu này đạt được độ chính xác tương đối trên tập dữ liệu thử nghiệm.
 Kết quả trên của mô hình Yolov8 được áp dụng để xây dụng lên hệ thống phát hiện và phân loại rác thải trên đường phố, lập ra bản đồ phân bố bốn loại rác thải.
 \selectfont }
 
@@ -23,10 +24,21 @@ Việc kết hợp các tập dữ liệu Taco, TrashNet, tự thu thập giúp 
 Sau qua trình tìm hiểu và thực nghiệm, nghiên cứu cho thấy việc áp dụng các ảnh nền không chứa vật thể giúp cải thiện mô hình. Ngoài ra việc phân chia thành các lớp có thể ảnh hưởng đến kết quả của việc phân loại.
 }
 \section{Hạn chế và đề xuất}
-
+\subsection{Hạn chế}
 {\fontsize{13}{12} \selectfont
-Hiện tại, mô hình của chúng tôi chỉ hoạt động được trên ảnh X-Quang, chưa thể hoạt động trên ảnh CT. Chúng thôi sẽ cải thiện vấn đề này bằng cách xây dựng một thuật toán có thể chuyển ảnh CT sang ảnh X-Quang hoặc thu thập thêm ảnh CT để huấn luyện lại mô hình. 
-
-Chúng tôi sẽ tiến hành thử nghiệm các mô hình phát hiện đối tượng khác để so sánh hiệu năng. Ngoài ra, thu thập thêm các hình ảnh X-Quang về gãy xương ở những vị trí khác (ngoài cổ tay) để mở rộng tập dữ liệu và huấn luyện lại các mô hình trước đó để đạt được sự đa dạng hóa trong vấn đề phát hiện gãy xương.
+Hiện tại mô hình có cải thiện so với các mô hình trước đây về phát hiện rác trong tự nhiên, tuy nhiên vẫn còn nhiều hạn chế như
+\begin{itemize}
+    \item Độ chính xác của mô hình chưa cao, mô hình còn nhận dạng nhằm các vật thể không phải là rác, các mô hình khó nhận dang các vật thể nhỏ.
+    \item Việc kết hợp các bộ dữ liệu dẫn đến sự đa dạng trong phân loại, tuy nhiên chưa đủ dữ liệu cho mô hình học tập.
+    \item Hệ thống chưa lấy được tọa độ của video nên chỉ đang sử dụng nhận dạng với hình ảnh.
+    \item Việc gán nhãn thủ công và chuyển đổi nhãn của tập dữ liệu Taco có thể phát sinh nhiều sai sót ảnh hưởng quá trình học của mô hình.	
+\end{itemize}
+}
+\subsection{Đề xuất}
+{\fontsize{13}{12} \selectfont 
+Với nhưng hạn chế đã đề cập, chúng tôi đề xuất việc tăng cường thu thập dữ liệu cho mô hình, có thể thu thập bằng việc gắn camera lúc di chuyển.
+Các hình ảnh của người dùng khi sử dụng hệ thống cần được bổ sung vào tập dữ liệu để huấn luyện.
+Ngoài ra nên tìm hiểu và bổ sung thêm các tập dữ liệu về rác khác để giúp cân bằng dữ liệu.
+Nghiên cứu nên phát triển chức năng xác định vị trí khi quay video để sử dụng cho việc phát hiện theo thời gian thực, giúp cải thiện dữ liệu cho bản đồ phân bố.
 }
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.10)  16 APR 2024 11:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.10)  27 MAY 2024 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -12,7 +12,7 @@ Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
 Preamble taken from file `../the.tex'
 (D:\LaTex\tex/latex/import\import.sty
 Package: import 2020/04/01  v 6.2
-) (D:\Thanh\LaTex\LuanVanPThanh\the.tex (D:\LaTex\tex/latex/base\report.cls
+) (d:\Thanh\LaTex\LuanVanPThanh\the.tex (D:\LaTex\tex/latex/base\report.cls
 Document Class: report 2023/05/17 v1.4n Standard LaTeX document class
 (D:\LaTex\tex/latex/base\size12.clo
 File: size12.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
@@ -1075,19 +1075,58 @@ Package pgfplots: loading complementary utilities for your pgf version...
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (D:\LaTex\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)))
+))) (D:\LaTex\tex/latex/subfig\subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+ (D:\LaTex\tex/latex/caption\caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (D:\LaTex\tex/latex/caption\caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen344
+\captionmargin=\dimen345
+\caption@leftmargin=\dimen346
+\caption@rightmargin=\dimen347
+\caption@width=\dimen348
+\caption@indent=\dimen349
+\caption@parindent=\dimen350
+\caption@hangindent=\dimen351
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count364
+\c@continuedfloat=\count365
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+ (D:\LaTex\tex/latex/caption\ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+)
+\c@KVtest=\count366
+\sf@farskip=\skip105
+\sf@captopadj=\dimen352
+\sf@capskip=\skip106
+\sf@nearskip=\skip107
+\c@subfigure=\count367
+\c@subfigure@save=\count368
+\c@lofdepth=\count369
+\c@subtable=\count370
+\c@subtable@save=\count371
+\c@lotdepth=\count372
+\sf@top=\skip108
+\sf@bottom=\skip109
+)
 
-Package array Warning: Redefining primitive column b on input line 84.
+Package array Warning: Redefining primitive column b on input line 86.
 
 (D:\LaTex\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 ) (D:\LaTex\tex/latex/fancyvrb\fancyvrb.sty
 Package: fancyvrb 2023/11/06 4.5b verbatim text (tvz,hv)
-\FV@CodeLineNo=\count364
+\FV@CodeLineNo=\count373
 \FV@InFile=\read4
 \FV@TabBox=\box89
-\c@FancyVerbLine=\count365
-\FV@StepNumber=\count366
+\c@FancyVerbLine=\count374
+\FV@StepNumber=\count375
 \FV@OutFile=\write5
 LaTeX Info: Redefining \UseVerb on input line 1229.
 )
@@ -1095,16 +1134,16 @@ LaTeX Info: Redefining \UseVerb on input line 1229.
 \glo@main@file=\write7
 \openout7 = `chapter02.glo'.
 
-Package glossaries Info: Writing glossary file chapter02.glo on input line 130.
+Package glossaries Info: Writing glossary file chapter02.glo on input line 132.
 ))
 LaTeX Font Info:    Trying to load font information for T5+ptm on input line 3.
  (D:\LaTex\tex/latex/vntex\t5ptm.fd
 File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
 ) (D:\LaTex\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count367
+\l__color_backend_stack_int=\count376
 \l__pdf_internal_box=\box90
-) (D:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.aux)
+) (d:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.aux)
 \openout1 = `chapter02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -1164,16 +1203,16 @@ LaTeX Font Info:    ... okay on input line 3.
 
 (D:\LaTex\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count368
-\scratchdimen=\dimen344
+\scratchcounter=\count377
+\scratchdimen=\dimen353
 \scratchbox=\box91
-\nofMPsegments=\count369
-\nofMParguments=\count370
+\nofMPsegments=\count378
+\nofMParguments=\count379
 \everyMPshowfont=\toks68
-\MPscratchCnt=\count371
-\MPscratchDim=\dimen345
-\MPnumerator=\count372
-\makeMPintoPDFobject=\count373
+\MPscratchCnt=\count380
+\MPscratchDim=\dimen354
+\MPnumerator=\count381
+\makeMPintoPDFobject=\count382
 \everyMPtoPDFconversion=\toks69
 ) (D:\LaTex\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1182,7 +1221,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring OFF on input line 3.
- (D:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.out) (D:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.out)
+ (d:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.out) (d:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.out)
 \@outlinefile=\write8
 \openout8 = `chapter02.out'.
 
@@ -1199,332 +1238,440 @@ Package gensymb Warning: Not defining \micro.
 
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.8).
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
 
-Package natbib Warning: Citation `yang2016classification' on page 1 undefined on input line 12.
-
-
-Package natbib Warning: Citation `shah2022method' on page 1 undefined on input line 19.
-
-
-Package natbib Warning: Citation `simonyan2014very' on page 1 undefined on input line 24.
+Package natbib Warning: Citation `yang2016classification' on page 1 undefined on input line 13.
 
 
-Package natbib Warning: Citation `ahmad2020intelligent' on page 1 undefined on input line 27.
+Package natbib Warning: Citation `shah2022method' on page 1 undefined on input line 25.
 
 
-Package natbib Warning: Citation `yang2016classification' on page 1 undefined on input line 29.
+Package natbib Warning: Citation `simonyan2014very' on page 1 undefined on input line 30.
 
 
-Package natbib Warning: Citation `nhung2021nghien' on page 1 undefined on input line 37.
+Package natbib Warning: Citation `ahmad2020intelligent' on page 1 undefined on input line 38.
 
-<images/computer_vision.PNG, id=99, 521.69907pt x 306.39468pt>
-File: images/computer_vision.PNG Graphic file (type png)
-<use images/computer_vision.PNG>
-Package pdftex.def Info: images/computer_vision.PNG  used on input line 59.
-(pdftex.def)             Requested size: 441.01773pt x 259.01544pt.
+
+Package natbib Warning: Citation `yang2016classification' on page 1 undefined on input line 40.
+
+
+Package natbib Warning: Citation `nhung2021nghien' on page 1 undefined on input line 53.
+
+
+Package natbib Warning: Citation `proença2020taco' on page 1 undefined on input line 64.
+
+
+Package natbib Warning: Citation `Majchrowska_2022' on page 1 undefined on input line 72.
+
+
+Package natbib Warning: Citation `Majchrowska_2022' on page 1 undefined on input line 73.
+
+
+Package natbib Warning: Citation `yang2016classification' on page 1 undefined on input line 73.
+
+
+Package natbib Warning: Citation `proença2020taco' on page 1 undefined on input line 73.
+
 [1
 
 \openout6 = `chapter02.ist'.
 
 {C:/Users/Admin/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{D:/LaTex/fonts/enc/dvips/vntex/t5.enc}]
+<images/computer_vision.PNG, id=118, 521.69907pt x 306.39468pt>
+File: images/computer_vision.PNG Graphic file (type png)
+<use images/computer_vision.PNG>
+Package pdftex.def Info: images/computer_vision.PNG  used on input line 89.
+(pdftex.def)             Requested size: 441.01773pt x 259.01544pt.
 
-Package natbib Warning: Citation `Papert1966TheSV' on page 2 undefined on input line 63.
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 68.
+Package natbib Warning: Citation `Papert1966TheSV' on page 2 undefined on input line 95.
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 99.
 (D:\LaTex\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [2{D:/LaTex/fonts/enc/dvips/base/8r.enc} <./images/computer_vision.PNG>]
 
-Package natbib Warning: Citation `hubel1962receptive' on page 3 undefined on input line 87.
+Package natbib Warning: Citation `hubel1962receptive' on page 3 undefined on input line 120.
 
 
-Package natbib Warning: Citation `lecun1998gradient' on page 3 undefined on input line 89.
+Package natbib Warning: Citation `lecun1998gradient' on page 3 undefined on input line 122.
 
-<images/tichchap.png, id=116, 493.845pt x 221.32687pt>
+<images/tichchap.png, id=128, 493.845pt x 221.32687pt>
 File: images/tichchap.png Graphic file (type png)
 <use images/tichchap.png>
-Package pdftex.def Info: images/tichchap.png  used on input line 104.
+Package pdftex.def Info: images/tichchap.png  used on input line 142.
 (pdftex.def)             Requested size: 441.01773pt x 197.64896pt.
 [3]
 
-Package natbib Warning: Citation `nair2010rectified' on page 4 undefined on input line 120.
+Package natbib Warning: Citation `nair2010rectified' on page 4 undefined on input line 158.
 
 
-Package natbib Warning: Citation `caruana2000overfitting' on page 4 undefined on input line 121.
+Package natbib Warning: Citation `caruana2000overfitting' on page 4 undefined on input line 159.
 
 
-Package natbib Warning: Citation `krizhevsky2012imagenet' on page 4 undefined on input line 122.
+Package natbib Warning: Citation `krizhevsky2012imagenet' on page 4 undefined on input line 160.
 
-<images/relu.png, id=123, 879.285pt x 406.51875pt>
+<images/relu.png, id=135, 879.285pt x 406.51875pt>
 File: images/relu.png Graphic file (type png)
 <use images/relu.png>
-Package pdftex.def Info: images/relu.png  used on input line 126.
+Package pdftex.def Info: images/relu.png  used on input line 165.
 (pdftex.def)             Requested size: 441.01773pt x 203.89157pt.
 [4 <./images/tichchap.png>]
-<images/lopgop.jpg, id=131, 1286.8075pt x 567.11874pt>
+<images/lopgop.jpg, id=143, 1286.8075pt x 567.11874pt>
 File: images/lopgop.jpg Graphic file (type jpg)
 <use images/lopgop.jpg>
-Package pdftex.def Info: images/lopgop.jpg  used on input line 144.
+Package pdftex.def Info: images/lopgop.jpg  used on input line 187.
 (pdftex.def)             Requested size: 441.01773pt x 194.36679pt.
  [5 <./images/relu.png>]
 
-Package natbib Warning: Citation `dalal2005histograms' on page 6 undefined on input line 160.
+Package natbib Warning: Citation `dalal2005histograms' on page 6 undefined on input line 207.
 
 [6 <./images/lopgop.jpg>]
 
-Package natbib Warning: Citation `girshick2014rich' on page 7 undefined on input line 181.
+Package natbib Warning: Citation `girshick2014rich' on page 7 undefined on input line 236.
 
 
-Package natbib Warning: Citation `uijlings2013selective' on page 7 undefined on input line 182.
+Package natbib Warning: Citation `uijlings2013selective' on page 7 undefined on input line 237.
 
-<images/rcnn.png, id=141, 631.60968pt x 217.5628pt>
+<images/rcnn.png, id=153, 631.60968pt x 217.5628pt>
 File: images/rcnn.png Graphic file (type png)
 <use images/rcnn.png>
-Package pdftex.def Info: images/rcnn.png  used on input line 187.
+Package pdftex.def Info: images/rcnn.png  used on input line 243.
 (pdftex.def)             Requested size: 441.01773pt x 151.91447pt.
 
-Package natbib Warning: Citation `girshick2014rich' on page 7 undefined on input line 188.
+Package natbib Warning: Citation `girshick2014rich' on page 7 undefined on input line 244.
+
+
+Package natbib Warning: Citation `girshick2014rich' on page 7 undefined on input line 244.
 
 [7 <./images/rcnn.png>]
 
-Package natbib Warning: Citation `girshick2015fast' on page 8 undefined on input line 211.
+Package natbib Warning: Citation `girshick2015fast' on page 8 undefined on input line 272.
 
 
-Package natbib Warning: Citation `girshick2015fast' on page 8 undefined on input line 216.
+Package natbib Warning: Citation `girshick2015fast' on page 8 undefined on input line 281.
 
-<images/fastrcnn.png, id=151, 665.48625pt x 229.60782pt>
+<images/fastrcnn.png, id=163, 665.48625pt x 229.60782pt>
 File: images/fastrcnn.png Graphic file (type png)
 <use images/fastrcnn.png>
-Package pdftex.def Info: images/fastrcnn.png  used on input line 222.
+Package pdftex.def Info: images/fastrcnn.png  used on input line 287.
 (pdftex.def)             Requested size: 441.01773pt x 152.16174pt.
 
-Package natbib Warning: Citation `girshick2015fast' on page 8 undefined on input line 223.
+Package natbib Warning: Citation `girshick2015fast' on page 8 undefined on input line 288.
+
+
+Package natbib Warning: Citation `girshick2015fast' on page 8 undefined on input line 288.
 
 [8]
-<images/time_fastrcnn.png, id=158, 944.52875pt x 324.21124pt>
+<images/time_fastrcnn.png, id=170, 944.52875pt x 324.21124pt>
 File: images/time_fastrcnn.png Graphic file (type png)
 <use images/time_fastrcnn.png>
-Package pdftex.def Info: images/time_fastrcnn.png  used on input line 233.
+Package pdftex.def Info: images/time_fastrcnn.png  used on input line 301.
 (pdftex.def)             Requested size: 441.01773pt x 151.37999pt.
 
 
-Package natbib Warning: Citation `He_2014' on page 9 undefined on input line 234.
+Package natbib Warning: Citation `He_2014' on page 9 undefined on input line 302.
 
 
-Package natbib Warning: Citation `testtimefastrcnn' on page 9 undefined on input line 234.
+Package natbib Warning: Citation `testtimefastrcnn' on page 9 undefined on input line 302.
 
 
-Package natbib Warning: Citation `ren2016faster' on page 9 undefined on input line 245.
+Package natbib Warning: Citation `He_2014' on page 9 undefined on input line 302.
 
-[9 <./images/fastrcnn.png> <./images/time_fastrcnn.png>]
-<images/fasterrcnn.png, id=167, 508.90125pt x 501.875pt>
+
+Package natbib Warning: Citation `testtimefastrcnn' on page 9 undefined on input line 302.
+
+
+Package natbib Warning: Citation `ren2016faster' on page 9 undefined on input line 310.
+
+<images/fasterrcnn.png, id=172, 508.90125pt x 501.875pt>
 File: images/fasterrcnn.png Graphic file (type png)
 <use images/fasterrcnn.png>
-Package pdftex.def Info: images/fasterrcnn.png  used on input line 255.
+Package pdftex.def Info: images/fasterrcnn.png  used on input line 320.
 (pdftex.def)             Requested size: 441.01773pt x 434.94296pt.
 
+Package natbib Warning: Citation `ren2016faster' on page 9 undefined on input line 321.
 
-Package natbib Warning: Citation `ren2016faster' on page 10 undefined on input line 256.
 
-<images/RPN.png, id=170, 632.3625pt x 415.5525pt>
+Package natbib Warning: Citation `ren2016faster' on page 9 undefined on input line 321.
+
+[9 <./images/fastrcnn.png> <./images/time_fastrcnn.png>]
+<images/RPN.png, id=183, 632.3625pt x 415.5525pt>
 File: images/RPN.png Graphic file (type png)
 <use images/RPN.png>
-Package pdftex.def Info: images/RPN.png  used on input line 270.
+Package pdftex.def Info: images/RPN.png  used on input line 335.
 (pdftex.def)             Requested size: 441.01773pt x 289.8195pt.
-[10 <./images/fasterrcnn.png>] [11 <./images/RPN.png>]
+ [10 <./images/fasterrcnn.png>]
 
-Package natbib Warning: Citation `redmon2016look' on page 12 undefined on input line 293.
+Package natbib Warning: Citation `redmon2016look' on page 11 undefined on input line 358.
 
-<images/timelineYolo.png, id=183, 566.115pt x 121.20282pt>
+<images/timelineYolo.png, id=190, 566.115pt x 121.20282pt>
 File: images/timelineYolo.png Graphic file (type png)
 <use images/timelineYolo.png>
-Package pdftex.def Info: images/timelineYolo.png  used on input line 298.
+Package pdftex.def Info: images/timelineYolo.png  used on input line 363.
 (pdftex.def)             Requested size: 441.01773pt x 94.42314pt.
-<images/yolo.png, id=184, 853.1875pt x 539.01375pt>
+[11 <./images/RPN.png>]
+<images/yolo.png, id=196, 853.1875pt x 539.01375pt>
 File: images/yolo.png Graphic file (type png)
 <use images/yolo.png>
-Package pdftex.def Info: images/yolo.png  used on input line 315.
+Package pdftex.def Info: images/yolo.png  used on input line 380.
 (pdftex.def)             Requested size: 441.01773pt x 278.62737pt.
-[12 <./images/timelineYolo.png>]
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 324.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 324.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 389.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 389.
  (D:\LaTex\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 324.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 389.
  (D:\LaTex\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 324.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 389.
  (D:\LaTex\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 324.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 389.
  (D:\LaTex\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 324.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 389.
  (D:\LaTex\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 324.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.62007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 324.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 389.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.80008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 324.
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 324.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 389.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 389.
  (D:\LaTex\tex/latex/yhmath\omxyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
 )
 
-Package natbib Warning: Citation `redmon2016look' on page 13 undefined on input line 325.
+Package natbib Warning: Citation `redmon2016look' on page 12 undefined on input line 390.
 
-<images/yolo_a.png, id=194, 468.2861pt x 198.59561pt>
+[12 <./images/timelineYolo.png> <./images/yolo.png>]
+<images/yolo_a.png, id=208, 468.2861pt x 198.59561pt>
 File: images/yolo_a.png Graphic file (type png)
 <use images/yolo_a.png>
-Package pdftex.def Info: images/yolo_a.png  used on input line 337.
+Package pdftex.def Info: images/yolo_a.png  used on input line 402.
 (pdftex.def)             Requested size: 441.01773pt x 187.03142pt.
-[13 <./images/yolo.png>]
 
-Package natbib Warning: Citation `redmon2016yolo9000' on page 14 undefined on input line 346.
 
-[14 <./images/yolo_a.png>]
-<images/yolov2.png, id=213, 374.90062pt x 368.1253pt>
+Package natbib Warning: Citation `redmon2016yolo9000' on page 13 undefined on input line 411.
+
+[13 <./images/yolo_a.png>]
+<images/yolov2.png, id=221, 853.1875pt x 357.335pt>
 File: images/yolov2.png Graphic file (type png)
 <use images/yolov2.png>
-Package pdftex.def Info: images/yolov2.png  used on input line 369.
-(pdftex.def)             Requested size: 441.01773pt x 433.0753pt.
+Package pdftex.def Info: images/yolov2.png  used on input line 434.
+(pdftex.def)             Requested size: 441.01773pt x 184.71387pt.
 
 
-Package natbib Warning: Citation `redmon2016yolo9000' on page 15 undefined on input line 370.
+Package natbib Warning: Citation `deterseong' on page 14 undefined on input line 435.
 
 
-Package natbib Warning: Citation `redmon2018yolov3' on page 15 undefined on input line 377.
+Package natbib Warning: Citation `deterseong' on page 14 undefined on input line 435.
 
 
-Package natbib Warning: Citation `lin2017feature' on page 15 undefined on input line 379.
+Package natbib Warning: Citation `redmon2018yolov3' on page 14 undefined on input line 442.
 
-[15 <./images/yolov2.png>]
-<images/yolov3.png, id=222, 366.61969pt x 386.94562pt>
+
+Package natbib Warning: Citation `lin2017feature' on page 14 undefined on input line 444.
+
+[14 <./images/yolov2.png>]
+<images/yolov3.png, id=230, 769.87625pt x 621.32124pt>
 File: images/yolov3.png Graphic file (type png)
 <use images/yolov3.png>
-Package pdftex.def Info: images/yolov3.png  used on input line 387.
-(pdftex.def)             Requested size: 441.01773pt x 465.49556pt.
+Package pdftex.def Info: images/yolov3.png  used on input line 452.
+(pdftex.def)             Requested size: 441.01773pt x 355.92966pt.
 
 
-Package natbib Warning: Citation `redmon2018yolov3' on page 16 undefined on input line 388.
+Package natbib Warning: Citation `detectiongao2021' on page 15 undefined on input line 453.
 
 
-Package natbib Warning: Citation `bochkovskiy2020yolov4' on page 16 undefined on input line 394.
+Package natbib Warning: Citation `detectiongao2021' on page 15 undefined on input line 453.
 
 
-Package natbib Warning: Citation `simonyan2015deep' on page 16 undefined on input line 398.
+Package natbib Warning: Citation `bochkovskiy2020yolov4' on page 15 undefined on input line 459.
 
 
-Package natbib Warning: Citation `he2015deep' on page 16 undefined on input line 398.
+Package natbib Warning: Citation `simonyan2015deep' on page 15 undefined on input line 463.
 
 
-Package natbib Warning: Citation `xie2017aggregated' on page 16 undefined on input line 398.
+Package natbib Warning: Citation `he2015deep' on page 15 undefined on input line 463.
 
 
-Package natbib Warning: Citation `huang2018densely' on page 16 undefined on input line 398.
+Package natbib Warning: Citation `xie2017aggregated' on page 15 undefined on input line 463.
 
-<images/yolov4_kt.png, id=224, 487.06969pt x 133.24782pt>
+
+Package natbib Warning: Citation `huang2018densely' on page 15 undefined on input line 463.
+
+<images/yolov4_kt.png, id=232, 487.06969pt x 133.24782pt>
 File: images/yolov4_kt.png Graphic file (type png)
 <use images/yolov4_kt.png>
-Package pdftex.def Info: images/yolov4_kt.png  used on input line 404.
+Package pdftex.def Info: images/yolov4_kt.png  used on input line 469.
 (pdftex.def)             Requested size: 441.01773pt x 120.6498pt.
 
-Package natbib Warning: Citation `bochkovskiy2020yolov4' on page 16 undefined on input line 405.
-
-[16 <./images/yolov3.png>]
-
-Package natbib Warning: Citation `wang2019cspnet' on page 17 undefined on input line 411.
+Package natbib Warning: Citation `bochkovskiy2020yolov4' on page 15 undefined on input line 470.
 
 
-Package natbib Warning: Citation `liu2018path' on page 17 undefined on input line 413.
+Package natbib Warning: Citation `bochkovskiy2020yolov4' on page 15 undefined on input line 470.
+
+[15 <./images/yolov3.png>]
+
+Package natbib Warning: Citation `wang2019cspnet' on page 16 undefined on input line 476.
 
 
-Package natbib Warning: Citation `He_2014' on page 17 undefined on input line 413.
+Package natbib Warning: Citation `liu2018path' on page 16 undefined on input line 478.
 
 
-Package natbib Warning: Citation `woo2018cbam' on page 17 undefined on input line 413.
+Package natbib Warning: Citation `He_2014' on page 16 undefined on input line 478.
 
-<images/yolov4_2.png, id=233, 974.89218pt x 406.51875pt>
+
+Package natbib Warning: Citation `woo2018cbam' on page 16 undefined on input line 478.
+
+<images/yolov4_2.png, id=241, 974.89218pt x 406.51875pt>
 File: images/yolov4_2.png Graphic file (type png)
 <use images/yolov4_2.png>
-Package pdftex.def Info: images/yolov4_2.png  used on input line 421.
+Package pdftex.def Info: images/yolov4_2.png  used on input line 486.
 (pdftex.def)             Requested size: 441.01773pt x 183.8994pt.
-[17 <./images/yolov4_kt.png>]
-<images/yolov5.png, id=242, 4403.45125pt x 2951.025pt>
+[16 <./images/yolov4_kt.png>]
+<images/yolov5.png, id=250, 4403.45125pt x 2951.025pt>
 File: images/yolov5.png Graphic file (type png)
 <use images/yolov5.png>
-Package pdftex.def Info: images/yolov5.png  used on input line 441.
+Package pdftex.def Info: images/yolov5.png  used on input line 506.
 (pdftex.def)             Requested size: 441.01773pt x 295.52504pt.
 
 
-Package natbib Warning: Citation `s22020464' on page 18 undefined on input line 442.
-
-[18 <./images/yolov4_2.png>]
-
-Package natbib Warning: Citation `li2022yolov6' on page 19 undefined on input line 451.
+Package natbib Warning: Citation `s22020464' on page 17 undefined on input line 507.
 
 
-Package natbib Warning: Citation `yolov72023' on page 19 undefined on input line 453.
+Package natbib Warning: Citation `s22020464' on page 17 undefined on input line 507.
+
+[17 <./images/yolov4_2.png>]
+
+Package natbib Warning: Citation `li2022yolov6' on page 18 undefined on input line 516.
 
 
-Package natbib Warning: Citation `wang2022yolov7' on page 19 undefined on input line 458.
+Package natbib Warning: Citation `yolov72023' on page 18 undefined on input line 518.
 
-[19 <./images/yolov5.png>]
-<images/yolov7.jpg, id=256, 1304.875pt x 552.0625pt>
+
+Package natbib Warning: Citation `wang2022yolov7' on page 18 undefined on input line 524.
+
+[18 <./images/yolov5.png>]
+<images/yolov7.jpg, id=263, 1304.875pt x 552.0625pt>
 File: images/yolov7.jpg Graphic file (type jpg)
 <use images/yolov7.jpg>
-Package pdftex.def Info: images/yolov7.jpg  used on input line 474.
+Package pdftex.def Info: images/yolov7.jpg  used on input line 540.
 (pdftex.def)             Requested size: 441.01773pt x 186.58682pt.
 
 
-Package natbib Warning: Citation `wang2022yolov7' on page 20 undefined on input line 475.
+Package natbib Warning: Citation `wang2022yolov7' on page 19 undefined on input line 541.
 
-<images/mosiac.png, id=258, 147.55125pt x 163.3603pt>
+
+Package natbib Warning: Citation `wang2022yolov7' on page 19 undefined on input line 541.
+
+<images/mosiac.png, id=265, 1944.26375pt x 943.525pt>
 File: images/mosiac.png Graphic file (type png)
 <use images/mosiac.png>
-Package pdftex.def Info: images/mosiac.png  used on input line 492.
-(pdftex.def)             Requested size: 231.31598pt x 256.09982pt.
-[20 <./images/yolov7.jpg>]
+Package pdftex.def Info: images/mosiac.png  used on input line 559.
+(pdftex.def)             Requested size: 441.01773pt x 214.0116pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 560.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 560.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 560.
+[19 <./images/yolov7.jpg>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 564.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 564.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 564.
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 564.
+ (D:\LaTex\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 
-Package natbib Warning: Citation `Liu_2016' on page 21 undefined on input line 500.
+Package natbib Warning: Citation `Liu_2016' on page 20 undefined on input line 568.
 
-<images/ssd.png, id=266, 448.67625pt x 137.7647pt>
+<images/ssd.png, id=276, 448.67625pt x 137.7647pt>
 File: images/ssd.png Graphic file (type png)
 <use images/ssd.png>
-Package pdftex.def Info: images/ssd.png  used on input line 507.
+Package pdftex.def Info: images/ssd.png  used on input line 575.
 (pdftex.def)             Requested size: 441.01773pt x 135.41837pt.
 
-Package natbib Warning: Citation `Liu_2016' on page 21 undefined on input line 508.
+Package natbib Warning: Citation `Liu_2016' on page 20 undefined on input line 576.
 
-[21 <./images/mosiac.png>]
-<images/ssd_2.png, id=274, 403.5075pt x 155.07938pt>
+
+Package natbib Warning: Citation `Liu_2016' on page 20 undefined on input line 576.
+
+[20 <./images/mosiac.png>]
+<images/ssd_2.png, id=287, 403.5075pt x 155.07938pt>
 File: images/ssd_2.png Graphic file (type png)
 <use images/ssd_2.png>
-Package pdftex.def Info: images/ssd_2.png  used on input line 523.
+Package pdftex.def Info: images/ssd_2.png  used on input line 591.
 (pdftex.def)             Requested size: 441.01773pt x 169.49695pt.
 
 
-Package natbib Warning: Citation `Liu_2016' on page 22 undefined on input line 524.
+Package natbib Warning: Citation `Liu_2016' on page 21 undefined on input line 592.
 
-[22 <./images/ssd.png>]
 
-Package natbib Warning: Citation `Duy2019NHGC' on page 23 undefined on input line 537.
+Package natbib Warning: Citation `Liu_2016' on page 21 undefined on input line 592.
 
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 544.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 551.
+[21 <./images/ssd.png> <./images/ssd_2.png>]
+
+Package natbib Warning: Citation `lin2018focal' on page 22 undefined on input line 610.
+
+<images/focal_loss.png, id=296, 340.27126pt x 341.275pt>
+File: images/focal_loss.png Graphic file (type png)
+<use images/focal_loss.png>
+Package pdftex.def Info: images/focal_loss.png  used on input line 626.
+(pdftex.def)             Requested size: 255.3378pt x 256.091pt.
+
+Package natbib Warning: Citation `lin2018focal' on page 22 undefined on input line 627.
+
+
+Package natbib Warning: Citation `lin2018focal' on page 22 undefined on input line 627.
+
+[22]
+
+Package natbib Warning: Citation `lin2017feature' on page 23 undefined on input line 634.
+
+<images/retinanet.png, id=306, 944.52875pt x 251.94125pt>
+File: images/retinanet.png Graphic file (type png)
+<use images/retinanet.png>
+Package pdftex.def Info: images/retinanet.png  used on input line 644.
+(pdftex.def)             Requested size: 441.01773pt x 117.63585pt.
+
+Package natbib Warning: Citation `lin2018focal' on page 23 undefined on input line 645.
+
+
+Package natbib Warning: Citation `lin2018focal' on page 23 undefined on input line 645.
+
+[23 <./images/focal_loss.png> <./images/retinanet.png>]
+<images/iou.jpg, id=315, 243.15843pt x 131.74219pt>
+File: images/iou.jpg Graphic file (type jpg)
+<use images/iou.jpg>
+Package pdftex.def Info: images/iou.jpg  used on input line 663.
+(pdftex.def)             Requested size: 441.01773pt x 238.94292pt.
+ [24 <./images/iou.jpg>]
+<images/nguong_iou.jpg, id=328, 1027.84pt x 418.56375pt>
+File: images/nguong_iou.jpg Graphic file (type jpg)
+<use images/nguong_iou.jpg>
+Package pdftex.def Info: images/nguong_iou.jpg  used on input line 699.
+(pdftex.def)             Requested size: 441.01773pt x 179.59569pt.
+<images/AP.png, id=331, 468.75125pt x 461.725pt>
+File: images/AP.png Graphic file (type png)
+<use images/AP.png>
+Package pdftex.def Info: images/AP.png  used on input line 715.
+(pdftex.def)             Requested size: 441.01773pt x 434.40201pt.
+ [25 <./images/nguong_iou.jpg>] [26 <./images/AP.png>]
 
 Package natbib Warning: There were undefined citations.
 
@@ -1533,26 +1680,29 @@ Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[23 <./images/ssd_2.png>] [24] (D:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.aux)
+[27] (d:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `chapter02.out' has not changed.
-(rerunfilecheck)             Checksum: EC61912B487291E013AE9908C3A9974B;3726.
+(rerunfilecheck)             Checksum: 92B3291548DD06C48D5E9EFF734368B2;4872.
  ) 
 Here is how much of TeX's memory you used:
- 40934 strings out of 474485
- 873489 string characters out of 5760618
+ 42560 strings out of 474485
+ 904695 string characters out of 5760618
  1940528 words of memory out of 5000000
- 62375 multiletter control sequences out of 15000+600000
- 609021 words of font info for 129 fonts, out of 8000000 for 9000
+ 63987 multiletter control sequences out of 15000+600000
+ 615008 words of font info for 142 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,15n,110p,2411b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/urw/symbol/usyr.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmb8v.pfb><D:/LaTex/fonts/type1/urw/times/utmr8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmr8v.pfb><D:/LaTex/fonts/type1/urw/times/utmri8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmri8v.pfb>
-Output written on D:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.pdf (24 pages, 2071486 bytes).
+ 114i,10n,150p,2411b,585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
+
+<D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/urw/symbol/usyr.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmb8v.pfb><D:/LaTex/fonts/type1/urw/times/utmr8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmr8v.pfb><D:/LaTex/fonts/type1/urw/times/utmri8a.pfb><D:/LaTex/fonts/type1/vntex/vnr/vntt10.pfb>
+Output written on d:\Thanh\LaTex\LuanVanPThanh\chapters\chapter02.pdf (27 pages, 3680630 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
- 350 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 408 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -137,15 +137,12 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình Yolov7, Yolov8, SS
 	\label{tab:dataset1}
 \end{table}
 
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{trashnet_sample2.png}
 	\caption{Ví dụ về hình ảnh của tập dữ liệu TrashNet được gán hộp giới hạn}
 	\label{fig:dataset_1}
 \end{figure}
-
-
 
 \subsection{Taco}
 \label{sec:Taco}
@@ -225,6 +222,7 @@ tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít d�
     \end{tabular}
 	\label{tab:taco_map}
 \end{table}
+
 \subsection{Dữ liệu tự thu thập}
 \label{sec:own}
 {\fontsize{13}{12} \selectfont
@@ -232,6 +230,7 @@ Hình \ref{fig:dataset_own} là bộ dữ liệu được thực hiện lấy m�
 Dữ liệu thu thập gồm 663 hình ảnh với 1766 đối tượng được chia cho bốn lớp kim loại, nhựa - nilon, giấy, rác khác với trung bình 2.6 đối tượng mỗi hình ảnh (bảng \ref{tab:datasetown}).
 Phần lớn là các hộp thức ăn giấy, các bọc nilon, ly nhựa, túi rác, khẩu trang giấy và các phần rác cũ không có hình dạng cố định. 
 Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải thiện khả năng phát hiện đúng thực tế. Trong quá trình thực hiện thu thập dữ liệu gặp những vấn đề như sau:
+
 \begin{itemize}
 	\item Các rác chồng chéo khó xác định hộp giới hạn.
 	\item Tình trạng các rác cũ, rác nhỏ bị ẩn vào nền, rất khó xác định nhãn.
@@ -239,10 +238,8 @@ Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải
 	\item Phần rác kim loại xuất hiện ít, vì hầu hết được người dân xử lí chủ động trước. Tuy nhiên phần rác kim loại vẫn có đặc tính dễ phát hiện và bổ sung dữ liệu từ Taco \cite{proença2020taco} và TrashNet.
 	\item Các loại còn lại được gom vào rác khác sẽ giảm khả năng phân lớp vì độ đa dạng cao.
 \end{itemize}
-
-\bigskip
 }
-{\fontsize{13}{12} \selectfont
+
 \begin{table}[!ht]
 	\centering
 	\caption{Thuộc tính của tập dữ liệu tự thu thập}
@@ -273,6 +270,8 @@ Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải
 
 	\label{tab:datasetown}
 \end{table}
+
+{\fontsize{13}{12} \selectfont
 Bảng \ref{tab:datasetown} thể hiện các rác thải nhựa-nilon chiếm phần lớn các loại rác ở đường phố hiện nay và các rác kim loại rất ít chỉ khoảng 5,8\% dữ liệu thu thập được.
 Việc mất cân bằng dữ liệu ở tập dữ liệu tự thu thập sẽ được bổ sung bằng các tập dữ liệu của Taco và TrashNet, từ đó tạo ra bộ dữ liệu để huấn luyện và kiểm thử.
 Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng cường dữ liệu, đặt ra vấn đề các ảnh nền không chứa đối tượng nào (background) có tăng khả năng nhận diện của mô hình bằng cách giảm việc nhận dạng sai các đối tượng không phải là rác hay không.
@@ -289,9 +288,11 @@ Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng 
 \subsection{Dữ liệu sử dụng cho mô hình}
 {\fontsize{13}{12} \selectfont 
 Trong phạm vi nghiên cứu sẽ sử dụng kết hợp giữa các bộ dữ liệu được nêu ở mục \ref{sec:trashnet}, \ref{sec:Taco}, \ref{sec:own} để tạo ra các bộ dữ liệu phù hợp với các mục đích huấn luyện.
-Nghiên cứu ban đầu sẽ tìm ra mô hình phù hợp với phát hiện rác, sau đó sẽ đề xuất điều chỉnh các thông số và bổ sung dữ liệu nền để cải thiện mô hình.
+Tập dữ liệu Taco được tiền xử lí để loại bỏ đi nhưng vật thể có kích thước quá nhỏ (dưới 0.005\%) so với hình, việc này nhầm loại bỏ những dữ liệu nhiễu và không thể phân loại rác.
+Nghiên cứu thực nghiệm trên các mô hình với nhiệm vụ phát hiện rác, sau đó vừa phát hiện vừa phân loại, tiếp theo là bổ sung dữ liệu nền để cả thiện mô hình.
 Bảng \ref{tab:datasetmain} trình bày sự kết hợp của cả ba bộ dữ liệu. 
 }
+
 \begin{table}[!ht]
 	\centering
 	\caption{Thuộc tính của tập dữ liệu của nghiên cứu}
@@ -312,17 +313,17 @@ Bảng \ref{tab:datasetmain} trình bày sự kết hợp của cả ba bộ d�
 
 {\fontsize{13}{12} \selectfont
 Nghiên cứu sẽ sử dụng các bộ dữ liệu như sau:
+
 \begin{itemize}
 	\item Bộ dữ liệu \#1 kết hợp của dữ liệu Taco và tự thu thập gồm một lớp là rác, giúp đánh giá và chọn ra mô hình phù hợp trong các mô hình phát hiện đối tượng một giai đoạn.
 	\item Bộ dữ liệu \#2 kết hợp của dữ liệu Taco, tự thu thập và bổ sung dữ liệu TrashNet để giải quyết vấn đề mất cân bằng dữ liệu. 
 	Trong đó, lớp "Unlabeled litter" của bộ dữ liệu Taco sẽ được gán lại nhãn thủ công để phù hợp với dữ liệu của nghiên cứu. Bảng \ref{tab:datasetmain} mô tả chi tiết các hình ảnh và đối tượng được sử dụng trong nghiên cứu được lấy từ việc kết hợp ba bộ dữ liệu.\label{item:dataset}
 	\item Bộ dữ liệu \#2 nhưng bổ sung 200 hình nền không có đối tượng.
 \end{itemize}
-\bigskip
 
 Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần. Ví dụ như các lớp được chuyển đổi từ bộ dữ liệu Taco (bảng \ref{tab:taco_map}).
 Ngoài ra bộ dữ liệu Taco là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
-Tập dữ liệu để đánh giá mô hình ở bộ dữ liệu \#2 và \#3 sẽ chỉ gồm dữ liệu của \ref{sec:Taco} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình.
+Tập dữ liệu để đánh giá mô hình ở bộ dữ liệu \#2 và \#3 sẽ chỉ gồm dữ liệu của \ref{sec:Taco} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình ở điều kiện tự nhiên.
 }
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
@@ -344,17 +345,14 @@ Mô hình Yolov7 được trình bày cở bản ở phần \ref{sec:yolov7}, tr
 	là dự đoán các ô lưới (grid cells) chứa đối
 	tượng. Lớp thứ hai là dự đoán các hộp giới hạn cho các đối tượng. Lớp thứ ba dự đoán lớp của đối tượng \cite{cachuayol7}.
 \end{itemize}
-\bigskip
 }
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{yolov7_kientruc.jpg}
 	\caption{Kiến trúc mô hình Yolov7}
 	\label{fig:yolov7_kientruc}
 \end{figure}
-
-
-
 
 \subsection{Mô hình Yolov8}
 {\fontsize{13}{12} \selectfont 
@@ -369,7 +367,6 @@ Như phần \ref{sec:yolov8} đã trình bày những thay đổi mới của yo
 	là dự đoán các ô lưới (grid cells) chứa đối
 	tượng. Lớp thứ hai là dự đoán các hộp giới hạn cho các đối tượng. Lớp thứ ba dự đoán lớp của đối tượng.
 \end{itemize}
-\bigskip
 }
 
 \begin{figure}[H]
@@ -378,7 +375,6 @@ Như phần \ref{sec:yolov8} đã trình bày những thay đổi mới của yo
 	\caption{Kiến trúc mô hình Yolov8 trên github được đóng góp bởi RangeKing}
 	\label{fig:yolo8_kientruc}
 \end{figure}
-
 
 {\fontsize{13}{12} \selectfont 
 Với nhưng cải tiến của Yolov8 mang lại như giảm kích thước mạng tích chập từ $6x6$ xuống $3x3$ để trừu tượng hoá hình ảnh hiệu quả, thay thế module C3 bằng module C2f tăng tốc độc xử lí, triển khai dự đoán không cần hộp neo để loại bỏ sự cần thiết của hộp neo,
@@ -412,7 +408,6 @@ Các bước xây dựng hệ thống được chia làm hai giai đoạn đư�
 	API sẽ được xây dựng trên thư viện FastApi và dữ liệu được lưu trữ ở MongoDB.
 \end{itemize}
 }
-\bigskip
 
 \begin{figure}[H]
 	\centering
@@ -420,6 +415,7 @@ Các bước xây dựng hệ thống được chia làm hai giai đoạn đư�
 	\caption{Sơ đồ hệ thống}
 	\label{fig:sodo}
 \end{figure}
+
 \end{document}
 
 

@@ -3,9 +3,9 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Hệ thống thị giác của con người và máy tính}}{4}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Ví dụ về tích chập}}{6}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Hàm kích hoạt Relu}}{7}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Mình họa về gộp cực đại và gộp trung bình}}{7}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Mình họa về gộp cực đại và gộp trung bình}}{8}{figure.caption.10}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Mô hình CNN \cite {girshick2014rich}}}{9}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Mô hình Fast R-CNN \cite {girshick2015fast}}}{10}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Mô hình Fast R-CNN \cite {girshick2015fast}}}{11}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Thời gian huấn luyện R-CNN, SPP-NET \cite {He_2014}, Fast R-CNN \cite {testtimefastrcnn}}}{11}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Mô hình faster RCNN \cite {ren2016faster}}}{12}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Cấu trúc mạng RPN}}{13}{figure.caption.15}%
