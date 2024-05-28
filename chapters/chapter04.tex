@@ -95,44 +95,67 @@ Các tham số còn lại cài đặt theo mặc định của mô hình, như t
 
 \section{Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}
  {\fontsize{13}{12} \selectfont
-  Các mô hình vẫn sử dụng tham số để tăng cường dữ liệu giống như ở \ref{tab:thamso}, thực hiện trên tập dữ liệu \#2 và \#3 như đã đề cập ở phần \ref{sec:dataset}.
-  Đánh giá các mô hình dựa vào chỉ số mAP50 trên từng loại rác và trung bình của tất cả, kết quả đánh giá được thể hiện ở.
+  Mô hình SSD MobileNetv2 tỏ ra không hiệu quả so với hai mô hình còn lại trong Thực nghiệm 1, vì vậy trong Thực nghiệm 2 và 3, nghiên cứu tập trung vào Yolov7-tiny và Yolov8n. Các mô hình vẫn sử dụng tham số để tăng cường dữ liệu giống như ở \ref{tab:thamso}, thực hiện trên tập dữ liệu \#2 và \#3 như đã đề cập ở phần \ref{sec:dataset}.
+  Đánh giá các mô hình dựa vào chỉ số mAP50 trên từng loại rác và trung bình của tất cả, kết quả đánh giá được thể hiện Bảng \ref{tab:thucnghiem2.1} và Hình \ref{fig:thucnghiem2} ở Thực nghiệm 2 và Bảng \ref{tab:thucnghiem3.1} ở Thực nghiệm 3.
  }
 
 \bigskip
 
 {\fontsize{13}{12} \selectfont
-    Mô hình SSD MobileNetv2 tỏ ra không hiệu quả so với hai mô hình còn lại trong Thực nghiệm 1, vì vậy trong Thực nghiệm 2 và 3, nghiên cứu tập trung vào Yolov7-tiny và Yolov8n.
     Các mô hình nhận dạng tốt ở lớp kim loại và thấp nhất ở lớp khác,
     điều này có thể giải thích bằng tính đặc trưng của lớp khác quá nhiều, đa dạng về hình thể, đa phần là các rác nhỏ và khó xác định.
-    Trong khi đó lớp kim loại dễ xác định vì chủ yếu là các lon nước với kích thước và hình dạng đặc trưng. (... note Bổ sung thêm đặc tính các lớp khác).
-    Hình (matrix note) cho thấy việc các hình nền dễ bị nhận dạng trở thành các vật thể rác, trong đó có thể gồm các vật thể như đá, các biển báo, vũng nước.
+    Ở Thực nghiệm 2, .
+    Hình (matrix note) cho thấy việc các hình nền dễ bị nhận dạng trở thành các vật thể rác, trong đó có thể gồm các vật thể như đá, các biển báo, vũng nước hoặc nhận dạng dư các hộp giới hạn gần giống nhau.
+    Các vật thể từ giấy cũng dễ bị nhận nhầm với với rác khác, lớp kim loại có sự ổn định cao và ít nhầm lẫn với lớp còn lại. Lớp giấy và nhựa - nilon dễ bị bỏ qua không thể nhận dạng vì các vật thể bị chồng chéo lên nhau.
 }
 \begin{table}[h!]
     \centering
-    \caption{Kết quả thực hiện Thực nghiệm 2 với tập xác thực}
-    \begin{tabular}{|l|c|c|c|l|l|}
+    \caption{Kết quả thực hiện Thực nghiệm 2}
+    \begin{tabular}{|l|c|c|c|c|c|c|}
         \hline
-        \textbf{Mô hình}  & \textbf{Kim loại}          & \textbf{Giấy}              & \textbf{Nhựa - nilon}      & \multicolumn{1}{c|}{\textbf{Khac}} & \multicolumn{1}{c|}{\textbf{Tất cả}} \\ \hline
-        SSD   MobileNetv2 & 0.711                      & 0.707                      & 0.601                      & 0.459                              & 0.62                               \\ \hline
-        Yolov7-tiny       & 0.721                      & 0.716                      & 0.598                      & 0.498                              & 0.633                                \\ \hline
-        Yolov8n           & 0.759                      & 0.703                      & 0.652                      & 0.581                              & 0.674                                \\ \hline
-    \end{tabular}
+        \textbf{Mô hình}             & \multicolumn{1}{l|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{l|}{\textbf{Kim Loại}} & \multicolumn{1}{l|}{\textbf{Giấy}} & \multicolumn{1}{l|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{l|}{\textbf{Khác}} & \multicolumn{1}{l|}{Tất cả} \\ \hline
+        \multirow{2}{*}{Yolov7-tiny} & Xác thực                                  & 0.721                                  & 0.716                              & 0.598                                      & 0.498                              & 0.633                       \\ \cline{2-7} 
+                                     & Thử nghiệm                                & 0.359                                  & 0.387                              & 0.423                                      & 0.183                              & 0.338                       \\ \hline
+        \multirow{2}{*}{Yolov8n}     & Xác thực                                  & \textbf{0.759}                         & \textbf{0.703}                     & \textbf{0.652}                             & \textbf{0.581}                     & \textbf{0.674}              \\ \cline{2-7} 
+                                     & Thử nghiệm                                & \textbf{0.377}                         & \textbf{0.415}                     & \textbf{0.553}                             & \textbf{0.207}                     & \textbf{0.388}              \\ \hline
+        \end{tabular}
     \label{tab:thucnghiem2.1}
 \end{table}
 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{thucnghiem2.1.jpg}
+    \caption{Biểu đồ kết quả Thực nghiệm 2}
+    \label{fig:thucnghiem2}
+\end{figure}
+
+{\fontsize{13}{12} \selectfont 
+Thực nghiệm 3 với việc bổ sung các hình ảnh nền giúp mô hình cải thiện độ chính xác bằng cách giảm đi các dương tính giả. Hình (matrix) cho thấy các ở lớp background đã giảm bớt nhận dạng thành các lớp rác.
+Độ chính xác ở các lớp nhìn chung được cải thiện từ 3 - 5\%. Mô hình Yolov8 vẫn đạt được kết quả tốt hơn trong việc huấn luyện, việc áp dụng các ảnh nền cũng tỏ ra hiệu quả hơn mô hình Yolov8n khi cải thiện được 2\% độ chính xác so với 1,2\% của mô hình Yolov7-tiny.
+}
+
 \begin{table}[h!]
     \centering
-    \caption{Kết quả thực hiện Thực nghiệm 2 với tập thử nghiệm}
-    \begin{tabular}{|l|c|c|c|l|l|}
+    \caption{Kết quả thực hiện Thực nghiệm 3}
+    \begin{tabular}{|l|c|c|c|c|c|c|}
         \hline
-        \textbf{Mô hình}  & \textbf{Kim loại}          & \textbf{Giấy}              & \textbf{Nhựa - nilon}      & \multicolumn{1}{c|}{\textbf{Khac}} & \multicolumn{1}{c|}{\textbf{Tất cả}} \\ \hline
-        SSD   MobileNetv2 & 0.711                      & 0.707                      & 0.601                      & 0.459                              & 0.6195                               \\ \hline
-        Yolov7-tiny       & 0.721                      & 0.716                      & 0.598                      & 0.498                              & 0.633                                \\ \hline
-        Yolov8n           & 0.759                      & 0.703                      & 0.652                      & 0.581                              & 0.674                                \\ \hline
-    \end{tabular}
-    \label{tab:thucnghiem2.2}
+        \textbf{Mô hình}             & \multicolumn{1}{l|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{l|}{\textbf{Kim Loại}} & \multicolumn{1}{l|}{\textbf{Giấy}} & \multicolumn{1}{l|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{l|}{\textbf{Khác}} & \multicolumn{1}{l|}{Tất cả} \\ \hline
+        \multirow{2}{*}{Yolov7-tiny} & Xác thực                                  & 0.721                                  & 0.716                              & 0.598                                      & 0.498                              & 0.633                       \\ \cline{2-7} 
+                                     & Thử nghiệm                                & 0.359                                  & 0.387                              & 0.423                                      & 0.183                              & 0.338                       \\ \hline
+        \multirow{2}{*}{Yolov8n}     & Xác thực                                  & \textbf{0.759}                         & \textbf{0.703}                     & \textbf{0.652}                             & \textbf{0.581}                     & \textbf{0.674}              \\ \cline{2-7} 
+                                     & Thử nghiệm                                & \textbf{0.377}                         & \textbf{0.415}                     & \textbf{0.553}                             & \textbf{0.207}                     & \textbf{0.388}              \\ \hline
+        \end{tabular}
+    \label{tab:thucnghiem3.1}
 \end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{thucnghiem2.1.jpg}
+    \caption{Biểu đồ kết quả Thực nghiệm 2}
+    \label{fig:thucnghiem3}
+\end{figure}
+
 
 \section{Thảo luận} 
 {\fontsize{13}{12} \selectfont 
