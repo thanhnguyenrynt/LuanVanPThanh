@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.10)  29 MAY 2024 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.10)  29 MAY 2024 17:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2017,9 +2017,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--272
 \T5/ptm/m/n/12 4 lîp-mAP:
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 ) [49] [50]
 Ch\uhorn \ohorn ng 5.
 
@@ -2074,11 +2071,11 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\z@skip' on input line 221.
 
-(chapters/chapter05.tex) [51
+(chapters/chapter05.tex) (the.bbl [51
 
-] (the.bbl [52] [53
+] [52
 
-] [54]) [55] (pubs.tex
+] [53]) [54] (pubs.tex
 Underfull \hbox (badness 10000) in paragraph at lines 24--24
 []|\T5/ptm/m/n/12 Detection of
  []
@@ -2223,7 +2220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 \T5/cmtt/m/n/12 org / 10 . 7717 /
  []
 
-) [56
+) [55
 
 ] (the.aux)
  ***********
@@ -2238,8 +2235,8 @@ Package rerunfilecheck Info: File `the.out' has not changed.
 (rerunfilecheck)             Checksum: 94B24A6F083315EA02BA076405198FFF;9472.
  ) 
 Here is how much of TeX's memory you used:
- 43264 strings out of 474485
- 918140 string characters out of 5760618
+ 43263 strings out of 474485
+ 918133 string characters out of 5760618
  1945528 words of memory out of 5000000
  64448 multiletter control sequences out of 15000+600000
  643994 words of font info for 157 fonts, out of 8000000 for 9000
@@ -2258,9 +2255,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/urw/symbol/usyr.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmb8v.pfb><D:/LaTex/fonts/type1/urw/times/utmr8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmr8v.pfb><D:/LaTex/fonts/type1/urw/times/utmri8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmri8v.pfb><D:/LaTex/fonts/type1/vntex/vnr/vntt10.pfb><D:/LaTex/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on the.pdf (66 pages, 39828152 bytes).
+Output written on the.pdf (65 pages, 39827355 bytes).
 PDF statistics:
- 1150 PDF objects out of 1200 (max. 8388607)
- 236 named destinations out of 1000 (max. 500000)
+ 1146 PDF objects out of 1200 (max. 8388607)
+ 235 named destinations out of 1000 (max. 500000)
  697 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -29,16 +29,15 @@ Sau qua trình tìm hiểu và thực nghiệm, nghiên cứu cho thấy việc 
 Hiện tại mô hình có cải thiện so với các mô hình trước đây về phát hiện rác trong tự nhiên, tuy nhiên vẫn còn nhiều hạn chế như
 \begin{itemize}
     \item Độ chính xác của mô hình chưa cao, mô hình còn nhận dạng nhằm các vật thể không phải là rác, các mô hình khó nhận dang các vật thể nhỏ.
-    \item Việc kết hợp các bộ dữ liệu dẫn đến sự đa dạng trong phân loại, tuy nhiên chưa đủ dữ liệu cho mô hình học tập.
+    \item Cần bổ sung thêm dữ liệu cho mô hình học tập.
     \item Hệ thống chưa lấy được tọa độ của video nên chỉ đang sử dụng nhận dạng với hình ảnh.
     \item Việc gán nhãn thủ công và chuyển đổi nhãn của tập dữ liệu Taco có thể phát sinh nhiều sai sót ảnh hưởng quá trình học của mô hình.	
 \end{itemize}
 }
 \subsection{Đề xuất}
 {\fontsize{13}{12} \selectfont 
-Với nhưng hạn chế đã đề cập, chúng tôi đề xuất việc tăng cường thu thập dữ liệu cho mô hình, có thể thu thập bằng việc gắn camera lúc di chuyển.
+Với những hạn chế đã đề cập, chúng tôi đề xuất việc tăng cường thu thập dữ liệu cho mô hình, có thể thu thập bằng việc gắn camera lúc di chuyển.
 Các hình ảnh của người dùng khi sử dụng hệ thống cần được bổ sung vào tập dữ liệu để huấn luyện.
-Ngoài ra nên tìm hiểu và bổ sung thêm các tập dữ liệu về rác khác để giúp cân bằng dữ liệu.
 Nghiên cứu nên phát triển chức năng xác định vị trí khi quay video để sử dụng cho việc phát hiện theo thời gian thực, giúp cải thiện dữ liệu cho bản đồ phân bố.
 }
 \end{document}
