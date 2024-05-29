@@ -6,9 +6,9 @@
 \contentsline {chapter}{\numberline {2}\centering CƠ SỞ LÝ THUYẾT}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Các nghiên cứu liên quan}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Thị giác máy tính}{4}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Mạng nơ-ron tích chập }{5}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Mạng nơ-ron tích chập }{6}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Lớp tích chập}{6}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Hàm kích hoạt}{6}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Hàm kích hoạt}{7}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Lớp gộp (Polling) và Lớp kết hợp đầy đủ(Fully Connected Layer)}{7}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}Phát hiện đối tượng}{8}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Thuật toán Histrogram of oriented gradient (HOG)}{8}{subsection.2.4.1}%
@@ -45,9 +45,9 @@
 \contentsline {chapter}{\numberline {4}\centering KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{43}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{43}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{45}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Thảo luận}{47}{section.4.3}%
-\contentsline {chapter}{\numberline {5}\centering KẾT LUẬN VÀ ĐỀ XUẤT}{48}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kết luận}{48}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{48}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{48}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{48}{subsection.5.2.2}%
+\contentsline {section}{\numberline {4.3}Thảo luận}{48}{section.4.3}%
+\contentsline {chapter}{\numberline {5}\centering KẾT LUẬN VÀ ĐỀ XUẤT}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kết luận}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{51}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{51}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{51}{subsection.5.2.2}%

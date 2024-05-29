@@ -1,5 +1,3 @@
-Mô hình	T?p d? li?u	Kim Lo?i	Gi?y	Nh?a - Nilon	Khác	T?t c?
-Yolov7-tiny	Xác th?c	0.721	0.716	0.598	0.498	0.633
-	Th? nghi?m	0.359	0.387	0.423	0.183	0.338
-Yolov8n	Xác th?c	0.759	0.703	0.652	0.581	0.674
-	Th? nghi?m	0.377	0.415	0.553	0.207	0.388
+#	Kim Lo?i	Gi?y	Nh?a - Nilon	Khác	T?t c?
+T?p d? li?u	0.377	0.415	0.553	0.207	0.388
+T?p b? sung n?n	0.514	0.451	0.556	0.263	0.446

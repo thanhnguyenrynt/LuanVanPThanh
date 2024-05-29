@@ -21,6 +21,29 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{wang2022yolov7}
+C.-Y. Wang, A.~Bochkovskiy, and H.-Y.~M. Liao, ``Yolov7: Trainable
+  bag-of-freebies sets new state-of-the-art for real-time object detectors,''
+  2022.
+
+\bibitem{Yolov8}
+\BIBentryALTinterwordspacing
+G.~Jocher, A.~Chaurasia, and J.~Qiu, ``{Ultralytics YOLO},'' 01 2023. [Online].
+  Available: \url{https://github.com/ultralytics/ultralytics}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Liu_2016}
+\BIBentryALTinterwordspacing
+W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.-Y. Fu, and A.~C. Berg,
+  \emph{SSD: Single Shot MultiBox Detector}.\hskip 1em plus 0.5em minus
+  0.4em\relax Springer International Publishing, 2016, p. 21–37. [Online].
+  Available: \url{http://dx.doi.org/10.1007/978-3-319-46448-0_2}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sandler2019mobilenetv2}
+M.~Sandler, A.~Howard, M.~Zhu, A.~Zhmoginov, and L.-C. Chen, ``Mobilenetv2:
+  Inverted residuals and linear bottlenecks,'' 2019.
+
 \bibitem{proença2020taco}
 P.~F. Proença and P.~Simões, ``Taco: Trash annotations in context for litter
   detection,'' 2020.
@@ -53,6 +76,12 @@ F.~F. L. . J. J. .~S. Yeung, ``Detection and segmentation,''
 S.~Ren, K.~He, R.~Girshick, and J.~Sun, ``Faster r-cnn: Towards real-time
   object detection with region proposal networks,'' 2016.
 
+\bibitem{redmon2016yolo9000}
+J.~Redmon and A.~Farhadi, ``Yolo9000: Better, faster, stronger,'' 2016.
+
+\bibitem{redmon2018yolov3}
+------, ``Yolov3: An incremental improvement,'' 2018.
+
 \bibitem{bochkovskiy2020yolov4}
 A.~Bochkovskiy, C.-Y. Wang, and H.-Y.~M. Liao, ``Yolov4: Optimal speed and
   accuracy of object detection,'' 2020.
@@ -62,19 +91,6 @@ A.~Bochkovskiy, C.-Y. Wang, and H.-Y.~M. Liao, ``Yolov4: Optimal speed and
 U.~Nepal and H.~Eslamiat, ``Comparing yolov3, yolov4 and yolov5 for autonomous
   landing spot detection in faulty uavs,'' \emph{Sensors}, vol.~22, no.~2,
   2022. [Online]. Available: \url{https://www.mdpi.com/1424-8220/22/2/464}
-\BIBentrySTDinterwordspacing
-
-\bibitem{wang2022yolov7}
-C.-Y. Wang, A.~Bochkovskiy, and H.-Y.~M. Liao, ``Yolov7: Trainable
-  bag-of-freebies sets new state-of-the-art for real-time object detectors,''
-  2022.
-
-\bibitem{Liu_2016}
-\BIBentryALTinterwordspacing
-W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.-Y. Fu, and A.~C. Berg,
-  \emph{SSD: Single Shot MultiBox Detector}.\hskip 1em plus 0.5em minus
-  0.4em\relax Springer International Publishing, 2016, p. 21–37. [Online].
-  Available: \url{http://dx.doi.org/10.1007/978-3-319-46448-0_2}
 \BIBentrySTDinterwordspacing
 
 \bibitem{lin2018focal}
@@ -103,6 +119,16 @@ K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
   bay kh{\^o}ng người l{\'a}i v{\`a} mạng nơ-ron t{\'\i}ch chập
   s{\^a}u,'' \emph{Tạp ch{\'\i} Khoa học {\DJ}o {\dj}ạc v{\`a} Bản
   {\dj}ồ}, no.~49, pp. 21--29, 2021.
+
+\bibitem{9122693}
+B.~D. Carolis, F.~Ladogana, and N.~Macchiarulo, ``Yolo trashnet: Garbage
+  detection in video streams,'' in \emph{2020 IEEE Conference on Evolving and
+  Adaptive Intelligent Systems (EAIS)}, 2020, pp. 1--7.
+
+\bibitem{8793975}
+M.~Fulton, J.~Hong, M.~J. Islam, and J.~Sattar, ``Robotic detection of marine
+  litter using deep visual detection models,'' in \emph{2019 International
+  Conference on Robotics and Automation (ICRA)}, 2019, pp. 5752--5758.
 
 \bibitem{Majchrowska_2022}
 \BIBentryALTinterwordspacing
@@ -158,12 +184,6 @@ J.~R. Uijlings, K.~E. Van De~Sande, T.~Gevers, and A.~W. Smeulders, ``Selective
 \bibitem{redmon2016look}
 J.~Redmon, S.~Divvala, R.~Girshick, and A.~Farhadi, ``You only look once:
   Unified, real-time object detection,'' 2016.
-
-\bibitem{redmon2016yolo9000}
-J.~Redmon and A.~Farhadi, ``Yolo9000: Better, faster, stronger,'' 2016.
-
-\bibitem{redmon2018yolov3}
-------, ``Yolov3: An incremental improvement,'' 2018.
 
 \bibitem{lin2017feature}
 T.-Y. Lin, P.~Dollár, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
@@ -221,9 +241,5 @@ M.~Nguyễn~Văn, A.~Lê~Văn, L.~Trần~Đức, T.~Nguyễn~Tuấn,
   p. 102–112, tháng 3 2024. [Online]. Available:
   \url{https://tapchikhtnmt.hunre.edu.vn/index.php/tapchikhtnmt/article/view/569}
 \BIBentrySTDinterwordspacing
-
-\bibitem{sandler2019mobilenetv2}
-M.~Sandler, A.~Howard, M.~Zhu, A.~Zhmoginov, and L.-C. Chen, ``Mobilenetv2:
-  Inverted residuals and linear bottlenecks,'' 2019.
 
 \end{thebibliography}

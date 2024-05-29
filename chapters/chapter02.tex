@@ -35,7 +35,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Ahmad và ctv. \cite{ahmad2020intelligent} đã áp dụng các phương pháp kết hợp sớm, kết hợp muộn
+	Ahmad \etal. \cite{ahmad2020intelligent} đã áp dụng các phương pháp kết hợp sớm, kết hợp muộn
 	và kết hợp kép các mô hình học sâu trên tập dự liệu 2.527 hình ảnh được cung cấp bởi Kaggle, tập dữ liệu
 	được chia làm 6 lớp giống như nghiên cứu của Yang và Thung \cite{yang2016classification}. Trong nghiên cứu này,
 	nhóm tác giả đạt kết quả cao và đưa ra kết luận có thể đạt được hiệu suất phân
@@ -54,8 +54,6 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	huấn luyện và thử nghiệm trên 95 hình ảnh được chụp từ máy bay không người
 	lái (UAV) Phantom 4 Pro ở khu vực ven biển Hội An (Quảng Nam). Mô hình
 	đạt độ chính xác trong việc phân loại hình ảnh rác thải nhựa ven biển là 87\%.
-	Các nghiên cứu trên là tiêu biểu của việc ứng dụng công nghệ phát hiện
-	và phân loại rác thải.
 }
 \bigskip
 
@@ -69,7 +67,25 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Sylwia Majchrowska \cite{Majchrowska_2022} áp dụng việc kết hợp các bộ dữ liệu về rác để huấn luyện mô hình theo bảy lớp theo tình hình ở Pomerania, Ba Lan và đạt kết quả 66.4\% với phát hiện một lớp.
+	Mô hình Yolov3 \cite{redmon2018yolov3} được Carolis \etal \cite{9122693} sử dụng cho việc phát hiện và phân loại rác chia làm bốn lớp: thùng rác lớn, thùng rác nhỏ, túi rác, và rác tập hợp.
+	Nghiên cứu đạt mAP50 là 59.59\% với kết quả của các lớp là túi rác (40.56\%), thùng rác lớn (64.57\%), thùng rác nhỏ (65.01\%) và rác tập hợp (68.18\%).
+	Các lớp của mô hình chủ yếu là các vật thể có kích thước lớn giúp mô hình dễ nhận dạng, nhóm nghiên cứu chỉ gặp khó khăn khi nhận dạng lớp rác tập hợp.
+	Vì vậy, tác giả đã sử dụng thuật toán riêng để gộp các hộp giới hạn bị chồng chéo có cùng lớp, việc này giúp ít trong việc đánh giá kết quả của lớp rác tập hợp.
+
+}
+
+{\fontsize{13}{12} \selectfont
+	Fulton cùng các cộng sự \cite{8793975} đã sử dụng tập dữ liệu Trash-ICRA19 về rác thải biển. Tập dữ liệu gồm 5,700 hình ảnh được trích xuất từ video được quay dưới đáy biển với độ sâu khác nhau,
+	cung cấp nhiều vật thể ở các trạng thái đã phân hủy hoặc bị vùi lắp.
+	Bộ dữ liệu được chia thành ba lớp là nhựa, vật thể nhân tạo, vật thể tự nhiên bao gồm cả cá, thảm thực vật dưới biển.
+	Nghiên cứu đạt kết quả 47.9\% với Yolov2 \cite{redmon2016yolo9000}, 67.4\% với SSD MobileNetv2 \cite{sandler2019mobilenetv2} , 81\% Faster R-CNN \cite{ren2016faster}.
+	Faster R-CNN là sự lựa chọn hoàn hảo dựa vào độ chính xác, tuy nhiên lại rất chậm. Yolov2 đạt được sự cân bằng cả hai trong khi SSD cho thấy hiệu quả về tốc độ.
+
+}
+
+{\fontsize{13}{12} \selectfont
+
+	Sylwia \etal  \cite{Majchrowska_2022} áp dụng việc kết hợp các bộ dữ liệu về rác để huấn luyện mô hình theo bảy lớp theo tình hình ở Pomerania, Ba Lan và đạt kết quả 66.4\% với phát hiện một lớp.
 	Đề tài nghiên cứu sẽ áp dụng ý tưởng của nghiên cứu này \cite{Majchrowska_2022} kết hợp dữ liệu TrashNet \cite{yang2016classification}, Taco \cite{proença2020taco} để thực hiện.
 }
 \section{Thị giác máy tính}
@@ -317,7 +333,7 @@ Nhưng mô hình R-CNN bị hạn chế bơi khả năng phức tạp ở tính 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{fasterrcnn.png}
-	\caption{Mô hình faster RCNN \cite{ren2016faster}}
+	\caption{Mô hình Faster R-CNN \cite{ren2016faster}}
 	\label{fig:fasterrcnn}
 \end{figure}
 
@@ -429,7 +445,7 @@ Có thể dễ dàng nhận thấy rằng toàn bộ mạng Yolo à không có b
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{yolov2.png}
-	\caption{Kiến trúc mạng Darknet-19 \cite{deterseong}}
+	\caption{Kiến trúc mạng Darknet-19 \cite{redmon2016yolo9000}}
 	\label{fig:yolov2}
 \end{figure}
 \bigskip
@@ -447,7 +463,7 @@ Có thể dễ dàng nhận thấy rằng toàn bộ mạng Yolo à không có b
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{yolov3.png}
-	\caption{Kiến trúc mạng Darknet-53 \cite{detectiongao2021}}
+	\caption{Kiến trúc mạng Darknet-53 \cite{redmon2018yolov3}}
 	\label{fig:yolov3}
 \end{figure}
 \bigskip
@@ -511,10 +527,10 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 \bigskip
 
 {\fontsize{13}{12} \selectfont
-Yolov6 \cite{li2022yolov6} được đề xuất vào năm 2022 bởi Li và cộng sự như một cải tiến so với các phiên bản trước.
-Một trong những điểm khác biệt chính giữa Yolov5 và Yolov6 là kiến trúc CNN được sử dụng.
-Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên là EfficientNet-L2 \cite{yolov72023}.
-Đó là một kiến trúc hiệu quả hơn so với EfficientDet được sử dụng trong Yolov5 với ít tham số hơn và hiệu quả tính toán cao hơn. Nó có thể đạt được kết quả tiên tiến trên các điểm chuẩn phát hiện đối tượng khác nhau.
+	Yolov6 \cite{li2022yolov6} được đề xuất vào năm 2022 bởi Li và cộng sự như một cải tiến so với các phiên bản trước.
+	Một trong những điểm khác biệt chính giữa Yolov5 và Yolov6 là kiến trúc CNN được sử dụng.
+	Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên là EfficientNet-L2 \cite{yolov72023}.
+	Đó là một kiến trúc hiệu quả hơn so với EfficientDet được sử dụng trong Yolov5 với ít tham số hơn và hiệu quả tính toán cao hơn. Nó có thể đạt được kết quả tiên tiến trên các điểm chuẩn phát hiện đối tượng khác nhau.
 }
 
 \subsubsection{Yolov7}
@@ -551,7 +567,7 @@ Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên l
 \subsubsection{Yolov8}
 \label{sec:yolov8}
 {\fontsize{13}{12} \selectfont
-	Được công bố vào đầu năm 2023, Yolov8 đã mang lại nhiều điểm tích cực so với phiên bản tiền nhiệm, như phát hiện không dùng anchor, giới thiệu lớp tích chập C2f và tăng cường mosaic.
+	Được công bố vào đầu năm 2023, Yolov8 \cite{Yolov8} đã mang lại nhiều điểm tích cực so với phiên bản tiền nhiệm, như phát hiện không dùng anchor, giới thiệu lớp tích chập C2f và tăng cường mosaic.
 	Yolov8 tương tự như Yolov5 được xây dựng và duy trì bởi nhóm Ultralytics, hiện Yolov8 vẫn chưa có bài báo chính thức, tuy nhiên vẫn có thể tìm kiếm thông tin nhờ vào tài liệu và cộng đồng sử dụng Yolov8.
 	YOLOv8 là mô hình không có neo. Điều này có nghĩa là nó dự đoán trực tiếp tâm của đối tượng thay vì xác định hộp neo như những mô hình trước đó.
 	Điều này giúp Yolov8 linh hoạt hơn trong việc phát hiện các vật thể có hình dạng và kích thước khác nhau, đặc biệt là các vật thể mỏng hoặc nhỏ có thể không vừa với các hộp neo được xác định trước của hệ thống.
@@ -586,11 +602,11 @@ Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên l
 \end{figure}
 
 {\fontsize{13}{12} \selectfont
-	Bằng việc tính toán các hộp giới hạn trên các bản đồ đặc trưng khác nhau, tại mỗi tầng chứa bản đồ đặc trưng, mỗi hộp giới hạn sẽ xác định được một phần hình ảnh với kích thước khác nhau. Như trên Hình, con mèo và con chó có thể được phát hiện ở hai tầng khác nhau với kích thước thước lần lượt là 8x8 và 4x4. Thay vì sử dụng một hộp giới hạn và thay đổi kích thước để phù hợp với vật thể thì SSD sử dụng nhiều box trên nhiều tầng, từ đó tổng hợp ra vị trí và kích thước của hộp cần xác định. Với việc loại bỏ đi vùng đề xuất khu vực, SSD sẽ đạt tốc độ xử lí cao hơn các Faster-RCNN.
-	SSD sử dụng mô mạng CNN duy nhất, kiến trúc gồm hai phần với một mạng cơ sở có thể là VGG16, ResNet hay MobileNet được loại bỏ tầng kết nối đầy đủ có nhiệm vụ trích xuất ra các bản đồ đặc trưng.
-	Một tập hợp các tầng tích chập phụ trợ để thay thế cho tầng kết nối bị loại bỏ. Các lớp này giảm dần kích thước không gian trong khi tăng số lượng kênh (kênh đặc trưng). hiết kế này cho phép SSD tạo ra các bản đồ đặc trưng ở nhiều tỷ lệ. Bản đồ đặc trưng của mỗi thang đo phù hợp để phát hiện các vật thể có kích thước khác nhau.
-	Sau đó SSD liên kết các hộp neo mặc định được xác định trước với các bản đồ đặc trưng như đã đề cập ở trên.
-	Kiến trúc được thể hiện ở hình \ref{fig:ssd2}
+Bằng việc tính toán các hộp giới hạn trên các bản đồ đặc trưng khác nhau, tại mỗi tầng chứa bản đồ đặc trưng, mỗi hộp giới hạn sẽ xác định được một phần hình ảnh với kích thước khác nhau. Như trên Hình, con mèo và con chó có thể được phát hiện ở hai tầng khác nhau với kích thước thước lần lượt là 8x8 và 4x4. Thay vì sử dụng một hộp giới hạn và thay đổi kích thước để phù hợp với vật thể thì SSD sử dụng nhiều box trên nhiều tầng, từ đó tổng hợp ra vị trí và kích thước của hộp cần xác định. Với việc loại bỏ đi vùng đề xuất khu vực, SSD sẽ đạt tốc độ xử lí cao hơn các Faster-RCNN.
+SSD sử dụng mô mạng CNN duy nhất, kiến trúc gồm hai phần với một mạng cơ sở có thể là VGG16, ResNet hay MobileNet được loại bỏ tầng kết nối đầy đủ có nhiệm vụ trích xuất ra các bản đồ đặc trưng.
+Một tập hợp các tầng tích chập phụ trợ để thay thế cho tầng kết nối bị loại bỏ. Các lớp này giảm dần kích thước không gian trong khi tăng số lượng kênh (kênh đặc trưng). hiết kế này cho phép SSD tạo ra các bản đồ đặc trưng ở nhiều tỷ lệ. Bản đồ đặc trưng của mỗi thang đo phù hợp để phát hiện các vật thể có kích thước khác nhau.
+Sau đó SSD liên kết các hộp neo mặc định được xác định trước với các bản đồ đặc trưng như đã đề cập ở trên.
+Kiến trúc được thể hiện ở hình \ref{fig:ssd2}
 }
 
 \begin{figure}[H]
@@ -601,9 +617,9 @@ Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên l
 \end{figure}
 
 {\fontsize{13}{12} \selectfont
-	SSD nổi bật nhờ hiệu suất thời gian thực, sự đơn giản và sự cân bằng tốt giữa độ chính xác và tốc độ. Nó rất phù hợp cho nhiều ứng dụng, đặc biệt là những ứng dụng yêu cầu phát hiện đối tượng hiệu quả trong các tình huống thời gian thực hoặc gần thời gian thực.
-	Tuy nhiên mô hình SSD vẫn gặp một số thách thức với các vật thể nhỏ, các vật thể bị chồng chéo lên nhau với các nền phức tạp vì sử dụng những hộp neo mặc định.
-	Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua tốc độ có thể ưu tiên sử dụng các phương pháp phát hiện đối tượng chính xác hơn.
+SSD nổi bật nhờ hiệu suất thời gian thực, sự đơn giản và sự cân bằng tốt giữa độ chính xác và tốc độ. Nó rất phù hợp cho nhiều ứng dụng, đặc biệt là những ứng dụng yêu cầu phát hiện đối tượng hiệu quả trong các tình huống thời gian thực hoặc gần thời gian thực.
+Tuy nhiên mô hình SSD vẫn gặp một số thách thức với các vật thể nhỏ, các vật thể bị chồng chéo lên nhau với các nền phức tạp vì sử dụng những hộp neo mặc định.
+Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua tốc độ có thể ưu tiên sử dụng các phương pháp phát hiện đối tượng chính xác hơn.
 }
 
 \subsection{Mô hình RetinaNet}
@@ -640,13 +656,13 @@ Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên l
 \end{figure}
 
 {\fontsize{13}{12} \selectfont
-	RetinaNet là sự kết hợp giữa các mạng bao gồm backbone và mạng con. Dữ
-	liệu đầu vào của RetinaNet được đưa qua mô hình mạng có tên là FPN \cite{lin2017feature} nhằm rút trích các ma trận đặc trưng với
-	cùng một tỉ lệ nhưng theo nhiều kích thước khác nhau. Sau đó từ ma trận đặc trưng mới bắt đầu tính toán các vùng để
-	xuất. Cuối cùng các vùng đề xuất được đưa qua hai mạng phụ để tính ra vị trí của các hộp giới và lớp của đối
-	tượng mà hộp đó bao quanh. Hình \ref{fig:retinanet} mô tả kiến trúc của Retinanet gồm hai phần. Phần backbone là
-	là một trích xuất đặc trưng kết hợp giữa Resnet + FPN. Phần mạng con dùng để phân lớp và
-	xác định vị trí hộp giới hạn.
+RetinaNet là sự kết hợp giữa các mạng bao gồm backbone và mạng con. Dữ
+liệu đầu vào của RetinaNet được đưa qua mô hình mạng có tên là FPN \cite{lin2017feature} nhằm rút trích các ma trận đặc trưng với
+cùng một tỉ lệ nhưng theo nhiều kích thước khác nhau. Sau đó từ ma trận đặc trưng mới bắt đầu tính toán các vùng để
+xuất. Cuối cùng các vùng đề xuất được đưa qua hai mạng phụ để tính ra vị trí của các hộp giới và lớp của đối
+tượng mà hộp đó bao quanh. Hình \ref{fig:retinanet} mô tả kiến trúc của Retinanet gồm hai phần. Phần backbone là
+là một trích xuất đặc trưng kết hợp giữa Resnet + FPN. Phần mạng con dùng để phân lớp và
+xác định vị trí hộp giới hạn.
 }
 
 \begin{figure}[H]
@@ -676,15 +692,15 @@ Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên l
 \end{figure}
 
 {\fontsize{13}{12} \selectfont
-	Trong hình \ref{fig:iou} có khung màu đỏ là nhãn thực hay còn gọi là hộp giới hạn
-	được gán nhãn, khung màu xanh là nhãn dự đoán hay còn gọi là hộp giới hạn được mô hình dự đoán.
-	Kết quả của Iou sẽ có giá trị trong khoảng 0 đến 1 với mỗi lần phát hiện có giá trị riêng. Để xác định là phát hiện đúng hoặc phát hiện sai, chúng ta phải dựa vào ngưỡng cho trước.
-	Thông thường với các mô hình phát hiện đôi tượng, chỉ số $IoU > 50\%$ được xem là dự đoán có đối tượng. Dựa vào khái niệm trên ta có các định nghĩa sau:
-	\begin{itemize}
-		\item True Positive (TP): IoU lớn hơn hoặc bằng ngưỡng, là một dự đoán đúng.
-		\item False Positive (FP): IoU bé hơn ngưỡng, là một dự đoán sai.
-		\item False Negative (FN): trường hợp mà hộp giới hạn đúng nhưng không có hộp dự đoán.
-	\end{itemize}
+Trong hình \ref{fig:iou} có khung màu đỏ là nhãn thực hay còn gọi là hộp giới hạn
+được gán nhãn, khung màu xanh là nhãn dự đoán hay còn gọi là hộp giới hạn được mô hình dự đoán.
+Kết quả của Iou sẽ có giá trị trong khoảng 0 đến 1 với mỗi lần phát hiện có giá trị riêng. Để xác định là phát hiện đúng hoặc phát hiện sai, chúng ta phải dựa vào ngưỡng cho trước.
+Thông thường với các mô hình phát hiện đôi tượng, chỉ số $IoU > 50\%$ được xem là dự đoán có đối tượng. Dựa vào khái niệm trên ta có các định nghĩa sau:
+\begin{itemize}
+	\item True Positive (TP): IoU lớn hơn hoặc bằng ngưỡng, là một dự đoán đúng.
+	\item False Positive (FP): IoU bé hơn ngưỡng, là một dự đoán sai.
+	\item False Negative (FN): trường hợp mà hộp giới hạn đúng nhưng không có hộp dự đoán.
+\end{itemize}
 }
 
 \subsection{Phương pháp đánh giá độ chính xác, độ nhạy, độ chính xác trung bình}
@@ -711,8 +727,8 @@ Yolov6 sử dụng một biến thể của kiến trúc EfficientNet có tên l
 \end{figure}
 
 {\fontsize{13}{12} \selectfont
-	Khi bắt đầu thay đổi ngưỡng IoU, các giá trị precision và recall sẽ được tính để tạo ra đường cong được gọi là Precision Recall Curve tương tự hình \ref{fig:ap}.
-	Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tích vùng màu xanh ở hình \ref{fig:ap}. AP càng lớn thể hiện việc precision và recall càng cao với các ngưỡng IoU khác nhau, đồng nghĩa với mô hình tốt.
+Khi bắt đầu thay đổi ngưỡng IoU, các giá trị precision và recall sẽ được tính để tạo ra đường cong được gọi là Precision Recall Curve tương tự hình \ref{fig:ap}.
+Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tích vùng màu xanh ở hình \ref{fig:ap}. AP càng lớn thể hiện việc precision và recall càng cao với các ngưỡng IoU khác nhau, đồng nghĩa với mô hình tốt.
 }
 
 \bigskip
