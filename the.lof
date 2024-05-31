@@ -34,16 +34,20 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục nhỏ}}}}{34}{subfigure.4.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Tỉ lệ nền}}}}{34}{subfigure.4.3}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Ví dụ về bộ dữ liệu thu thập}}{37}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Kiến trúc mô hình Yolov7}}{39}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Kiến trúc mô hình Yolov8 trên github được đóng góp bởi RangeKing}}{40}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Kiến trúc mô hình SSD MobileNetv2}}{41}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sơ đồ hệ thống}}{42}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Kiến trúc mô hình Yolov7}}{39}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Kiến trúc mô hình Yolov8 trên github được đóng góp bởi RangeKing}}{40}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Kiến trúc mô hình SSD MobileNetv2}}{41}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sơ đồ hệ thống}}{42}{figure.caption.47}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả thực nghiệm 1}}{44}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình Yolov8n ở Thực nghiệm 1}}{45}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Kết quả dự đoán trên tập xác thực của mô hình Yolov8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{45}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2}}{46}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình Yolov8n ở Thực nghiệm 2}}{47}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3}}{48}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình Yolov8n ở Thực nghiệm 3}}{48}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả thực nghiệm 1}}{44}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình Yolov8n ở Thực nghiệm 1}}{45}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Kết quả dự đoán của mô hình Yolov8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{45}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2}}{46}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình Yolov8n ở Thực nghiệm 2}}{47}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3}}{48}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình Yolov8n ở Thực nghiệm 3}}{48}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{50}{figure.caption.61}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{50}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{50}{subfigure.8.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{50}{subfigure.8.3}%
 \addvspace {10\p@ }

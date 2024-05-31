@@ -108,17 +108,14 @@ K.~Ahmad, K.~Khan, and A.~Al-Fuqaha, ``Intelligent fusion of deep features for
   improved waste classification,'' \emph{IEEE access}, vol.~8, pp.
   96\,495--96\,504, 2020.
 
-\bibitem{simonyan2014very}
-K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
-  large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
-
-\bibitem{nhung2021nghien}
-{\DJ}.~T. Nhung, N.~T.~D. My, P.~V. Mạnh, P.~V. {\DJ}{\^o}ng, B.~Q.
-  Th{\`a}nh, N.~V. Tuấn, and P.~M. Hải, ``Nghi{\^e}n cứu m{\^o} h{\`\i}nh
-  ph{\'a}t hiện r{\'a}c thải nhựa ven biển sử dụng ảnh m{\'a}y
-  bay kh{\^o}ng người l{\'a}i v{\`a} mạng nơ-ron t{\'\i}ch chập
-  s{\^a}u,'' \emph{Tạp ch{\'\i} Khoa học {\DJ}o {\dj}ạc v{\`a} Bản
-  {\dj}ồ}, no.~49, pp. 21--29, 2021.
+\bibitem{Majchrowska_2022}
+\BIBentryALTinterwordspacing
+S.~Majchrowska, A.~Mikołajczyk, M.~Ferlin, Z.~Klawikowska, M.~A. Plantykow,
+  A.~Kwasigroch, and K.~Majek, ``Deep learning-based waste detection in natural
+  and urban environments,'' \emph{Waste Management}, vol. 138, p. 274–284,
+  Feb. 2022. [Online]. Available:
+  \url{http://dx.doi.org/10.1016/j.wasman.2021.12.001}
+\BIBentrySTDinterwordspacing
 
 \bibitem{9122693}
 B.~D. Carolis, F.~Ladogana, and N.~Macchiarulo, ``Yolo trashnet: Garbage
@@ -130,14 +127,17 @@ M.~Fulton, J.~Hong, M.~J. Islam, and J.~Sattar, ``Robotic detection of marine
   litter using deep visual detection models,'' in \emph{2019 International
   Conference on Robotics and Automation (ICRA)}, 2019, pp. 5752--5758.
 
-\bibitem{Majchrowska_2022}
-\BIBentryALTinterwordspacing
-S.~Majchrowska, A.~Mikołajczyk, M.~Ferlin, Z.~Klawikowska, M.~A. Plantykow,
-  A.~Kwasigroch, and K.~Majek, ``Deep learning-based waste detection in natural
-  and urban environments,'' \emph{Waste Management}, vol. 138, p. 274–284,
-  Feb. 2022. [Online]. Available:
-  \url{http://dx.doi.org/10.1016/j.wasman.2021.12.001}
-\BIBentrySTDinterwordspacing
+\bibitem{simonyan2014very}
+K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
+  large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem{nhung2021nghien}
+{\DJ}.~T. Nhung, N.~T.~D. My, P.~V. Mạnh, P.~V. {\DJ}{\^o}ng, B.~Q.
+  Th{\`a}nh, N.~V. Tuấn, and P.~M. Hải, ``Nghi{\^e}n cứu m{\^o} h{\`\i}nh
+  ph{\'a}t hiện r{\'a}c thải nhựa ven biển sử dụng ảnh m{\'a}y
+  bay kh{\^o}ng người l{\'a}i v{\`a} mạng nơ-ron t{\'\i}ch chập
+  s{\^a}u,'' \emph{Tạp ch{\'\i} Khoa học {\DJ}o {\dj}ạc v{\`a} Bản
+  {\dj}ồ}, no.~49, pp. 21--29, 2021.
 
 \bibitem{Papert1966TheSV}
 \BIBentryALTinterwordspacing

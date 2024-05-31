@@ -1,6 +1,6 @@
 \contentsline {chapter}{\numberline {1}\centering GIỚI THIỆU}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Đặt vấn đề}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Mục tiêu của đề tài}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Mục tiêu của đề tài}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Phạm vi của luận văn}{2}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Bố cục luận văn}{2}{section.1.4}%
 \contentsline {chapter}{\numberline {2}\centering CƠ SỞ LÝ THUYẾT}{3}{chapter.2}%
@@ -15,7 +15,7 @@
 \contentsline {section}{\numberline {2.5}Các mô hình phát hiện đối tượng hai giai đoạn }{9}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Mô hình R-CNN}{9}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}Mô hình Fast R-CNN}{10}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Mô hình Fast R-CNN}{11}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.3}Mô hình Faster R-CNN}{11}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}Các mô hình phát hiện đối tượng một giai đoạn}{13}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Mô hình Yolo}{13}{subsection.2.6.1}%
 \contentsline {subsubsection}{\numberline {2.6.1.1}Yolo}{14}{subsubsection.2.6.1.1}%
@@ -40,14 +40,14 @@
 \contentsline {section}{\numberline {3.2}Các mô hình sử dụng}{38}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Mô hình Yolov7}{38}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Mô hình Yolov8}{39}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Mô hình SSD MobileNetV2}{40}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Mô hình SSD MobileNetv2}{40}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{41}{section.3.3}%
 \contentsline {chapter}{\numberline {4}\centering KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{43}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{43}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{45}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Thảo luận}{48}{section.4.3}%
-\contentsline {chapter}{\numberline {5}\centering KẾT LUẬN VÀ ĐỀ XUẤT}{51}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kết luận}{51}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{51}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{51}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{51}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {5}\centering KẾT LUẬN VÀ ĐỀ XUẤT}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kết luận}{52}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{52}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{52}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{52}{subsection.5.2.2}%

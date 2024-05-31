@@ -63,6 +63,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	Nhóm nghiên cứu sử dụng mô hình Mask R-CNN để huấn luyện và đạt được kết quả 26.2\% phát hiện và 17.6\% với khả năng phát hiện và phân loại rác.
 	Vì độ đa dạng của đối tượng cũng như hình nền, mô hình của nhóm tác giả dễ bị phát hiện nhầm giữa đối tượng và nền hoặc bỏ sót đi các vật thể nhỏ. Tuy vậy, nhóm tác giả cũng tin tưởng rằng bộ dữ liệu sẽ mang vấn đề tích cực và mong cộng đồng cùng chung tay xây dựng tập dữ liệu tốt hơn.
 }
+
 \bigskip
 
 {\fontsize{13}{12} \selectfont
@@ -74,6 +75,8 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 }
 
+\bigskip
+
 {\fontsize{13}{12} \selectfont
 	Fulton cùng các cộng sự \cite{8793975} đã sử dụng tập dữ liệu Trash-ICRA19 về rác thải biển. Tập dữ liệu gồm 5,700 hình ảnh được trích xuất từ video được quay dưới đáy biển với độ sâu khác nhau,
 	cung cấp nhiều vật thể ở các trạng thái đã phân hủy hoặc bị vùi lắp.
@@ -82,6 +85,8 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	Faster R-CNN là sự lựa chọn hoàn hảo dựa vào độ chính xác, tuy nhiên lại rất chậm. Yolov2 đạt được sự cân bằng cả hai trong khi SSD cho thấy hiệu quả về tốc độ.
 
 }
+
+\bigskip
 
 {\fontsize{13}{12} \selectfont
 
@@ -100,31 +105,34 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	sau đó được mô hình huấn luyện từ trước để nhận dạng các đối tượng trong ảnh.
 	Tuy vẫn chưa thể chính xác được như thị giác của con người nhưng đã có rất nhiều ứng dụng hữu ích, điểm hình như điểm danh bằng khuôn mặt, phát hiện các bệnh bằng chuẩn đoán hình ảnh, công nghệ xe tự hành.
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\textwidth]{computer_vision.PNG}
-		\caption{Hệ thống thị giác của con người và máy tính}
-		\label{fig:computer_vision}
-	\end{figure}}
+
+}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{computer_vision.PNG}
+	\caption{Hệ thống thị giác của con người và máy tính}
+	\label{fig:computer_vision}
+\end{figure}
 
 {\fontsize{13}{12} \selectfont
-	Năm 1966, dự án mang tên "Summer Vision Project" \cite{Papert1966TheSV} của Seymour Papert và Marvin Minsky  đã mở đầu cho việc nghiên cứu về thị giác máy tính sau khi nỗ lực trong hai tháng để tạo ra một hệ thống máy tính có thể
-	nhận dạng các vật thể trong ảnh. Từ đó đến nay, thị giác máy tính đã phát triển vượt bậc để thực hiện được những tác vụ phổ biến như:
+Năm 1966, dự án mang tên "Summer Vision Project" \cite{Papert1966TheSV} của Seymour Papert và Marvin Minsky  đã mở đầu cho việc nghiên cứu về thị giác máy tính sau khi nỗ lực trong hai tháng để tạo ra một hệ thống máy tính có thể
+nhận dạng các vật thể trong ảnh. Từ đó đến nay, thị giác máy tính đã phát triển vượt bậc để thực hiện được những tác vụ phổ biến như:
 
-	\begin{itemize}
-		\item Phân loại hình ảnh: Phân loại hình ảnh cho phép máy tính quan sát và phân loại chính xác một hình ảnh thuộc loại nào.
-		      Ví dụ là camera có thể nhận diện khuôn mặt trong ảnh.
-		\item Phát hiện đối tượng: Xác định và phân loại các vật thể khác nhau trong hình ảnh hoặc video bằng ô bao quanh đối tượng (Bbox). Ví dụ phát hiện cây cối hay con người.
-		\item Theo dõi đối tượng: Theo dõi đối tượng sử dụng mô hình học sâu để xác định và theo dõi các mục tiêu. Ví dụ giám sát giao thông tại cái điểm có đèn giao thông.
-		\item Phân đoạn: Xác định đối tượng bằng cách chia nhỏ đối tượng thành các vùng khác nhau dựa trên các điểm ảnh quan sát được. Khác với nhận dạng đối tượng, phân đoạn sẽ xác định hình dạng cụ thể của đối tượng.
-		\item Truy xuất hình ảnh dựa trên nội dung: có khả năng tìm kiếm các hình ảnh kỹ thuật số cụ thể trong cơ sở dữ liệu lớn.
-	\end{itemize}
+\begin{itemize}
+	\item Phân loại hình ảnh: Phân loại hình ảnh cho phép máy tính quan sát và phân loại chính xác một hình ảnh thuộc loại nào.
+	      Ví dụ là camera có thể nhận diện khuôn mặt trong ảnh.
+	\item Phát hiện đối tượng: Xác định và phân loại các vật thể khác nhau trong hình ảnh hoặc video bằng ô bao quanh đối tượng (Bbox). Ví dụ phát hiện cây cối hay con người.
+	\item Theo dõi đối tượng: Theo dõi đối tượng sử dụng mô hình học sâu để xác định và theo dõi các mục tiêu. Ví dụ giám sát giao thông tại cái điểm có đèn giao thông.
+	\item Phân đoạn: Xác định đối tượng bằng cách chia nhỏ đối tượng thành các vùng khác nhau dựa trên các điểm ảnh quan sát được. Khác với nhận dạng đối tượng, phân đoạn sẽ xác định hình dạng cụ thể của đối tượng.
+	\item Truy xuất hình ảnh dựa trên nội dung: có khả năng tìm kiếm các hình ảnh kỹ thuật số cụ thể trong cơ sở dữ liệu lớn.
+\end{itemize}
 }
 
 {\fontsize{13}{12} \selectfont
 
-	Mạng nơ-ron truyền thống (Neural Network) hoạt động không thực sự hiệu quả với dữ liệu đầu vào là hình ảnh vì các pixel liền kề có sự phụ thuộc lẫn nhau.
-	việc biến đổi thành vector sẽ mất đi tính phụ thuộc, thay đổi ý nghĩa hình ảnh hoặc đòi hỏi dữ liệu lớn để huấn luyện.
+Mạng nơ-ron truyền thống (Neural Network) hoạt động không thực sự hiệu quả với dữ liệu đầu vào là hình ảnh vì các pixel liền kề có sự phụ thuộc lẫn nhau.
+việc biến đổi thành vector sẽ mất đi tính phụ thuộc, thay đổi ý nghĩa hình ảnh hoặc đòi hỏi dữ liệu lớn để huấn luyện.
 
 }
 
@@ -171,7 +179,7 @@ Bộ lọc ở những lớp tích chập đầu tiên sẽ dùng để phát hi
 {\fontsize{13}{12} \selectfont
 	Phép toán tích chập chỉ là một phép toán tuyến tính nên cần bổ sung thêm yếu tố phi tuyến tính để đảm bảo CNN giải quyết được nhiều vấn đề.
 	Hàm kích hoạt sẽ được đặt sau lớp tích chập.
-	Hàm ReLu \cite{nair2010rectified} là hàm kích hoạt phổ biến được sử dụng cho CNN  \ref{fig:relu}. Trước khi hàm ReLU được áp dụng thì những hàm như sigmoid hay tanh mới là những hàm được sử dụng phổ biến.
+	Hàm ReLu \cite{nair2010rectified} là hàm kích hoạt phổ biến được sử dụng cho CNN  \ref{fig:relu}. Trước khi hàm ReLu được áp dụng thì những hàm như sigmoid hay Tanh mới là những hàm được sử dụng phổ biến.
 	Relu được ưu chuộng vì tính đơn giản (lọc và thay thế các giá trị âm bằng 0), tăng độ thưa thớt của mạng và giảm vấn đề quá khớp \cite{caruana2000overfitting}.
 	Ngoài ra ReLu cũng có tốc độ hội tụ nhanh hơn gấp 6 lần Tanh \cite{krizhevsky2012imagenet}.
 }
@@ -220,7 +228,7 @@ Bộ lọc ở những lớp tích chập đầu tiên sẽ dùng để phát hi
 }
 \subsection{Thuật toán Histrogram of oriented gradient (HOG)}
 {\fontsize{13}{12} \selectfont
-	HOG là một trong những phương pháp phát hiện đối tượng lâu đời nhất \cite{dalal2005histograms}. Nó được giới thiệu lần đàu vào năm 1986,
+	HOG là một trong những phương pháp phát hiện đối tượng lâu đời nhất \cite{dalal2005histograms}. Nó được giới thiệu lần đầu vào năm 1986,
 	tuy nhiên đến năm 2005 mới được bổ sung và sử dụng rộng rãi. HOG hoạt động trên một cửa sổ, là vùng có kích thước pixel cố định trên hình ảnh. Một cửa sổ được chia thành các vùng không gian nhỏ, được gọi là một khối và một khối còn được chia thành nhiều ô.
 	Thuật toán sẽ tính toán độ lớn và hướng của độ dốc trong ô và tạo biểu đồ về hướng của độ dốc. Sau đó các biểu đồ trong cùng một khối sẽ được nối với nhau.
 	Kết quả sau bước chuẩn hóa sẽ là một vector đặc trưng có tính bất biến đối với các thay đổi về điều kiện ánh sáng.
@@ -242,7 +250,7 @@ Bộ lọc ở những lớp tích chập đầu tiên sẽ dùng để phát hi
  {\fontsize{13}{12} \selectfont
   Các mô hình phát hiện đối tượng hai giai đoạn sẽ có bước đầu tiên là sử dụng mạng thiết kế khu vực để tạo ra các khu vực quan tâm có xác suất cao là đối tượng.
   Bước thứ hai là phát hiện đối tượng, thực hiện phân loại cuối cùng và định vị hộp giới hạn của các đối tượng.
-  Các mô hình hai giai đoạn được dùng để giải quyết các bài toán định vị và nhận dạng đối tượng tĩnh (hình ảnh) do yêu cầu cao về độ chính xác nhưng không yêu cầu quá cao về tốc độ.
+  Các mô hình hai giai đoạn được dùng để giải quyết các bài toán định vị và nhận dạng đối tượng tĩnh (xem Hình ảnh) do yêu cầu cao về độ chính xác nhưng không yêu cầu quá cao về tốc độ.
   Các mô hình tiêu biểu gồm các mô hình thuộc họ RCNN.
  }
 
@@ -265,7 +273,7 @@ Bộ lọc ở những lớp tích chập đầu tiên sẽ dùng để phát hi
 Hình \ref{fig:rcnn} cho thấy mô hình R-CNN cụ thể gồm những bước như sau:
 \begin{itemize}
 	\item Thực hiện tìm kiếm chọn lọc để trích xuẩt ra các vùng đề xuất của hình ảnh dựa vào việc hợp nhất các vùng có các đặc trưng tương tự như kết cấu, màu sắc và đường viền. Mỗi vùng đề xuất này có hoặc không chứa vật thể và được bao bởi các hộp giới hạn.
-	\item Chọn một CNN được đào tạo trước không gồm lớp phân loại, ở bài báo của tác giả xử dụng mô hình AlexNet. Các vùng đề xuất sẽ được thay đổi kích thước đề phù hợp vơi mạng CNN đã chọn (224x224 vơi AlexNet).
+	\item Chọn một CNN được đào tạo trước không gồm lớp phân loại, ở bài báo của tác giả xử dụng mô hình AlexNet. Các vùng đề xuất sẽ được thay đổi kích thước đề phù hợp với mạng CNN đã chọn (224x224 vơi AlexNet).
 	\item Nhận được một vector đặc trưng của đối tượng khi đưa các vùng đề xuất vào mạng CNN.
 	\item Vector đặc trưng trên sẽ được đào tạo qua mô hình SVM để gán nhãn.
 	\item Ngoài việc phân loại đối tượng, R-CNN còn thực hiện hồi quy hộp giới hạn. Đối với mỗi lớp, một mô hình hồi quy riêng biệt được đào tạo để tinh chỉnh vị trí và kích thước của hộp giới hạn xung quanh đối tượng được phát hiện. Hồi quy hộp giới hạn giúp cải thiện độ chính xác của bằng cách điều chỉnh hộp giới hạn được đề xuất ban đầu để phù hợp hơn với ranh giới thực tế của đối tượng.
@@ -274,7 +282,7 @@ Hình \ref{fig:rcnn} cho thấy mô hình R-CNN cụ thể gồm những bước
 
 {\fontsize{13}{12} \selectfont
 Tuy đạt được hiệu quả ở độ chính xác khi phát hiện đối tượng và không bị ảnh hưởng bởi các đối tượng có tỉ lệ, kích thước khác nhau.
-Nhưng mô hình R-CNN bị hạn chế bơi khả năng phức tạp ở tính toán, có quá nhiều thành phần độc lập làm việc tuần tự kéo làm thời gian huấn luyện mô hình chậm.
+Nhưng mô hình R-CNN bị hạn chế bởi khả năng phức tạp ở tính toán, có quá nhiều thành phần độc lập làm việc tuần tự kéo làm thời gian huấn luyện mô hình chậm.
 }
 
 \subsection{Mô hình Fast R-CNN}
@@ -303,7 +311,7 @@ Nhưng mô hình R-CNN bị hạn chế bơi khả năng phức tạp ở tính 
 \bigskip
 
 {\fontsize{13}{12} \selectfont
-	Tuy đã giải quyết được những vấn đề hạn chế của R-CNN như giảm thời gian rất nhiều (giảm gần 10 lần), Fast R-CNN vẫn còn sử dụng tìm kiếm chọn lọc để tạo ra các vùng đề xuất nên làm giới hạn hiệu suất của Fast R-CNN. Việc này rất dễ nhìn thấy hình \ref{fig:timefastrcnn},
+	Tuy đã giải quyết được những vấn đề hạn chế của R-CNN như giảm thời gian rất nhiều (giảm gần 10 lần), Fast R-CNN vẫn còn sử dụng tìm kiếm chọn lọc để tạo ra các vùng đề xuất nên làm giới hạn hiệu suất của Fast R-CNN. Việc này được thể hiện ở Hình \ref{fig:timefastrcnn},
 	thời gian thử nghiệm lên tới 2 giây nên không đảm bảo áp dụng cho phát hiện đối tượng ở thời gian thực.
 }
 
@@ -314,12 +322,12 @@ Nhưng mô hình R-CNN bị hạn chế bơi khả năng phức tạp ở tính 
 	\label{fig:timefastrcnn}
 \end{figure}
 
-\subsection{Mô hình Fast R-CNN}
+\subsection{Mô hình Faster R-CNN}
 {\fontsize{13}{12} \selectfont
 
 	Faster R-CNN là mô hình cải thiện được nhược điểm của các mô hình tiền nhiệm trong họ R-CNN. Mô hình được đề xuất bởi
 	Shaoqing Ren và các cộng sự tại Microsoft Research \cite{ren2016faster} đã
-	đạt kết quả tốt về tốc độ huấn luyện và phát hiện. Tương tự như Fast R-CNN, nó sử dụng mạng CNN để trích xuất feature map.
+	đạt kết quả tốt về tốc độ huấn luyện và phát hiện. Tương tự như Fast R-CNN, nó sử dụng mạng CNN để trích xuất bản đồ đặc trưng.
 	Tuy nhiên thay vì sử dụng tìm kiếm chọn lọc để xác định các vùng đề xuất thì Faster R-CNN sử dụng mạng đề xuất vùng (RPN) để dự đoán các vùng có khả năng chứa đối tượng của ảnh.
 	Sau khi thực hiện RPN, các bước xử lý sau tương tự như Fast-RCNN nhưng nhanh hơn.
 }
@@ -338,11 +346,11 @@ Nhưng mô hình R-CNN bị hạn chế bơi khả năng phức tạp ở tính 
 \end{figure}
 
 {\fontsize{13}{12} \selectfont
-Mạng RPN (Hình \ref{fig:rpn}) sẽ được dùng để đề xuất các vùng khả năng cao chứa đối tượng thay cho thuật toán tìm kiếm chọn lọc.
+Mạng RPN (xem Hình \ref{fig:rpn}) sẽ được dùng để đề xuất các vùng khả năng cao chứa đối tượng thay cho thuật toán tìm kiếm chọn lọc.
 Mạng này bao gồm các lớp tích hợp mà từ đó chúng ta có thể thu được các đặc trưng cần thiết thông qua từng lớp tích chập liên tiếp nhau.
 Để đưa ra các vùng đặc trưng, chúng ta sử dụng các hộp neo với các tỉ lệ, kích thước và độ lớn khác nhau. Đối với mỗi hộp neo tại RPN, chúng ta thực hiện phân lớp nhị phân để phân loại vùng chọn đó có khả năng chứa đối tượng hay không và dự đoán ra các hộp giới hạn đối tượng tương ứng.
 Để xác định một hộp neo có chứa đối tượng cần phải so sánh với các hộp dự đoán thật, nếu điểm của khu vực cao hơn ngưỡng trên được xem là mẫu có đối tượng, thấp hơn ngưỡng dưới là mẫu không có đối tượng, còn những điểm trong khoảng thì bỏ qua, ở bài viết ngưỡng trên và dưới lần lượt là 0.7 và 0.3.
-Các vùng đề xuất này tiếp tục đi qua lớp ROI để cố định kích thước đầu ra, sau đó phần xử lí tiếp theo tương tự như Fast-RCNN (Hình \ref{fig:fasterrcnn}).
+Các vùng đề xuất này tiếp tục đi qua lớp ROI để cố định kích thước đầu ra, sau đó phần xử lí tiếp theo tương tự như Fast-RCNN (xem Hình \ref{fig:fasterrcnn}).
 Với việc chia sẽ trọng số của mạng RPN và mạng Fast-RCNN. Faster R-CNN cho phép hệ thống phát hiện đối tượng đạt độ chính xác cao và chạy ở khung hình gần như thời gian thực.
 }
 
@@ -369,7 +377,7 @@ Do đó, các mô hình phát hiện hai giai đoạn chủ yếu được sử 
   \subsection{Mô hình Yolo}}
  {\fontsize{13}{12} \selectfont
   Yolo - “You only look once” \cite{redmon2016look} là mô hình phát hiện đối tượng một giai đoạn được giới thiệu lần đầu vào năm 2015 và hiện có nhiều phiên bản cải tiến theo thời gian,
-  nổi bật như Yolo, Yolov2, Yolov3, Yolov5, Yolov7 và gần nhất là Yolov8 (Hình \ref{fig:timelimeyolo}). Các mô hình Yolo không phải là thuật toán tốt nhất về độ chính xác nhưng luôn đảm bảo về tốc độ, phù hợp để xử lí các tác vụ thời gian thực.
+  nổi bật như Yolo, Yolov2, Yolov3, Yolov5, Yolov7 và gần nhất là Yolov8 (xem Hình \ref{fig:timelimeyolo}). Các mô hình Yolo không phải là thuật toán tốt nhất về độ chính xác nhưng luôn đảm bảo về tốc độ, phù hợp để xử lí các tác vụ thời gian thực.
  }
 
 \begin{figure}[H]
@@ -381,7 +389,7 @@ Do đó, các mô hình phát hiện hai giai đoạn chủ yếu được sử 
 
 \subsubsection{Yolo}
 {\fontsize{13}{12} \selectfont
-	Phương pháp chính dựa trên một mạng nơ ron duy nhất được huấn luyện dạng mô hình từ đầu cuối.
+	Phương pháp chính dựa trên một mạng nơ-ron duy nhất được huấn luyện dạng mô hình từ đầu cuối.
 	Mô hình lấy input là một bức ảnh và dự đoán các hộp giới hạn và nhãn lớp cho mỗi hộp đó.
 	Do không sử dụng các vùng đề xuất nên kỹ thuật này có độ chính xác thấp hơn do có thể bị nhiều lỗi định vị vật thể,
 	Yolo có thể hoạt động ở tốc độ 45 khung hình/giây (fps) và tối đa 155 fps cho phiên bản tối ưu hóa tốc độ. Tốc độ này còn nhanh hơn cả tốc độ khung hình của máy quay phim thông thường chỉ vào khoảng 24 fps.
@@ -437,7 +445,7 @@ Có thể dễ dàng nhận thấy rằng toàn bộ mạng Yolo à không có b
 	đối của neo và ô lưới để làm cho neo không bị lệch khỏi tâm của đối tượng. Điều này
 	làm cho mạng ổn định hơn và dễ hội tụ hơn. Hơn thế nữa, Yolov2 có kích thước bản đồ đặc trưng là $13 \times 13$ đủ để phát hiện các đối tượng có kích thước lớn và khắc phục nhược điểm của Yolo là khó khắn trong việc nhận dạng các vật thể nhỏ
 	bằng cách đưa vào các lớp chuyển tiếp để nối các bản đồ đặc trưng của lớp trước đó với các bản đồ đặc trưng của các lớp sau ở kích thước $26
-		times 26$. Điều đặc biệt của Yolov2 mang lại là một kiến trúc mạng mới được gọi là Darknet-19.
+		\times 26$. Điều đặc biệt của Yolov2 mang lại là một kiến trúc mạng mới được gọi là Darknet-19.
 	Mạng bao gồm 19 lớp tích chập và 5 lớp gộp lấy giá trị lớn nhất, đồng thời loại bỏ tầng kết nối đầy đủ, việc này làm tăng đáng kể tốc độ của mạng.
 	Hình \ref{fig:yolov2} dưới đây mô tả kiến trúc cụ thể của Darknet-19.
 }
@@ -472,10 +480,10 @@ Có thể dễ dàng nhận thấy rằng toàn bộ mạng Yolo à không có b
 	Yolov4 là phiên bản thứ tư của thuật toán phát hiện đối tượng họ Yolo được giới thiệu vào năm 2020 \cite{bochkovskiy2020yolov4} như một cải tiến so với Yolov3 bằng cách áp dụng các phương pháp hiện đại.
 	Trong đó có kỹ thuật Bag of Freebies (BoF) là các kỹ thuật giúp cải thiện độ chính xác của mô hình trong quá trình đào tạo mà không làm tăng chi phí tính toán.
 	Tăng cường dữ liệu là một kỹ thuật BoF phổ biến được sử dụng trong phát hiện đối tượng, giúp tăng tính biến đổi của hình ảnh đầu vào để cải thiện độ tin cậy của mô hình. Một số ví dụ về tăng cường dữ liệu bao gồm biến dạng trắc quang (điều chỉnh độ sáng, độ tương phản, màu sắc, độ bão hòa và nhiễu của hình ảnh) và biến dạng hình học (thêm tỷ lệ ngẫu nhiên, cắt xén, lật và xoay). Những kỹ thuật này giúp mô hình khái quát hóa tốt hơn cho các loại hình ảnh khác nhau.
-	Yolov4 đã giới hiệu một kiến trúc tổng thể cho các mô hình phát hiện đối tượng bao gồm các thành phần xương sống (neck), cổ (neck), đầu (head) và các lớp liên kết để tối ưu việc phát hiện đối tượng ở thời gian thực. Phần backbone được đào tạo trước trên tập ImageNet và được sử dụng để dự đoán các lớp và hộp giới hạn của đối tượng đó.
+	Yolov4 đã giới hiệu một kiến trúc tổng thể cho các mô hình phát hiện đối tượng bao gồm các thành phần xương sống (backbone), cổ (neck), đầu (head) và các lớp liên kết để tối ưu việc phát hiện đối tượng ở thời gian thực. Phần backbone được đào tạo trước trên tập ImageNet và được sử dụng để dự đoán các lớp và hộp giới hạn của đối tượng đó.
 	Backbone có thể là các mô hình như VGG \cite{simonyan2015deep}, ResNet \cite{he2015deep}, RestNeXt \cite{xie2017aggregated} hoặc DensenNet \cite{huang2018densely}.
 	Phần neck được sử dụng để thu thập các bản đồ đặc trưng từ các giai đoạn khác nhau và thường bao gồm các luồng đi từ dưới lên và các luồng đi từ trên xuống, từ đó giúp cho lớp nhận dạng sẽ chứa thhông tin phong phú hơn. Phần head là phần được sử dụng để thực hiện việc phát hiện và phân loại đối tượng cuối cùng.
-	Kiến trúc tổng quan được Yolov4 định nghĩa như hình \ref{fig:yolov4_1}.
+	Kiến trúc tổng quan được Yolov4 định nghĩa như Hình \ref{fig:yolov4_1}.
 }
 \begin{figure}[H]
 	\centering
@@ -488,7 +496,7 @@ Có thể dễ dàng nhận thấy rằng toàn bộ mạng Yolo à không có b
 Yolov4 sử dụng kiến trúc CNN mới có tên là Cross Stage Partial Network (CSPNet) \cite{wang2019cspnet} và là một biến thể của kiến trúc ResNet được thiết kế đặc biệt cho các nhiệm vụ phát hiện đối tượng. Nó có cấu trúc tương đối nông, chỉ có 54 lớp chập. Tuy nhiên, nó có thể đạt được kết quả tiên tiến trên các tiêu chuẩn phát hiện đối tượng khác nhau.
 Backbone của Yolov4 sửa Darknet53 ở Yolov3 bằng cách thay thế các khối Residual Block thành CSPResBlock, tạo nên mạng CSPDarknet23.
 Yolov4 có neck là sự kết hợp ba phương pháp hiện đại khác nhau: Path Aggregation Network (PANet) \cite{liu2018path}, một khối SPP \cite{He_2014} và ba khối SAM \cite{woo2018cbam}.
-YOLOv4 có kiến trúc phần đầu giống như trong Yolov3, kiến trúc mô hình Yolov4 như hình \ref{fig:yolov4_2}.
+YOLOv4 có kiến trúc phần đầu giống như trong Yolov3, kiến trúc mô hình Yolov4 như Hình \ref{fig:yolov4_2}.
 Thiết kế này cho phép Yolov4 thực hiện phát hiện đối tượng với tốc độ ấn tượng, phù hợp với các ứng dụng thời gian thực. Yolov4 cũng vượt trội về độ chính xác, đạt được kết quả tiên tiến trong các tiêu chuẩn phát hiện đối tượng.
 YOLOv4 là mô hình phát hiện đối tượng mạnh mẽ và hiệu quả, tạo ra sự cân bằng giữa tốc độ và độ chính xác. Việc sử dụng các tính năng độc đáo và nhiều kỹ thuật BoF trong quá trình đào tạo cho phép mô hình thực hiện xuất sắc các nhiệm vụ phát hiện đối tượng theo thời gian thực.
 }
@@ -546,7 +554,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 {\fontsize{13}{12} \selectfont
 	Một cải tiến quan trọng trong Yolov7 là việc sử dụng một hàm mất mát mới gọi là “focal loss”. Các phiên bản trước của Yolo đã sử dụng cross-entropy là một hàm mất mát tiêu chuẩn, được biết là kém hiệu quả hơn trong việc phát hiện các đối tượng nhỏ. Focal loss giải quyết vấn đề này bằng cách giảm trọng số mất mát cho các ví dụ được phân loại tốt và tập trung vào các ví dụ các đối tượng khó phát hiện.
 	Một trong những ưu điểm chính của Yolov7 là tốc độ. Nó có thể xử lý hình ảnh với tốc độ 155 khung hình mỗi giây, nhanh hơn nhiều so với các thuật toán phát hiện đối tượng hiện đại khác. Điều này làm cho nó phù hợp với các ứng dụng thời gian thực nhạy cảm như giám sát và ô tô tự lái, trong đó tốc độ xử lý cao hơn là rất quan trọng.
-	So sánh hiệu suất và tốc độ của Yolov7 với các mô hình phát hiện đối tượng thời gian thực hiện đại (Hình \ref{fig:yolov7}).
+	So sánh hiệu suất và tốc độ của Yolov7 với các mô hình phát hiện đối tượng thời gian thực hiện đại (xem Hình \ref{fig:yolov7}).
 }
 
 \bigskip
@@ -572,7 +580,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	YOLOv8 là mô hình không có neo. Điều này có nghĩa là nó dự đoán trực tiếp tâm của đối tượng thay vì xác định hộp neo như những mô hình trước đó.
 	Điều này giúp Yolov8 linh hoạt hơn trong việc phát hiện các vật thể có hình dạng và kích thước khác nhau, đặc biệt là các vật thể mỏng hoặc nhỏ có thể không vừa với các hộp neo được xác định trước của hệ thống.
 	Một lợi ích nữa của phương pháp không có neo là tính đơn giản của nó. Bằng cách loại bỏ sự phụ thuộc vào các hộp neo, mô hình trở nên dễ hiểu và dễ thực hiện hơn.
-	Yolov8 còn giới thiệu một kĩ thuật mới là tăng cường dữ liệu mosiac (Hình \ref{fig:mosaic}). Tăng cường dữ liệu mosaic là một kỹ thuật đơn giản, trong đó bốn hình ảnh khác nhau được nối lại với nhau và đưa vào mô hình như đầu vào. Điều này giúp mô hình học được các đối tượng thực sự từ các vị trí khác nhau và trong trạng thái bị che khuất.
+	Yolov8 còn giới thiệu một kĩ thuật mới là tăng cường dữ liệu mosiac (xem Hình \ref{fig:mosaic}). Tăng cường dữ liệu mosaic là một kỹ thuật đơn giản, trong đó bốn hình ảnh khác nhau được nối lại với nhau và đưa vào mô hình như đầu vào. Điều này giúp mô hình học được các đối tượng thực sự từ các vị trí khác nhau và trong trạng thái bị che khuất.
 	Việc thực hiện tăng cường dữ liệu mosiac có thể làm giảm hiệu suất, vì vậy nó đã sẽ được tắt đi khi quá trình huấn luyện chuyển sang những kỷ nguyên cuối cùng.
 }
 
@@ -590,7 +598,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 {\fontsize{13}{12} \selectfont
 	Tương tự như các mô hình họ Yolo, mô hình SSD \cite{Liu_2016} (Single Shot MultiBox Detector) là thuật toán phát hiện đối tượng một giao đoạn nên tỏ ra nhanh hơn so với các mô hình họ R-CNN.
 	Mô hình SSD là sự kết hợp của trích xuất các bản đồ đặc trưng từ mạng CNN và áp dụng bộ lọc để phát hiện vật thể ở các độ phân giải khác nhau. SSD nhận đầu vào là các tọa độ hộp giới hạn của vật thể và nhãn của vật thể chứa trong các hộp giới hạn đó.
-	Mô hình sẽ tạo ra các lưới ô trên các bản đồ đặc trưng, từ tâm của mỗi ô sẽ xác định tập hợp các hộp giới hạn mặc định được lựa chọn thủ công để dự đoán khung hình có khả năng bao quanh vật thể (Hình \ref{fig:ssd}).
+	Mô hình sẽ tạo ra các lưới ô trên các bản đồ đặc trưng, từ tâm của mỗi ô sẽ xác định tập hợp các hộp giới hạn mặc định được lựa chọn thủ công để dự đoán khung hình có khả năng bao quanh vật thể (xem Hình \ref{fig:ssd}).
 	Tại mỗi hộp giới hạn mặc định, ta cần dự báo phân phối xác suất $c = (c_1, c_2,\dots, c_n)$ tương ứng với các lớp $C= C_1, C_2,\dots,C_n $ . Tại thời điểm huấn luyện, ta cần so khớp các hộp giới hạn mặc định với các hộp giới hạn thực của vật thể trên ảnh đầu vào sao cho mức độ sai số qua mất mát vị trí là thấp nhất, sau đó dự đoán nhãn bằng hàm sofmax để dự đoán nhãn.
 }
 
@@ -677,7 +685,7 @@ xác định vị trí hộp giới hạn.
 \subsection{Phương pháp đánh giá IoU (Intersection over Union)}
 
 {\fontsize{13}{12} \selectfont
-	IoU là chỉ số đánh giá các mô hình phát hiện vật thể. IoU là tỉ lệ giữa vùng giao và hợp của kết quả dự đoán và kết quả thực tế (Hình \ref{fig:iou}).
+	IoU là chỉ số đánh giá các mô hình phát hiện vật thể. IoU là tỉ lệ giữa vùng giao và hợp của kết quả dự đoán và kết quả thực tế (xem Hình \ref{fig:iou}).
 	Giá trị của IoU dao động
 	từ 0 đến 1, với 0 là không có sự chồng chéo giữa kết quả dự đoán và kết quả
 	thực tế và 1 là hai kết quả này hoàn toàn trùng khớp.
@@ -699,7 +707,7 @@ Thông thường với các mô hình phát hiện đôi tượng, chỉ số $I
 \begin{itemize}
 	\item True Positive (TP): IoU lớn hơn hoặc bằng ngưỡng, là một dự đoán đúng.
 	\item False Positive (FP): IoU bé hơn ngưỡng, là một dự đoán sai.
-	\item False Negative (FN): trường hợp mà hộp giới hạn đúng nhưng không có hộp dự đoán.
+	\item False Negative (FN): trường hợp vật thể nhưng không có hộp dự đoán.
 \end{itemize}
 }
 
@@ -715,7 +723,7 @@ Thông thường với các mô hình phát hiện đôi tượng, chỉ số $I
 		\label{equa:P}
 	\end{equation}
 	\begin{equation}
-		Precision = \frac{TP}{TP+FN}\
+		Recall = \frac{TP}{TP+FN}\
 		\label{equa:R}
 	\end{equation}
 }
@@ -727,7 +735,7 @@ Thông thường với các mô hình phát hiện đôi tượng, chỉ số $I
 \end{figure}
 
 {\fontsize{13}{12} \selectfont
-Khi bắt đầu thay đổi ngưỡng IoU, các giá trị precision và recall sẽ được tính để tạo ra đường cong được gọi là Precision Recall Curve tương tự hình \ref{fig:ap}.
+Khi bắt đầu thay đổi ngưỡng IoU, các giá trị precision và recall sẽ được tính để tạo ra đường cong được gọi là Precision Recall Curve tương tự Hình \ref{fig:ap}.
 Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tích vùng màu xanh ở hình \ref{fig:ap}. AP càng lớn thể hiện việc precision và recall càng cao với các ngưỡng IoU khác nhau, đồng nghĩa với mô hình tốt.
 }
 
