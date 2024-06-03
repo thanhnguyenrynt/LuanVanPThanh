@@ -26,7 +26,7 @@ C.-Y. Wang, A.~Bochkovskiy, and H.-Y.~M. Liao, ``Yolov7: Trainable
   bag-of-freebies sets new state-of-the-art for real-time object detectors,''
   2022.
 
-\bibitem{Yolov8}
+\bibitem{YOLOv8}
 \BIBentryALTinterwordspacing
 G.~Jocher, A.~Chaurasia, and J.~Qiu, ``{Ultralytics YOLO},'' 01 2023. [Online].
   Available: \url{https://github.com/ultralytics/ultralytics}

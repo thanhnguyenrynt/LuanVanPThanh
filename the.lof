@@ -3,21 +3,21 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Hệ thống thị giác của con người và máy tính}}{5}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Ví dụ về tích chập}}{6}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Hàm kích hoạt Relu}}{7}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Mình họa về gộp cực đại và gộp trung bình}}{8}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Minh họa về gộp cực đại và gộp trung bình}}{8}{figure.caption.10}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Mô hình CNN \cite {girshick2014rich}}}{9}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Mô hình Fast R-CNN \cite {girshick2015fast}}}{11}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces Thời gian huấn luyện R-CNN, SPP-NET \cite {He_2014}, Fast R-CNN \cite {testtimefastrcnn}}}{11}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Mô hình Faster R-CNN \cite {ren2016faster}}}{12}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Cấu trúc mạng RPN}}{13}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Dòng thời gian phát hiển của Yolo}}{14}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Mô hình hệ thống Yolo}}{14}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Kiến trúc mạng Yolo}}{15}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Dòng thời gian phát hiển của YOLO}}{14}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Mô hình hệ thống YOLO}}{14}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Kiến trúc mạng YOLO}}{15}{figure.caption.18}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Kiến trúc mạng Darknet-19 \cite {redmon2016yolo9000}}}{16}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Kiến trúc mạng Darknet-53 \cite {redmon2018yolov3}}}{17}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Kiến trúc tổng quan mô hình phát hiện đối tượng \cite {bochkovskiy2020yolov4}}}{18}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces Kiến trúc Yolov4}}{19}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Kiến trúc Yolov5 \cite {s22020464}}}{20}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces So sánh hiệu suất và tốc độ của Yolov7 \cite {wang2022yolov7}}}{21}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Kiến trúc YOLOv4}}{19}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Kiến trúc YOLOv5 \cite {s22020464}}}{20}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces So sánh hiệu suất và tốc độ của YOLOv7 \cite {wang2022yolov7}}}{21}{figure.caption.24}%
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Ví dụ về các hộp mặc định thủ công từ bản đồ đặc trưng ở SSD \cite {Liu_2016}}}{23}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Kiến trúc mô hình SSD \cite {Liu_2016}}}{23}{figure.caption.27}%
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Ví dụ về sự mất cân bằng giữa foreground và background\cite {lin2018focal}}}{25}{figure.caption.28}%
