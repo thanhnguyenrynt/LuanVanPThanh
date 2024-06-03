@@ -78,7 +78,7 @@
 \newcommand*{\etal}{\emph{et~al.}\@\xspace}
 \makeatletter
 \patchcmd{\tableofcontents}{\contentsname}{\fontsize{14}{12} \selectfont \MakeUppercase\contentsname}{}{}
-\patchcmd{\listoffigures}{\listfigurename}{\fontsize{14}{12} \selectfont \MakeUppercase\listfigurename}{}{}
+\patchcmd{\listoffigures}{\listfigurename}{\fontsize{14}{12} \selectfont \MakeUppercase DANH SÁCH HÌNH}{}{}
 \patchcmd{\listoftables}{\listtablename}{\fontsize{14}{12} \selectfont \MakeUppercase\listtablename}{}{}
 \patchcmd{\printglossary}{\glossarytitle}{\fontsize{14}{12} \selectfont \MakeUppercase\glossarytitle}{}{}
 \makeatother
@@ -153,8 +153,9 @@
 \newglossaryentry{fp}{name=FP, description={False Positive }} 
 \newglossaryentry{tn}{name=TN, description={True Negative}} 
 \newglossaryentry{fn}{name=FN, description={False Negative}} 
-\newglossaryentry{ĐBSCL}{name=ĐBSCL, description={Đồng bằng sông Cửu Long}} 
-\newglossaryentry{API}{name=API, description={Application Programming Interface}} 
+\newglossaryentry{dbscl}{name=ĐBSCL, description={Đồng bằng sông Cửu Long}} 
+\newglossaryentry{api}{name=API, description={Application Programming Interface}} 
+
 
 
 
@@ -181,10 +182,10 @@
 % \subfile{chapters/nhan-xet-gv}
 
 \chapter*{\centering TÓM TẮT}
-\subfile{chapters/tom-tat} 
+\subfile{chapters/tom-tat}
 
 \chapter*{\centering ABSTRACT}
-\subfile{chapters/abstract} 
+\subfile{chapters/abstract}
 
 % \chapter*{\centering LỜI CAM ĐOAN}
 % \subfile{chapters/loi-cam-doan}
@@ -193,27 +194,32 @@
 \listoffigures
 \listoftables
 % \listofalgorithms
-\glsaddall
+
+
+
+\glsaddall[types=\acronymtype]
 
 \printglossary[title=DANH MỤC TỪ VIẾT TẮT]
+
+
 
 
 \clearpage
 \pagenumbering{arabic}			% Kiểu số trang: 1, 2, 3,...
 
-\chapter{\centering GIỚI THIỆU}
+\chapter{ GIỚI THIỆU}
 \subfile{chapters/chapter01}	% Gọi file chương 1, tương tự gọi các chương khác
 
-\chapter{\centering CƠ SỞ LÝ THUYẾT}
+\chapter{ CƠ SỞ LÍ THUYẾT}
 \subfile{chapters/chapter02}
 
-\chapter{\centering PHƯƠNG PHÁP NGHIÊN CỨU}
+\chapter{ PHƯƠNG PHÁP NGHIÊN CỨU}
 \subfile{chapters/chapter03}
 
-\chapter{\centering KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}
+\chapter{ KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}
 \subfile{chapters/chapter04}
 
-\chapter{\centering KẾT LUẬN VÀ ĐỀ XUẤT}
+\chapter{ KẾT LUẬN VÀ ĐỀ XUẤT}
 \subfile{chapters/chapter05}
 
 

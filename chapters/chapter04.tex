@@ -4,16 +4,17 @@
 \begin{document}
 {\fontsize{13}{12} \selectfont
 Trong chương này tiền hành đánh giá và thảo luận kết quả. Các mô hình sẽ được đánh giá dựa vào số lượng tham số sử dụng, tốc độ FPS và độ chính xác mAP50.
-Nghiên cứu sẽ tiến hành đánh giá các mô hình dựa vào bộ dữ liệu \#1, \#2 đã đề cập ở phần \ref{sec:dataset} lần lượt được gọi là Thực nghiệm 1, 2, 3.
-Các tập xác thực được tạo từ $20\%$ từ bộ dữ liệu, tập thử nghiệm ($5\%$) để đánh giá kết quả trên hình ảnh thực tế ở đường phố được lấy từ tập dữ liệu Taco và tự thu thập.
+Nghiên cứu sẽ tiến hành đánh giá các mô hình dựa vào bộ dữ liệu 1, 2 đã đề cập ở phần \ref{sec:dataset} lần lượt được gọi là Thực nghiệm 1, 2, 3.
+Các tập xác thực được tạo từ $20\%$ từ bộ dữ liệu, tập thử nghiệm ($5\%$) để đánh giá kết quả trên hình ảnh thực tế ở đường phố được lấy từ tập dữ liệu Taco và tự thu thập (xem Bảng \ref{tab:datasettest}).
 Các mô hình được huấn luyện trên máy tính cấu hình GPU GTX 3050 với bộ nhớ 8GB.
+
 }
 
 \section{Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}
 \begin{table}[ht!]
     \centering
     \caption{Các tham số tăng cường dữ liệu cho các mô hình}
-    \begin{tabular}{|l|p{7cm}|c|}
+    \begin{tabular}{|l|p{7cm}|r|}
         \hline
         \textbf{Tên}
                    & \textbf{Mô tả}
@@ -23,105 +24,115 @@ Các mô hình được huấn luyện trên máy tính cấu hình GPU GTX 3050
         Lật dọc    & Lật ngược hình ảnh, không ảnh hưởng đến đặc điểm của đối tượng                                                                               & 50 \\  \hline
         Xoay       & Xoay hình ảnh ngẫu nhiên, cải thiện khả năng nhận dạng vật thể ở nhiều hướng                                                                 & 50 \\  \hline
         Xê dịch    & Dịch hình ảnh theo chiều ngang và chiều dọc bằng một phần kích thước hình ảnh, hỗ trợ học cách phát hiện các vật thể nhìn thấy được một phần & 10 \\  \hline
-        Phóng đại      & Phóng to, thu nhỏ hình ảnh, mô phỏng hình ảnh với tỉ lệ khác nhau so với hình ảnh chụp                                                       & 50 \\  \hline
+        Phóng đại  & Phóng to, thu nhỏ hình ảnh, mô phỏng hình ảnh với tỉ lệ khác nhau so với hình ảnh chụp                                                       & 50 \\  \hline
         Độ bão hòa & Thay đổi độ bão hòa của hình ảnh một phần, ảnh hưởng đến cường độ màu sắc. Hữu ích cho việc mô phỏng các điều kiện môi trường khác nhau      & 70 \\ \hline
         Độ sáng    & Sửa đổi độ sáng của hình ảnh theo một phần nhỏ, giúp mô hình hoạt động tốt trong nhiều điều kiện ánh sáng khác nhau                          & 40 \\ \hline
     \end{tabular}
     \label{tab:thamso}
 \end{table}
 {\fontsize{13}{12} \selectfont
+
 Thực nghiệm 1 với mục tiêu đánh giá các mô hình dựa trên việc phát hiện vật thể có phải là rác hay không, trong tập dữ liệu có một nhãn duy nhất là rác.
 Các mô hình được so sánh trong nhiệm vụ phát hiện đối tượng, các phương pháp tăng cường dữ liệu được cài đặt cho các mô hình là như nhau được thể hiện ở bảng \ref{tab:thamso}.
-Các tham số còn lại cài đặt theo mặc định của mô hình, như tăng cường mosiac ở Yolov8, focal loss ở Yolov7 mục đích đánh giá đặc trưng riêng của các mô hình.
+Các tham số còn lại cài đặt theo mặc định của mô hình, như tăng cường mosiac ở YOLOv8, focal loss ở YOLOv7 mục đích đánh giá đặc trưng riêng của các mô hình.
 
 }
 \begin{table}[h!]
     \centering
-    \caption{Kết quả thực hiện Thực nghiệm 1 với tập xác thực}
-    \begin{tabular}{|l|c|c|c|}
+    \caption{Kết quả thực hiện Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác với tập xác thực}
+    \begin{tabular}{|l|r|r|r|}
         \hline
         \textbf{Mô hình}  & \textbf{Precision} & \textbf{Recall} & \textbf{mAP50} \\ \hline
         SSD   MobileNetv2 & 0.841              & 0.595           & 0.657          \\ \hline
-        Yolov7-tiny       & 0.81               & 0.699           & 0.788          \\ \hline
-        Yolov8n           & \textbf{0.873}     & \textbf{0.727}  & \textbf{0.842} \\ \hline
+        YOLOv7-tiny       & 0.81               & 0.699           & 0.788          \\ \hline
+        YOLOv8n           & \textbf{0.873}     & \textbf{0.727}  & \textbf{0.842} \\ \hline
     \end{tabular}
     \label{tab:thucnghiem1.1}
 \end{table}
 
 \begin{table}[h!]
     \centering
-    \caption{Kết quả thực hiện Thực nghiệm 1 với tập thử nghiệm}
-    \begin{tabular}{|l|c|c|c|c|}
+    \caption{Kết quả thực hiện Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác với tập thử nghiệm}
+    \begin{tabular}{|l|r|r|r|r|}
         \hline
         \textbf{Mô hình} & \textbf{Precision} & \textbf{Recall} & \textbf{mAP50} & \multicolumn{1}{l|}{\textbf{FPS}} \\ \hline
         SSD MobileNetv2  & 0.712              & 0.364           & 0.427          & 105                               \\ \hline
-        Yolov7-tiny      & 0.723              & 0.515           & 0.62           & \textbf{136}                      \\ \hline
-        Yolov8n          & \textbf{0.73}      & \textbf{0.606}  & \textbf{0.713} & 125                               \\ \hline
+        YOLOv7-tiny      & 0.723              & 0.515           & 0.62           & \textbf{136}                      \\ \hline
+        YOLOv8n          & \textbf{0.73}      & \textbf{0.606}  & \textbf{0.713} & 125                               \\ \hline
     \end{tabular}
     \label{tab:thucnghiem1.2}
 \end{table}
 
 {\fontsize{13}{12} \selectfont
+
 Các mô hình được huấn luyện bằng phương pháp học chuyển giao dựa trên tập dữ liệu coco, quá trình huấn luyện là 100 kỷ nguyên, ngưỡng tin cậy để đánh giá là 0.3.
 Kết quả đánh giá của Thực nghiệm 1 được thể hiện ở Bảng \ref{tab:thucnghiem1.1}
-và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập dữ liệu thực nghiệm cho thấy mô hình.
+và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập dữ liệu thực nghiệm của các mô hình.
+
 }
 
 \bigskip
 
 {\fontsize{13}{12} \selectfont
-Hình \ref{fig:thucnghiem1} cho thấy Yolov8 đạt kết quả tốt hơn so với hai mô hình còn lại. Đối với tập xác thực, mô hình SSD MobileNetv2 có khả năng nhận dạng đúng đối tượng tốt hơn so với Yolov7-tiny, tuy nhiên Recall của mô hình lại kém so với hai mô hình họ Yolo.
-Đối với tập dữ liệu thử nghiệm, mô hình Yolov8n vẫn vượt rội so với những mô hình còn lại, chỉ số Precision của các mô hình không có sự chênh lệnh lớn (khoảng 2\%), tuy nhiên chỉ số Recall của tất cả giảm đáng kể, giảm nhiều nhất là mô hình SSD MobileNetv2 chỉ còn 36.4\%.
-Kết quả chênh lệch giữa tập dữ liệu xác thực và tập dữ liệu thực nghiệm khoảng 10 - 20\% cho thấy việc phát hiện rác ở tự nhiên khó hơn điều kiện lí tưởng bởi chịu ảnh hưởng của môi trường xung quanh vật thể.
-Các Hình \ref{fig:thucnghiem1.2} và Hình \ref{fig:thucnghiem1.3} thể hiện khả năng nhận dạng của mô hình Yolov8.
+
+    Hình \ref{fig:thucnghiem1} cho thấy YOLOv8 đạt kết quả tốt hơn so với hai mô hình còn lại. Đối với tập xác thực, mô hình SSD MobileNetv2 có khả năng nhận dạng đúng đối tượng tốt hơn so với YOLOv7-tiny, tuy nhiên Recall của mô hình lại kém so với hai mô hình họ YOLO.
+    Đối với tập dữ liệu thử nghiệm, mô hình YOLOv8n vẫn vượt rội so với những mô hình còn lại, chỉ số Precision của các mô hình không có sự chênh lệch lớn (khoảng 2\%), tuy nhiên chỉ số Recall của tất cả giảm đáng kể, giảm nhiều nhất là mô hình SSD MobileNetv2 chỉ còn 36.4\%.
+    Kết quả chênh lệch giữa tập dữ liệu xác thực và tập dữ liệu thực nghiệm khoảng 10 - 25\% cho thấy việc phát hiện rác ở tự nhiên khó hơn điều kiện lí tưởng bởi chịu ảnh hưởng của môi trường xung quanh vật thể.
+    Các Hình \ref{fig:thucnghiem1.2} và Hình \ref{fig:thucnghiem1.3} thể hiện khả năng nhận dạng của mô hình YOLOv8.
 
 }
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{thucnghiem1.png}
-    \caption{Biểu đồ kết quả thực nghiệm 1}
+    \caption{Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}
     \label{fig:thucnghiem1}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{matrix_tn1.png}
-    \caption{Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình Yolov8n ở Thực nghiệm 1}
+    \caption{Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}
     \label{fig:thucnghiem1.2}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{th1_data.png}
-    \caption{Kết quả dự đoán của mô hình Yolov8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}
+    \caption{Hình ảnh dự đoán của mô hình YOLOv8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}
     \label{fig:thucnghiem1.3}
 \end{figure}
 
-\section{Thực nghiệm 2 và 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}
+\section{Thực nghiệm 2 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}
+
  {\fontsize{13}{12} \selectfont
-  Mô hình SSD MobileNetv2 tỏ ra không hiệu quả so với hai mô hình còn lại trong Thực nghiệm 1, vì vậy trong Thực nghiệm 2 và 3, nghiên cứu tập trung vào Yolov7-tiny và Yolov8n. Các mô hình vẫn sử dụng tham số để tăng cường dữ liệu giống như ở \ref{tab:thamso}, thực hiện trên tập dữ liệu \#1 và \#2 như đã đề cập ở phần \ref{sec:dataset}.
-  Đánh giá các mô hình dựa vào chỉ số mAP50 trên từng loại rác và trung bình của tất cả, kết quả đánh giá được thể hiện Bảng \ref{tab:thucnghiem2.1} và Hình \ref{fig:thucnghiem2} ở Thực nghiệm 2 và Bảng \ref{tab:thucnghiem3.1} ở Thực nghiệm 3.
- }
+
+  Mô hình SSD MobileNetv2 tỏ ra không hiệu quả so với hai mô hình còn lại trong Thực nghiệm 1, vì vậy trong Thực nghiệm 2 và 3, nghiên cứu tập trung vào YOLOv7-tiny và YOLOv8n. Các mô hình vẫn sử dụng tham số để tăng cường dữ liệu giống như ở \ref{tab:thamso}, thực hiện trên tập dữ liệu 1 và 2 như đã đề cập ở phần \ref{sec:dataset}.
+  Đánh giá các mô hình dựa vào chỉ số mAP50 trên từng loại rác và trung bình của tất cả, kết quả đánh giá được thể hiện Bảng \ref{tab:thucnghiem2.1} và Hình \ref{fig:thucnghiem2} ở Thực nghiệm 2.
+ 
+  }
 
 \bigskip
 
 {\fontsize{13}{12} \selectfont
+
     Các mô hình nhận dạng tốt ở lớp kim loại và thấp nhất ở lớp khác,
     điều này có thể giải thích bằng tính đặc trưng của lớp khác quá nhiều, đa dạng về hình thể, đa phần là các rác nhỏ và khó xác định.
-    Ở Thực nghiệm 2, mô hình Yolov8n có kết quả vượt trội hơn khi kiểm tra trên tập xác thực, tuy nhiên với tập dữ liệu thử nghiệm thì mô hình Yolov7 có kết quả tốt hơn với lớp kim loại và lớp khác, nhưng tổng thể mô hình Yolov8n vẫn tốt hơn $1,2\%$ .
+    Ở Thực nghiệm 2, mô hình YOLOv8n có kết quả vượt trội hơn khi kiểm tra trên tập xác thực, tuy nhiên với tập dữ liệu thử nghiệm thì mô hình YOLOv7 có kết quả tốt hơn với lớp kim loại và lớp khác, nhưng tổng thể mô hình YOLOv8n vẫn tốt hơn $1,2\%$ .
     Hình \ref{fig:thucnghiem2.1} cho thấy việc các hình nền dễ bị nhận dạng trở thành các vật thể rác, trong đó có thể gồm các vật thể như đá, các biển báo, vũng nước hoặc nhận dạng trùng lặp các hộp giới hạn gần vị trí của nhau.
     Các vật thể từ giấy cũng dễ bị nhận nhầm với với rác khác, lớp kim loại có sự ổn định cao và ít nhầm lẫn với lớp còn lại. Lớp giấy và nhựa - nilon dễ bị bỏ qua không thể nhận dạng vì các vật thể bị chồng chéo lên nhau.
+
 }
+
 \begin{table}[h!]
     \centering
-    \caption{Kết quả thực hiện Thực nghiệm 2}
-    \begin{tabular}{|l|c|c|c|c|c|c|}
+    \caption{Kết quả thực hiện trên tập xác thực và thử nghiệm ở Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}
+    \begin{tabular}{|l|l|r|r|r|r|r|}
         \hline
         \textbf{Mô hình}             & \multicolumn{1}{l|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{l|}{\textbf{Kim Loại}} & \multicolumn{1}{l|}{\textbf{Giấy}} & \multicolumn{1}{l|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{l|}{\textbf{Khác}} & \multicolumn{1}{l|}{\textbf{Tất cả}} \\ \hline
-        \multirow{2}{*}{Yolov7-tiny} & Xác thực                                  & 0.689                                  & 0.691                              & 0.538                                      & 0.509                              & 0.607                                \\ \cline{2-7}
-                                     & Thử nghiệm                                & \textbf{0.407}                          & 0.385                              & 0.487                                      & \textbf{0.223}                     & 0.376                                \\ \hline
-        \multirow{2}{*}{Yolov8n}     & Xác thực                                  & \textbf{0.759}                         & \textbf{0.703}                     & \textbf{0.652}                             & \textbf{0.581}                     & \textbf{0.674}                       \\ \cline{2-7}
+        \multirow{2}{*}{YOLOv7-tiny} & Xác thực                                  & 0.689                                  & 0.691                              & 0.538                                      & 0.509                              & 0.607                                \\ \cline{2-7}
+                                     & Thử nghiệm                                & \textbf{0.407}                         & 0.385                              & 0.487                                      & \textbf{0.223}                     & 0.376                                \\ \hline
+        \multirow{2}{*}{YOLOv8n}     & Xác thực                                  & \textbf{0.759}                         & \textbf{0.703}                     & \textbf{0.652}                             & \textbf{0.581}                     & \textbf{0.674}                       \\ \cline{2-7}
                                      & Thử nghiệm                                & 0.377                                  & \textbf{0.415}                     & \textbf{0.553}                             & 0.207                              & \textbf{0.388}                       \\ \hline
     \end{tabular}
     \label{tab:thucnghiem2.1}
@@ -131,33 +142,36 @@ Các Hình \ref{fig:thucnghiem1.2} và Hình \ref{fig:thucnghiem1.3} thể hiệ
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{thucnghiem2.1.jpg}
-    \caption{Biểu đồ kết quả Thực nghiệm 2}
+    \caption{Biểu đồ kết quả Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}
     \label{fig:thucnghiem2}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{matrix_tn2.png}
-    \caption{Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình Yolov8n ở Thực nghiệm 2}
+    \caption{Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}
     \label{fig:thucnghiem2.1}
 \end{figure}
 
+\section{Thực nghiệm 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không chứa đối tượng} 
 {\fontsize{13}{12} \selectfont
-Thực nghiệm 3 đối với tập xác thực không có sự chênh lệch (Bảng \ref{tab:thucnghiem3.1}), tuy nhiên với tập dữ liệu thử nghiệm chỉ gồm các vật thể ngoài tự nhiên thì mô hình
-cho thấy sự hiệu quả của việc bổ sung các hình ảnh nền giảm đi các dương tính giả. Hình \ref{fig:thucnghiem3.1} cho thấy các ở mô hình đã cải thiện việc bỏ sót các vật thể \ref{fig:thucnghiem2.1}.
-Mô hình Yolov8 vẫn đạt được kết quả tốt hơn trong việc huấn luyện, việc áp dụng các ảnh nền cũng tỏ ra hiệu quả hơn đối với mô hình Yolov8n khi cải thiện được 5.8\% độ chính xác so với 1,1\% của mô hình Yolov7-tiny.
-Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình Yolov8n.
+
+Thực nghiệm 3 đối với tập xác thực không có sự chênh lệch đáng kể (Bảng \ref{tab:thucnghiem3.1}) so với kết quả của Thực nghiệm 2, tuy nhiên với tập dữ liệu thử nghiệm chỉ gồm các vật thể ngoài tự nhiên thì mô hình
+cho thấy sự hiệu quả của việc bổ sung các hình ảnh nền giảm đi các dương tính giả. Hình \ref{fig:thucnghiem3.1} cho thấy các mô hình đã cải thiện việc bỏ sót các vật thể.
+Mô hình YOLOv8 vẫn đạt được kết quả tốt hơn trong việc huấn luyện, việc áp dụng các ảnh nền cũng tỏ ra hiệu quả hơn đối với mô hình YOLOv8n khi cải thiện được 5.8\% độ chính xác so với 1,1\% của mô hình YOLOv7-tiny.
+Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOLOv8n.
+
 }
 
 \begin{table}[h!]
     \centering
-    \caption{Kết quả thực hiện Thực nghiệm 3}
-    \begin{tabular}{|l|c|c|c|c|c|c|}
+    \caption{Kết quả thực hiện Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không chứa đối tượng}
+    \begin{tabular}{|l|l|r|r|r|r|r|}
         \hline
-        \textbf{Mô hình}             & \multicolumn{1}{l|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{l|}{\textbf{Kim Loại}} & \multicolumn{1}{l|}{\textbf{Giấy}} & \multicolumn{1}{l|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{l|}{\textbf{Khác}} & \multicolumn{1}{l|}{\textbf{Tất cả}} \\ \hline
-        \multirow{2}{*}{Yolov7-tiny} & Xác thực                                  & 0.729                                 & 0.678                              & 0.546                                      & 0.477                             & 0.608                                \\ \cline{2-7}
-                                     & Thử nghiệm                                & 0.445                                   & 0.393                              & 0.476                                      & 0.235                              & 0.387                                \\ \hline
-        \multirow{2}{*}{Yolov8n}     & Xác thực                                  & \textbf{0.759}                         & \textbf{0.727}                     & \textbf{0.629}                             & \textbf{0.572}                     & \textbf{0.672}                       \\ \cline{2-7}
+        \textbf{Mô hình}             & \multicolumn{1}{c|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{c|}{\textbf{Kim Loại}} & \multicolumn{1}{c|}{\textbf{Giấy}} & \multicolumn{1}{c|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{c|}{\textbf{Khác}} & \multicolumn{1}{c|}{\textbf{Tất cả}} \\ \hline
+        \multirow{2}{*}{YOLOv7-tiny} & Xác thực                                  & 0.729                                  & 0.678                              & 0.546                                      & 0.477                              & 0.608                                \\ \cline{2-7}
+                                     & Thử nghiệm                                & 0.445                                  & 0.393                              & 0.476                                      & 0.235                              & 0.387                                \\ \hline
+        \multirow{2}{*}{YOLOv8n}     & Xác thực                                  & \textbf{0.759}                         & \textbf{0.727}                     & \textbf{0.629}                             & \textbf{0.572}                     & \textbf{0.672}                       \\ \cline{2-7}
                                      & Thử nghiệm                                & \textbf{0.514}                         & \textbf{0.451}                     & \textbf{0.556}                             & \textbf{0.263}                     & \textbf{0.446}                       \\ \hline
     \end{tabular}
     \label{tab:thucnghiem3.1}
@@ -166,64 +180,67 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình Yol
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{thucnghiem3.1.jpg}
-    \caption{Biểu đồ kết quả Thực nghiệm 3}
+    \caption{Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không chứa đối tượng}
     \label{fig:thucnghiem3}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{matrix_tn3.png}
-    \caption{Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình Yolov8n ở Thực nghiệm 3}
+    \caption{Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không chứa đối tượng}
     \label{fig:thucnghiem3.1}
 \end{figure}
 
 
 \section{Thảo luận}
  {\fontsize{13}{12} \selectfont
-  Các kết quả được so sánh cho ta thấy cùng một kết quả: mô hình Yolov8 hoạt động tốt hơn hai mô hình còn lại.
+
+  Các kết quả được so sánh cho ta thấy cùng một kết quả: mô hình YOLOv8 hoạt động tốt hơn hai mô hình còn lại.
   Từ đánh giá việc phát hiện đối tượng (phát hiện một lớp) đến việc phát hiện và phân loại rác thành bốn lớp theo thành phần.
   Các mô hình luôn gặp khó khăn khi phát hiện vật thể với lớp rác khác vì có kích thước nhỏ và tính đa dạng.
   Điều đó cho thấy việc gán nhãn và định nghĩa các rác cụ thể thành các lớp đặc trưng mang ý nghĩa quan trọng,
   tương tự như việc chuyển đổi các lớp ở dữ liệu Taco thành các lớp ở dữ liệu nghiên cứu.
   Thực nghiệm 3 bổ sung thêm dữ liệu từ các nền đã tăng độ chính xác của mô hình được mô tả chi tiết ở Bảng \ref{tab:thaoluan1}.
+
  }
 
 
- \begin{table}[h!]
+\begin{table}[h!]
     \centering
-    \caption{Kết quả mô hình Yolov8 khi tăng cường ảnh nền}
-    \begin{tabular}{|c|c|c|c|c|c|}
+    \caption{Kết quả thể hiện độ cải thiện của mô hình YOLOv8 khi tăng cường ảnh nền}
+    \begin{tabular}{|l|r|r|r|r|r|}
         \hline
         \multicolumn{1}{|l|}{\textbf{\#}} & \textbf{Kim Loại} & \textbf{Giấy} & \textbf{Nhựa - Nilon} & \textbf{Khác} & \textbf{Tất cả} \\ \hline
         Tập dữ liệu                       & 0.377             & 0.415         & 0.553                 & 0.207         & 0.388           \\ \hline
-        Tập bổ sung   nền                 & 0.514     & 0.451 & 0.556         & 0.263  & 0.446     \\ \hline
-        Độ cải thiện                & +0.13     & +0.036 & +0.003         & +0.056  & +0.058    \\ \hline
+        Tập bổ sung nền                 & 0.514             & 0.451         & 0.556                 & 0.263         & 0.446           \\ \hline
+        Độ cải thiện                      & +0.13             & +0.036        & +0.003                & +0.056        & +0.058          \\ \hline
     \end{tabular}
     \label{tab:thaoluan1}
 \end{table}
 
 
-
 {\fontsize{13}{12} \selectfont
-    Bảng \ref{tab:related} 
-    mô tả các nghiên cứu liên quan ở mục \ref{sec:nnlq} và kết quả đạt được của nghiên cứu hiện tại với các thông tin về tập dữ liệu, số lớp của mô hình, mô hình sử dụng, loại nhận dạng và kết quả đạt được dựa trên đánh giá từng nghiên cứu.
-    Nhìn chung các nghiên cứu đạt kết quả không cao đối với nhiệm vụ phát hiện hoặc phân đoạn đối tượng, điều đó cho thấy việc khó khăn khi áp dụng thực tế các dữ liệu ngoài tự nhiên vì nhiều dữ liệu gây nhiễu,
-    từ đó dẫn đến việc gán nhãn vật thể khó khăn.
-    Nghiên cứu của chúng tôi bước đầu cho thấy kết quả khả quan đối với nhiệm vụ phát hiện và phân loại rác theo thành phần. 
-    Ý tưởng phân loại rác thành bốn lớp của nghiên cứu dựa vào số lớp của các nghiên cứu phân lớp và tình hình thực tế sau khi thu thập dữ liệu ở địa phương. Kết hợp từ việc lấy ý tưởng từ các tập dữ liệu có sẵn và huấn luyện trên các mô hình gần đây,
-    nghiên cứu cho thấy sự cải thiện kết quả đối với các nghiên cứu phân đoạn hay phát hiện đối tượng trên tập dữ liệu về rác.
+
+Bảng \ref{tab:related}
+mô tả các nghiên cứu liên quan ở mục \ref{sec:nnlq} và kết quả đạt được của nghiên cứu hiện tại với các thông tin về tập dữ liệu, số lớp của mô hình, mô hình sử dụng, loại nhận dạng và kết quả đạt được dựa trên đánh giá từng nghiên cứu.
+Nhìn chung các nghiên cứu đạt kết quả không cao đối với nhiệm vụ phát hiện hoặc phân đoạn đối tượng, điều đó cho thấy việc khó khăn khi áp dụng thực tế các dữ liệu ngoài tự nhiên vì nhiều dữ liệu gây nhiễu,
+từ đó dẫn đến việc gán nhãn vật thể khó khăn.
+Nghiên cứu của chúng tôi bước đầu cho thấy kết quả khả quan đối với nhiệm vụ phát hiện và phân loại rác theo thành phần.
+Ý tưởng phân loại rác thành bốn lớp của nghiên cứu dựa vào số lớp của các nghiên cứu phân lớp và tình hình thực tế sau khi thu thập dữ liệu ở địa phương. Kết hợp từ việc lấy ý tưởng từ các tập dữ liệu có sẵn và huấn luyện trên các mô hình gần đây,
+nghiên cứu cho thấy sự cải thiện kết quả so với các nghiên cứu phân đoạn hay phát hiện đối tượng trên tập dữ liệu về rác.
+
 }
 
 
-\begin{figure}[H]	
-	\centering
-	\subfloat[\centering {\fontsize{11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }]{{\includegraphics[width=10cm]{yolov8_label.jpg} \label{fig:yolov8_label}}}%
-	\qquad
-	\subfloat[\centering {\fontsize{11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}]{{\includegraphics[width=7cm]{yolov8_pred_nobg.jpg} \label{fig:yolov8_pred_nobg}}}%
-	\qquad
-	\subfloat[\centering {\fontsize{11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}]{{\includegraphics[width=7cm]{yolov8_pred.jpg} \label{fig:yolov8_pred}}}%
-	\caption{Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}
-	\label{fig:final}
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering {\fontsize{11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }]{{\includegraphics[width=10cm]{yolov8_label.jpg} \label{fig:yolov8_label}}}%
+    \qquad
+    \subfloat[\centering {\fontsize{11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}]{{\includegraphics[width=7cm]{yolov8_pred_nobg.jpg} \label{fig:yolov8_pred_nobg}}}%
+    \qquad
+    \subfloat[\centering {\fontsize{11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}]{{\includegraphics[width=7cm]{yolov8_pred.jpg} \label{fig:yolov8_pred}}}%
+    \caption{Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}
+    \label{fig:final}
 \end{figure}
 
 \begin{table*}[ht!]
@@ -245,21 +262,21 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình Yol
                                                         & 6
                                                         & SVM \newline CNN
                                                         & Phân lớp
-                                                        & Độ chính xác: 63\%                                    \\ \hline
+                                                        & Độ chính xác: 63\%                                              \\ \hline
 
         Jash và Sagar \etal \cite{shah2022method}
                                                         & 25,077
                                                         & 2
                                                         & SVM \newline CNN
                                                         & Phân lớp
-                                                        & Độ chính xác: 94,96\%                             \\ \hline
+                                                        & Độ chính xác: 94.96\%                                           \\ \hline
 
         Carolis \etal \cite{9122693}
-                                                        & 2714
+                                                        & 2,714
                                                         & 4
-                                                        & Yolov3
+                                                        & YOLOv3
                                                         & Phát hiện
-                                                        & mAP50: 59.59\%                                \\ \hline
+                                                        & mAP50: 59.59\%                                                  \\ \hline
 
 
         Proença \etal \cite{proença2020taco}
@@ -267,38 +284,40 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình Yol
                                                         & 1, 10
                                                         & Mask RCNN
                                                         & Phân đoạn
-                                                        & 1 lớp mAP: 15.9\% \newline 10 lớp: 17,6\%      \\ \hline
+                                                        & 1 lớp mAP: 15.9\% \newline 10 lớp: 17.6\%                       \\ \hline
 
         Fulton \etal \cite{8793975}
                                                         & Trash-ICRA19
                                                         & 3
-                                                        & Yolov2 \newline SSD \newline FasterRCNN
+                                                        & YOLOv2 \newline SSD \newline FasterRCNN
                                                         & Phát hiện
-                                                        & Yolov2 47.9\%  \newline SSD: 67.4\%  \newline Faster RCNN: 81\%    \\ \hline
+                                                        & YOLOv2 47.9\%  \newline SSD: 67.4\%  \newline Faster RCNN: 81\% \\ \hline
 
         Sylwia \etal  \cite{Majchrowska_2022}
                                                         & detect waste + \newline (Gồm TACO)
                                                         & 1, 7
                                                         & EfficientNet-B2
                                                         & Phát hiện
-                                                        & 1 lớp-mAP50: 46.9\% \newline 7 lớp-mAP50: 11.9\%       \\ \hline
+                                                        & 1 lớp-mAP50: 46.9\% \newline 7 lớp-mAP50: 11.9\%                \\ \hline
 
         Nghiên cứu này
-                                                        & ~4,000
+                                                        & khoảng 4,000
                                                         & 1, 4
-                                                        & Yolov8n
+                                                        & YOLOv8n
                                                         & Phát hiện
-                                                        & 1 lớp-mAP50: 73\% \newline 4 lớp-mAP: 44.6\%\\ \hline
+                                                        & 1 lớp-mAP50: 73\% \newline 4 lớp-mAP: 44.6\%                    \\ \hline
     \end{tabularx}
     \label{tab:related}
 
 \end{table*}
 
 \bigskip
-    {\fontsize{13}{12} \selectfont
-    Tổng kết lại, nghiên cứu đã cho thấy mô hình Yolov8 có hiệu suất vượt trội ở độ chính xác
+{\fontsize{13}{12} \selectfont
+
+    Tổng kết lại, nghiên cứu đã cho thấy mô hình YOLOv8 có hiệu suất vượt trội ở độ chính xác
     mà còn có số lượng tham số ít hơn giúp việc huấn luyện nhanh, phù hợp với việc cải thiện độ chính xác của mô hình khi dữ liệu được tăng cường.
     Nghiên cứu cho thấy tầm quan trọng của việc kết hợp dữ liệu, gán nhãn phân loại và áp dụng các hình không có vật thể giúp cải thiện hiệu suất của mô hình khi thực nghiệm ngoài tự nhiên.
+
 }
 
 
