@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.6.3)  3 JUN 2024 17:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.6.3)  4 JUN 2024 10:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1316,34 +1316,34 @@ l.48 \end{titlepage}
                      [1
 
 ]) (chapters/loi-cam-on.tex
-LaTeX Font Info:    Calculating math sizes for size <13> on input line 21.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 21.
+LaTeX Font Info:    Calculating math sizes for size <13> on input line 23.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 23.
  (D:\LaTex\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 21.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 23.
  (D:\LaTex\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 21.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 23.
  (D:\LaTex\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 21.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 23.
  (D:\LaTex\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 21.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 23.
  (D:\LaTex\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <13> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9.62007> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.80008> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+LaTeX Font Info:    Trying to load font information for OMX+yhex on input line 23.
  (D:\LaTex\tex/latex/yhmath\omxyhex.fd
 File: OMXyhex.fd 
 File: OMXyhex.fd 2013/07/03 v1.1 YH's humble contribution to TeX maths (NP)
@@ -1366,14 +1366,14 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \tf@toc=\write9
 \openout9 = `the.toc'.
 
- [5] (the.lof
+ [5] (the.lof [6
+
+]
 Overfull \hbox (9.96632pt too wide) in paragraph at lines 46--46
  [][] [][]\T5/ptm/m/n/12 Ma trªn nh¦m l¨n chu©n hâa tr¶n tªp dú li»u thû nghi»m cõa mæ h¼nh YOLOv8n 
  []
 
-[6
-
-])
+)
 \tf@lof=\write10
 \openout10 = `the.lof'.
 
@@ -1415,156 +1415,155 @@ Ch\uhorn \ohorn ng 2.
 <images/computer_vision.PNG, id=588, 521.69907pt x 306.39468pt>
 File: images/computer_vision.PNG Graphic file (type png)
 <use images/computer_vision.PNG>
-Package pdftex.def Info: images/computer_vision.PNG  used on input line 120.
+Package pdftex.def Info: images/computer_vision.PNG  used on input line 117.
 (pdftex.def)             Requested size: 441.01773pt x 259.01544pt.
  [4] [5 <./images/computer_vision.PNG>]
 <images/tichchap.png, id=604, 493.845pt x 221.32687pt>
 File: images/tichchap.png Graphic file (type png)
 <use images/tichchap.png>
-Package pdftex.def Info: images/tichchap.png  used on input line 181.
+Package pdftex.def Info: images/tichchap.png  used on input line 182.
 (pdftex.def)             Requested size: 441.01773pt x 197.64896pt.
  [6 <./images/tichchap.png>]
 <images/relu.png, id=616, 879.285pt x 406.51875pt>
 File: images/relu.png Graphic file (type png)
 <use images/relu.png>
-Package pdftex.def Info: images/relu.png  used on input line 208.
+Package pdftex.def Info: images/relu.png  used on input line 209.
 (pdftex.def)             Requested size: 441.01773pt x 203.89157pt.
 <images/lopgop.jpg, id=618, 1286.8075pt x 567.11874pt>
 File: images/lopgop.jpg Graphic file (type jpg)
 <use images/lopgop.jpg>
-Package pdftex.def Info: images/lopgop.jpg  used on input line 235.
+Package pdftex.def Info: images/lopgop.jpg  used on input line 236.
 (pdftex.def)             Requested size: 441.01773pt x 194.36679pt.
  [7 <./images/relu.png>] [8 <./images/lopgop.jpg>]
 <images/rcnn.png, id=635, 631.60968pt x 217.5628pt>
 File: images/rcnn.png Graphic file (type png)
 <use images/rcnn.png>
-Package pdftex.def Info: images/rcnn.png  used on input line 303.
+Package pdftex.def Info: images/rcnn.png  used on input line 304.
 (pdftex.def)             Requested size: 441.01773pt x 151.91447pt.
  [9 <./images/rcnn.png>]
 <images/fastrcnn.png, id=648, 665.48625pt x 229.60782pt>
 File: images/fastrcnn.png Graphic file (type png)
 <use images/fastrcnn.png>
-Package pdftex.def Info: images/fastrcnn.png  used on input line 351.
+Package pdftex.def Info: images/fastrcnn.png  used on input line 352.
 (pdftex.def)             Requested size: 441.01773pt x 152.16174pt.
  [10]
 <images/time_fastrcnn.png, id=656, 944.52875pt x 324.21124pt>
 File: images/time_fastrcnn.png Graphic file (type png)
 <use images/time_fastrcnn.png>
-Package pdftex.def Info: images/time_fastrcnn.png  used on input line 367.
+Package pdftex.def Info: images/time_fastrcnn.png  used on input line 368.
 (pdftex.def)             Requested size: 441.01773pt x 151.37999pt.
 <images/fasterrcnn.png, id=663, 508.90125pt x 501.875pt>
 File: images/fasterrcnn.png Graphic file (type png)
 <use images/fasterrcnn.png>
-Package pdftex.def Info: images/fasterrcnn.png  used on input line 394.
+Package pdftex.def Info: images/fasterrcnn.png  used on input line 395.
 (pdftex.def)             Requested size: 441.01773pt x 434.94296pt.
  [11 <./images/fastrcnn.png> <./images/time_fastrcnn.png>]
 <images/RPN.png, id=674, 632.3625pt x 415.5525pt>
 File: images/RPN.png Graphic file (type png)
 <use images/RPN.png>
-Package pdftex.def Info: images/RPN.png  used on input line 412.
+Package pdftex.def Info: images/RPN.png  used on input line 413.
 (pdftex.def)             Requested size: 441.01773pt x 289.8195pt.
- [12 <./images/fasterrcnn.png>]
-<images/timelineYolo.png, id=681, 566.115pt x 121.20282pt>
+ [12 <./images/fasterrcnn.png>] [13 <./images/RPN.png>]
+<images/timelineYolo.png, id=687, 566.115pt x 121.20282pt>
 File: images/timelineYolo.png Graphic file (type png)
 <use images/timelineYolo.png>
-Package pdftex.def Info: images/timelineYolo.png  used on input line 445.
+Package pdftex.def Info: images/timelineYolo.png  used on input line 446.
 (pdftex.def)             Requested size: 441.01773pt x 94.42314pt.
- [13 <./images/RPN.png>]
 <images/yolo.png, id=688, 853.1875pt x 539.01375pt>
 File: images/yolo.png Graphic file (type png)
 <use images/yolo.png>
-Package pdftex.def Info: images/yolo.png  used on input line 462.
+Package pdftex.def Info: images/yolo.png  used on input line 463.
 (pdftex.def)             Requested size: 441.01773pt x 278.62737pt.
  [14 <./images/timelineYolo.png> <./images/yolo.png>]
 <images/yolo_a.png, id=701, 468.2861pt x 198.59561pt>
 File: images/yolo_a.png Graphic file (type png)
 <use images/yolo_a.png>
-Package pdftex.def Info: images/yolo_a.png  used on input line 489.
+Package pdftex.def Info: images/yolo_a.png  used on input line 490.
 (pdftex.def)             Requested size: 441.01773pt x 187.03142pt.
  [15 <./images/yolo_a.png>]
 <images/yolov2.png, id=712, 853.1875pt x 357.335pt>
 File: images/yolov2.png Graphic file (type png)
 <use images/yolov2.png>
-Package pdftex.def Info: images/yolov2.png  used on input line 528.
+Package pdftex.def Info: images/yolov2.png  used on input line 529.
 (pdftex.def)             Requested size: 441.01773pt x 184.71387pt.
  [16 <./images/yolov2.png>]
 <images/yolov3.png, id=724, 769.87625pt x 621.32124pt>
 File: images/yolov3.png Graphic file (type png)
 <use images/yolov3.png>
-Package pdftex.def Info: images/yolov3.png  used on input line 547.
+Package pdftex.def Info: images/yolov3.png  used on input line 548.
 (pdftex.def)             Requested size: 441.01773pt x 355.92966pt.
  [17 <./images/yolov3.png>]
 <images/yolov4_kt.png, id=740, 487.06969pt x 133.24782pt>
 File: images/yolov4_kt.png Graphic file (type png)
 <use images/yolov4_kt.png>
-Package pdftex.def Info: images/yolov4_kt.png  used on input line 566.
+Package pdftex.def Info: images/yolov4_kt.png  used on input line 567.
 (pdftex.def)             Requested size: 441.01773pt x 120.6498pt.
 <images/yolov4_2.png, id=748, 974.89218pt x 406.51875pt>
 File: images/yolov4_2.png Graphic file (type png)
 <use images/yolov4_2.png>
-Package pdftex.def Info: images/yolov4_2.png  used on input line 584.
+Package pdftex.def Info: images/yolov4_2.png  used on input line 585.
 (pdftex.def)             Requested size: 441.01773pt x 183.8994pt.
  [18 <./images/yolov4_kt.png>]
 <images/yolov5.png, id=762, 4403.45125pt x 2951.025pt>
 File: images/yolov5.png Graphic file (type png)
 <use images/yolov5.png>
-Package pdftex.def Info: images/yolov5.png  used on input line 603.
+Package pdftex.def Info: images/yolov5.png  used on input line 604.
 (pdftex.def)             Requested size: 441.01773pt x 295.52504pt.
  [19 <./images/yolov4_2.png>] [20 <./images/yolov5.png>]
 <images/yolov7.jpg, id=782, 1304.875pt x 552.0625pt>
 File: images/yolov7.jpg Graphic file (type jpg)
 <use images/yolov7.jpg>
-Package pdftex.def Info: images/yolov7.jpg  used on input line 659.
+Package pdftex.def Info: images/yolov7.jpg  used on input line 660.
 (pdftex.def)             Requested size: 441.01773pt x 186.58682pt.
  [21 <./images/yolov7.jpg>]
 <images/mosiac.png, id=792, 1944.26375pt x 943.525pt>
 File: images/mosiac.png Graphic file (type png)
 <use images/mosiac.png>
-Package pdftex.def Info: images/mosiac.png  used on input line 680.
+Package pdftex.def Info: images/mosiac.png  used on input line 681.
 (pdftex.def)             Requested size: 441.01773pt x 214.0116pt.
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 685.
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 686.
  (D:\LaTex\tex/latex/vntex\t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 <images/ssd.png, id=797, 448.67625pt x 137.7647pt>
 File: images/ssd.png Graphic file (type png)
 <use images/ssd.png>
-Package pdftex.def Info: images/ssd.png  used on input line 700.
+Package pdftex.def Info: images/ssd.png  used on input line 701.
 (pdftex.def)             Requested size: 441.01773pt x 135.41837pt.
  [22 <./images/mosiac.png>]
 <images/ssd_2.png, id=810, 403.5075pt x 155.07938pt>
 File: images/ssd_2.png Graphic file (type png)
 <use images/ssd_2.png>
-Package pdftex.def Info: images/ssd_2.png  used on input line 717.
+Package pdftex.def Info: images/ssd_2.png  used on input line 718.
 (pdftex.def)             Requested size: 441.01773pt x 169.49695pt.
  [23 <./images/ssd.png> <./images/ssd_2.png>]
 <images/focal_loss.png, id=821, 340.27126pt x 341.275pt>
 File: images/focal_loss.png Graphic file (type png)
 <use images/focal_loss.png>
-Package pdftex.def Info: images/focal_loss.png  used on input line 763.
+Package pdftex.def Info: images/focal_loss.png  used on input line 764.
 (pdftex.def)             Requested size: 255.3378pt x 256.091pt.
  [24]
 <images/retinanet.png, id=833, 944.52875pt x 251.94125pt>
 File: images/retinanet.png Graphic file (type png)
 <use images/retinanet.png>
-Package pdftex.def Info: images/retinanet.png  used on input line 782.
+Package pdftex.def Info: images/retinanet.png  used on input line 783.
 (pdftex.def)             Requested size: 441.01773pt x 117.63585pt.
  [25 <./images/focal_loss.png> <./images/retinanet.png>]
 <images/iou.jpg, id=843, 243.15843pt x 131.74219pt>
 File: images/iou.jpg Graphic file (type jpg)
 <use images/iou.jpg>
-Package pdftex.def Info: images/iou.jpg  used on input line 803.
+Package pdftex.def Info: images/iou.jpg  used on input line 804.
 (pdftex.def)             Requested size: 441.01773pt x 238.94292pt.
-<images/nguong_iou.jpg, id=848, 1027.84pt x 418.56375pt>
+ [26 <./images/iou.jpg>]
+<images/nguong_iou.jpg, id=855, 1027.84pt x 418.56375pt>
 File: images/nguong_iou.jpg Graphic file (type jpg)
 <use images/nguong_iou.jpg>
-Package pdftex.def Info: images/nguong_iou.jpg  used on input line 844.
+Package pdftex.def Info: images/nguong_iou.jpg  used on input line 845.
 (pdftex.def)             Requested size: 441.01773pt x 179.59569pt.
- [26 <./images/iou.jpg>]
 <images/AP.png, id=858, 468.75125pt x 461.725pt>
 File: images/AP.png Graphic file (type png)
 <use images/AP.png>
-Package pdftex.def Info: images/AP.png  used on input line 868.
+Package pdftex.def Info: images/AP.png  used on input line 869.
 (pdftex.def)             Requested size: 441.01773pt x 434.40201pt.
  [27 <./images/nguong_iou.jpg>] [28 <./images/AP.png>]) [29]
 Ch\uhorn \ohorn ng 3.
@@ -1577,12 +1576,15 @@ Package pdftex.def Info: images/trashnet_sample.png  used on input line 89.
  [30
 
 ]
-<images/trashnet_sample2.png, id=888, 2448.14626pt x 2451.1575pt>
+Overfull \vbox (7.15541pt too high) has occurred while \output is active []
+
+ [31 <./images/trashnet_sample.png>]
+<images/trashnet_sample2.png, id=893, 2448.14626pt x 2451.1575pt>
 File: images/trashnet_sample2.png Graphic file (type png)
 <use images/trashnet_sample2.png>
 Package pdftex.def Info: images/trashnet_sample2.png  used on input line 147.
 (pdftex.def)             Requested size: 441.01773pt x 441.52594pt.
- [31 <./images/trashnet_sample.png>] [32 <./images/trashnet_sample2.png>]
+ [32 <./images/trashnet_sample2.png>]
 <images/Taco.png, id=900, 426.84468pt x 320.69812pt>
 File: images/Taco.png Graphic file (type png)
 <use images/Taco.png>
@@ -1663,163 +1665,163 @@ Package pdftex.def Info: images/th1_data.png  used on input line 101.
 <images/thucnghiem2.1.jpg, id=1025, 364.74524pt x 219.23517pt>
 File: images/thucnghiem2.1.jpg Graphic file (type jpg)
 <use images/thucnghiem2.1.jpg>
-Package pdftex.def Info: images/thucnghiem2.1.jpg  used on input line 144.
+Package pdftex.def Info: images/thucnghiem2.1.jpg  used on input line 145.
 (pdftex.def)             Requested size: 352.81552pt x 212.07912pt.
 <images/matrix_tn2.png, id=1026, 867.24pt x 650.43pt>
 File: images/matrix_tn2.png Graphic file (type png)
 <use images/matrix_tn2.png>
-Package pdftex.def Info: images/matrix_tn2.png  used on input line 151.
+Package pdftex.def Info: images/matrix_tn2.png  used on input line 152.
 (pdftex.def)             Requested size: 352.81552pt x 264.61368pt.
  [46 <./images/thucnghiem2.1.jpg>]
 <images/thucnghiem3.1.jpg, id=1034, 364.74524pt x 219.23517pt>
 File: images/thucnghiem3.1.jpg Graphic file (type jpg)
 <use images/thucnghiem3.1.jpg>
-Package pdftex.def Info: images/thucnghiem3.1.jpg  used on input line 182.
+Package pdftex.def Info: images/thucnghiem3.1.jpg  used on input line 183.
 (pdftex.def)             Requested size: 352.81552pt x 212.07912pt.
  [47 <./images/matrix_tn2.png>]
 <images/matrix_tn3.png, id=1040, 867.24pt x 650.43pt>
 File: images/matrix_tn3.png Graphic file (type png)
 <use images/matrix_tn3.png>
-Package pdftex.def Info: images/matrix_tn3.png  used on input line 189.
+Package pdftex.def Info: images/matrix_tn3.png  used on input line 190.
 (pdftex.def)             Requested size: 352.81552pt x 264.61368pt.
  [48 <./images/thucnghiem3.1.jpg> <./images/matrix_tn3.png>]
 <images/yolov8_label.jpg, id=1049, 1927.2pt x 1927.2pt>
 File: images/yolov8_label.jpg Graphic file (type jpg)
 <use images/yolov8_label.jpg>
-Package pdftex.def Info: images/yolov8_label.jpg  used on input line 237.
+Package pdftex.def Info: images/yolov8_label.jpg  used on input line 238.
 (pdftex.def)             Requested size: 284.52756pt x 284.50949pt.
 <images/yolov8_pred_nobg.jpg, id=1050, 1927.2pt x 1927.2pt>
 File: images/yolov8_pred_nobg.jpg Graphic file (type jpg)
 <use images/yolov8_pred_nobg.jpg>
-Package pdftex.def Info: images/yolov8_pred_nobg.jpg  used on input line 239.
+Package pdftex.def Info: images/yolov8_pred_nobg.jpg  used on input line 240.
 (pdftex.def)             Requested size: 199.16928pt x 199.14194pt.
 <images/yolov8_pred.jpg, id=1051, 1927.2pt x 1927.2pt>
 File: images/yolov8_pred.jpg Graphic file (type jpg)
 <use images/yolov8_pred.jpg>
-Package pdftex.def Info: images/yolov8_pred.jpg  used on input line 241.
+Package pdftex.def Info: images/yolov8_pred.jpg  used on input line 242.
 (pdftex.def)             Requested size: 199.16928pt x 199.14194pt.
  [49]
-Underfull \hbox (badness 3386) in paragraph at lines 309--309
+Underfull \hbox (badness 3386) in paragraph at lines 310--310
 []|\T5/ptm/b/n/12 K¸t qu£ cõa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 Yang,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/n/12 Thung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/n/12 Sagar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 Carolis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 mAP50:
  []
 
 
-Overfull \hbox (2.03023pt too wide) in paragraph at lines 309--309
+Overfull \hbox (2.03023pt too wide) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 Proen[]a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 1 lîp mAP:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 Fulton
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 YOLOv2
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 309--309
+Underfull \hbox (badness 2582) in paragraph at lines 310--310
 \T5/ptm/m/n/12 Faster RCNN:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 Sylwia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 EfficientNet-
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 309--309
+Underfull \hbox (badness 2020) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 1 lîp-mAP50:
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 309--309
+Underfull \hbox (badness 2020) in paragraph at lines 310--310
 \T5/ptm/m/n/12 7 lîp-mAP50:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 Nghi¶n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/n/12 cùu
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 309--309
+Underfull \hbox (badness 2020) in paragraph at lines 310--310
 []|\T5/ptm/m/n/12 1 lîp-mAP50:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 310--310
 \T5/ptm/m/n/12 4 lîp-mAP:
  []
 
@@ -1829,7 +1831,7 @@ Ch\uhorn \ohorn ng 5.
 
 ] [53
 
-] [54]) [55] (the.aux)
+] [54] [55]) [56] (the.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -1838,13 +1840,13 @@ Package rerunfilecheck Info: File `the.out' has not changed.
 (rerunfilecheck)             Checksum: 121CF901890911A43228F2F2F222450F;10502.
  ) 
 Here is how much of TeX's memory you used:
- 43180 strings out of 474485
- 917440 string characters out of 5760619
+ 43181 strings out of 474485
+ 917447 string characters out of 5760619
  1945528 words of memory out of 5000000
  64333 multiletter control sequences out of 15000+600000
  643683 words of font info for 156 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,14n,133p,2372b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,14n,133p,2372b,725s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist, replaced by a fixed one
 
@@ -1858,9 +1860,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/urw/symbol/usyr.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmb8v.pfb><D:/LaTex/fonts/type1/urw/times/utmr8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmr8v.pfb><D:/LaTex/fonts/type1/urw/times/utmri8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmri8v.pfb><D:/LaTex/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on the.pdf (66 pages, 43026068 bytes).
+Output written on the.pdf (67 pages, 43026801 bytes).
 PDF statistics:
- 1225 PDF objects out of 1440 (max. 8388607)
- 265 named destinations out of 1000 (max. 500000)
+ 1230 PDF objects out of 1440 (max. 8388607)
+ 266 named destinations out of 1000 (max. 500000)
  728 words of extra memory for PDF output out of 10000 (max. 10000000)
 

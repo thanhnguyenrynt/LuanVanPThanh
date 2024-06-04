@@ -17,7 +17,8 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	ảnh và phân ra làm 6 lớp: thủy tinh, giấy, kim loại, nhựa, bìa cứng, và các loại
 	rác khác. Nhóm nghiên cứu đã sử dụng tăng cường dữ liệu bằng việc xoay, điều chỉnh độ sáng,
 	dịch chuyển và cắt các hình ảnh một cách ngẫu nhiên. Sau đó nhóm huấn luyện mô hình và đạt kết quả 67\% cho SVM và 22\% cho CNN.
-	Tuy kết quả của nhóm tác giả không đạt mong muốn như kì vọng nhưng bộ dữ liệu TrashNet sau này của nhóm đã được sử dụng rộng rãi cho các nghiên cứu tương tự.
+	Tuy kết quả của nhóm tác giả không đạt mong muốn như kì vọng nhưng bộ dữ liệu TrashNet sau này của nhóm đã được sử
+	dụng rộng rãi cho các nghiên cứu tương tự.
 
 }
 
@@ -32,6 +33,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	có giá trị 0 (rác hữu cơ) và 1 (rác tái chế). Nhóm nghiên cứu so sánh kết quả
 	của mô hình tự xây dựng với VGG16 \cite{simonyan2014very} và ResNet-34.
 	Mô hình đạt độ chính xác lên đến 94.96\%.
+
 }
 
 \bigskip
@@ -44,6 +46,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	Nghiên cứu đạt kết quả cao vì áp dụng các phương pháp kết hợp thích hợp các mô hình CNN.
 	Tuy nhiên tác giả cũng đang mở rộng
 	quy mô dữ liệu trong tương lai.
+
 }
 
 \bigskip
@@ -105,13 +108,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12}\selectfont
 
-	Thị giác máy tính là một trong những lĩnh vực quan trọng của khoa học máy tính và trí tuệ nhân tạo. Thị giác máy tính là một công nghệ giúp tự động nhân biết và mô tả hình ảnh một các chính xác và hiệu quả.
-	Hình \ref{fig:computer_vision} giải thích quá trình con người ghi lại hình ảnh đối tượng thông qua võng mạc của mắt,
-	sau đó bộ não tiếp nhận và nhận dạng ra đối tượng. Một người có thể dễ dàng nhận biết và phát hiện đối tượng trong bức ảnh một các chính xác vị trí của chúng.
-	Tuy nhiên việc này lại khó khăn với máy tính, hệ thống phải
-	tiếp nhận hình ảnh thông qua thiết bị ghi hình, "đọc" và "hiểu" hình ảnh dưới dạng ma trận số của tập hợp các điểm ảnh,
-	sau đó được mô hình huấn luyện từ trước để nhận dạng các đối tượng trong ảnh.
-	Tuy vẫn chưa thể chính xác được như thị giác của con người nhưng đã có rất nhiều ứng dụng hữu ích, điểm hình như điểm danh bằng khuôn mặt, phát hiện các bệnh bằng chẩn đoán hình ảnh, công nghệ xe tự hành.
+	Thị giác máy tính là một trong những lĩnh vực quan trọng của khoa học máy tính và trí tuệ nhân tạo. Thị giác máy tính là một công nghệ giúp tự động nhân biết và mô tả hình ảnh một các chính xác và hiệu quả. Hình \ref{fig:computer_vision} giải thích quá trình con người ghi lại hình ảnh đối tượng thông qua võng mạc của mắt, sau đó bộ não tiếp nhận và nhận dạng ra đối tượng. Một người có thể dễ dàng nhận biết và phát hiện đối tượng trong bức ảnh một các chính xác vị trí của chúng. Tuy nhiên việc này lại khó khăn với máy tính, hệ thống phải tiếp nhận hình ảnh thông qua thiết bị ghi hình, "đọc" và "hiểu" hình ảnh dưới dạng ma trận số của tập hợp các điểm ảnh, sau đó được mô hình huấn luyện từ trước để nhận dạng các đối tượng trong ảnh. Tuy vẫn chưa thể chính xác được như thị giác của con người nhưng đã có rất nhiều ứng dụng hữu ích, điểm hình như điểm danh bằng khuôn mặt, phát hiện các bệnh bằng chẩn đoán hình ảnh, công nghệ xe tự hành.
 
 }
 
@@ -130,9 +127,13 @@ nhận dạng các vật thể trong ảnh. Từ đó đến nay, thị giác m�
 \begin{itemize}
 	\item Phân loại hình ảnh: Phân loại hình ảnh cho phép máy tính quan sát và phân loại chính xác một hình ảnh thuộc loại nào.
 	      Ví dụ là camera có thể nhận diện khuôn mặt trong ảnh.
+
 	\item Phát hiện đối tượng: Xác định và phân loại các vật thể khác nhau trong hình ảnh hoặc video bằng ô bao quanh đối tượng. Ví dụ phát hiện cây cối hay con người.
+
 	\item Theo dõi đối tượng: Theo dõi đối tượng sử dụng mô hình học sâu để xác định và theo dõi các mục tiêu. Ví dụ giám sát giao thông tại cái điểm có đèn giao thông.
+
 	\item Phân đoạn: Xác định đối tượng bằng cách chia nhỏ đối tượng thành các vùng khác nhau dựa trên các điểm ảnh quan sát được. Khác với nhận dạng đối tượng, phân đoạn sẽ xác định hình dạng cụ thể của đối tượng.
+
 	\item Truy xuất hình ảnh dựa trên nội dung: có khả năng tìm kiếm các hình ảnh kỹ thuật số cụ thể trong cơ sở dữ liệu lớn.
 \end{itemize}
 
@@ -560,7 +561,7 @@ Có thể dễ dàng nhận thấy rằng toàn bộ mạng YOLO không có bấ
 	Phần neck được sử dụng để thu thập các bản đồ đặc trưng từ các giai đoạn khác nhau và thường bao gồm các luồng đi từ dưới lên và các luồng đi từ trên xuống, từ đó giúp cho lớp nhận dạng sẽ chứa thông tin phong phú hơn. Phần head là phần được sử dụng để thực hiện việc phát hiện và phân loại đối tượng cuối cùng.
 	Kiến trúc tổng quan được YOLOv4 định nghĩa như Hình \ref{fig:yolov4_1}.
 
-	}
+}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{yolov4_kt.png}
@@ -596,7 +597,7 @@ YOLOv4 là mô hình phát hiện đối tượng mạnh mẽ và hiệu quả, 
 	Hình \ref{fig:yolov5} mô tả kiến trúc của YOLOv5 không khác biệt nhiều so với YOLOv4, với backbone thay thế CSPNet với ít hơn một lớp tích chập (53 lớp) gọi là C3 module, phần neck cải tiến SPP bằng SPP-Fast có khả năng xử lí nhanh hơn,
 	phần head vẫn giữ là YOLOv3.
 
-	}
+}
 
 \begin{figure}[H]
 	\centering
@@ -622,7 +623,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	YOLOv6 sử dụng một biến thể của kiến trúc EfficientNet có tên là EfficientNet-L2 \cite{yolov72023}.
 	Đó là một kiến trúc hiệu quả hơn so với EfficientDet được sử dụng trong YOLOv5 với ít tham số hơn và hiệu quả tính toán cao hơn. Nó có thể đạt được kết quả tiên tiến trên các điểm chuẩn phát hiện đối tượng khác nhau.
 
-	}
+}
 
 \subsubsection{YOLOv7}
 \label{sec:yolov7}
@@ -632,7 +633,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	YOLOv7 sử dụng chín hộp neo, cho phép phát hiện phạm vi hình dạng và kích thước đối tượng rộng hơn so với các phiên bản trước, do đó giúp giảm số lượng xác định sai.
 	YOLOv7 cũng có độ phân giải cao hơn so với các phiên bản trước. Nó xử lý hình ảnh ở độ phân giải 608 x 608, cao hơn độ phân giải 416 x 416 được sử dụng trong YOLOv3. Độ phân giải cao hơn này cho phép YOLOv7 phát hiện các đối tượng nhỏ hơn và có độ chính xác tổng thể cao hơn.
 
-	}
+}
 
 \bigskip
 
@@ -642,7 +643,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	Một trong những ưu điểm chính của YOLOv7 là tốc độ. Nó có thể xử lý hình ảnh với tốc độ 155 khung hình mỗi giây, nhanh hơn nhiều so với các thuật toán phát hiện đối tượng hiện đại khác. Điều này làm cho nó phù hợp với các ứng dụng thời gian thực nhạy cảm như giám sát và ô tô tự lái, trong đó tốc độ xử lý cao hơn là rất quan trọng.
 	So sánh hiệu suất và tốc độ của YOLOv7 với các mô hình phát hiện đối tượng thời gian thực hiện đại (xem Hình \ref{fig:yolov7}).
 
-	}
+}
 
 \bigskip
 
@@ -652,7 +653,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	Ngoài ra, YOLOv7 còn gặp khó khăn khi phát hiện đối tượng rất lớn hay rất nhỏ so với các đối tượng khác trong ngữ cảnh. Cuối cùng, YOLOv7 đòi hỏi nhiều tính toán, điều này gây khó khăn khi chạy trong thời gian thực trên các thiết bị hạn chế về tài nguyên như điện thoại thông minh hoặc các thiết bị
 	khác.
 
-	}
+}
 
 \begin{figure}[H]
 	\centering
@@ -673,7 +674,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	YOLOv8 còn giới thiệu một kỹ thuật mới là tăng cường dữ liệu mosiac (xem Hình \ref{fig:mosaic}). Tăng cường dữ liệu mosaic là một kỹ thuật đơn giản, trong đó bốn hình ảnh khác nhau được nối lại với nhau và đưa vào mô hình như đầu vào. Điều này giúp mô hình học được các đối tượng thực sự từ các vị trí khác nhau và trong trạng thái bị che khuất.
 	Việc thực hiện tăng cường dữ liệu mosiac có thể làm giảm hiệu suất, vì vậy nó đã sẽ được tắt đi khi quá trình huấn luyện chuyển sang những kỷ nguyên cuối cùng.
 
-	}
+}
 
 \begin{figure}[H]
 	\centering
@@ -693,7 +694,7 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	Mô hình sẽ tạo ra các lưới ô trên các bản đồ đặc trưng, từ tâm của mỗi ô sẽ xác định tập hợp các hộp giới hạn mặc định được lựa chọn thủ công để dự đoán khung hình có khả năng bao quanh vật thể (xem Hình \ref{fig:ssd}).
 	Tại mỗi hộp giới hạn mặc định, ta cần dự báo phân phối xác suất $c = (c_1, c_2,\dots, c_n)$ tương ứng với các lớp $C= C_1, C_2,\dots,C_n $ . Tại thời điểm huấn luyện, ta cần so khớp các hộp giới hạn mặc định với các hộp giới hạn thực của vật thể trên ảnh đầu vào sao cho mức độ sai số qua mất mát vị trí là thấp nhất, sau đó dự đoán nhãn bằng hàm Sofmax để dự đoán nhãn.
 
-	}
+}
 
 \begin{figure}[H]
 	\centering
@@ -742,7 +743,7 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 	Những mô hình phát hiện đối tượng trước đó điều phải đối mặt với vấn đề mất cân bằng lớp (class imbalance) và luôn phải đối mặt với việc đánh giá khoảng $10^4 - 10^5$ vị trí ứng viên cho mỗi ảnh nhưng chỉ có một vài vị trí chứa vật thể.
 	Điều này dẫn đến việc huấn luyện không hiệu quả vì hầu hết dữ liệu là các lớp âm \cite{lin2018focal}. Focal loss là hàm mất mát lần đầu được giới thiệu trong RetinaNet. Hàm mất mát này đã chứng minh được tính hiệu quả trong các bài toán object detection.
 	Như hình \ref{fig:focal_loss} chỉ có 4 hộp giới hạn thuộc lớp dương (các đường viền in đậm), tất cả trường hợp còn lại đều là lớp âm. Công thức của hàm cross entropy tại các nhãn bằng 0 giá trị đóng góp vào hàm mất mát bằng 0 nên có công thức:
-	
+
 	\begin{equation}
 		CE(p,y) = C(p_t) =  -\log(p_t)
 	\end{equation}
@@ -756,7 +757,7 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 	nếu $\gamma$ tăng thì mất mát sẽ nhỏ hơn cho dữ liệu dễ học (foreground), cao hơn cho dữ liệu khó học (background) của dữ liệu học khó
 	và do đó tập trung hơn vào những trường hợp khó dự báo. Nhờ đó cải thiện được độ chính xác.
 
-	}
+}
 
 \begin{figure}[H]
 	\centering
@@ -796,7 +797,7 @@ xác định vị trí hộp giới hạn.
 	thực tế và 1 là hai kết quả này hoàn toàn trùng khớp.
 	Tỉ lệ này càng lớn đồng nghĩa hộp giới hạn dự đoán ra càng giống hộp thực của dữ liệu.
 
-	}
+}
 
 \begin{figure}[H]
 	\centering
@@ -828,7 +829,7 @@ Thông thường với các mô hình phát hiện đôi tượng, chỉ số $I
 	Độ nhạy (recall) đo lường tỷ lệ của các hộp giới hạn mà mô hình dự đoán đúng so với tổng số các hộp giới hạn dữ liệu thực tế đúng có công thức \ref{equa:R}.
 	Giá trị TP của mô hình sẽ phụ thuộc vào việc chọn ngưỡng IoU.
 	Như hình \ref{fig:nguong_iou} nếu ngưỡng IoU là 0.5, IoU cho dự đoán là 0.7 khi đó chúng ta có TP - dự đoán đúng. Ngược lại nếu IoU là 0.3, chúng ta có FP - dự đoán sai.
-	
+
 	\begin{equation}
 		Precision = \frac{TP}{TP+FP}\
 		\label{equa:P}
@@ -838,7 +839,7 @@ Thông thường với các mô hình phát hiện đôi tượng, chỉ số $I
 		\label{equa:R}
 	\end{equation}
 
-	}
+}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{nguong_iou.jpg}
@@ -861,7 +862,7 @@ Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tí
 	Trong PASCAL VOC2007, AP cho một lớp được tính cho một ngưỡng IoU. Do đó mAP là trung bình của AP trên toàn bộ các lớp.
 	Còn trong COCO 2017, mAP là trung bình trên toàn bộ các lớp và với mười ngưỡng IoU.
 
-	}
+}
 
 \begin{figure}[H]
 	\centering
@@ -883,7 +884,7 @@ Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tí
 	Kích thước thể hiện kích thước tệp hoặc mức tiêu thụ bộ nhớ của mô hình. Nó đo lường tính di động của mô hình và khả năng triển khai dễ dàng.
 	kích thước nhỏ hơn sẽ dễ dàng lưu trữ và truyền tải hơn, yêu cầu tài nguyên trên thiết bị thấp hơn, có khả năng tải xuống và triển khai nhanh hơn. Hệ thống hướng tới việc triển khai trên thiết bị di động nên việc chọn các mô hình có kích thước nhỏ là việc ưu tiên.
 
-	}
+}
 % \begin{algorithm}
 % \caption{Thuật toán NMS}\label{alg:1}
 % \begin{algorithmic}

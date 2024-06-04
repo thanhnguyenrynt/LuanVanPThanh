@@ -16,7 +16,6 @@ YOLOv8 không những cho thấy khả năng vượt trội trong việc phát h
 Mô hình nhận dạng tốt các vật thể là kim loại và có kết quả không khả quan với lớp rác khác do ảnh hưởng bởi nền xung quanh vật thể và sự đa dạng trong lớp.
 So với các nghiên cứu trước đây chủ yếu thực hiện việc phân lớp có đặc tính dữ liệu được chụp ở môi trường có ánh sáng, nền lí tưởng nên không thể áp dụng với các hình ảnh được chụp trực tiếp ngoài tự nhiên, thì nghiên cứu này đạt được độ chính xác tương đối trên tập dữ liệu thử nghiệm.
 Kết quả trên của mô hình YOLOv8 được áp dụng để xây dụng lên hệ thống phát hiện và phân loại rác thải trên đường phố, lập ra bản đồ phân bố bốn loại rác thải.
-\selectfont 
 
 }
 
@@ -25,6 +24,7 @@ Kết quả trên của mô hình YOLOv8 được áp dụng để xây dụng l
 {\fontsize{13}{12} \selectfont 
 Việc kết hợp các tập dữ liệu Taco, TrashNet, tự thu thập giúp hạn chế việc mất cân bằng dữ liệu, tăng tính đa dạng cho việc huấn luyện.
 Sau quá trình tìm hiểu và thực nghiệm, nghiên cứu cho thấy việc áp dụng các ảnh nền không chứa vật thể giúp cải thiện mô hình. Ngoài ra việc phân chia thành các lớp có thể ảnh hưởng đến kết quả của việc phân loại.
+
 }
 \section{Hạn chế và đề xuất}
 \subsection{Hạn chế}
@@ -36,11 +36,13 @@ Hiện tại mô hình có cải thiện so với các mô hình trước đây 
     \item Hệ thống chưa lấy được tọa độ của video nên chỉ đang sử dụng nhận dạng với hình ảnh.
     \item Việc gán nhãn thủ công và chuyển đổi nhãn của tập dữ liệu Taco có thể phát sinh nhiều sai sót ảnh hưởng quá trình học của mô hình.	
 \end{itemize}
+
 }
 \subsection{Đề xuất}
 {\fontsize{13}{12} \selectfont 
 Với những hạn chế đã đề cập, chúng tôi đề xuất việc tăng cường thu thập dữ liệu cho mô hình, có thể thu thập bằng việc gắn camera lúc di chuyển.
 Các hình ảnh của người dùng khi sử dụng hệ thống cần được bổ sung vào tập dữ liệu để huấn luyện.
 Nghiên cứu nên phát triển chức năng xác định vị trí khi quay video để sử dụng cho việc phát hiện theo thời gian thực, giúp cải thiện dữ liệu cho bản đồ phân bố.
+
 }
 \end{document}
