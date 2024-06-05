@@ -5,7 +5,7 @@
 {\fontsize{13}{12} \selectfont
 Trong chương này tiền hành đánh giá và thảo luận kết quả. Các mô hình sẽ được đánh giá dựa vào số lượng tham số sử dụng, tốc độ FPS và độ chính xác mAP50.
 Nghiên cứu sẽ tiến hành đánh giá các mô hình dựa vào bộ dữ liệu 1, 2 đã đề cập ở phần \ref{sec:dataset} lần lượt được gọi là Thực nghiệm 1, 2, 3.
-Các tập xác thực được tạo từ $20\%$ từ bộ dữ liệu, tập thử nghiệm ($5\%$) để đánh giá kết quả trên hình ảnh thực tế ở đường phố được lấy từ tập dữ liệu Taco và tự thu thập (xem Bảng \ref{tab:datasettest}).
+Các tập xác thực được tạo từ $20\%$ từ bộ dữ liệu, tập thử nghiệm ($5\%$) để đánh giá kết quả trên hình ảnh thực tế ở đường phố được lấy từ tập dữ liệu TACO và tự thu thập (xem Bảng \ref{tab:datasettest}).
 Các mô hình được huấn luyện trên máy tính cấu hình GPU GTX 3050 với bộ nhớ 8GB.
 
 }
@@ -200,7 +200,7 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOL
   Từ đánh giá việc phát hiện đối tượng (phát hiện một lớp) đến việc phát hiện và phân loại rác thành bốn lớp theo thành phần.
   Các mô hình luôn gặp khó khăn khi phát hiện vật thể với lớp rác khác vì có kích thước nhỏ và tính đa dạng.
   Điều đó cho thấy việc gán nhãn và định nghĩa các rác cụ thể thành các lớp đặc trưng mang ý nghĩa quan trọng,
-  tương tự như việc chuyển đổi các lớp ở dữ liệu Taco thành các lớp ở dữ liệu nghiên cứu.
+  tương tự như việc chuyển đổi các lớp ở dữ liệu TACO thành các lớp ở dữ liệu nghiên cứu.
   Thực nghiệm 3 bổ sung thêm dữ liệu từ các nền đã tăng độ chính xác của mô hình được mô tả chi tiết ở Bảng \ref{tab:thaoluan1}.
 
  }

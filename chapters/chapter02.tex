@@ -66,7 +66,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Đối với các nghiên cứu về phân loại hoặc phân đoạn rác thải có nhóm nghiên cứu của tác giả Pedro F. Proença \cite{proença2020taco} cung cấp bộ dữ liệu Taco với đa dạng nhãn về các loại rác.
+	Đối với các nghiên cứu về phân loại hoặc phân đoạn rác thải có nhóm nghiên cứu của tác giả Pedro F. Proença \cite{proença2020taco} cung cấp bộ dữ liệu TACO với đa dạng nhãn về các loại rác.
 	Nhóm nghiên cứu sử dụng mô hình Mask R-CNN để huấn luyện và đạt được kết quả 26.2\% phát hiện và 17.6\% với khả năng phát hiện và phân loại rác.
 	Vì độ đa dạng của đối tượng cũng như hình nền, mô hình của nhóm tác giả dễ bị phát hiện nhầm giữa đối tượng và nền hoặc bỏ sót đi các vật thể nhỏ. Tuy vậy, nhóm tác giả cũng tin tưởng rằng bộ dữ liệu sẽ mang vấn đề tích cực và mong cộng đồng cùng chung tay xây dựng tập dữ liệu tốt hơn.
 
@@ -99,7 +99,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 {\fontsize{13}{12} \selectfont
 
 	Sylwia \etal  \cite{Majchrowska_2022} áp dụng việc kết hợp các bộ dữ liệu về rác để huấn luyện mô hình theo bảy lớp theo tình hình ở Pomerania, Ba Lan và đạt kết quả 66.4\% với phát hiện một lớp.
-	Đề tài nghiên cứu sẽ áp dụng ý tưởng của nghiên cứu này \cite{Majchrowska_2022} kết hợp dữ liệu TrashNet \cite{yang2016classification}, Taco \cite{proença2020taco} để thực hiện.
+	Đề tài nghiên cứu sẽ áp dụng ý tưởng của nghiên cứu này \cite{Majchrowska_2022} kết hợp dữ liệu TrashNet \cite{yang2016classification}, TACO \cite{proença2020taco} để thực hiện.
 
 }
 
@@ -211,7 +211,7 @@ Bộ lọc ở những lớp tích chập đầu tiên sẽ dùng để phát hi
 	\label{fig:relu}
 \end{figure}
 
-\subsection{Lớp gộp (Polling) và Lớp kết hợp đầy đủ(Fully Connected Layer)}
+\subsection{Lớp gộp (Polling) và Lớp kết hợp đầy đủ (Fully Connected Layer)}
 
 {\fontsize{13}{12} \selectfont
 
@@ -734,14 +734,15 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 
 	RetinaNet là một phương pháp tiếp cận một giai đoạn, trong đó RetinaNet thực hiện tính toán dựa trên các hộp neo mặc định tại mỗi vị trí cần tính toán thay vì sử dụng các vùng đề xuất được tạo ra từ một nghiên cứu khác. RetinaNet là một mô hình giải quyết được vấn đề mất cân bằng dữ liệu giữa các lớp các hộp giới hạn chứa vật thể (foreground) và lớp các hộp giới hạn không chứa vật thể (background) trong các bài toán phát hiện đối tượng một giai đoạn
 	bằng cách sử dụng hàm focal loss thay cho cross entropy.
-}
+
+	}
 
 \bigskip
 
 {\fontsize{13}{12} \selectfont
 
 	Những mô hình phát hiện đối tượng trước đó điều phải đối mặt với vấn đề mất cân bằng lớp (class imbalance) và luôn phải đối mặt với việc đánh giá khoảng $10^4 - 10^5$ vị trí ứng viên cho mỗi ảnh nhưng chỉ có một vài vị trí chứa vật thể.
-	Điều này dẫn đến việc huấn luyện không hiệu quả vì hầu hết dữ liệu là các lớp âm \cite{lin2018focal}. Focal loss là hàm mất mát lần đầu được giới thiệu trong RetinaNet. Hàm mất mát này đã chứng minh được tính hiệu quả trong các bài toán object detection.
+	Điều này dẫn đến việc huấn luyện không hiệu quả vì hầu hết dữ liệu là các lớp âm \cite{lin2018focal}. Focal loss là hàm mất mát lần đầu được giới thiệu trong RetinaNet. Hàm mất mát này đã chứng minh được tính hiệu quả trong các bài toán phát hiện đối tượng.
 	Như hình \ref{fig:focal_loss} chỉ có 4 hộp giới hạn thuộc lớp dương (các đường viền in đậm), tất cả trường hợp còn lại đều là lớp âm. Công thức của hàm cross entropy tại các nhãn bằng 0 giá trị đóng góp vào hàm mất mát bằng 0 nên có công thức:
 
 	\begin{equation}
@@ -754,7 +755,7 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 
 	Khi sử dụng hàm focal loss cần có hai tham số cần điều chỉnh, $\alpha \in$ cho lớp là $1$ và $1 - \alpha$ cho lớp $-1$.
 	Bình thường $\alpha > 0.5$ thì model sẽ tập trung học những dữ liệu có lớp là $1$. Tham số $\gamma$ điều chỉnh mất mát,
-	nếu $\gamma$ tăng thì mất mát sẽ nhỏ hơn cho dữ liệu dễ học (foreground), cao hơn cho dữ liệu khó học (background) của dữ liệu học khó
+	nếu $\gamma$ tăng thì mất mát sẽ nhỏ hơn cho dữ liệu dễ học (foreground), cao hơn cho dữ liệu khó học (background)
 	và do đó tập trung hơn vào những trường hợp khó dự báo. Nhờ đó cải thiện được độ chính xác.
 
 }
