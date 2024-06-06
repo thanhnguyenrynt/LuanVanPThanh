@@ -33,7 +33,7 @@ Các mô hình được huấn luyện trên máy tính cấu hình GPU GTX 3050
 {\fontsize{13}{12} \selectfont
 
 Thực nghiệm 1 với mục tiêu đánh giá các mô hình dựa trên việc phát hiện vật thể có phải là rác hay không, trong tập dữ liệu có một nhãn duy nhất là rác.
-Các mô hình được so sánh trong nhiệm vụ phát hiện đối tượng, các phương pháp tăng cường dữ liệu được cài đặt cho các mô hình là như nhau được thể hiện ở bảng \ref{tab:thamso}.
+Các mô hình được so sánh trong nhiệm vụ phát hiện đối tượng, các phương pháp tăng cường dữ liệu được cài đặt cho các mô hình là như nhau được thể hiện ở Bảng \ref{tab:thamso}.
 Các tham số còn lại cài đặt theo mặc định của mô hình, như tăng cường mosiac ở YOLOv8, focal loss ở YOLOv7 mục đích đánh giá đặc trưng riêng của các mô hình.
 
 }
@@ -170,10 +170,10 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOL
     \begin{tabular}{|l|l|r|r|r|r|r|}
         \hline
         \textbf{Mô hình}             & \multicolumn{1}{c|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{c|}{\textbf{Kim Loại}} & \multicolumn{1}{c|}{\textbf{Giấy}} & \multicolumn{1}{c|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{c|}{\textbf{Khác}} & \multicolumn{1}{c|}{\textbf{Tất cả}} \\ \hline
-        \multirow{2}{*}{YOLOv7-tiny} & Xác thực                                  & 0,729                                  & 0,678                              & 0,546                                      & 0.477                              & 0.608                                \\ \cline{2-7}
-                                     & Thử nghiệm                                & 0,445                                  & 0,393                              & 0,476                                      & 0.235                              & 0.387                                \\ \hline
-        \multirow{2}{*}{YOLOv8n}     & Xác thực                                  & \textbf{0,759}                         & \textbf{0,727}                     & \textbf{0,629}                             & \textbf{0.572}                     & \textbf{0.672}                       \\ \cline{2-7}
-                                     & Thử nghiệm                                & \textbf{0,514}                         & \textbf{0,451}                     & \textbf{0,556}                             & \textbf{0.263}                     & \textbf{0.446}                       \\ \hline
+        \multirow{2}{*}{YOLOv7-tiny} & Xác thực                                  & 0,729                                  & 0,678                              & 0,546                                      & 0,477                              & 0,608                                \\ \cline{2-7}
+                                     & Thử nghiệm                                & 0,445                                  & 0,393                              & 0,476                                      & 0,235                              & 0,387                                \\ \hline
+        \multirow{2}{*}{YOLOv8n}     & Xác thực                                  & \textbf{0,759}                         & \textbf{0,727}                     & \textbf{0,629}                             & \textbf{0,572}                     & \textbf{0,672}                       \\ \cline{2-7}
+                                     & Thử nghiệm                                & \textbf{0,514}                         & \textbf{0,451}                     & \textbf{0,556}                             & \textbf{0,263}                     & \textbf{0,446}                       \\ \hline
     \end{tabular}
     \label{tab:thucnghiem3.1}
 \end{table}

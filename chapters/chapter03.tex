@@ -26,7 +26,7 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 \label{sec:trashnet}
 {\fontsize{13}{12} \selectfont
 
-	TrashNet là tập dữ liệu được giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như bảng \ref{tab:dataset}. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình, một số hình ảnh ở tập Trashnet ở hình
+	TrashNet là tập dữ liệu được giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như Bảng \ref{tab:dataset}. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình, một số hình ảnh ở tập Trashnet ở hình
 	\ref{fig:dataset_0}.
 	Do mục đích ban đầu của tập dữ liệu dùng để phân lớp nên nghiên cứu phải thực hiện gán hộp giới hạn cho bộ dữ liệu để phù hợp với nhu cầu phát hiện đối tượng. Tập dữ liệu TrashNet bao gồm các đối tượng có kích thước lớn và rõ ràng, mục đích sử dụng tăng độ nhận dạng cho mô hình. Bảng \ref{tab:dataset1} thể hiện số lượng đối tượng sau khi đã gán hộp giới hạn cho tập dữ liệu, hình
 	\ref{fig:dataset_1} mô tả tập dữ liệu TrashNet khi được gán hộp giới hạn.
@@ -156,7 +156,7 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 	TACO là một tập dữ liệu hình ảnh về chất thải trong tự nhiên. Tập dữ liệu chứa các hình ảnh về rác được chụp trong nhiều môi trường khác nhau, từ những bãi biển đến đường phố London. Những hình ảnh này được gắn nhãn và phân đoạn thủ công để đào tạo và đánh giá các thuật toán phát hiện đối tượng.
 	Bộ dữ liệu được cung cấp
 	theo chuẩn json của COCO. Hiện tại bộ dữ liệu có 1.500 ảnh với 4.784 vật thể
-	và 3,918 ảnh mới cần được gán nhãn.
+	và 3.918 ảnh mới cần được gán nhãn.
 
 }
 
@@ -236,7 +236,7 @@ tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít d�
 {\fontsize{13}{12} \selectfont
 
 	Hình \ref{fig:dataset_own} là bộ dữ liệu được thực hiện lấy mẫu ở các tỉnh thành ở ĐBSCL như Cần Thơ, Vĩnh Long và chủ yếu ở Trà Vinh nhầm phản ánh thực tế tình trạng rác ở địa phương.
-	Dữ liệu thu thập gồm 663 hình ảnh với 1.766 đối tượng được chia cho bốn lớp kim loại, nhựa - nilon, giấy, rác khác với trung bình 2,6 đối tượng mỗi hình ảnh (bảng \ref{tab:datasetown}).
+	Dữ liệu thu thập gồm 663 hình ảnh với 1.766 đối tượng được chia cho bốn lớp kim loại, nhựa - nilon, giấy, rác khác với trung bình 2,6 đối tượng mỗi hình ảnh (xem Bảng \ref{tab:datasetown}).
 	Phần lớn là các hộp thức ăn giấy, các bọc nilon, ly nhựa, túi rác, khẩu trang giấy và các phần rác cũ không có hình dạng cố định.
 	Việc thu thập thêm dữ liệu nhầm giúp mô hình học tập và cải thiện khả năng phát hiện đúng thực tế. Trong quá trình thực hiện thu thập dữ liệu gặp những vấn đề như sau:
 
@@ -353,7 +353,7 @@ Nghiên cứu sẽ sử dụng các bộ dữ liệu như sau:
 
 {\fontsize{13}{12} \selectfont
 
-Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần. Ví dụ như các lớp được chuyển đổi từ bộ dữ liệu TACO (bảng \ref{tab:taco_map}).
+Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần. Ví dụ như các lớp được chuyển đổi từ bộ dữ liệu TACO (xem Bảng \ref{tab:taco_map}).
 Ngoài ra bộ dữ liệu TACO là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
 Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref{sec:TACO} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình ở điều kiện tự nhiên.
 

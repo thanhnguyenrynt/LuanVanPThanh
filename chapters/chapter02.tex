@@ -26,7 +26,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Ngoài ra, Jash và Sagar \cite{shah2022method} đã đề xuất một mô hình CNN dựa trên 25,077
+	Ngoài ra, Jash và Sagar \cite{shah2022method} đã đề xuất một mô hình CNN dựa trên 25.077
 	hình ảnh chia làm 2 lớp: rác hữu cơ và rác tái chế. Mô hình nhận ảnh đầu vào là
 	hình có kích thước 224x224 với mã màu RGB, gồm 6 lớp tích chập, 3 lớp tổng
 	hợp, và 3 lớp kết nối. Đầu ra của mô hình là nơ-ron
@@ -77,7 +77,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 {\fontsize{13}{12} \selectfont
 
 	Mô hình YOLOv3 \cite{redmon2018yolov3} được Carolis \etal \cite{9122693} sử dụng cho việc phát hiện và phân loại rác chia làm bốn lớp: thùng rác lớn, thùng rác nhỏ, túi rác, và rác tập hợp.
-	Nghiên cứu đạt mAP50 là 59.59\% với kết quả của các lớp là túi rác (40,56\%), thùng rác lớn (64,57\%), thùng rác nhỏ (65,01\%) và rác tập hợp (68,18\%).
+	Nghiên cứu đạt mAP50 là 59,59\% với kết quả của các lớp là túi rác (40,56\%), thùng rác lớn (64,57\%), thùng rác nhỏ (65,01\%) và rác tập hợp (68,18\%).
 	Các lớp của mô hình chủ yếu là các vật thể có kích thước lớn giúp mô hình dễ nhận dạng, nhóm nghiên cứu chỉ gặp khó khăn khi nhận dạng lớp rác tập hợp.
 	Vì vậy, tác giả đã sử dụng thuật toán riêng để gộp các hộp giới hạn bị chồng chéo có cùng lớp, việc này giúp ít trong việc đánh giá kết quả của lớp rác tập hợp.
 
@@ -709,7 +709,7 @@ Bằng việc tính toán các hộp giới hạn trên các bản đồ đặc 
 SSD sử dụng mô mạng CNN duy nhất, kiến trúc gồm hai phần với một mạng cơ sở có thể là VGG16, ResNet hay MobileNet được loại bỏ tầng kết nối đầy đủ có nhiệm vụ trích xuất ra các bản đồ đặc trưng.
 Một tập hợp các tầng tích chập phụ trợ để thay thế cho tầng kết nối bị loại bỏ. Các lớp này giảm dần kích thước không gian trong khi tăng số lượng kênh (kênh đặc trưng). Thiết kế này cho phép SSD tạo ra các bản đồ đặc trưng ở nhiều tỷ lệ. Bản đồ đặc trưng của mỗi thang đo phù hợp để phát hiện các vật thể có kích thước khác nhau.
 Sau đó SSD liên kết các hộp neo mặc định được xác định trước với các bản đồ đặc trưng như đã đề cập ở trên.
-Kiến trúc được thể hiện ở hình \ref{fig:ssd2}
+Kiến trúc được thể hiện ở Hình \ref{fig:ssd2}
 
 }
 
@@ -743,7 +743,7 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 
 	Những mô hình phát hiện đối tượng trước đó điều phải đối mặt với vấn đề mất cân bằng lớp (class imbalance) và luôn phải đối mặt với việc đánh giá khoảng $10^4 - 10^5$ vị trí ứng viên cho mỗi ảnh nhưng chỉ có một vài vị trí chứa vật thể.
 	Điều này dẫn đến việc huấn luyện không hiệu quả vì hầu hết dữ liệu là các lớp âm \cite{lin2018focal}. Focal loss là hàm mất mát lần đầu được giới thiệu trong RetinaNet. Hàm mất mát này đã chứng minh được tính hiệu quả trong các bài toán phát hiện đối tượng.
-	Như hình \ref{fig:focal_loss} chỉ có 4 hộp giới hạn thuộc lớp dương (các đường viền in đậm), tất cả trường hợp còn lại đều là lớp âm. Công thức của hàm cross entropy tại các nhãn bằng 0 giá trị đóng góp vào hàm mất mát bằng 0 nên có công thức:
+	Như Hình \ref{fig:focal_loss} chỉ có 4 hộp giới hạn thuộc lớp dương (các đường viền in đậm), tất cả trường hợp còn lại đều là lớp âm. Công thức của hàm cross entropy tại các nhãn bằng 0 giá trị đóng góp vào hàm mất mát bằng 0 nên có công thức:
 
 	\begin{equation}
 		CE(p,y) = C(p_t) =  -\log(p_t)
@@ -809,7 +809,7 @@ xác định vị trí hộp giới hạn.
 
 {\fontsize{13}{12} \selectfont
 
-Trong hình \ref{fig:iou} có khung màu đỏ là nhãn thực hay còn gọi là hộp giới hạn
+Trong Hình \ref{fig:iou} có khung màu đỏ là nhãn thực hay còn gọi là hộp giới hạn
 được gán nhãn, khung màu xanh là nhãn dự đoán hay còn gọi là hộp giới hạn được mô hình dự đoán.
 Kết quả của Iou sẽ có giá trị trong khoảng 0 đến 1 với mỗi lần phát hiện có giá trị riêng. Để xác định là phát hiện đúng hoặc phát hiện sai, chúng ta phải dựa vào ngưỡng cho trước.
 Thông thường với các mô hình phát hiện đôi tượng, chỉ số $IoU > 50\%$ được xem là dự đoán có đối tượng. Dựa vào khái niệm trên ta có các định nghĩa sau:
@@ -829,7 +829,7 @@ Thông thường với các mô hình phát hiện đôi tượng, chỉ số $I
 	mà thực tế là đúng có công thức \ref{equa:P}.
 	Độ nhạy (recall) đo lường tỷ lệ của các hộp giới hạn mà mô hình dự đoán đúng so với tổng số các hộp giới hạn dữ liệu thực tế đúng có công thức \ref{equa:R}.
 	Giá trị TP của mô hình sẽ phụ thuộc vào việc chọn ngưỡng IoU.
-	Như hình \ref{fig:nguong_iou} nếu ngưỡng IoU là 0.5, IoU cho dự đoán là 0.7 khi đó chúng ta có TP - dự đoán đúng. Ngược lại nếu IoU là 0.3, chúng ta có FP - dự đoán sai.
+	Như Hình \ref{fig:nguong_iou} nếu ngưỡng IoU là 0.5, IoU cho dự đoán là 0.7 khi đó chúng ta có TP - dự đoán đúng. Ngược lại nếu IoU là 0.3, chúng ta có FP - dự đoán sai.
 
 	\begin{equation}
 		Precision = \frac{TP}{TP+FP}\
@@ -851,7 +851,7 @@ Thông thường với các mô hình phát hiện đôi tượng, chỉ số $I
 {\fontsize{13}{12} \selectfont
 
 Khi bắt đầu thay đổi ngưỡng IoU, các giá trị precision và recall sẽ được tính để tạo ra đường cong được gọi là Precision Recall Curve tương tự Hình \ref{fig:ap}.
-Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tích vùng màu xanh ở hình \ref{fig:ap}. AP càng lớn thể hiện việc precision và recall càng cao với các ngưỡng IoU khác nhau, đồng nghĩa với mô hình tốt.
+Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tích vùng màu xanh ở Hình \ref{fig:ap}. AP càng lớn thể hiện việc precision và recall càng cao với các ngưỡng IoU khác nhau, đồng nghĩa với mô hình tốt.
 
 }
 
