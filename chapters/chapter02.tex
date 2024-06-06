@@ -13,7 +13,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 {\fontsize{13}{12} \selectfont
 
 	Yang và Thung \cite{yang2016classification} đã so sánh mô hình Support Vector Model (SVM) với
-	mô hình mạng nơ-ron tích chập (CNN) dựa trên tập dữ liệu khoảng 2400 hình
+	mô hình mạng nơ-ron tích chập (CNN) dựa trên tập dữ liệu khoảng 2.400 hình
 	ảnh và phân ra làm 6 lớp: thủy tinh, giấy, kim loại, nhựa, bìa cứng, và các loại
 	rác khác. Nhóm nghiên cứu đã sử dụng tăng cường dữ liệu bằng việc xoay, điều chỉnh độ sáng,
 	dịch chuyển và cắt các hình ảnh một cách ngẫu nhiên. Sau đó nhóm huấn luyện mô hình và đạt kết quả 67\% cho SVM và 22\% cho CNN.
@@ -26,7 +26,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Ngoài ra, Jash và Sagar \cite{shah2022method} đã đề xuất một mô hình CNN dựa trên 25.077
+	Ngoài ra, Jash và Sagar \cite{shah2022method} đã đề xuất một mô hình CNN dựa trên 25,077
 	hình ảnh chia làm 2 lớp: rác hữu cơ và rác tái chế. Mô hình nhận ảnh đầu vào là
 	hình có kích thước 224x224 với mã màu RGB, gồm 6 lớp tích chập, 3 lớp tổng
 	hợp, và 3 lớp kết nối. Đầu ra của mô hình là nơ-ron
@@ -67,7 +67,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 {\fontsize{13}{12} \selectfont
 
 	Đối với các nghiên cứu về phân loại hoặc phân đoạn rác thải có nhóm nghiên cứu của tác giả Pedro F. Proença \cite{proença2020taco} cung cấp bộ dữ liệu TACO với đa dạng nhãn về các loại rác.
-	Nhóm nghiên cứu sử dụng mô hình Mask R-CNN để huấn luyện và đạt được kết quả 26.2\% phát hiện và 17.6\% với khả năng phát hiện và phân loại rác.
+	Nhóm nghiên cứu sử dụng mô hình Mask R-CNN để huấn luyện và đạt được kết quả 26,2\% phát hiện và 17,6\% với khả năng phát hiện và phân loại rác.
 	Vì độ đa dạng của đối tượng cũng như hình nền, mô hình của nhóm tác giả dễ bị phát hiện nhầm giữa đối tượng và nền hoặc bỏ sót đi các vật thể nhỏ. Tuy vậy, nhóm tác giả cũng tin tưởng rằng bộ dữ liệu sẽ mang vấn đề tích cực và mong cộng đồng cùng chung tay xây dựng tập dữ liệu tốt hơn.
 
 }
@@ -77,7 +77,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 {\fontsize{13}{12} \selectfont
 
 	Mô hình YOLOv3 \cite{redmon2018yolov3} được Carolis \etal \cite{9122693} sử dụng cho việc phát hiện và phân loại rác chia làm bốn lớp: thùng rác lớn, thùng rác nhỏ, túi rác, và rác tập hợp.
-	Nghiên cứu đạt mAP50 là 59.59\% với kết quả của các lớp là túi rác (40.56\%), thùng rác lớn (64.57\%), thùng rác nhỏ (65.01\%) và rác tập hợp (68.18\%).
+	Nghiên cứu đạt mAP50 là 59.59\% với kết quả của các lớp là túi rác (40,56\%), thùng rác lớn (64,57\%), thùng rác nhỏ (65,01\%) và rác tập hợp (68,18\%).
 	Các lớp của mô hình chủ yếu là các vật thể có kích thước lớn giúp mô hình dễ nhận dạng, nhóm nghiên cứu chỉ gặp khó khăn khi nhận dạng lớp rác tập hợp.
 	Vì vậy, tác giả đã sử dụng thuật toán riêng để gộp các hộp giới hạn bị chồng chéo có cùng lớp, việc này giúp ít trong việc đánh giá kết quả của lớp rác tập hợp.
 
@@ -89,7 +89,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	Fulton cùng các cộng sự \cite{8793975} đã sử dụng tập dữ liệu Trash-ICRA19 về rác thải biển. Tập dữ liệu gồm 5,700 hình ảnh được trích xuất từ video được quay dưới đáy biển với độ sâu khác nhau,
 	cung cấp nhiều vật thể ở các trạng thái đã phân hủy hoặc bị vùi lấp.
 	Bộ dữ liệu được chia thành ba lớp là nhựa, vật thể nhân tạo, vật thể tự nhiên bao gồm cả cá, thảm thực vật dưới biển.
-	Nghiên cứu đạt kết quả 47.9\% với YOLOv2 \cite{redmon2016yolo9000}, 67.4\% với SSD MobileNetv2 \cite{sandler2019mobilenetv2} , 81\% Faster R-CNN \cite{ren2016faster}.
+	Nghiên cứu đạt kết quả 47,9\% với YOLOv2 \cite{redmon2016yolo9000}, 67,4\% với SSD MobileNetv2 \cite{sandler2019mobilenetv2} , 81\% Faster R-CNN \cite{ren2016faster}.
 	Faster R-CNN là sự lựa chọn hoàn hảo dựa vào độ chính xác, tuy nhiên lại rất chậm. YOLOv2 đạt được sự cân bằng cả hai trong khi SSD cho thấy hiệu quả về tốc độ.
 
 }
@@ -98,7 +98,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Sylwia \etal  \cite{Majchrowska_2022} áp dụng việc kết hợp các bộ dữ liệu về rác để huấn luyện mô hình theo bảy lớp theo tình hình ở Pomerania, Ba Lan và đạt kết quả 66.4\% với phát hiện một lớp.
+	Sylwia \etal  \cite{Majchrowska_2022} áp dụng việc kết hợp các bộ dữ liệu về rác để huấn luyện mô hình theo bảy lớp theo tình hình ở Pomerania, Ba Lan và đạt kết quả 66,4\% với phát hiện một lớp.
 	Đề tài nghiên cứu sẽ áp dụng ý tưởng của nghiên cứu này \cite{Majchrowska_2022} kết hợp dữ liệu TrashNet \cite{yang2016classification}, TACO \cite{proença2020taco} để thực hiện.
 
 }
