@@ -2,7 +2,7 @@
 \begin{document}
 {\fontsize{13}{12} \selectfont
 
-Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SSD MobileNet. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng. Mục \ref{sec:dataset} mô tả về tập dữ liệu, và sơ đồ hệ thống ở Mục \ref{sec:sodo}
+Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SSD MobileNet. Mục \ref{sec:dataset} mô tả về tập dữ liệu. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng và sơ đồ hệ thống ở Mục \ref{sec:sodo}
 
 }
 \section{Tập dữ liệu}
@@ -356,8 +356,28 @@ Nghiên cứu sẽ sử dụng các bộ dữ liệu như sau:
 Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần. Ví dụ như các lớp được chuyển đổi từ bộ dữ liệu TACO (xem Bảng \ref{tab:taco_map}).
 Ngoài ra bộ dữ liệu TACO là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
 Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref{sec:TACO} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình ở điều kiện tự nhiên.
-
+Để tăng cường dữ liệu, nghiên cứu sử dụng các tham số tăng cường như Bảng \ref{tab:thamso} để tạo sự đa dạng cho mô hình và cải thiện số lượng tập dữ liệu, các tham số được cài đặt trong mô hình.
 }
+
+\begin{table}[ht!]
+    \centering
+    \caption{Các tham số tăng cường dữ liệu cho các mô hình}
+    \begin{tabular}{|l|p{7cm}|r|}
+        \hline
+        \textbf{Tên}
+                   & \textbf{Mô tả}
+                   & \textbf{(\%)}
+        \\ \hline
+        Lật ngang  & Lật hình ảnh từ trái sang phải, tăng tính đa dạng dữ liệu                                                                                    & 50 \\  \hline
+        Lật dọc    & Lật ngược hình ảnh, không ảnh hưởng đến đặc điểm của đối tượng                                                                               & 50 \\  \hline
+        Xoay       & Xoay hình ảnh ngẫu nhiên, cải thiện khả năng nhận dạng vật thể ở nhiều hướng                                                                 & 50 \\  \hline
+        Xê dịch    & Dịch hình ảnh theo chiều ngang và chiều dọc bằng một phần kích thước hình ảnh, hỗ trợ học cách phát hiện các vật thể nhìn thấy được một phần & 10 \\  \hline
+        Phóng đại  & Phóng to, thu nhỏ hình ảnh, mô phỏng hình ảnh với tỉ lệ khác nhau so với hình ảnh chụp                                                       & 50 \\  \hline
+        Độ bão hòa & Thay đổi độ bão hòa của hình ảnh một phần, ảnh hưởng đến cường độ màu sắc. Hữu ích cho việc mô phỏng các điều kiện môi trường khác nhau      & 70 \\ \hline
+        Độ sáng    & Sửa đổi độ sáng của hình ảnh theo một phần nhỏ, giúp mô hình hoạt động tốt trong nhiều điều kiện ánh sáng khác nhau                          & 40 \\ \hline
+    \end{tabular}
+    \label{tab:thamso}
+\end{table}
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % Please add the following required packages to your document preamble:

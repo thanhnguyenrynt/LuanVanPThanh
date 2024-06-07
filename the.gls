@@ -21,9 +21,6 @@
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossentry{iou}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
-\glsgroupheading{M}\relax \glsresetentrylist %
-\glossentry{ml}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
 \glsgroupheading{N}\relax \glsresetentrylist %
 \glossentry{nms}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
@@ -38,10 +35,6 @@
 \glossentry{rpn}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{viii}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
-\glossentry{sam}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{viii}}}%
-\glossentry{sgd}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{viii}}}%
 \glossentry{spp}{\glossaryentrynumbers{\relax 
 		\setentrycounter[]{page}\glsnumberformat{viii}}}%
 \glossentry{svm}{\glossaryentrynumbers{\relax 

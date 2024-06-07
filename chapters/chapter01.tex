@@ -47,12 +47,13 @@ Việc phát hiện rác thải ngoài tự nhiên là một thách thức so v�
 
 {\fontsize{13}{12} \selectfont
 
-Mục đích đề tài nhắm đến xây dựng hệ thống hỗ trợ phát hiện và phân loại rác với đầu vào là hình ảnh trên đường phố. Kết quả được đạt được là hình ảnh đã được xác định vùng là vật thể rác và tên loại rác, từ đó xây dựng lên bản đồ phân bố. Nghiên cứu chia làm các giai đoạn:
+Mục đích đề tài nhắm đến xây dựng hệ thống hỗ trợ phát hiện và phân loại rác với đầu vào là hình ảnh trên đường phố. Kết quả được đạt được là hình ảnh đã được xác định vùng là vật thể rác và tên loại rác, từ đó xây dựng lên bản đồ phân bố. Cụ thể nghiên cứu thực hiện nhưng nội dung sau:
 
 \begin{itemize}
-  \item Tiến hành thu thập, gán nhãn và chuẩn hóa dữ liệu đầu vào tùy vào mô hình, sau đó tìm ra mô hình tối ưu nhất.
+  \item Tiến hành thu thập, gán nhãn tập dữ liệu cá nhân. Tìm hiểu tập dữ liệu TrashNet \cite{yang2016classification} và TACO \cite{proença2020taco}. Tiền xử lí, kết hợp các tập dữ liệu để tạo ra bộ dữ liệu cho việc phát hiện đối tượng.
+  Đánh giá các mô hình như YOLO, SSD trên bộ dữ liệu ngoài tự nhiên trong nhiệm vụ phát hiện và phân loại rác. Sau đó so sánh độ hiệu quả của mô hình và tìm ra mô hình tối ưu để xây dựng hệ thống.
   
-  \item Xây dựng ứng dụng nhận đầu vào là hình ảnh rác ở đường phố, hình ảnh được mô hình nhận dạng và phân loại thông qua giao tiếp API, cuối cùng hình ảnh được thêm vào cơ sở dữ liệu giúp tăng cường bản đồ phân loại.
+  \item Xây dựng ứng dụng nhận đầu vào là hình ảnh rác ở đường phố, hình ảnh được mô hình nhận dạng, phân loại rác, sau đó ghi nhận vào cơ sở dữ liệu các thông tin vị trí, vùng phát hiện rác, loại rác để hiển thị lên bản đồ phân bố.
  
 \end{itemize}
 
@@ -61,7 +62,7 @@ Mục đích đề tài nhắm đến xây dựng hệ thống hỗ trợ phát 
 
 {\fontsize{13}{12} \selectfont
 
-Qua các thực nghiệm, phát hiện đối tượng là một cách tiếp cận mới phù hợp để phát hiện rác. Nghiên cứu dựa vào tình hình dữ liệu ở ĐBSCL và các quy định của Luật Bảo vệ môi trường 2020 và tình hình rác ở địa phương để phân loại rác thành các lớp thích hợp. Từ đó có thể áp dụng thực tiễn để phát triển bản đồ phân bố rác ở địa phương. 
+Qua các thực nghiệm, phát hiện đối tượng là một cách tiếp cận mới phù hợp để phân loại rác thải trong môi trường tự nhiên, việc bổ sung các hình ảnh không có rác giúp mô hình cải thiện hiệu suất. Nghiên cứu dựa vào tình hình dữ liệu ở ĐBSCL và các quy định của Luật Bảo vệ môi trường 2020 và tình hình rác ở địa phương để phân loại rác thành các lớp thích hợp. Từ đó có thể áp dụng thực tiễn để phát triển bản đồ phân bố rác ở địa phương. 
 
 }
 

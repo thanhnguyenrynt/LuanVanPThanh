@@ -11,25 +11,7 @@ Các mô hình được huấn luyện trên máy tính cấu hình GPU GTX 3050
 }
 
 \section{Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}
-\begin{table}[ht!]
-    \centering
-    \caption{Các tham số tăng cường dữ liệu cho các mô hình}
-    \begin{tabular}{|l|p{7cm}|r|}
-        \hline
-        \textbf{Tên}
-                   & \textbf{Mô tả}
-                   & \textbf{(\%)}
-        \\ \hline
-        Lật ngang  & Lật hình ảnh từ trái sang phải, tăng tính đa dạng dữ liệu                                                                                    & 50 \\  \hline
-        Lật dọc    & Lật ngược hình ảnh, không ảnh hưởng đến đặc điểm của đối tượng                                                                               & 50 \\  \hline
-        Xoay       & Xoay hình ảnh ngẫu nhiên, cải thiện khả năng nhận dạng vật thể ở nhiều hướng                                                                 & 50 \\  \hline
-        Xê dịch    & Dịch hình ảnh theo chiều ngang và chiều dọc bằng một phần kích thước hình ảnh, hỗ trợ học cách phát hiện các vật thể nhìn thấy được một phần & 10 \\  \hline
-        Phóng đại  & Phóng to, thu nhỏ hình ảnh, mô phỏng hình ảnh với tỉ lệ khác nhau so với hình ảnh chụp                                                       & 50 \\  \hline
-        Độ bão hòa & Thay đổi độ bão hòa của hình ảnh một phần, ảnh hưởng đến cường độ màu sắc. Hữu ích cho việc mô phỏng các điều kiện môi trường khác nhau      & 70 \\ \hline
-        Độ sáng    & Sửa đổi độ sáng của hình ảnh theo một phần nhỏ, giúp mô hình hoạt động tốt trong nhiều điều kiện ánh sáng khác nhau                          & 40 \\ \hline
-    \end{tabular}
-    \label{tab:thamso}
-\end{table}
+
 {\fontsize{13}{12} \selectfont
 
 Thực nghiệm 1 với mục tiêu đánh giá các mô hình dựa trên việc phát hiện vật thể có phải là rác hay không, trong tập dữ liệu có một nhãn duy nhất là rác.
@@ -91,7 +73,7 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{matrix_tn1.png}
+    \includegraphics[width=0.9\textwidth]{matrix_tn1.png}
     \caption{Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}
     \label{fig:thucnghiem1.2}
 \end{figure}
@@ -149,7 +131,7 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{matrix_tn2.png}
+    \includegraphics[width=1.0\textwidth]{matrix_tn2.png}
     \caption{Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}
     \label{fig:thucnghiem2.1}
 \end{figure}
@@ -180,14 +162,14 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOL
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{thucnghiem3.1.jpg}
+    \includegraphics[width=1\textwidth]{thucnghiem3.1.jpg}
     \caption{Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}
     \label{fig:thucnghiem3}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{matrix_tn3.png}
+    \includegraphics[width=1\textwidth]{matrix_tn3.png}
     \caption{Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không có nhãn}
     \label{fig:thucnghiem3.1}
 \end{figure}
