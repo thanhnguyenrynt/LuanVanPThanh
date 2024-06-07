@@ -44,11 +44,11 @@
 \contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{41}{section.3.3}%
 \contentsline {chapter}{\numberline {4} KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{43}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{43}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Thực nghiệm 2 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{46}{section.4.2}%
+\contentsline {section}{\numberline {4.2}Thực nghiệm 2 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{45}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Thực nghiệm 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}{47}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Thảo luận}{49}{section.4.4}%
-\contentsline {chapter}{\numberline {5} KẾT LUẬN VÀ ĐỀ XUẤT}{53}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kết luận}{53}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{53}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{53}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{53}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {5} KẾT LUẬN VÀ ĐỀ XUẤT}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kết luận}{52}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{52}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{52}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{52}{subsection.5.2.2}%

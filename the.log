@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.6.3)  7 JUN 2024 11:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.6.3)  7 JUN 2024 13:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1599,28 +1599,39 @@ File: images/data_own.png Graphic file (type png)
 <use images/data_own.png>
 Package pdftex.def Info: images/data_own.png  used on input line 294.
 (pdftex.def)             Requested size: 441.01773pt x 328.84923pt.
- [35] [36 <./images/data_own.png>] [37]
+ [35]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[36 <./images/data_own.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[37]
 <images/yolov7_kientruc.jpg, id=924, 2569.6pt x 1526.70375pt>
 File: images/yolov7_kientruc.jpg Graphic file (type jpg)
 <use images/yolov7_kientruc.jpg>
-Package pdftex.def Info: images/yolov7_kientruc.jpg  used on input line 407.
+Package pdftex.def Info: images/yolov7_kientruc.jpg  used on input line 411.
 (pdftex.def)             Requested size: 352.81552pt x 209.61374pt.
- [38]
+ [38 <./images/yolov7_kientruc.jpg>]
 <images/yolov8_kientruc.jpg, id=932, 1405.25pt x 1470.49374pt>
 File: images/yolov8_kientruc.jpg Graphic file (type jpg)
 <use images/yolov8_kientruc.jpg>
-Package pdftex.def Info: images/yolov8_kientruc.jpg  used on input line 431.
+Package pdftex.def Info: images/yolov8_kientruc.jpg  used on input line 435.
 (pdftex.def)             Requested size: 352.81552pt x 369.19319pt.
- [39 <./images/yolov7_kientruc.jpg>] [40 <./images/yolov8_kientruc.jpg>]
+ [39] [40 <./images/yolov8_kientruc.jpg>]
 <images/mobinet.png, id=945, 554.82281pt x 236.38312pt>
 File: images/mobinet.png Graphic file (type png)
 <use images/mobinet.png>
-Package pdftex.def Info: images/mobinet.png  used on input line 456.
+Package pdftex.def Info: images/mobinet.png  used on input line 460.
 (pdftex.def)             Requested size: 352.81552pt x 150.31802pt.
 <images/sodo.png, id=949, 581.17125pt x 852.18375pt>
 File: images/sodo.png Graphic file (type png)
 <use images/sodo.png>
-Package pdftex.def Info: images/sodo.png  used on input line 478.
+Package pdftex.def Info: images/sodo.png  used on input line 482.
 (pdftex.def)             Requested size: 352.81552pt x 517.3477pt.
  [41 <./images/mobinet.png>]) [42 <./images/sodo.png>]
 Ch\uhorn \ohorn ng 4.
@@ -1631,189 +1642,189 @@ Ch\uhorn \ohorn ng 4.
 File: images/thucnghiem1.png Graphic file (type png)
 <use images/thucnghiem1.png>
 Package pdftex.def Info: images/thucnghiem1.png  used on input line 69.
-(pdftex.def)             Requested size: 352.81552pt x 211.94815pt.
+(pdftex.def)             Requested size: 308.71106pt x 185.45172pt.
 <images/matrix_tn1.png, id=972, 867.24pt x 650.43pt>
 File: images/matrix_tn1.png Graphic file (type png)
 <use images/matrix_tn1.png>
 Package pdftex.def Info: images/matrix_tn1.png  used on input line 76.
-(pdftex.def)             Requested size: 441.01773pt x 330.76213pt.
- [44 <./images/thucnghiem1.png>]
-<images/th1_data.png, id=979, 4004.9625pt x 2027.575pt>
+(pdftex.def)             Requested size: 396.91325pt x 297.68294pt.
+<images/th1_data.png, id=973, 4004.9625pt x 2027.575pt>
 File: images/th1_data.png Graphic file (type png)
 <use images/th1_data.png>
 Package pdftex.def Info: images/th1_data.png  used on input line 83.
 (pdftex.def)             Requested size: 441.01773pt x 223.2505pt.
- [45 <./images/matrix_tn1.png> <./images/th1_data.png>]
-<images/thucnghiem2.1.jpg, id=991, 364.74524pt x 219.23517pt>
+ [44 <./images/thucnghiem1.png> <./images/matrix_tn1.png>]
+<images/thucnghiem2.1.jpg, id=985, 364.74524pt x 219.23517pt>
 File: images/thucnghiem2.1.jpg Graphic file (type jpg)
 <use images/thucnghiem2.1.jpg>
-Package pdftex.def Info: images/thucnghiem2.1.jpg  used on input line 127.
+Package pdftex.def Info: images/thucnghiem2.1.jpg  used on input line 118.
 (pdftex.def)             Requested size: 352.81552pt x 212.07912pt.
+ [45 <./images/th1_data.png>]
 <images/matrix_tn2.png, id=992, 867.24pt x 650.43pt>
 File: images/matrix_tn2.png Graphic file (type png)
 <use images/matrix_tn2.png>
-Package pdftex.def Info: images/matrix_tn2.png  used on input line 134.
-(pdftex.def)             Requested size: 441.01773pt x 330.76213pt.
+Package pdftex.def Info: images/matrix_tn2.png  used on input line 136.
+(pdftex.def)             Requested size: 396.91325pt x 297.68294pt.
  [46 <./images/thucnghiem2.1.jpg>]
 <images/thucnghiem3.1.jpg, id=1000, 364.74524pt x 219.23517pt>
 File: images/thucnghiem3.1.jpg Graphic file (type jpg)
 <use images/thucnghiem3.1.jpg>
-Package pdftex.def Info: images/thucnghiem3.1.jpg  used on input line 165.
-(pdftex.def)             Requested size: 441.01773pt x 265.09805pt.
+Package pdftex.def Info: images/thucnghiem3.1.jpg  used on input line 167.
+(pdftex.def)             Requested size: 352.81552pt x 212.07912pt.
  [47 <./images/matrix_tn2.png>]
 <images/matrix_tn3.png, id=1006, 867.24pt x 650.43pt>
 File: images/matrix_tn3.png Graphic file (type png)
 <use images/matrix_tn3.png>
-Package pdftex.def Info: images/matrix_tn3.png  used on input line 172.
+Package pdftex.def Info: images/matrix_tn3.png  used on input line 174.
 (pdftex.def)             Requested size: 441.01773pt x 330.76213pt.
- [48 <./images/thucnghiem3.1.jpg>] [49 <./images/matrix_tn3.png>]
-<images/yolov8_label.jpg, id=1019, 1927.2pt x 1927.2pt>
+ [48 <./images/thucnghiem3.1.jpg> <./images/matrix_tn3.png>]
+<images/yolov8_label.jpg, id=1015, 1927.2pt x 1927.2pt>
 File: images/yolov8_label.jpg Graphic file (type jpg)
 <use images/yolov8_label.jpg>
-Package pdftex.def Info: images/yolov8_label.jpg  used on input line 220.
+Package pdftex.def Info: images/yolov8_label.jpg  used on input line 222.
 (pdftex.def)             Requested size: 284.52756pt x 284.50949pt.
-<images/yolov8_pred_nobg.jpg, id=1020, 1927.2pt x 1927.2pt>
+<images/yolov8_pred_nobg.jpg, id=1016, 1927.2pt x 1927.2pt>
 File: images/yolov8_pred_nobg.jpg Graphic file (type jpg)
 <use images/yolov8_pred_nobg.jpg>
-Package pdftex.def Info: images/yolov8_pred_nobg.jpg  used on input line 222.
+Package pdftex.def Info: images/yolov8_pred_nobg.jpg  used on input line 224.
 (pdftex.def)             Requested size: 199.16928pt x 199.14194pt.
-<images/yolov8_pred.jpg, id=1021, 1927.2pt x 1927.2pt>
+<images/yolov8_pred.jpg, id=1017, 1927.2pt x 1927.2pt>
 File: images/yolov8_pred.jpg Graphic file (type jpg)
 <use images/yolov8_pred.jpg>
-Package pdftex.def Info: images/yolov8_pred.jpg  used on input line 224.
+Package pdftex.def Info: images/yolov8_pred.jpg  used on input line 226.
 (pdftex.def)             Requested size: 199.16928pt x 199.14194pt.
- [50]
-Underfull \hbox (badness 3386) in paragraph at lines 292--292
+ [49]
+Underfull \hbox (badness 3386) in paragraph at lines 294--294
 []|\T5/ptm/b/n/12 K¸t qu£ cõa
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 Yang,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/n/12 Thung
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/n/12 Sagar
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 Carolis
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 mAP50:
  []
 
 
-Overfull \hbox (2.03023pt too wide) in paragraph at lines 292--292
+Overfull \hbox (2.03023pt too wide) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 Proen[]a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 1 lîp mAP:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 Fulton
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 YOLOv2
  []
 
 
-Underfull \hbox (badness 2582) in paragraph at lines 292--292
+Underfull \hbox (badness 2582) in paragraph at lines 294--294
 \T5/ptm/m/n/12 Faster RCNN:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 Sylwia
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/it/12 et al.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 EfficientNet-
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 292--292
+Underfull \hbox (badness 2020) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 1 lîp-mAP50:
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 292--292
+Underfull \hbox (badness 2020) in paragraph at lines 294--294
 \T5/ptm/m/n/12 7 lîp-mAP50:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 Nghi¶n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/n/12 cùu
  []
 
 
-Underfull \hbox (badness 2020) in paragraph at lines 292--292
+Underfull \hbox (badness 2020) in paragraph at lines 294--294
 []|\T5/ptm/m/n/12 1 lîp-mAP50:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
 \T5/ptm/m/n/12 4 lîp-mAP:
  []
 
-) [51 <./images/yolov8_label.jpg> <./images/yolov8_pred_nobg.jpg> <./images/yolov8_pred.jpg>] [52]
+) [50 <./images/yolov8_label.jpg> <./images/yolov8_pred_nobg.jpg> <./images/yolov8_pred.jpg>] [51]
 Ch\uhorn \ohorn ng 5.
-(chapters/chapter05.tex) (the.bbl [53
+(chapters/chapter05.tex) (the.bbl [52
 
-] [54
+] [53
 
-] [55] [56]) [57] (the.aux)
+] [54] [55]) [56] (the.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
@@ -1822,8 +1833,8 @@ Package rerunfilecheck Info: File `the.out' has not changed.
 (rerunfilecheck)             Checksum: 64742E2DC80EBAF3FF4214019ED10FE3;10304.
  ) 
 Here is how much of TeX's memory you used:
- 43092 strings out of 474485
- 916039 string characters out of 5760619
+ 43091 strings out of 474485
+ 916032 string characters out of 5760619
  1948528 words of memory out of 5000000
  64252 multiletter control sequences out of 15000+600000
  643683 words of font info for 156 fonts, out of 8000000 for 9000
@@ -1842,9 +1853,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmb8v.pfb><D:/LaTex/fonts/type1/urw/times/utmr8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmr8v.pfb><D:/LaTex/fonts/type1/urw/times/utmri8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmri8v.pfb><D:/LaTex/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on the.pdf (68 pages, 42658015 bytes).
+Output written on the.pdf (67 pages, 42657300 bytes).
 PDF statistics:
- 1196 PDF objects out of 1200 (max. 8388607)
- 260 named destinations out of 1000 (max. 500000)
+ 1192 PDF objects out of 1200 (max. 8388607)
+ 259 named destinations out of 1000 (max. 500000)
  710 words of extra memory for PDF output out of 10000 (max. 10000000)
 

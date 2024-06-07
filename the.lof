@@ -32,20 +32,20 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục nhỏ}}}}{33}{subfigure.4.2}%
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Tỉ lệ nền}}}}{33}{subfigure.4.3}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Ví dụ về bộ dữ liệu thu thập. Hộp màu hồng là kim loại, màu vàng là giấy, màu nâu là nhựa - nilon, màu xanh dương là khác}}{36}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Kiến trúc mô hình YOLOv7}}{39}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Kiến trúc mô hình YOLOv7}}{38}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Kiến trúc mô hình YOLOv8 trên github được đóng góp bởi RangeKing}}{40}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Kiến trúc mô hình SSD MobileNetv2}}{41}{figure.caption.47}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Sơ đồ hệ thống}}{42}{figure.caption.48}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}}{44}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}}{45}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}}{44}{figure.caption.52}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Hình ảnh dự đoán của mô hình YOLOv8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{45}{figure.caption.53}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}}{46}{figure.caption.55}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}}{47}{figure.caption.56}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}}{48}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không có nhãn}}{49}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{51}{figure.caption.61}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{51}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{51}{subfigure.8.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{51}{subfigure.8.3}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không có nhãn}}{48}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{50}{figure.caption.61}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{50}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{50}{subfigure.8.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{50}{subfigure.8.3}%
 \addvspace {10\p@ }

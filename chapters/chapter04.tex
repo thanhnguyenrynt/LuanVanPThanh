@@ -66,7 +66,7 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{thucnghiem1.png}
+    \includegraphics[width=0.7\textwidth]{thucnghiem1.png}
     \caption{Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}
     \label{fig:thucnghiem1}
 \end{figure}
@@ -97,15 +97,6 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 
 \bigskip
 
-{\fontsize{13}{12} \selectfont
-
-    Các mô hình nhận dạng tốt ở lớp kim loại và thấp nhất ở lớp khác,
-    điều này có thể giải thích bằng tính đặc trưng của lớp khác quá nhiều, đa dạng về hình thể, đa phần là các rác nhỏ và khó xác định.
-    Ở Thực nghiệm 2, mô hình YOLOv8n có kết quả vượt trội hơn khi kiểm tra trên tập xác thực, tuy nhiên với tập dữ liệu thử nghiệm thì mô hình YOLOv7 có kết quả tốt hơn với lớp kim loại và lớp khác, nhưng tổng thể mô hình YOLOv8n vẫn tốt hơn $1,2\%$ .
-    Hình \ref{fig:thucnghiem2.1} cho thấy việc các hình nền dễ bị nhận dạng trở thành các vật thể rác, trong đó có thể gồm các vật thể như đá, các biển báo, vũng nước hoặc nhận dạng trùng lặp các hộp giới hạn gần vị trí của nhau.
-    Các vật thể từ giấy cũng dễ bị nhận nhầm với với rác khác, lớp kim loại có sự ổn định cao và ít nhầm lẫn với lớp còn lại. Lớp giấy và nhựa - nilon dễ bị bỏ qua không thể nhận dạng vì các vật thể bị chồng chéo lên nhau.
-
-}
 
 \begin{table}[h!]
     \centering
@@ -129,9 +120,20 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
     \label{fig:thucnghiem2}
 \end{figure}
 
+{\fontsize{13}{12} \selectfont
+
+    Các mô hình nhận dạng tốt ở lớp kim loại và thấp nhất ở lớp khác,
+    điều này có thể giải thích bằng tính đặc trưng của lớp khác quá nhiều, đa dạng về hình thể, đa phần là các rác nhỏ và khó xác định.
+    Ở Thực nghiệm 2, mô hình YOLOv8n có kết quả vượt trội hơn khi kiểm tra trên tập xác thực, tuy nhiên với tập dữ liệu thử nghiệm thì mô hình YOLOv7 có kết quả tốt hơn với lớp kim loại và lớp khác, nhưng tổng thể mô hình YOLOv8n vẫn tốt hơn $1,2\%$ .
+    Hình \ref{fig:thucnghiem2.1} cho thấy việc các hình nền dễ bị nhận dạng trở thành các vật thể rác, trong đó có thể gồm các vật thể như đá, các biển báo, vũng nước hoặc nhận dạng trùng lặp các hộp giới hạn gần vị trí của nhau.
+    Các vật thể từ giấy cũng dễ bị nhận nhầm với với rác khác, lớp kim loại có sự ổn định cao và ít nhầm lẫn với lớp còn lại. Lớp giấy và nhựa - nilon dễ bị bỏ qua không thể nhận dạng vì các vật thể bị chồng chéo lên nhau.
+
+}
+
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{matrix_tn2.png}
+    \includegraphics[width=0.9\textwidth]{matrix_tn2.png}
     \caption{Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}
     \label{fig:thucnghiem2.1}
 \end{figure}
@@ -162,7 +164,7 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOL
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{thucnghiem3.1.jpg}
+    \includegraphics[width=0.8\textwidth]{thucnghiem3.1.jpg}
     \caption{Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}
     \label{fig:thucnghiem3}
 \end{figure}

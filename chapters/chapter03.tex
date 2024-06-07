@@ -306,7 +306,7 @@ Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng 
 
 }
 
-\begin{table}[!ht]
+\begin{table}[!h]
 	\centering
 	\caption{Số lượng hình ảnh, đối tượng của tập dữ liệu sử dụng cho nghiên cứu được tổng hợp từ dữ liệu TrashNet, TACO và tự thu thập}
 	\begin{tabular}{|l|l|r|r|r|}
@@ -336,7 +336,7 @@ Nghiên cứu sẽ sử dụng các bộ dữ liệu như sau:
 
 }
 
-\begin{table}[!ht]
+\begin{table}[!h]
 	\centering
 	\caption{Số lượng đối tượng theo từng lớp của tập huấn luyện, xác thực, thử nghiệm dùng trong nghiên cứu}
 	\begin{tabular}{|l|r|r|r|}
@@ -356,13 +356,14 @@ Nghiên cứu sẽ sử dụng các bộ dữ liệu như sau:
 Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần. Ví dụ như các lớp được chuyển đổi từ bộ dữ liệu TACO (xem Bảng \ref{tab:taco_map}).
 Ngoài ra bộ dữ liệu TACO là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
 Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref{sec:TACO} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình ở điều kiện tự nhiên.
-Để tăng cường dữ liệu, nghiên cứu sử dụng các tham số tăng cường như Bảng \ref{tab:thamso} để tạo sự đa dạng cho mô hình và cải thiện số lượng tập dữ liệu, các tham số được cài đặt trong mô hình.
+Để tăng cường dữ liệu, nghiên cứu sử dụng các tham số như Bảng \ref{tab:thamso} để tạo sự đa dạng cho mô hình và cải thiện số lượng tập dữ liệu, các tham số được cài đặt trong mô hình.
+
 }
 
-\begin{table}[ht!]
+\begin{table}[!h]
     \centering
     \caption{Các tham số tăng cường dữ liệu cho các mô hình}
-    \begin{tabular}{|l|p{7cm}|r|}
+    \begin{tabular}{|l|p{10cm}|r|}
         \hline
         \textbf{Tên}
                    & \textbf{Mô tả}
@@ -378,6 +379,8 @@ Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref
     \end{tabular}
     \label{tab:thamso}
 \end{table}
+
+\bigskip
 % Please add the following required packages to your document preamble:
 % \usepackage{multirow}
 % Please add the following required packages to your document preamble:
@@ -386,6 +389,7 @@ Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref
 
 \section{Các mô hình sử dụng}
 \label{sec:model}
+
 \subsection{Mô hình YOLOv7}
 {\fontsize{13}{12} \selectfont
 
