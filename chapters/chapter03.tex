@@ -390,77 +390,21 @@ Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref
 \section{Các mô hình sử dụng}
 \label{sec:model}
 
-\subsection{Mô hình YOLOv7}
-{\fontsize{13}{12} \selectfont
-
-	Mô hình YOLOv7 được trình bày cơ bản ở Mục \ref{sec:yolov7}, trong phần này sẽ giới thiệu kiến trúc được sử dụng trong nghiên cứu. Mô hình cài đặt sẽ nhận ảnh kích thước đầu vào là 640x640, sử dụng phiên bản YOLOv7-p5. Kiến trúc YOLOv7 (xem Hình \ref{fig:yolov7_kientruc}) sử dụng:
-	\begin{itemize}
-		\item Backbone: ELAN giải quyết vấn đề hội tụ khi thực hiện model scaling. ELAN được tạo từ các khối ELANBlock chịu ảnh hưởng từ CSPNet \cite{wang2019cspnet} và VoVNet \cite{lee2019energy}, các ELANBlock sẽ được kết nối với nhau thông qua Transition Block để giảm kích cỡ của bản đồ đặc trưng xuống hai lần.
-		\item Neck: CSPSPP + PANet. CSPSPP (Cross Stage Partial Spatial Pyramid Pooling) được sử dụng trong YOLOv7 giúp xử lý ảnh có kích thước khác nhau từ nhiều nguồn, trích xuất được cái đặc trưng từ nhiều tỷ lệ và bảo toàn được vị trí các vật thể. CSPSPP làm tăng độ phức tạp của mô hình so với các mạng gộp đơn giản.
-		\item Head: YOLOR. Cấu trúc của head trong YOLOv7
-		      gồm 3 lớp mạng nơ-ron hoàn toàn kết nối
-		      (fully-connected layers). Lớp thứ nhất
-		      là dự đoán các ô lưới (grid cells) chứa đối
-		      tượng. Lớp thứ hai là dự đoán các hộp giới hạn cho các đối tượng. Lớp thứ ba dự đoán lớp của đối tượng \cite{cachuayol7}.
-	\end{itemize}
-
-}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{yolov7_kientruc.jpg}
-	\caption{Kiến trúc mô hình YOLOv7}
-	\label{fig:yolov7_kientruc}
-\end{figure}
-
-\subsection{Mô hình YOLOv8}
-{\fontsize{13}{12} \selectfont
-
-	Như Mục \ref{sec:yolov8} đã trình bày những thay đổi mới của YOLOv8 mang lại. YOLOv8 vẫn nhận hình ảnh đầu vào là 640x640, sử dụng phiên bản YOLOv8n. Kiến trúc của YOLOv8 như sau:
-	\begin{itemize}
-		\item Backbone: là nền tảng của YOLOv8, có nhiệm vụ trích xuất cái đặc trưng từ ảnh đầu vào. YOLOv8 sử dụng CSPDarknet53, một biến thể của mạng Darknet làm backbone.
-		      Kiến trúc CSPDarknet53 sử dụng Cross-Stage Partial (CSP) để cải thiện luồng thông tin và cải thiện độ chính xác.
-		\item Neck: PANet. Phần neck có nhiệm vụ kết hợp các bản đồ đặc trưng để nắm bắt thông tin ở nhiều tỉ lệ khác nhau. YOLOv8 sử dụng module C2f thay vì C3 gồm hai lớp tích chập kết hợp với CSP giúp xử lí nhanh hơn, cải thiện khả năng phát hiện các vật thể nhỏ.
-		\item Head: gồm nhiều head giúp phát hiện, mỗi head chịu trách nhiệm dự đoán hộp giới hạn, xác suất của lớp và vị trí các đối tượng ở tỉ lệ  khác nhau.
-		      gồm 3 lớp mạng nơ-ron hoàn toàn kết nối
-		      (fully-connected layers). Lớp thứ nhất
-		      là dự đoán các ô lưới (grid cells) chứa đối
-		      tượng. Lớp thứ hai là dự đoán các hộp giới hạn cho các đối tượng. Lớp thứ ba dự đoán lớp của đối tượng.
-	\end{itemize}
-
-}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{yolov8_kientruc.jpg}
-	\caption{Kiến trúc mô hình YOLOv8 trên github được đóng góp bởi RangeKing}
-	\label{fig:yolo8_kientruc}
-\end{figure}
 
 {\fontsize{13}{12} \selectfont
 
-Với những cải tiến của YOLOv8 mang lại như giảm kích thước mạng tích chập từ $6x6$ xuống $3x3$ để trừu tượng hoá hình ảnh hiệu quả, thay thế module C3 bằng module C2f tăng tốc độ xử lí, triển khai dự đoán không cần hộp neo để loại bỏ sự cần thiết của hộp neo,
-tận dụng các kỹ thuật tăng cường dữ liệu khác nhau để cải thiện khả năng tổng quát hóa và giảm tình trạng trang bị quá mức, sử dụng hàm mất mát được sửa đổi (tác giả không giới thiệu) tập trung vào hộp giới hạn và độ tin cậy khi phân lớp.
+Nghiên cứu sử dụng các mô hình có số lượng tham số nhẹ, tốc độ xử lý nhanh là YOLOv7, YOLOv8, SSD MobileNetv2.
+Các mô hình họ SSD đạt được sự cân bằng giữa tốc độ và độ chính xác, trong đó mô hình 
+SSD MobileNetv2 là mô hình sử dụng rất ít tính toán, có kích thước nhỏ và cài đặt dễ dàng với thư viện Mmdetection. 
+Gần đây những cải tiến của YOLOv8 mang lại như giảm kích thước mạng tích chập từ $6x6$ xuống $3x3$ để trừu tượng hoá hình ảnh hiệu quả, thay thế module C3 bằng module C2f tăng tốc độ xử lí, triển khai dự đoán không cần hộp neo để loại bỏ sự cần thiết của hộp neo,
+tận dụng các kỹ thuật tăng cường dữ liệu khác nhau để cải thiện khả năng tổng quát hóa và giảm tình trạng trang bị quá mức, sử dụng hàm mất mát được sửa đổi dựa trên hàm binary cross-entropy tập trung vào hộp giới hạn và độ tin cậy khi phân lớp.
 Nghiên cứu sử dụng YOLOv7 và YOLOv8 để so sánh độ hiệu quả của hai mô hình mới nhất của họ YOLO, hai mô hình có sự khác biệt về kiến trúc mạng, hàm mất mát và việc sử dụng hay không sử dụng hộp neo.
+Các tham số cài đặt của mô hình thể hiện ở Bảng 
 
 }
 
-\subsection{Mô hình SSD MobileNetv2}
-{\fontsize{13}{12} \selectfont
 
-	Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô hình SSD. Trong nghiên cứu sử dụng MobiNetv2 \cite{sandler2019mobilenetv2} làm mạng cơ sở thay vì VGG-16 như Hình \ref{fig:ssd2} giúp tối ưu hóa cho các thiết bị di động. SSD MobileNetv2 sử dụng MobileNetv2 để trích xuất các tính năng từ ảnh, sau đó được xử lí thông qua các lớp dự đoán của SSD để giảm kích thước hình ảnh, giúp nhận ra các đối tượng ở tỉ lệ khác nhau (xem Hình \ref{fig:mobinet}).
-	Mô hình MobiNet ra đời dựa vào nhu cầu tăng cao về các mô hình có trọng số nhẹ, giải quyết bài toán sử dụng trên các thiết bị hạn chế về tài nguyên tính toán như mobile, IoT. MobiNet có độ chính xác không chênh lệch so với mạng cơ sở VGG, nên việc thay thế trong kiến trúc của SSD giúp cho mô hình vừa nhỏ gọn vừa đạt độ chính xác cao.
-	Điểm cải tiến của MobiNet là việc sử dụng tích chập tách biệt chiều sâu thay vì tích chập thông thường. Quá trình được phân chia làm hai bước tuần tự là tích chập chiều sâu và tích chập điểm.
-	MobiNetv2 được nhóm tác giả giới thiệu với module mới được gọi là Inverted Residual Block đi ngược lại với các Residual Block thông thường vì nó tăng độ sâu trước khi học các đặc trưng, MobileNetv2 còn sử dụng hàm kích hoạt tuyến tính thay vì hàm kích hoạt phi tuyến.
 
-}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{mobinet.png}
-	\caption{Kiến trúc mô hình SSD MobileNetv2}
-	\label{fig:mobinet}
-\end{figure}
 
 \section{Sơ đồ hệ thống}
 \label{sec:sodo}

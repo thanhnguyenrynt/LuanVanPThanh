@@ -71,7 +71,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 	chú thích thành nhiều danh mục, điều này tạo sự đa dạng trong tập dữ liệu thay vì chỉ là các hình ảnh có nền trắng.
 	Tác giả tin rằng đa dạng trong phân loại rác giúp các nghiên cứu sử dụng bộ dữ liệu giải quyết được vấn đề tìm tập dữ liệu phù hợp với đặc thù riêng.
 	Nhóm nghiên cứu sử dụng mô hình Mask R-CNN để huấn luyện và đạt được kết quả 26,2\% phát hiện và 17,6\% với khả năng phát hiện và phân loại rác.
-	Vì độ đa dạng của đối tượng cũng như hình nền, mô hình của nhóm tác giả dễ bị phát hiện nhầm giữa đối tượng và nền hoặc bỏ sót đi các vật thể nhỏ. 
+	Vì độ đa dạng của đối tượng cũng như hình nền, mô hình của nhóm tác giả dễ bị phát hiện nhầm giữa đối tượng và nền hoặc bỏ sót đi các vật thể nhỏ.
 	Tuy vậy, nhóm tác giả cũng tin tưởng rằng bộ dữ liệu sẽ mang vấn đề tích cực và mong cộng đồng cùng chung tay xây dựng tập dữ liệu tốt hơn.
 
 }
@@ -647,16 +647,32 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	Một cải tiến quan trọng trong YOLOv7 là việc sử dụng một hàm mất mát mới gọi là “focal loss”. Các phiên bản trước của YOLO đã sử dụng cross-entropy là một hàm mất mát tiêu chuẩn, được biết là kém hiệu quả hơn trong việc phát hiện các đối tượng nhỏ. Focal loss giải quyết vấn đề này bằng cách giảm trọng số mất mát cho các ví dụ được phân loại tốt và tập trung vào các ví dụ các đối tượng khó phát hiện.
 	Một trong những ưu điểm chính của YOLOv7 là tốc độ. Nó có thể xử lý hình ảnh với tốc độ 155 khung hình mỗi giây, nhanh hơn nhiều so với các thuật toán phát hiện đối tượng hiện đại khác. Điều này làm cho nó phù hợp với các ứng dụng thời gian thực nhạy cảm như giám sát và ô tô tự lái, trong đó tốc độ xử lý cao hơn là rất quan trọng.
 	So sánh hiệu suất và tốc độ của YOLOv7 với các mô hình phát hiện đối tượng thời gian thực hiện đại (xem Hình \ref{fig:yolov7}).
+	Kiến trúc mô hinh YOLOv7 cũng có ba thành phần cơ bản là backbone, neck, head, thành phần chính được mô tả ở Hình \ref{fig:yolov7_kientruc}
 
+	\begin{itemize}
+		\item Backbone: ELAN giải quyết vấn đề hội tụ khi thực hiện model scaling. ELAN được tạo từ các khối ELANBlock chịu ảnh hưởng từ CSPNet \cite{wang2019cspnet} và VoVNet \cite{lee2019energy}, các ELANBlock sẽ được kết nối với nhau thông qua Transition Block để giảm kích cỡ của bản đồ đặc trưng xuống hai lần.
+		\item Neck: CSPSPP + PANet. CSPSPP (Cross Stage Partial Spatial Pyramid Pooling) được sử dụng trong YOLOv7 giúp xử lý ảnh có kích thước khác nhau từ nhiều nguồn, trích xuất được cái đặc trưng từ nhiều tỷ lệ và bảo toàn được vị trí các vật thể. CSPSPP làm tăng độ phức tạp của mô hình so với các mạng gộp đơn giản.
+		\item Head: YOLOR. Cấu trúc của head trong YOLOv7
+		      gồm 3 lớp mạng nơ-ron hoàn toàn kết nối
+		      (fully-connected layers). Lớp thứ nhất
+		      là dự đoán các ô lưới (grid cells) chứa đối
+		      tượng. Lớp thứ hai là dự đoán các hộp giới hạn cho các đối tượng. Lớp thứ ba dự đoán lớp của đối tượng \cite{cachuayol7}.
+
+	\end{itemize}
 }
 
-\bigskip
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{yolov7_kientruc.jpg}
+	\caption{Kiến trúc mô hình YOLOv7}
+	\label{fig:yolov7_kientruc}
+\end{figure}
 
 {\fontsize{13}{12} \selectfont
 
-	YOLOv7 tuy là thuật toán phát hiện đối tượng tương đối mạnh mẽ nhưng vẫn còn những hạn chế của các mô hình phát hiện đối tượng như gặp không đảm bảo trong việc phát hiện các đối tượng nhỏ. Mô hình có thể không phát hiện chính xác các đối tượng trong các cảnh đông đúc hoặc khi các đối tượng ở xa máy ảnh.
-	Ngoài ra, YOLOv7 còn gặp khó khăn khi phát hiện đối tượng rất lớn hay rất nhỏ so với các đối tượng khác trong ngữ cảnh. Cuối cùng, YOLOv7 đòi hỏi nhiều tính toán, điều này gây khó khăn khi chạy trong thời gian thực trên các thiết bị hạn chế về tài nguyên như điện thoại thông minh hoặc các thiết bị
-	khác.
+YOLOv7 tuy là thuật toán phát hiện đối tượng tương đối mạnh mẽ nhưng vẫn còn những hạn chế của các mô hình phát hiện đối tượng như gặp không đảm bảo trong việc phát hiện các đối tượng nhỏ. Mô hình có thể không phát hiện chính xác các đối tượng trong các cảnh đông đúc hoặc khi các đối tượng ở xa máy ảnh.
+Ngoài ra, YOLOv7 còn gặp khó khăn khi phát hiện đối tượng rất lớn hay rất nhỏ so với các đối tượng khác trong ngữ cảnh. Cuối cùng, YOLOv7 đòi hỏi nhiều tính toán, điều này gây khó khăn khi chạy trong thời gian thực trên các thiết bị hạn chế về tài nguyên như điện thoại thông minh hoặc các thiết bị
+khác.
 
 }
 
@@ -674,13 +690,31 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 	Được công bố vào đầu năm 2023, YOLOv8 \cite{YOLOv8} đã mang lại nhiều điểm tích cực so với phiên bản tiền nhiệm, như phát hiện không dùng anchor, giới thiệu lớp tích chập C2f và tăng cường mosaic.
 	YOLOv8 tương tự như YOLOv5 được xây dựng và duy trì bởi nhóm Ultralytics, hiện YOLOv8 vẫn chưa có bài báo chính thức, tuy nhiên vẫn có thể tìm kiếm thông tin nhờ vào tài liệu và cộng đồng sử dụng YOLOv8.
 	YOLOv8 là mô hình không có neo. Điều này có nghĩa là nó dự đoán trực tiếp tâm của đối tượng thay vì xác định hộp neo như những mô hình trước đó.
+	Hình \ref{fig:anchorfree} cho thấy các phương pháp sử dụng hộp neo sẽ sử dụng số hộp neo nhất định được tính toán từ tập dữ liệu,
+	điều này dẫn đến không hiệu quả khi dùng các mô hình đã được huấn luyện trước sử dụng cho tập dữ liệu riêng. Ngoài ra để loại bỏ các hộp giới hạn dư thừa phải sử dụng thuật toán NMS, điều này làm tăng quá trình tính toán của mô hình.
+	Ngược lại khi không sử dụng hộp neo, từ điểm trung tâm của mỗi ô đo trực tiếp độ lệch đến đến các cạnh của hộp giới hạn.
 	Điều này giúp YOLOv8 linh hoạt hơn trong việc phát hiện các vật thể có hình dạng và kích thước khác nhau, đặc biệt là các vật thể mỏng hoặc nhỏ có thể không vừa với các hộp neo được xác định trước của hệ thống.
-	Một lợi ích nữa của phương pháp không có neo là tính đơn giản của nó. Bằng cách loại bỏ sự phụ thuộc vào các hộp neo, mô hình trở nên dễ hiểu và dễ thực hiện hơn.
+	Một lợi ích nữa của phương pháp không có neo là tính đơn giản của nó.
+
+}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{anchor-free.jpg}
+	\caption[]{Hình ảnh minh họa về sử dụng hộp neo (Anchor-based) và không sử dụng hộp neo (Anchor-free) trong các mô hình phát hiện đối tượng. \footnotemark}
+	\label{fig:anchorfree}
+\end{figure}
+
+
+\footnotetext{\url{https://learnopencv.com/}}
+
+{\fontsize{13}{12} \selectfont
+
+	Bằng cách loại bỏ sự phụ thuộc vào các hộp neo, mô hình trở nên dễ hiểu và dễ thực hiện hơn.
 	YOLOv8 còn giới thiệu một kỹ thuật mới là tăng cường dữ liệu mosiac (xem Hình \ref{fig:mosaic}). Tăng cường dữ liệu mosaic là một kỹ thuật đơn giản, trong đó bốn hình ảnh khác nhau được nối lại với nhau và đưa vào mô hình như đầu vào. Điều này giúp mô hình học được các đối tượng thực sự từ các vị trí khác nhau và trong trạng thái bị che khuất.
 	Việc thực hiện tăng cường dữ liệu mosiac có thể làm giảm hiệu suất, vì vậy nó đã sẽ được tắt đi khi quá trình huấn luyện chuyển sang những kỷ nguyên cuối cùng.
 
 }
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{mosiac.png}
@@ -689,6 +723,31 @@ Nó liên quan đến việc sử dụng thuật toán phân cụm để nhóm c
 \end{figure}
 
 \footnotetext{\url{http://wandb.ai/}}
+
+\bigskip
+
+{\fontsize{13}{12} \selectfont
+	YOLOv8 vẫn nhận hình ảnh đầu vào là 640x640. Kiến trúc của YOLOv8 như sau:
+	\begin{itemize}
+		\item Backbone: là nền tảng của YOLOv8, có nhiệm vụ trích xuất cái đặc trưng từ ảnh đầu vào. YOLOv8 sử dụng CSPDarknet53, một biến thể của mạng Darknet làm backbone.
+		      Kiến trúc CSPDarknet53 sử dụng Cross-Stage Partial (CSP) để cải thiện luồng thông tin và cải thiện độ chính xác.
+		\item Neck: PANet. Phần neck có nhiệm vụ kết hợp các bản đồ đặc trưng để nắm bắt thông tin ở nhiều tỉ lệ khác nhau. YOLOv8 sử dụng module C2f thay vì C3 gồm hai lớp tích chập kết hợp với CSP giúp xử lí nhanh hơn, cải thiện khả năng phát hiện các vật thể nhỏ.
+		\item Head: gồm nhiều head giúp phát hiện, mỗi head chịu trách nhiệm dự đoán hộp giới hạn, xác suất của lớp và vị trí các đối tượng ở tỉ lệ  khác nhau.
+		      gồm 3 lớp mạng nơ-ron hoàn toàn kết nối
+		      (fully-connected layers). Lớp thứ nhất
+		      là dự đoán các ô lưới (grid cells) chứa đối
+		      tượng. Lớp thứ hai là dự đoán các hộp giới hạn cho các đối tượng. Lớp thứ ba dự đoán lớp của đối tượng.
+	\end{itemize}
+
+}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{yolov8_kientruc.jpg}
+	\caption{Kiến trúc mô hình YOLOv8 trên github được đóng góp bởi RangeKing}
+	\label{fig:yolo8_kientruc}
+\end{figure}
+
 
 \subsection{Mô hình SSD}
 \label{sec:ssd}
@@ -733,6 +792,23 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 
 }
 
+\subsection{Mô hình SSD MobileNetv2}
+{\fontsize{13}{12} \selectfont
+
+	Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô hình SSD. Trong nghiên cứu sử dụng MobiNetv2 \cite{sandler2019mobilenetv2} làm mạng cơ sở thay vì VGG-16 như Hình \ref{fig:ssd2} giúp tối ưu hóa cho các thiết bị di động. SSD MobileNetv2 sử dụng MobileNetv2 để trích xuất các tính năng từ ảnh, sau đó được xử lí thông qua các lớp dự đoán của SSD để giảm kích thước hình ảnh, giúp nhận ra các đối tượng ở tỉ lệ khác nhau (xem Hình \ref{fig:mobinet}).
+	Mô hình MobiNet ra đời dựa vào nhu cầu tăng cao về các mô hình có trọng số nhẹ, giải quyết bài toán sử dụng trên các thiết bị hạn chế về tài nguyên tính toán như mobile, IoT. MobiNet có độ chính xác không chênh lệch so với mạng cơ sở VGG, nên việc thay thế trong kiến trúc của SSD giúp cho mô hình vừa nhỏ gọn vừa đạt độ chính xác cao.
+	Điểm cải tiến của MobiNet là việc sử dụng tích chập tách biệt chiều sâu thay vì tích chập thông thường. Quá trình được phân chia làm hai bước tuần tự là tích chập chiều sâu và tích chập điểm.
+	MobiNetv2 được nhóm tác giả giới thiệu với module mới được gọi là Inverted Residual Block đi ngược lại với các Residual Block thông thường vì nó tăng độ sâu trước khi học các đặc trưng, MobileNetv2 còn sử dụng hàm kích hoạt tuyến tính thay vì hàm kích hoạt phi tuyến.
+
+}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{mobinet.png}
+	\caption{Kiến trúc mô hình SSD MobileNetv2}
+	\label{fig:mobinet}
+\end{figure}
 % \subsection{Mô hình RetinaNet}
 
 % {\fontsize{13}{12} \selectfont
