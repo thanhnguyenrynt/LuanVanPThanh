@@ -93,10 +93,6 @@ U.~Nepal and H.~Eslamiat, ``Comparing yolov3, yolov4 and yolov5 for autonomous
   2022. [Online]. Available: \url{https://www.mdpi.com/1424-8220/22/2/464}
 \BIBentrySTDinterwordspacing
 
-\bibitem{lin2018focal}
-T.-Y. Lin, P.~Goyal, R.~Girshick, K.~He, and P.~Dollár, ``Focal loss for dense
-  object detection,'' 2018.
-
 \bibitem{shah2022method}
 J.~Shah and S.~Kamat, ``A method for waste segregation using convolutional
   neural networks,'' in \emph{2022 Second International Conference on Advances

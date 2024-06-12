@@ -1,0 +1,62 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: the.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: refs.bib
+Warning--entry type for "YOLOv8" isn't style-file defined
+--line 865 of file refs.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Papert1966TheSV
+
+Done.
+You've used 43 entries,
+            4087 wiz_defined-function locations,
+            1031 strings with 15077 characters,
+and the built_in function-call counts, 25377 in all, are:
+= -- 1909
+> -- 780
+< -- 99
++ -- 392
+- -- 174
+* -- 1121
+:= -- 3802
+add.period$ -- 88
+call.type$ -- 43
+change.case$ -- 41
+chr.to.int$ -- 204
+cite$ -- 44
+duplicate$ -- 1976
+empty$ -- 2171
+format.name$ -- 208
+if$ -- 5867
+int.to.chr$ -- 0
+int.to.str$ -- 43
+missing$ -- 427
+newline$ -- 166
+num.names$ -- 43
+pop$ -- 1177
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1974
+stack$ -- 0
+substring$ -- 609
+swap$ -- 1415
+text.length$ -- 31
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 43
+warning$ -- 1
+while$ -- 83
+width$ -- 45
+write$ -- 393
+(There were 2 warnings)
