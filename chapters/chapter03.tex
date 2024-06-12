@@ -154,9 +154,8 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 {\fontsize{13}{12} \selectfont
 
 	TACO là một tập dữ liệu hình ảnh về chất thải trong tự nhiên. Tập dữ liệu chứa các hình ảnh về rác được chụp trong nhiều môi trường khác nhau, từ những bãi biển đến đường phố London. Những hình ảnh này được gắn nhãn và phân đoạn thủ công để đào tạo và đánh giá các thuật toán phát hiện đối tượng.
-	Bộ dữ liệu được cung cấp
-	theo chuẩn json của COCO. Hiện tại bộ dữ liệu có 1.500 ảnh với 4.784 vật thể
-	và 3.918 ảnh mới cần được gán nhãn.
+	Hiện tại bộ dữ liệu có 1.500 ảnh với 4.784 vật thể
+	và 3.918 ảnh mới cần được gán nhãn. Một số hình ảnh của tập dữ liệu ở Hình \ref{fig:dataset_taco}
 
 }
 
@@ -166,12 +165,34 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 	\caption{Ví dụ về hình ảnh của bộ dữ liệu TACO \cite{proença2020taco}}
 	\label{fig:dataset_taco}
 \end{figure}
+
+
+{\fontsize{13}{12} \selectfont 
+Bộ dữ liệu TACO được cung cấp theo chuẩn json của COCO (xem Hình \ref{fig:coco_full_format}). 
+Các trường dữ liệu cung cấp thông tin về giấy phép, đường dẫn các hình ảnh, thông tin về danh mục, ngữ cảnh và đặc biệt là thông tin gán nhãn của đối tương được lưu ở trường \textbf{annotation}.
+Hình \ref{fig:taco_format} mô tả các chi tiết về một đối tượng được gán nhãn gồm hình ảnh chứa đối tượng, nhãn, diện tích, đa giác phân đoạn và hộp giới hạn. Hộp giới hạn được lưu theo cấu trúc $[x,y,width,height]$ lần lượt là tọa độ điểm, chiều rộng, chiều cao. 
+
+}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{COCO_format.png}
+	\caption{Cấu trúc tệp theo chuẩn COCO của dữ liệu TACO}
+	\label{fig:coco_full_format}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\textwidth]{COCO_full_format.png}
+	\caption{Cấu trúc lưu trữ thông tin một đối tượng được gán nhãn trong bộ dữ liệu TACO}
+	\label{fig:taco_format}
+\end{figure}
+
 {\fontsize{13}{12} \selectfont
 
 Bộ dữ liệu gồm 28 danh mục lớn  (xem Hình \ref{fig:dataset_taco_1_a}) và 60 danh mục nhỏ (xem Hình \ref{fig:dataset_taco_1_b}) với
 6 loại nền là rác, thảm cỏ, nước, trong nhà, vỉa hè, cát đá (xem Hình \ref{fig:dataset_taco_1_c}). Do
-điều kiện đường phố ở một số tỉnh ĐBSCL nên nghiên cứu loại bỏ ngữ cảnh trong nhà, cát đá và nước phục vụ cho mục đích huấn luyện mô hình. Các danh
-mục nhỏ được gom nhóm phù hợp thành bốn loại rác đề ra của nghiên cứu như Bảng \ref{tab:taco_map}. Bộ dữ liệu TACO thể hiện sự đa dạng trong từng loại rác,
+điều kiện đường phố ở một số tỉnh ĐBSCL nên nghiên cứu loại bỏ ngữ cảnh trong nhà, cát đá và nước phục vụ cho mục đích huấn luyện mô hình. Bộ dữ liệu TACO thể hiện sự đa dạng trong từng loại rác,
 tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít dữ liệu như Carded blister pack (1 đối tượng), Battery (2 đối tượng), và các lớp có quá nhiều đối tượng như Cigarette (667 đối tượng) và Unlabeled litter (516 đối tượng).
 
 }
@@ -187,49 +208,7 @@ tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít d�
 	\label{fig:dataset_taco_1}
 \end{figure}
 
-\begin{table}[!ht]
-	\centering
-	\caption{Bảng chuyển các lớp của TACO sang lớp của mô hình}
-	\begin{tabular}{|l|l|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{TACO}}
-		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}
-		                       & \multicolumn{1}{c|}{\textbf{TACO}}
-		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}                                           \\
-		\hline
-		Aluminium foil         & kim\_loai                             & Magazine paper            & giay        \\ \hline
-		Battery                & kim\_loai                             & Tissues                   & giay        \\ \hline
-		Aluminium blister pack & khac                                  & Wrapping paper            & giay        \\ \hline
-		Carded blister pack    & khac                                  & Normal paper              & giay        \\ \hline
-		Other plastic bottle   & nhua\_nilon                           & Paper bag                 & giay        \\ \hline
-		Clear plastic bottle   & nhua\_nilon                           & Plastified paper bag      & giay        \\ \hline
-		Glass bottle           & khac                                  & Plastic film              & nhua\_nilon \\ \hline
-		Plastic bottle cap     & nhua\_nilon                           & Six pack rings            & khac        \\ \hline
-		Metal bottle cap       & kim\_loai                             & Garbage bag               & nhua\_nilon \\ \hline
-		Broken glass           & khac                                  & Other plastic wrapper     & nhua\_nilon \\ \hline
-		Food Can               & kim\_loai                             & Single-use carrier bag    & nhua\_nilon \\ \hline
-		Aerosol                & kim\_loai                             & Polypropylene bag         & nhua\_nilon \\ \hline
-		Drink can              & kim\_loai                             & Crisp packet              & khac        \\ \hline
-		Toilet tube            & giay                                  & Spread tub                & nhua\_nilon \\ \hline
-		Other carton           & giay                                  & Tupperware                & nhua\_nilon \\ \hline
-		Egg carton             & giay                                  & Disposable food container & nhua\_nilon \\ \hline
-		Drink carton           & giay                                  & Foam food container       & giay        \\ \hline
-		Corrugated carton      & giay                                  & Other plastic container   & nhua\_nilon \\ \hline
-		Meal carton            & giay                                  & Plastic glooves           & nhua\_nilon \\ \hline
-		Pizza box              & giay                                  & Plastic utensils          & nhua\_nilon \\ \hline
-		Paper cup              & giay                                  & Pop tab                   & kim\_loai   \\ \hline
-		Disposable plastic cup & nhua\_nilon                           & Rope \& strings           & khac        \\ \hline
-		Foam cup               & giay                                  & Scrap metal               & kim\_loai   \\ \hline
-		Glass cup              & khac                                  & Shoe                      & khac        \\ \hline
-		Other plastic cup      & nhua\_nilon                           & Squeezable tube           & khac        \\ \hline
-		Food waste             & khac                                  & Plastic straw             & nhua\_nilon \\ \hline
-		Glass jar              & khac                                  & Paper straw               & nhua\_nilon \\ \hline
-		Plastic lid            & nhua\_nilon                           & Styrofoam piece           & khac        \\ \hline
-		Metal lid              & kim\_loai                             & Unlabeled litter          & khac        \\ \hline
-		Other plastic          & nhua\_nilon                           & Cigarette                 & khac        \\ \hline
-	\end{tabular}
-	\label{tab:taco_map}
-\end{table}
+
 
 \subsection{Dữ liệu tự thu thập}
 \label{sec:own}
@@ -300,6 +279,13 @@ Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng 
 {\fontsize{13}{12} \selectfont
 
 	Trong phạm vi nghiên cứu sẽ sử dụng kết hợp giữa các bộ dữ liệu được nêu ở Mục \ref{sec:trashnet}, \ref{sec:TACO}, \ref{sec:own} để tạo ra các bộ dữ liệu phù hợp với các mục đích huấn luyện.
+	Các tập dữ liệu lần lượt được được xử lí như sau:
+
+	\begin{itemize}
+		\item Tập dữ liệu TrashNet được gom các lớp \textbf{cardboard} và \textbf{paper} thành lớp \textbf{giấy}, \textbf{glass} và \textbf{trash} thành lớp khác để phù hợp với mô hình có bốn lớp, sau đó sẽ được gán hộp giới hạn như Hình \ref{dataset_1}.
+		\item Tập dữ liệu TACO tiến hành loại bỏ đi những đối tượng có kích thước quá nhỏ với hình ảnh (dưới 0,05\%), việc này giúp loại bỏ dữ liệu nhiễu và khó phân loại.
+	\end{itemize}
+
 	Tập dữ liệu TACO được tiền xử lí để loại bỏ đi những vật thể có kích thước quá nhỏ (dưới 0,005\%) so với hình, việc này nhằm loại bỏ những dữ liệu nhiễu và không thể phân loại rác.
 	Nghiên cứu thực nghiệm trên các mô hình với nhiệm vụ phát hiện rác, sau đó vừa phát hiện vừa phân loại, tiếp theo là bổ sung dữ liệu nền để cải thiện mô hình.
 	Bảng \ref{tab:datasetmain} trình bày sự kết hợp của cả ba bộ dữ liệu.

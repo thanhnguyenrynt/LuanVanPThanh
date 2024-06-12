@@ -30,22 +30,24 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ví dụ về hình ảnh của tập dữ liệu TrashNet}}{34}{figure.caption.38}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Ví dụ về hình ảnh của tập dữ liệu TrashNet được gán hộp giới hạn}}{35}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Ví dụ về hình ảnh của bộ dữ liệu TACO \cite {proença2020taco}}}{36}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Các thống kê theo danh mục lớn, danh mục nhỏ, tỉ lệ nền của bộ dữ liệu TACO}}{37}{figure.caption.42}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục lớn }}}}{37}{subfigure.4.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục nhỏ}}}}{37}{subfigure.4.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Tỉ lệ nền}}}}{37}{subfigure.4.3}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ví dụ về bộ dữ liệu thu thập. Hộp màu hồng là kim loại, màu vàng là giấy, màu nâu là nhựa - nilon, màu xanh dương là khác}}{40}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Sơ đồ hệ thống}}{43}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Cấu trúc tệp theo chuẩn COCO của dữ liệu TACO}}{37}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Cấu trúc lưu trữ thông tin một đối tượng được gán nhãn trong bộ dữ liệu TACO}}{37}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Các thống kê theo danh mục lớn, danh mục nhỏ, tỉ lệ nền của bộ dữ liệu TACO}}{38}{figure.caption.44}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục lớn }}}}{38}{subfigure.6.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục nhỏ}}}}{38}{subfigure.6.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Tỉ lệ nền}}}}{38}{subfigure.6.3}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Ví dụ về bộ dữ liệu thu thập. Hộp màu hồng là kim loại, màu vàng là giấy, màu nâu là nhựa - nilon, màu xanh dương là khác}}{41}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Sơ đồ hệ thống}}{44}{figure.caption.51}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}}{45}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}}{45}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Hình ảnh dự đoán của mô hình YOLOv8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{46}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}}{47}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}}{48}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}}{49}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không có nhãn}}{49}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{51}{figure.caption.62}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{51}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{51}{subfigure.8.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{51}{subfigure.8.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}}{46}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}}{46}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Hình ảnh dự đoán của mô hình YOLOv8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{47}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}}{48}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}}{49}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}}{50}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không có nhãn}}{50}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{52}{figure.caption.64}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{52}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{52}{subfigure.8.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{52}{subfigure.8.3}%
 \addvspace {10\p@ }

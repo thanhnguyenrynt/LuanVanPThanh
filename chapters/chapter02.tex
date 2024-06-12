@@ -727,7 +727,7 @@ khác.
 \bigskip
 
 {\fontsize{13}{12} \selectfont
-	YOLOv8 vẫn nhận hình ảnh đầu vào là 640x640. Kiến trúc của YOLOv8 như sau:
+	YOLOv8 vẫn nhận hình ảnh đầu vào là 640x640. Hình \ref{fig:yolo8_kientruc} mô tả kiến trúc của YOLOv8 như sau:
 	\begin{itemize}
 		\item Backbone: là nền tảng của YOLOv8, có nhiệm vụ trích xuất cái đặc trưng từ ảnh đầu vào. YOLOv8 sử dụng CSPDarknet53, một biến thể của mạng Darknet làm backbone.
 		      Kiến trúc CSPDarknet53 sử dụng Cross-Stage Partial (CSP) để cải thiện luồng thông tin và cải thiện độ chính xác.
@@ -753,7 +753,7 @@ khác.
 \label{sec:ssd}
 {\fontsize{13}{12} \selectfont
 
-	Tương tự như các mô hình họ YOLO, mô hình SSD \cite{Liu_2016} (Single Shot MultiBox Detector) là thuật toán phát hiện đối tượng một giai đoạn nên tỏ ra nhanh hơn so với các mô hình họ R-CNN.
+	Tương tự như các mô hình họ YOLO, mô hình SSD \cite{Liu_2016} (Single Shot MultiBox Detector) là thuật toán phát hiện đối tượng một giai đoạn nên nhanh hơn so với các mô hình họ R-CNN.
 	Mô hình SSD là sự kết hợp của trích xuất các bản đồ đặc trưng từ mạng CNN và áp dụng bộ lọc để phát hiện vật thể ở các độ phân giải khác nhau. SSD nhận đầu vào là các tọa độ hộp giới hạn của vật thể và nhãn của vật thể chứa trong các hộp giới hạn đó.
 	Mô hình sẽ tạo ra các lưới ô trên các bản đồ đặc trưng, từ tâm của mỗi ô sẽ xác định tập hợp các hộp giới hạn mặc định được lựa chọn thủ công để dự đoán khung hình có khả năng bao quanh vật thể (xem Hình \ref{fig:ssd}).
 	Tại mỗi hộp giới hạn mặc định, ta cần dự báo phân phối xác suất $c = (c_1, c_2,\dots, c_n)$ tương ứng với các lớp $C= C_1, C_2,\dots,C_n $ . Tại thời điểm huấn luyện, ta cần so khớp các hộp giới hạn mặc định với các hộp giới hạn thực của vật thể trên ảnh đầu vào sao cho mức độ sai số qua mất mát vị trí là thấp nhất, sau đó dự đoán nhãn bằng hàm Sofmax để dự đoán nhãn.
@@ -795,7 +795,7 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 \subsection{Mô hình SSD MobileNetv2}
 {\fontsize{13}{12} \selectfont
 
-	Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô hình SSD. Trong nghiên cứu sử dụng MobiNetv2 \cite{sandler2019mobilenetv2} làm mạng cơ sở thay vì VGG-16 như Hình \ref{fig:ssd2} giúp tối ưu hóa cho các thiết bị di động. SSD MobileNetv2 sử dụng MobileNetv2 để trích xuất các tính năng từ ảnh, sau đó được xử lí thông qua các lớp dự đoán của SSD để giảm kích thước hình ảnh, giúp nhận ra các đối tượng ở tỉ lệ khác nhau (xem Hình \ref{fig:mobinet}).
+	Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô hình SSD. Mô hình SSD MobileNetv2 sử dụng MobiNetv2 \cite{sandler2019mobilenetv2} làm mạng cơ sở thay vì VGG-16 như Hình \ref{fig:ssd2} giúp tối ưu hóa cho các thiết bị di động. MobileNetv2 có nhiệm vụ trích xuất các tính năng từ ảnh, sau đó được xử lí thông qua các lớp dự đoán của SSD để giảm kích thước hình ảnh, giúp nhận ra các đối tượng ở tỉ lệ khác nhau (xem Hình \ref{fig:mobinet}).
 	Mô hình MobiNet ra đời dựa vào nhu cầu tăng cao về các mô hình có trọng số nhẹ, giải quyết bài toán sử dụng trên các thiết bị hạn chế về tài nguyên tính toán như mobile, IoT. MobiNet có độ chính xác không chênh lệch so với mạng cơ sở VGG, nên việc thay thế trong kiến trúc của SSD giúp cho mô hình vừa nhỏ gọn vừa đạt độ chính xác cao.
 	Điểm cải tiến của MobiNet là việc sử dụng tích chập tách biệt chiều sâu thay vì tích chập thông thường. Quá trình được phân chia làm hai bước tuần tự là tích chập chiều sâu và tích chập điểm.
 	MobiNetv2 được nhóm tác giả giới thiệu với module mới được gọi là Inverted Residual Block đi ngược lại với các Residual Block thông thường vì nó tăng độ sâu trước khi học các đặc trưng, MobileNetv2 còn sử dụng hàm kích hoạt tuyến tính thay vì hàm kích hoạt phi tuyến.
