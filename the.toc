@@ -38,13 +38,13 @@
 \contentsline {subsection}{\numberline {3.1.2}TACO}{36}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Dữ liệu tự thu thập}{39}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Dữ liệu sử dụng cho mô hình}{41}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Các mô hình sử dụng}{41}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Các mô hình sử dụng}{43}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{43}{section.3.3}%
 \contentsline {chapter}{\numberline {4} KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{45}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{45}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Thực nghiệm 2 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{47}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Thực nghiệm 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}{49}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Thảo luận}{51}{section.4.4}%
+\contentsline {section}{\numberline {4.2}Thực nghiệm 2 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{46}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Thực nghiệm 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}{48}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Thảo luận}{50}{section.4.4}%
 \contentsline {chapter}{\numberline {5} KẾT LUẬN VÀ ĐỀ XUẤT}{54}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Kết luận}{54}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{54}{section.5.2}%

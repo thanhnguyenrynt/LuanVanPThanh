@@ -14,7 +14,7 @@ Các mô hình được huấn luyện trên máy tính cấu hình GPU GTX 3050
 
 {\fontsize{13}{12} \selectfont
 
-Thực nghiệm 1 với mục tiêu đánh giá các mô hình dựa trên việc phát hiện vật thể có phải là rác hay không, trong tập dữ liệu có một nhãn duy nhất là rác.
+Thực nghiệm 1 với mục tiêu đánh giá các mô hình dựa trên việc phát hiện đối tượng có phải là rác hay không, trong tập dữ liệu có một nhãn duy nhất là rác.
 Các mô hình được so sánh trong nhiệm vụ phát hiện đối tượng, các phương pháp tăng cường dữ liệu được cài đặt cho các mô hình là như nhau được thể hiện ở Bảng \ref{tab:thamso}.
 Các tham số còn lại cài đặt theo mặc định của mô hình, như tăng cường mosiac ở YOLOv8, focal loss ở YOLOv7 mục đích đánh giá đặc trưng riêng của các mô hình.
 
@@ -59,8 +59,8 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 
     Hình \ref{fig:thucnghiem1} cho thấy YOLOv8 đạt kết quả tốt hơn so với hai mô hình còn lại. Đối với tập xác thực, mô hình SSD MobileNetv2 có khả năng nhận dạng đúng đối tượng tốt hơn so với YOLOv7-tiny, tuy nhiên Recall của mô hình lại kém so với hai mô hình họ YOLO.
     Đối với tập dữ liệu thử nghiệm, mô hình YOLOv8n vẫn vượt rội so với những mô hình còn lại, chỉ số Precision của các mô hình không có sự chênh lệch lớn (khoảng 2\%), tuy nhiên chỉ số Recall của tất cả giảm đáng kể, giảm nhiều nhất là mô hình SSD MobileNetv2 chỉ còn 36.4\%.
-    Kết quả chênh lệch giữa tập dữ liệu xác thực và tập dữ liệu thực nghiệm khoảng 10 - 25\% cho thấy việc phát hiện rác ở tự nhiên khó hơn điều kiện lí tưởng bởi chịu ảnh hưởng của môi trường xung quanh vật thể.
-    Các Hình \ref{fig:thucnghiem1.2} và Hình \ref{fig:thucnghiem1.3} thể hiện khả năng nhận dạng của mô hình YOLOv8.
+    Kết quả chênh lệch giữa tập dữ liệu xác thực và tập dữ liệu thực nghiệm khoảng 10 - 25\% cho thấy việc phát hiện rác ở tự nhiên khó hơn điều kiện lí tưởng bởi chịu ảnh hưởng của môi trường xung quanh đối tượng.
+    Hình \ref{fig:thucnghiem1.3} bao gồm hình ảnh gán nhãn và hình ảnh kết quả của mô hình YOLOv8.
 
 }
 
@@ -71,12 +71,6 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
     \label{fig:thucnghiem1}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\textwidth]{matrix_tn1.png}
-    \caption{Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}
-    \label{fig:thucnghiem1.2}
-\end{figure}
 
 \begin{figure}[H]
     \centering
@@ -101,14 +95,14 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 \begin{table}[h!]
     \centering
     \caption{Kết quả thực hiện trên tập xác thực và thử nghiệm ở Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}
-    \begin{tabular}{|l|l|r|r|r|r|r|}
+    \begin{tabular}{|c|l|r|r|r|r|r|}
         \hline
-        \textbf{Mô hình}             & \multicolumn{1}{l|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{l|}{\textbf{Kim Loại}} & \multicolumn{1}{l|}{\textbf{Giấy}} & \multicolumn{1}{l|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{l|}{\textbf{Khác}} & \multicolumn{1}{l|}{\textbf{Tất cả}} \\ \hline
-        \multirow{2}{*}{YOLOv7-tiny} & Xác thực                                  & 0,689                                  & 0,691                              & 0,538                                      & 0,509                              & 0,607                                \\ \cline{2-7}
-                                     & Thử nghiệm                                & \textbf{0,407}                         & 0,385                              & 0,487                                      & \textbf{0,223}                     & 0,376                                \\ \hline
-        \multirow{2}{*}{YOLOv8n}     & Xác thực                                  & \textbf{0,759}                         & \textbf{0,703}                     & \textbf{0,652}                             & \textbf{0,581}                     & \textbf{0,674}                       \\ \cline{2-7}
-                                     & Thử nghiệm                                & 0,377                                  & \textbf{0,415}                     & \textbf{0,553}                             & 0,207                              & \textbf{0,388}                       \\ \hline
-    \end{tabular}
+        \multicolumn{1}{|l|}{\textbf{Tập dữ liệu}} & \textbf{Mô hình} & \textbf{Kim loại} & \textbf{Giấy}  & \textbf{Nhựa - nilon} & \textbf{Khác}  & \textbf{Tất cả} \\ \hline
+        \multirow{2}{*}{Xác thực}                  & YOLOv7-tiny      & 0,689             & 0,538          & 0,538                 & 0,509          & 0,607           \\ \cline{2-7} 
+                                                   & YOLOv8n          & \textbf{0,759}    & \textbf{0,703} & \textbf{0,652}        & \textbf{0,581} & \textbf{0,674}  \\ \hline
+        \multirow{2}{*}{Thử nghiệm}                & YOLOv7-tiny      & \textbf{0,407}    & 0,385          & 0,487                 & \textbf{0,223} & 0,376           \\ \cline{2-7} 
+                                                   & YOLOv8n          & 0,377             & \textbf{0,415} & \textbf{0,553}        & 0,207          & \textbf{0,388}  \\ \hline
+        \end{tabular}
     \label{tab:thucnghiem2.1}
 \end{table}
 
@@ -122,11 +116,11 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 
 {\fontsize{13}{12} \selectfont
 
-    Các mô hình nhận dạng tốt ở lớp kim loại và thấp nhất ở lớp khác,
+    Các mô hình nhận dạng tốt ở lớp "Kim loại" và thấp nhất ở lớp "Khác",
     điều này có thể giải thích bằng tính đặc trưng của lớp khác quá nhiều, đa dạng về hình thể, đa phần là các rác nhỏ và khó xác định.
     Ở Thực nghiệm 2, mô hình YOLOv8n có kết quả vượt trội hơn khi kiểm tra trên tập xác thực, tuy nhiên với tập dữ liệu thử nghiệm thì mô hình YOLOv7 có kết quả tốt hơn với lớp kim loại và lớp khác, nhưng tổng thể mô hình YOLOv8n vẫn tốt hơn $1,2\%$ .
-    Hình \ref{fig:thucnghiem2.1} cho thấy việc các hình nền dễ bị nhận dạng trở thành các vật thể rác, trong đó có thể gồm các vật thể như đá, các biển báo, vũng nước hoặc nhận dạng trùng lặp các hộp giới hạn gần vị trí của nhau.
-    Các vật thể từ giấy cũng dễ bị nhận nhầm với với rác khác, lớp kim loại có sự ổn định cao và ít nhầm lẫn với lớp còn lại. Lớp giấy và nhựa - nilon dễ bị bỏ qua không thể nhận dạng vì các vật thể bị chồng chéo lên nhau.
+    Hình \ref{fig:thucnghiem2.1} cho thấy việc các hình nền dễ bị nhận dạng trở thành các đối tượng rác, trong đó có thể gồm các đối tượng như đá, các biển báo, vũng nước hoặc nhận dạng trùng lặp các hộp giới hạn gần vị trí của nhau.
+    Các đối tượng từ "Giấy" cũng dễ bị nhận nhầm với với rác "Khác", lớp "Kim loại" có sự ổn định cao và ít nhầm lẫn với lớp còn lại. Lớp "Giấy" và "Nhựa - nilon" dễ bị bỏ qua không thể nhận dạng vì các đối tượng bị chồng chéo lên nhau.
 
 }
 
@@ -141,8 +135,9 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
 \section{Thực nghiệm 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn} 
 {\fontsize{13}{12} \selectfont
 
-Thực nghiệm 3 đối với tập xác thực không có sự chênh lệch đáng kể (Bảng \ref{tab:thucnghiem3.1}) so với kết quả của Thực nghiệm 2, tuy nhiên với tập dữ liệu thử nghiệm chỉ gồm các vật thể ngoài tự nhiên thì mô hình
-cho thấy sự hiệu quả của việc bổ sung các hình ảnh nền giảm đi các dương tính giả. Hình \ref{fig:thucnghiem3.1} cho thấy các mô hình đã cải thiện việc bỏ sót các vật thể.
+Thực nghiệm 3 đối với tập xác thực không có sự chênh lệch đáng kể (Bảng \ref{tab:thucnghiem3.1}) so với kết quả của Thực nghiệm 2, tuy nhiên với tập dữ liệu thử nghiệm chỉ gồm các đối tượng ngoài tự nhiên thì mô hình
+cho thấy sự hiệu quả của việc bổ sung các hình ảnh nền giúp mô hình nhận dạng chính xác các lớp hơn, giảm việc bỏ sót hoặc nhận dạng nhầm thành các lớp khác (xem Hình \ref{fig:thucnghiem3.1}). 
+Lớp "Kim loại", "Giấy" cho thấy sự cải thiện đáng kể, giảm bớt việc nhận dạng sai thành các lớp còn lại.
 Mô hình YOLOv8 vẫn đạt được kết quả tốt hơn trong việc huấn luyện, việc áp dụng các ảnh nền cũng tỏ ra hiệu quả hơn đối với mô hình YOLOv8n khi cải thiện được 5.8\% độ chính xác so với 1,1\% của mô hình YOLOv7-tiny.
 Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOLOv8n.
 
@@ -153,12 +148,12 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOL
     \caption{Kết quả thực hiện Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}
     \begin{tabular}{|l|l|r|r|r|r|r|}
         \hline
-        \textbf{Mô hình}             & \multicolumn{1}{c|}{\textbf{Tập dữ liệu}} & \multicolumn{1}{c|}{\textbf{Kim Loại}} & \multicolumn{1}{c|}{\textbf{Giấy}} & \multicolumn{1}{c|}{\textbf{Nhựa - Nilon}} & \multicolumn{1}{c|}{\textbf{Khác}} & \multicolumn{1}{c|}{\textbf{Tất cả}} \\ \hline
-        \multirow{2}{*}{YOLOv7-tiny} & Xác thực                                  & 0,729                                  & 0,678                              & 0,546                                      & 0,477                              & 0,608                                \\ \cline{2-7}
-                                     & Thử nghiệm                                & 0,445                                  & 0,393                              & 0,476                                      & 0,235                              & 0,387                                \\ \hline
-        \multirow{2}{*}{YOLOv8n}     & Xác thực                                  & \textbf{0,759}                         & \textbf{0,727}                     & \textbf{0,629}                             & \textbf{0,572}                     & \textbf{0,672}                       \\ \cline{2-7}
-                                     & Thử nghiệm                                & \textbf{0,514}                         & \textbf{0,451}                     & \textbf{0,556}                             & \textbf{0,263}                     & \textbf{0,446}                       \\ \hline
-    \end{tabular}
+        \multicolumn{1}{|l|}{\textbf{Tập dữ liệu}} & \textbf{Mô hình} & \multicolumn{1}{l|}{\textbf{Kim loại}} & \multicolumn{1}{l|}{\textbf{Giấy}} & \multicolumn{1}{l|}{\textbf{Nhựa - nilon}} & \multicolumn{1}{l|}{\textbf{Khác}} & \multicolumn{1}{l|}{\textbf{Tất cả}} \\ \hline
+        \multirow{2}{*}{Xác thực}                  & YOLOv7-tiny      & 0,729                                  & 0,678                              & 0,546                                      & 0,477                              & 0,608                                \\ \cline{2-7} 
+                                                   & YOLOv8n          & \textbf{0,759}                         & \textbf{0,727}                     & \textbf{0,629}                             & \textbf{0,572}                     & \textbf{0,672}                       \\ \hline
+        \multirow{2}{*}{Thử nghiệm}                & YOLOv7-tiny      & 0,445                                  & 0,393                              & 0,476                                      & 0,235                              & 0,387                                \\ \cline{2-7} 
+                                                   & YOLOv8n          & \textbf{0,514}                         & \textbf{0,451}                     & \textbf{0,556}                             & \textbf{0,263}                     & \textbf{0,446}                       \\ \hline
+        \end{tabular}
     \label{tab:thucnghiem3.1}
 \end{table}
 
@@ -182,7 +177,7 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOL
 
   Các kết quả được so sánh cho ta thấy cùng một kết quả: mô hình YOLOv8 hoạt động tốt hơn hai mô hình còn lại.
   Từ đánh giá việc phát hiện đối tượng (phát hiện một lớp) đến việc phát hiện và phân loại rác thành bốn lớp theo thành phần.
-  Các mô hình luôn gặp khó khăn khi phát hiện vật thể với lớp rác khác vì có kích thước nhỏ và tính đa dạng.
+  Các mô hình luôn gặp khó khăn khi phát hiện đối tượng với lớp rác khác vì có kích thước nhỏ và tính đa dạng.
   Điều đó cho thấy việc gán nhãn và định nghĩa các rác cụ thể thành các lớp đặc trưng mang ý nghĩa quan trọng,
   tương tự như việc chuyển đổi các lớp ở dữ liệu TACO thành các lớp ở dữ liệu nghiên cứu.
   Thực nghiệm 3 bổ sung thêm dữ liệu từ các nền đã tăng độ chính xác của mô hình được mô tả chi tiết ở Bảng \ref{tab:thaoluan1}.
@@ -209,13 +204,12 @@ Hình \ref{fig:final} thể hiện kết quả nhận dạng của mô hình YOL
 Bảng \ref{tab:related}
 mô tả các nghiên cứu liên quan ở mục \ref{sec:nnlq} và kết quả đạt được của nghiên cứu hiện tại với các thông tin về tập dữ liệu, số lớp của mô hình, mô hình sử dụng, loại nhận dạng và kết quả đạt được dựa trên đánh giá từng nghiên cứu.
 Nhìn chung các nghiên cứu đạt kết quả không cao đối với nhiệm vụ phát hiện hoặc phân đoạn đối tượng, điều đó cho thấy việc khó khăn khi áp dụng thực tế các dữ liệu ngoài tự nhiên vì nhiều dữ liệu gây nhiễu,
-từ đó dẫn đến việc gán nhãn vật thể khó khăn.
+từ đó dẫn đến việc gán nhãn đối tượng khó khăn.
 Nghiên cứu của chúng tôi bước đầu cho thấy kết quả khả quan đối với nhiệm vụ phát hiện và phân loại rác theo thành phần.
 Ý tưởng phân loại rác thành bốn lớp của nghiên cứu dựa vào số lớp của các nghiên cứu phân lớp và tình hình thực tế sau khi thu thập dữ liệu ở địa phương. Kết hợp từ việc lấy ý tưởng từ các tập dữ liệu có sẵn và huấn luyện trên các mô hình gần đây,
 nghiên cứu cho thấy sự cải thiện kết quả so với các nghiên cứu phân đoạn hay phát hiện đối tượng trên tập dữ liệu về rác.
 
 }
-
 
 \begin{figure}[H]
     \centering
@@ -227,6 +221,30 @@ nghiên cứu cho thấy sự cải thiện kết quả so với các nghiên c�
     \caption{Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}
     \label{fig:final}
 \end{figure}
+
+{\fontsize{13}{12} \selectfont 
+
+Tuy nhiên nghiên cứu đạt kết quả không cao, mô hình gặp khó khăn với các đối tượng nhỏ, đối tượng bị che khuất hoặc khó nhận thấy vì ẩn vào nền như Hình \ref{fig:sai1}.
+Mô hình cũng dễ nhầm lẫn giữa các lớp với nhau vì tập dữ liệu còn ít, Hình \ref{fig:sai2} cho thấy lon nước thuộc lớp "Kim loại" nhưng nhận dạng sai thành rác "Khác".
+Các đối tượng ngoài tự nhiên như cây, đá cũng dễ nhận dạng nhầm thành rác hoặc các hộp giới hạn bao không hết đối tượng như Hình \ref{fig:sai3}
+Hơn nữa, mô hình cũng xảy ra tình trạng chồng chéo các hộp giới hạn, làm cho một đối tượng có nhiều lớp (xem Hình \ref{fig:sai4}).
+
+}
+
+
+\begin{figure}[H]
+    \centering
+    \subfloat[\centering {\fontsize{11}{10} \selectfont Bỏ qua không phát hiện đối tượng }]{{\includegraphics[width=7cm]{result_sai2.jpg} \label{fig:sai1}}}%
+    \qquad
+    \subfloat[\centering {\fontsize{11}{10} \selectfont Phân loại không đúng}]{{\includegraphics[width=7cm]{result_sai4.jpg} \label{fig:sai2}}}%
+    \qquad
+    \subfloat[\centering {\fontsize{11}{10} \selectfont Phát hiện dư và hộp không bao hết đối tượng}]{{\includegraphics[width=7cm]{result_sai1.jpg} \label{fig:sai3}}}%
+    \qquad
+    \subfloat[\centering {\fontsize{11}{10} \selectfont Nhiều hộp cho một đối tượng, đối tượng có nhiều lớp}]{{\includegraphics[width=7cm]{result_sai3.jpg} \label{fig:sai4}}}%
+    \caption{Hình ảnh mô hình nhận dạng sai với các đối tượng ngoài tự nhiên}
+    \label{fig:sai}
+\end{figure}
+
 
 \begin{table*}[ht!]
     \centering
@@ -290,7 +308,7 @@ nghiên cứu cho thấy sự cải thiện kết quả so với các nghiên c�
                                                         & 1, 4
                                                         & YOLOv8n
                                                         & Phát hiện
-                                                        & 1 lớp-mAP50: 73\% \newline 4 lớp-mAP: 44,6\%                    \\ \hline
+                                                        & 1 lớp-mAP50: 73\% \newline 4 lớp-mAP50: 44,6\%                    \\ \hline
     \end{tabularx}
     \label{tab:related}
 
@@ -301,8 +319,8 @@ nghiên cứu cho thấy sự cải thiện kết quả so với các nghiên c�
 
     Tổng kết lại, nghiên cứu đã cho thấy mô hình YOLOv8 có hiệu suất vượt trội ở độ chính xác
     mà còn có số lượng tham số ít hơn giúp việc huấn luyện nhanh, phù hợp với việc cải thiện độ chính xác của mô hình khi dữ liệu được tăng cường.
-    Nghiên cứu cho thấy tầm quan trọng của việc kết hợp dữ liệu, gán nhãn phân loại và áp dụng các hình không có vật thể giúp cải thiện hiệu suất của mô hình khi thực nghiệm ngoài tự nhiên.
-
+    Nghiên cứu cho thấy tầm quan trọng của việc kết hợp dữ liệu, gán nhãn phân loại và áp dụng các hình không có đối tượng giúp cải thiện hiệu suất của mô hình khi thực nghiệm ngoài tự nhiên.
+    Tuy nhiên để xây dựng hệ thống cần xử lý việc đối tượng có nhiều nhãn bằng cách so khớp vị trí tọa độ, diện tích và lấy độ tin cậy của hộp có điểm cao nhất.
 }
 
 

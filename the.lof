@@ -38,17 +38,21 @@
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Tỉ lệ nền}}}}{38}{subfigure.6.3}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Các hình ảnh dữ liệu thu thập khi được chú thích hộp giới hạn}}{40}{figure.caption.46}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Các hình nền không có chú thích để tăng cường dữ liệu}}{40}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sơ đồ hệ thống}}{44}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sơ đồ hệ thống}}{44}{figure.caption.53}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}}{46}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ma trận nhầm lẫn trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện rác}}{46}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Hình ảnh dự đoán của mô hình YOLOv8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{47}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}}{48}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}}{49}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}}{50}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không có nhãn}}{50}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{52}{figure.caption.65}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{52}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{52}{subfigure.8.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{52}{subfigure.8.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}}{46}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Hình ảnh dự đoán của mô hình YOLOv8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{46}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}}{47}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}}{48}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã tăng cường ảnh nền không có nhãn}}{49}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi tăng cường ảnh nền không có nhãn}}{49}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{51}{figure.caption.65}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{51}{subfigure.7.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{51}{subfigure.7.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{51}{subfigure.7.3}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh mô hình nhận dạng sai với các đối tượng ngoài tự nhiên}}{52}{figure.caption.66}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Bỏ qua không phát hiện đối tượng }}}}{52}{subfigure.8.1}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Phân loại không đúng}}}}{52}{subfigure.8.2}%
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Phát hiện dư và hộp không bao hết đối tượng}}}}{52}{subfigure.8.3}%
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Nhiều hộp cho một đối tượng, đối tượng có nhiều lớp}}}}{52}{subfigure.8.4}%
 \addvspace {10\p@ }

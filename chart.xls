@@ -1,5 +1,4 @@
-L?p	??i t??ng
-Nh?a - nilon	235
-Gi?y	136
-Kim lo?i	104
-Khác	49
+Mô hình	Batch size	Learning Rate	Tham s?	S? h?p neo
+SSD MobiNetv2	16	0.0025	15 tri?u	6
+YOLOv7	16	0.01	6 tri?u	4
+YOLOv8	16	0.01	3.2 tri?u	0

@@ -12,8 +12,8 @@
 {\fontsize{13}{12} \selectfont
 
 Nghiên cứu cho thấy mô hình họ YOLO hoạt động tốt hơn so với SSD, tốt nhất với mô hình YOLOv8 trên tập dữ liệu phức tạp về hình ảnh rác ở tự nhiên, đặc biệt là rác trên đường phố.
-YOLOv8 không những cho thấy khả năng vượt trội trong việc phát hiện vật thể rác mà còn hiệu quả trong nhiệm vụ phân loại rác thành phần.
-Mô hình nhận dạng tốt các vật thể là kim loại và có kết quả không khả quan với lớp rác khác do ảnh hưởng bởi nền xung quanh vật thể và sự đa dạng trong lớp.
+YOLOv8 không những cho thấy khả năng vượt trội trong việc phát hiện đối tượng rác mà còn hiệu quả trong nhiệm vụ phân loại rác thành phần.
+Mô hình nhận dạng tốt các đối tượng là kim loại và có kết quả không khả quan với lớp rác khác do ảnh hưởng bởi nền xung quanh đối tượng và sự đa dạng trong lớp.
 So với các nghiên cứu trước đây chủ yếu thực hiện việc phân lớp có đặc tính dữ liệu được chụp ở môi trường có ánh sáng, nền lí tưởng nên không thể áp dụng với các hình ảnh được chụp trực tiếp ngoài tự nhiên, thì nghiên cứu này đạt được độ chính xác tương đối trên tập dữ liệu thử nghiệm.
 Kết quả trên của mô hình YOLOv8 được áp dụng để xây dụng lên hệ thống phát hiện và phân loại rác thải trên đường phố, lập ra bản đồ phân bố bốn loại rác thải.
 
@@ -31,7 +31,7 @@ Sau quá trình tìm hiểu và thực nghiệm, nghiên cứu cho thấy việc
 {\fontsize{13}{12} \selectfont
 Hiện tại mô hình có cải thiện so với các mô hình trước đây về phát hiện rác trong tự nhiên, tuy nhiên vẫn còn nhiều hạn chế như
 \begin{itemize}
-    \item Độ chính xác của mô hình chưa cao, mô hình còn nhận dạng nhằm các vật thể không phải là rác, các mô hình khó nhận dạng các vật thể nhỏ.
+    \item Độ chính xác của mô hình chưa cao, mô hình còn nhận dạng nhằm các đối tượng không phải là rác, các mô hình khó nhận dạng các đối tượng nhỏ.
     \item Cần bổ sung thêm dữ liệu cho mô hình học tập.
     \item Hệ thống chưa lấy được tọa độ của video nên chỉ đang sử dụng nhận dạng với hình ảnh.
     \item Việc gán nhãn thủ công và chuyển đổi nhãn của tập dữ liệu TACO có thể phát sinh nhiều sai sót ảnh hưởng quá trình học của mô hình.	

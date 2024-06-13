@@ -251,7 +251,7 @@ tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít d�
 
 		Kim loại          & 60                                         & 103 & 5,8\%  \\
 		\hline
-		Ảnh không vật thể & 200                                        & 0   & 0      \\
+		Ảnh không đối tượng & 200                                        & 0   & 0      \\
 		\hline
 	\end{tabular}
 
@@ -311,58 +311,14 @@ Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng 
 
 {\fontsize{13}{12} \selectfont
 
-	Tập dữ liệu TrashNet được gom các lớp \textbf{cardboard} và \textbf{paper} thành lớp \textbf{giấy}, \textbf{glass} và \textbf{trash} thành lớp khác để phù hợp với mô hình có bốn lớp, sau đó sẽ được gán hộp giới hạn như Hình \ref{fig:dataset_1}.
-	Tập dữ liệu TACO sử dụng các hộp giới hạn thay cho phân đoạn, tiến hành loại bỏ đi những đối tượng có kích thước quá nhỏ với hình ảnh (dưới 0,05\%), việc này giúp loại bỏ dữ liệu nhiễu và khó phân loại.
-	Các danh mục của dữ liệu TACO được chuyển đổi sáng các lớp để phù hợp với mô hình được mô tả ở Bảng  \ref{tab:taco_map}.
-	Trong đó với lớp "Unlabeled litter" sẽ được chú thích nhãn thủ công.
-	Tập dữ liệu tự thu thập được gán nhãn thủ công dựa vào công cụ trực tuyến Roboflow.
-	Cuối cùng kết hợp ba tập dữ liệu để hình thành bộ dữ liệu cho nghiên cứu, chia dữ liệu lần lượt cho huấn luyện, xác thực và thử nghiệm là 75\%, 20\% và 5\%, trong đó tập dữ liệu dùng để thử nghiệm gồm hình ảnh rác trong tự nhiên được lấy từ TACO và tự thu thập, thể hiện ở Bảng \ref{tab:datasettest}.
+Tập dữ liệu TrashNet được gom các lớp "Cardboard" và "Paper" thành lớp "Giấy", lớp "Glass" và "Trash" thành lớp "Khác" để phù hợp với bốn lớp trong nghiên cứu, sau đó sẽ được gán hộp giới hạn như Hình \ref{fig:dataset_1}.
+Tập dữ liệu TACO sử dụng các hộp giới hạn thay cho phân đoạn, tiến hành loại bỏ đi những đối tượng có kích thước quá nhỏ với hình ảnh (dưới 0,05\%), việc này giúp loại bỏ dữ liệu nhiễu và khó phân loại.
+Các danh mục của dữ liệu TACO được chuyển đổi sáng các lớp để phù hợp với mô hình được mô tả ở Bảng  \ref{tab:taco_map}.
+Trong đó với lớp "Unlabeled litter" sẽ được chú thích nhãn thủ công.
+Tập dữ liệu tự thu thập được gán nhãn thủ công dựa vào công cụ trực tuyến Roboflow.
+Cuối cùng kết hợp ba tập dữ liệu để hình thành bộ dữ liệu cho nghiên cứu, chia dữ liệu lần lượt cho huấn luyện, xác thực và thử nghiệm là 75\%, 20\% và 5\%, trong đó tập dữ liệu dùng để thử nghiệm gồm hình ảnh rác trong tự nhiên được lấy từ TACO và tự thu thập, thể hiện ở Bảng \ref{tab:datasettest}.
 
 }
-
-\begin{table}[!h]
-	\centering
-	\caption{Bảng chuyển các lớp của TACO sang lớp của mô hình}
-	\begin{tabular}{|l|l|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{TACO}}
-		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}
-		                       & \multicolumn{1}{c|}{\textbf{TACO}}
-		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}                                           \\
-		\hline
-		Aluminium foil         & kim\_loai                             & Magazine paper            & giay        \\ \hline
-		Battery                & kim\_loai                             & Tissues                   & giay        \\ \hline
-		Aluminium blister pack & khac                                  & Wrapping paper            & giay        \\ \hline
-		Carded blister pack    & khac                                  & Normal paper              & giay        \\ \hline
-		Other plastic bottle   & nhua\_nilon                           & Paper bag                 & giay        \\ \hline
-		Clear plastic bottle   & nhua\_nilon                           & Plastified paper bag      & giay        \\ \hline
-		Glass bottle           & khac                                  & Plastic film              & nhua\_nilon \\ \hline
-		Plastic bottle cap     & nhua\_nilon                           & Six pack rings            & khac        \\ \hline
-		Metal bottle cap       & kim\_loai                             & Garbage bag               & nhua\_nilon \\ \hline
-		Broken glass           & khac                                  & Other plastic wrapper     & nhua\_nilon \\ \hline
-		Food Can               & kim\_loai                             & Single-use carrier bag    & nhua\_nilon \\ \hline
-		Aerosol                & kim\_loai                             & Polypropylene bag         & nhua\_nilon \\ \hline
-		Drink can              & kim\_loai                             & Crisp packet              & khac        \\ \hline
-		Toilet tube            & giay                                  & Spread tub                & nhua\_nilon \\ \hline
-		Other carton           & giay                                  & Tupperware                & nhua\_nilon \\ \hline
-		Egg carton             & giay                                  & Disposable food container & nhua\_nilon \\ \hline
-		Drink carton           & giay                                  & Foam food container       & giay        \\ \hline
-		Corrugated carton      & giay                                  & Other plastic container   & nhua\_nilon \\ \hline
-		Meal carton            & giay                                  & Plastic glooves           & nhua\_nilon \\ \hline
-		Pizza box              & giay                                  & Plastic utensils          & nhua\_nilon \\ \hline
-		Paper cup              & giay                                  & Pop tab                   & kim\_loai   \\ \hline
-		Disposable plastic cup & nhua\_nilon                           & Rope \& strings           & khac        \\ \hline
-		Foam cup               & giay                                  & Scrap metal               & kim\_loai   \\ \hline
-		Glass cup              & khac                                  & Shoe                      & khac        \\ \hline
-		Other plastic cup      & nhua\_nilon                           & Squeezable tube           & khac        \\ \hline
-		Food waste             & khac                                  & Plastic straw             & nhua\_nilon \\ \hline
-		Glass jar              & khac                                  & Paper straw               & nhua\_nilon \\ \hline
-		Plastic lid            & nhua\_nilon                           & Styrofoam piece           & khac        \\ \hline
-		Metal lid              & kim\_loai                             & Unlabeled litter          & khac        \\ \hline
-		Other plastic          & nhua\_nilon                           & Cigarette                 & khac        \\ \hline
-	\end{tabular}
-	\label{tab:taco_map}
-\end{table}
 
 
 \begin{table}[!h]
@@ -380,16 +336,68 @@ Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng 
 	\label{tab:datasettest}
 \end{table}
 
+
+\begin{table}[!h]
+	\centering
+	\caption{Bảng chuyển các lớp của TACO sang lớp của mô hình}
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{TACO}}
+		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}
+		                       & \multicolumn{1}{c|}{\textbf{TACO}}
+		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}                                            \\
+		\hline
+		Aluminium foil         & Kim loại                              & Magazine paper            & Giấy         \\ \hline
+		Battery                & Kim loại                              & Tissues                   & Giấy         \\ \hline
+		Aluminium blister pack & Khác                                  & Wrapping paper            & Giấy         \\ \hline
+		Carded blister pack    & Khác                                  & Normal paper              & Giấy         \\ \hline
+		Other plastic bottle   & Nhựa - nilon                          & Paper bag                 & Giấy         \\ \hline
+		Clear plastic bottle   & Nhựa - nilon                          & Plastified paper bag      & Giấy         \\ \hline
+		Glass bottle           & Khác                                  & Plastic film              & Nhựa - nilon \\ \hline
+		Plastic bottle cap     & Nhựa - nilon                          & Six pack rings            & Khác         \\ \hline
+		Metal bottle cap       & Kim loại                              & Garbage bag               & Nhựa - nilon \\ \hline
+		Broken glass           & Khác                                  & Other plastic wrapper     & Nhựa - nilon \\ \hline
+		Food Can               & Kim loại                              & Single-use carrier bag    & Nhựa - nilon \\ \hline
+		Aerosol                & Kim loại                              & Polypropylene bag         & Nhựa - nilon \\ \hline
+		Drink can              & Kim loại                              & Crisp packet              & Khác         \\ \hline
+		Toilet tube            & Giấy                                  & Spread tub                & Nhựa - nilon \\ \hline
+		Other carton           & Giấy                                  & Tupperware                & Nhựa - nilon \\ \hline
+		Egg carton             & Giấy                                  & Disposable food container & Nhựa - nilon \\ \hline
+		Drink carton           & Giấy                                  & Foam food container       & Giấy         \\ \hline
+		Corrugated carton      & Giấy                                  & Other plastic container   & Nhựa - nilon \\ \hline
+		Meal carton            & Giấy                                  & Plastic glooves           & Nhựa - nilon \\ \hline
+		Pizza box              & Giấy                                  & Plastic utensils          & Nhựa - nilon \\ \hline
+		Paper cup              & Giấy                                  & Pop tab                   & Kim loại     \\ \hline
+		Disposable plastic cup & Nhựa - nilon                          & Rope \& strings           & Khác         \\ \hline
+		Foam cup               & Giấy                                  & Scrap metal               & Kim loại     \\ \hline
+		Glass cup              & Khác                                  & Shoe                      & Khác         \\ \hline
+		Other plastic cup      & Nhựa - nilon                          & Squeezable tube           & Khác         \\ \hline
+		Food waste             & Khác                                  & Plastic straw             & Nhựa - nilon \\ \hline
+		Glass jar              & Khác                                  & Paper straw               & Nhựa - nilon \\ \hline
+		Plastic lid            & Nhựa - nilon                          & Styrofoam piece           & Khác         \\ \hline
+		Metal lid              & Kim loại                              & Unlabeled litter          & Khác         \\ \hline
+		Other plastic          & Nhựa - nilon                          & Cigarette                 & Khác         \\ \hline
+	\end{tabular}
+	\label{tab:taco_map}
+\end{table}
+
+\bigskip
+
 {\fontsize{13}{12} \selectfont
 
-Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần. Ví dụ như các lớp được chuyển đổi từ bộ dữ liệu TACO (xem Bảng).
-Ngoài ra bộ dữ liệu TACO là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
-Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref{sec:TACO} và \ref{sec:own} để đánh giá khả năng phát hiện thực tế của mô hình ở điều kiện tự nhiên.
-Để tăng cường dữ liệu, nghiên cứu sử dụng các tham số như Bảng \ref{tab:thamso} để tạo sự đa dạng cho mô hình và cải thiện số lượng tập dữ liệu, các tham số được cài đặt trong mô hình.
+	Việc gán nhãn cho dữ liệu ảnh hưởng đến hiểu quả mô hình vì rất dễ nhầm lẫn về định nghĩa rác theo thành phần.
+	Việc chuyển đổi các danh mục của TACO sang bốn lớp của nghiên cứu gặp phải khó khăn vì có những danh mục có thể nằm ở hai lớp, ví dụ như "Foam food container" có thể là lớp  "Giấy" hoặc "Khác".
+	Ngoài ra bộ dữ liệu TACO là do cộng đồng đóng góp, vì vậy việc xuất hiện nhiều lớp "Unlabeled litter" sẽ gây nhiễu cho dữ liệu, cần phải gán nhãn lại.
 
 }
 
-\begin{table}[!h]
+\bigskip
+
+{\fontsize{13}{12} \selectfont
+	Ngoài ra việc tăng cường dữ liệu giúp dữ liệu nghiên cứu trở nên đa dạng, tăng tính khái quát của mô hình. Hiện nay các mã nguồn mở hỗ trợ việc tăng cường trong lúc học dữ liệu, vì vậy nghiên cứu sử dụng các tham số như Bảng \ref{tab:thamso}, các tham số đều được cài đặt trong mô hình.
+
+}
+\begin{table}[H]
 	\centering
 	\caption{Các tham số tăng cường dữ liệu cho các mô hình}
 	\begin{tabular}{|l|p{10cm}|r|}
@@ -409,13 +417,6 @@ Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref
 	\label{tab:thamso}
 \end{table}
 
-\bigskip
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-% Please add the following required packages to your document preamble:
-% \usepackage{multirow}
-
-
 \section{Các mô hình sử dụng}
 \label{sec:model}
 
@@ -424,16 +425,27 @@ Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref
 
 	Nghiên cứu sử dụng các mô hình có số lượng tham số nhẹ, tốc độ xử lý nhanh là YOLOv7, YOLOv8, SSD MobileNetv2.
 	Các mô hình họ SSD đạt được sự cân bằng giữa tốc độ và độ chính xác, trong đó mô hình
-	SSD MobileNetv2 là mô hìn ít tính toán, có kích thước nhỏ và cài đặt dễ dàng với thư viện MMdetection.
+	SSD MobileNetv2 là mô hình ít tính toán, có kích thước nhỏ và cài đặt dễ dàng với thư viện MMdetection.
 	Gần đây những cải tiến của YOLOv8 mang lại như giảm kích thước mạng tích chập từ $6x6$ xuống $3x3$ để trừu tượng hoá hình ảnh hiệu quả, thay thế module C3 bằng module C2f tăng tốc độ xử lí, triển khai dự đoán không cần hộp neo để loại bỏ sự cần thiết của hộp neo,
 	tận dụng các kỹ thuật tăng cường dữ liệu khác nhau để cải thiện khả năng tổng quát hóa và giảm tình trạng trang bị quá mức, sử dụng hàm mất mát được sửa đổi dựa trên hàm binary cross-entropy tập trung vào hộp giới hạn và độ tin cậy khi phân lớp.
 	Nghiên cứu sử dụng YOLOv7 và YOLOv8 để so sánh độ hiệu quả của hai mô hình mới nhất của họ YOLO, hai mô hình có sự khác biệt về kiến trúc mạng, hàm mất mát và việc sử dụng hay không sử dụng hộp neo.
-	Các tham số cài đặt của mô hình thể hiện ở Bảng
+	Các tham số cài đặt được tối ưu hóa để phù hợp với từng mô hình thể hiện ở Bảng \ref{tab:caidat}.
 
 }
 
 
-
+\begin{table}[H]
+	\centering
+	\caption{Các tham số huấn luyện được cài đặt trong các mô hfnh}
+	\begin{tabular}{|l|r|r|r|r|}
+		\hline
+		\textbf{Mô hình} & \textbf{Batch size} & \textbf{Learning Rate} & \textbf{Tham số} & \textbf{Số hộp neo} \\ \hline
+		SSD MobiNetv2    & 16                  & 0.025                 & 15M         & 6                   \\ \hline
+		YOLOv7           & 16                  & 0.01                   & 6M          & 4                   \\ \hline
+		YOLOv8           & 16                  & 0.01                   & 3,2M        & 0                   \\ \hline
+	\end{tabular}
+	\label{tab:caidat}
+\end{table}
 
 \section{Sơ đồ hệ thống}
 \label{sec:sodo}
@@ -442,17 +454,17 @@ Tập dữ liệu để đánh giá mô hình chỉ gồm dữ liệu của \ref
 	Các bước xây dựng hệ thống được chia làm hai giai đoạn được mô tả ở Hình \ref{fig:sodo}:
 
 	\begin{itemize}
-		\item Tiến hành thu thập dữ liệu và kết hợp dữ liệu như đã đề ra ở Mục \ref{sec:dataset}, sau đó dữ liệu được huấn luyện và đánh giá với các mô hình ở Mục \ref{sec:model} để tìm ra mô hình tối ưu cho hệ thống.
-		      Qua trình huấn luyện mô hình thực hiện dựa trên các thư viện, dự án như Ultralytics cho YOLOv8, Mmdetection cho SSD MobileNetv2 và tài nguyên trên github của chính tác giả YOLOv7.
-		\item Mô hình tối ưu sẽ được sử dụng cho việc xây dựng API, thông qua mô hình sẽ dự đoán thông tin các loại rác. Từ đó lưu trữ thông tin nhãn và tọa độ giúp bản đồ hiển thị thông tin cần thiết.
-		      API sẽ được xây dựng trên thư viện FastApi và dữ liệu được lưu trữ ở MongoDB.
+		\item Giai đoạn 1: Tiến hành thu thập dữ liệu và kết hợp dữ liệu như đã đề ra ở Mục \ref{sec:dataset}, sau đó dữ liệu được huấn luyện và đánh giá với các mô hình ở Mục \ref{sec:model} để tìm ra mô hình tối ưu cho hệ thống.
+		      Qua trình huấn luyện mô hình thực hiện dựa trên các thư viện, dự án như Ultralytics cho YOLOv8, MMdetection cho SSD MobileNetv2 và tài nguyên trên github của chính tác giả YOLOv7.
+		\item Giai đoạn 2: Mô hình tối ưu sẽ được sử dụng cho việc xây dựng hệ thống, thông qua mô hình sẽ dự đoán thông tin các loại rác. Từ đó lưu trữ thông tin nhãn và tọa độ giúp bản đồ hiển thị thông tin cần thiết.
+		      Dữ liệu sẽ được lưu trữ ở MongoDB.
 	\end{itemize}
 
 }
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{sodo.png}
+	\includegraphics[width=1\textwidth]{sodo.png}
 	\caption{Sơ đồ hệ thống}
 	\label{fig:sodo}
 \end{figure}
