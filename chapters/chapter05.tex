@@ -29,19 +29,14 @@ Sau quá trình tìm hiểu và thực nghiệm, nghiên cứu cho thấy việc
 \section{Hạn chế và đề xuất}
 \subsection{Hạn chế}
 {\fontsize{13}{12} \selectfont
-Hiện tại mô hình có cải thiện so với các mô hình trước đây về phát hiện rác trong tự nhiên, tuy nhiên vẫn còn nhiều hạn chế như
-\begin{itemize}
-    \item Độ chính xác của mô hình chưa cao, mô hình còn nhận dạng nhằm các đối tượng không phải là rác, các mô hình khó nhận dạng các đối tượng nhỏ.
-    \item Cần bổ sung thêm dữ liệu cho mô hình học tập.
-    \item Hệ thống chưa lấy được tọa độ của video nên chỉ đang sử dụng nhận dạng với hình ảnh.
-    \item Việc gán nhãn thủ công và chuyển đổi nhãn của tập dữ liệu TACO có thể phát sinh nhiều sai sót ảnh hưởng quá trình học của mô hình.	
-\end{itemize}
+Hiện tại mô hình có cải thiện so với các mô hình trước đây về phát hiện rác trong tự nhiên, tuy nhiên vẫn còn nhiều hạn chế như độ chính xác của mô hình chưa cao, mô hình còn nhận dạng nhằm các đối tượng không phải là rác, các mô hình khó nhận dạng các đối tượng nhỏ. Mô hình chưa đủ dữ liệu để phân loại, cần bổ sung thêm dữ liệu. Hệ thống chưa lấy được tọa độ của video nên chỉ đang sử dụng nhận dạng với hình ảnh. Việc gán nhãn thủ công và chuyển đổi nhãn của tập dữ liệu TACO có thể phát sinh nhiều sai sót ảnh hưởng quá trình học của mô hình.	
 
 }
 \subsection{Đề xuất}
 {\fontsize{13}{12} \selectfont 
-Với những hạn chế đã đề cập, chúng tôi đề xuất việc tăng cường thu thập dữ liệu cho mô hình, có thể thu thập bằng việc gắn camera lúc di chuyển.
-Các hình ảnh của người dùng khi sử dụng hệ thống cần được bổ sung vào tập dữ liệu để huấn luyện.
+Với những hạn chế đã đề cập, chúng tôi đề xuất việc tăng cường thu thập dữ liệu cho mô hình, dữ liệu cần thu thập đa dạng hơn để cải thiện khả năng nhận dạng các vật nhỏ, đa dạng hơn về các môi trường khác như trên mặt nước. Ý tưởng 
+thu thập bằng việc gắn camera lúc di chuyển hoặc hệ thống CCTV được đặt trên đường phố hay các con sông.
+Các hình ảnh của người dùng khi sử dụng hệ thống cũng được bổ sung vào tập dữ liệu để huấn luyện. 
 Nghiên cứu nên phát triển chức năng xác định vị trí khi quay video để sử dụng cho việc phát hiện theo thời gian thực, giúp cải thiện dữ liệu cho bản đồ phân bố.
 
 }

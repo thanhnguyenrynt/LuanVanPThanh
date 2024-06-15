@@ -5,10 +5,12 @@
 % The semantic image segmentation technique has many applications in digital graphics, ...}
 
 {\fontsize{13}{12} \selectfont
-To address the issue of street littering, waste detection and classification are crucial steps for each locality to develop appropriate waste treatment and recycling solutions.
-Therefore, this study aims to tackle this problem by constructing a waste recognition and classification system. The study will employ various one-stage detection models such as YOLOv7 \cite{wang2022yolov7}, YOLOv8 \cite{YOLOv8}, SSD MobileNetv2 \cite{Liu_2016} \cite{sandler2019mobilenetv2} to identify the most optimal model for system development.
-A dataset of approximately 4000 images will be utilized, combining the TACO \cite{proença2020taco}, TrashNet \cite{yang2016classification} datasets, and a self-collected dataset of over 800 waste images gathered from provinces in the Mekong Delta region.
-The study also demonstrates that augmenting the dataset with background images without objects improves the model's recognition ability in detecting waste in natural environments.
+Across Vietnam, the rise of smart cities brings intelligent waste management to the forefront, playing a vital role in improving the quality of life in urban areas, alongside traffic control, better public services, and healthcare advancements
+Detecting and classifying waste on the streets enables local authorities to grasp the waste pollution situation in an area, enabling timely waste treatment, and preventing waste accumulation, and illegal landfills that harm public health.
+This research addresses this issue by developing a waste recognition and classification system using novel detection models like YOLOv7, YOLOv8, and SSD MobileNetv2.
+The dataset of approximately 4,000 images is divided into four classes: metal, paper, plastic-nylon, and other waste, combining datasets TACO, TrashNet, and over 800 waste images collected from the Mekong Delta region.
+Experimental results show that YOLOv8 outperformed the other two models with mAP50 for street waste detection by 73\% (single class) and 44.6\% (four classes).
+The study compares the results with other research and highlights key issues for system development. It also demonstrates that adding background images without waste objects improved the model's ability to detect waste in natural settings.
 
 }
 \bigskip

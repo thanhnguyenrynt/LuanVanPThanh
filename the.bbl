@@ -21,37 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{wang2022yolov7}
-C.-Y. Wang, A.~Bochkovskiy, and H.-Y.~M. Liao, ``Yolov7: Trainable
-  bag-of-freebies sets new state-of-the-art for real-time object detectors,''
-  2022.
-
-\bibitem{YOLOv8}
-\BIBentryALTinterwordspacing
-G.~Jocher, A.~Chaurasia, and J.~Qiu, ``{Ultralytics YOLO},'' 01 2023. [Online].
-  Available: \url{https://github.com/ultralytics/ultralytics}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Liu_2016}
-\BIBentryALTinterwordspacing
-W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.-Y. Fu, and A.~C. Berg,
-  \emph{SSD: Single Shot MultiBox Detector}.\hskip 1em plus 0.5em minus
-  0.4em\relax Springer International Publishing, 2016, p. 21–37. [Online].
-  Available: \url{http://dx.doi.org/10.1007/978-3-319-46448-0_2}
-\BIBentrySTDinterwordspacing
-
-\bibitem{sandler2019mobilenetv2}
-M.~Sandler, A.~Howard, M.~Zhu, A.~Zhmoginov, and L.-C. Chen, ``Mobilenetv2:
-  Inverted residuals and linear bottlenecks,'' 2019.
-
-\bibitem{proença2020taco}
-P.~F. Proença and P.~Simões, ``Taco: Trash annotations in context for litter
-  detection,'' 2020.
-
-\bibitem{yang2016classification}
-M.~Yang and G.~Thung, ``Classification of trash for recyclability status,''
-  \emph{CS229 project report}, vol. 2016, no.~1, p.~3, 2016.
-
 \bibitem{girshick2014rich}
 R.~Girshick, J.~Donahue, T.~Darrell, and J.~Malik, ``Rich feature hierarchies
   for accurate object detection and semantic segmentation,'' 2014.
@@ -76,22 +45,26 @@ F.~F. L. . J. J. .~S. Yeung, ``Detection and segmentation,''
 S.~Ren, K.~He, R.~Girshick, and J.~Sun, ``Faster r-cnn: Towards real-time
   object detection with region proposal networks,'' 2016.
 
-\bibitem{redmon2016yolo9000}
-J.~Redmon and A.~Farhadi, ``Yolo9000: Better, faster, stronger,'' 2016.
+\bibitem{wang2022yolov7}
+C.-Y. Wang, A.~Bochkovskiy, and H.-Y.~M. Liao, ``Yolov7: Trainable
+  bag-of-freebies sets new state-of-the-art for real-time object detectors,''
+  2022.
 
-\bibitem{redmon2018yolov3}
-------, ``Yolov3: An incremental improvement,'' 2018.
-
-\bibitem{bochkovskiy2020yolov4}
-A.~Bochkovskiy, C.-Y. Wang, and H.-Y.~M. Liao, ``Yolov4: Optimal speed and
-  accuracy of object detection,'' 2020.
-
-\bibitem{s22020464}
+\bibitem{Liu_2016}
 \BIBentryALTinterwordspacing
-U.~Nepal and H.~Eslamiat, ``Comparing yolov3, yolov4 and yolov5 for autonomous
-  landing spot detection in faulty uavs,'' \emph{Sensors}, vol.~22, no.~2,
-  2022. [Online]. Available: \url{https://www.mdpi.com/1424-8220/22/2/464}
+W.~Liu, D.~Anguelov, D.~Erhan, C.~Szegedy, S.~Reed, C.-Y. Fu, and A.~C. Berg,
+  \emph{SSD: Single Shot MultiBox Detector}.\hskip 1em plus 0.5em minus
+  0.4em\relax Springer International Publishing, 2016, p. 21–37. [Online].
+  Available: \url{http://dx.doi.org/10.1007/978-3-319-46448-0_2}
 \BIBentrySTDinterwordspacing
+
+\bibitem{proença2020taco}
+P.~F. Proença and P.~Simões, ``Taco: Trash annotations in context for litter
+  detection,'' 2020.
+
+\bibitem{yang2016classification}
+M.~Yang and G.~Thung, ``Classification of trash for recyclability status,''
+  \emph{CS229 project report}, vol. 2016, no.~1, p.~3, 2016.
 
 \bibitem{shah2022method}
 J.~Shah and S.~Kamat, ``A method for waste segregation using convolutional
@@ -134,6 +107,16 @@ K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
   bay kh{\^o}ng người l{\'a}i v{\`a} mạng nơ-ron t{\'\i}ch chập
   s{\^a}u,'' \emph{Tạp ch{\'\i} Khoa học {\DJ}o {\dj}ạc v{\`a} Bản
   {\dj}ồ}, no.~49, pp. 21--29, 2021.
+
+\bibitem{redmon2018yolov3}
+J.~Redmon and A.~Farhadi, ``Yolov3: An incremental improvement,'' 2018.
+
+\bibitem{redmon2016yolo9000}
+------, ``Yolo9000: Better, faster, stronger,'' 2016.
+
+\bibitem{sandler2019mobilenetv2}
+M.~Sandler, A.~Howard, M.~Zhu, A.~Zhmoginov, and L.-C. Chen, ``Mobilenetv2:
+  Inverted residuals and linear bottlenecks,'' 2019.
 
 \bibitem{Papert1966TheSV}
 \BIBentryALTinterwordspacing
@@ -181,47 +164,9 @@ J.~R. Uijlings, K.~E. Van De~Sande, T.~Gevers, and A.~W. Smeulders, ``Selective
 J.~Redmon, S.~Divvala, R.~Girshick, and A.~Farhadi, ``You only look once:
   Unified, real-time object detection,'' 2016.
 
-\bibitem{lin2017feature}
-T.-Y. Lin, P.~Dollár, R.~Girshick, K.~He, B.~Hariharan, and S.~Belongie,
-  ``Feature pyramid networks for object detection,'' 2017.
-
-\bibitem{simonyan2015deep}
-K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
-  large-scale image recognition,'' 2015.
-
-\bibitem{he2015deep}
-K.~He, X.~Zhang, S.~Ren, and J.~Sun, ``Deep residual learning for image
-  recognition,'' 2015.
-
-\bibitem{xie2017aggregated}
-S.~Xie, R.~Girshick, P.~Dollár, Z.~Tu, and K.~He, ``Aggregated residual
-  transformations for deep neural networks,'' 2017.
-
-\bibitem{huang2018densely}
-G.~Huang, Z.~Liu, L.~van~der Maaten, and K.~Q. Weinberger, ``Densely connected
-  convolutional networks,'' 2018.
-
 \bibitem{wang2019cspnet}
 C.-Y. Wang, H.-Y.~M. Liao, I.-H. Yeh, Y.-H. Wu, P.-Y. Chen, and J.-W. Hsieh,
   ``Cspnet: A new backbone that can enhance learning capability of cnn,'' 2019.
-
-\bibitem{liu2018path}
-S.~Liu, L.~Qi, H.~Qin, J.~Shi, and J.~Jia, ``Path aggregation network for
-  instance segmentation,'' 2018.
-
-\bibitem{woo2018cbam}
-S.~Woo, J.~Park, J.-Y. Lee, and I.~S. Kweon, ``Cbam: Convolutional block
-  attention module,'' 2018.
-
-\bibitem{li2022yolov6}
-C.~Li, L.~Li, H.~Jiang, K.~Weng, Y.~Geng, L.~Li, Z.~Ke, Q.~Li, M.~Cheng,
-  W.~Nie, Y.~Li, B.~Zhang, Y.~Liang, L.~Zhou, X.~Xu, X.~Chu, X.~Wei, and
-  X.~Wei, ``Yolov6: A single-stage object detection framework for industrial
-  applications,'' 2022.
-
-\bibitem{yolov72023}
-G.~Al-refai, H.~ElMoaqet, M.~Ryalat, and M.~Al-refai, ``Object detection in
-  low-light environment using yolov7,'' 09 2023.
 
 \bibitem{lee2019energy}
 Y.~Lee, J.~won Hwang, S.~Lee, Y.~Bae, and J.~Park, ``An energy and
@@ -236,6 +181,20 @@ M.~Nguyễn~Văn, A.~Lê~Văn, L.~Trần~Đức, T.~Nguyễn~Tuấn,
   chua,'' \emph{Tạp chí khoa học Tài nguyên và Môi trường}, no.~50,
   p. 102–112, tháng 3 2024. [Online]. Available:
   \url{https://tapchikhtnmt.hunre.edu.vn/index.php/tapchikhtnmt/article/view/569}
+\BIBentrySTDinterwordspacing
+
+\bibitem{YOLOv8}
+\BIBentryALTinterwordspacing
+G.~Jocher, A.~Chaurasia, and J.~Qiu, ``{Ultralytics YOLO},'' 01 2023. [Online].
+  Available: \url{https://github.com/ultralytics/ultralytics}
+\BIBentrySTDinterwordspacing
+
+\bibitem{info14120633}
+\BIBentryALTinterwordspacing
+S.~Single, S.~Iranmanesh, and R.~Raad, ``Realwaste: A novel real-life data set
+  for landfill waste classification using deep learning,'' \emph{Information},
+  vol.~14, no.~12, 2023. [Online]. Available:
+  \url{https://www.mdpi.com/2078-2489/14/12/633}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

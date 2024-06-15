@@ -35,53 +35,55 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 
 \begin{table}[!ht]
 	\centering
-	\caption{Số lượng ảnh theo lớp của tập dữ liệu TrashNet}
-	\begin{tabular}{|l|l|r|}
-		\hline
-		\multicolumn{1}{|l|}{
-			\textbf{\#}}
-		 & \multicolumn{1}{c|}{\textbf{Lớp}}
-		 & \multicolumn{1}{c|}{\textbf{Số lượng ảnh}} \\
-		\hline
+	\begin{threeparttable}
+		\caption{Số lượng ảnh theo lớp của tập dữ liệu TrashNet}
 
-		1
-		 & Cardboard
-		 & 403                                        \\
-		\hline
+		\begin{tabular}{llr}
+			\hline
+			\multicolumn{1}{l}{
+				\textbf{\#}}
+			 & \multicolumn{1}{l}{\textbf{Lớp}}
+			 & \multicolumn{1}{r}{\textbf{Số lượng ảnh}} \\
+			\hline
 
-		2
-		 & Paper
-		 & 594                                        \\
-		\hline
+			1
+			 & Cardboard
+			 & 403                                       \\
+			\hline
 
-		3
-		 & Glass
-		 & 501                                        \\
-		\hline
+			2
+			 & Paper
+			 & 594                                       \\
+			\hline
 
-		4
-		 & Plastic
-		 & 482                                        \\
-		\hline
+			3
+			 & Glass
+			 & 501                                       \\
+			\hline
 
-		5
-		 & Metal
-		 & 410                                        \\
-		\hline
+			4
+			 & Plastic
+			 & 482                                       \\
+			\hline
 
-		6
-		 & Trash
-		 & 137                                        \\
-		\hline
+			5
+			 & Metal
+			 & 410                                       \\
+			\hline
+
+			6
+			 & Trash
+			 & 137                                       \\
+			\hline
 
 
-		\textbf{Tổng cộng}
-		 &
-		 & 2524                                       \\
-		\hline
-	\end{tabular}
-
-	\label{tab:dataset}
+			\textbf{Tổng cộng}
+			 &
+			 & 2524                                      \\
+			\hline
+		\end{tabular}
+		\label{tab:dataset}
+	\end{threeparttable}
 \end{table}
 
 \begin{figure}[H]
@@ -93,53 +95,55 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 
 \begin{table}[!ht]
 	\centering
-	\caption{Số lượng ảnh theo lớp của tập dữ liệu TrashNet khi được gán hộp giới hạn}
-	\begin{tabular}{|l|l|r|}
-		\hline
-		\multicolumn{1}{|l|}{
-			\textbf{\#}}
-		 & \multicolumn{1}{c|}{\textbf{Lớp}}
-		 & \multicolumn{1}{c|}{\textbf{Số lượng vật thể}} \\
-		\hline
+	\begin{threeparttable}
+		\caption{Số lượng ảnh theo lớp của tập dữ liệu TrashNet khi được gán hộp giới hạn}
 
-		1
-		 & Cardboard
-		 & 404                                            \\
-		\hline
+		\begin{tabular}{llr}
+			\hline
+			\multicolumn{1}{l}{
+				\textbf{\#}}
+			 & \multicolumn{1}{l}{\textbf{Lớp}}
+			 & \multicolumn{1}{r}{\textbf{Số lượng vật thể}} \\
+			\hline
 
-		2
-		 & Paper
-		 & 601                                            \\
-		\hline
+			1
+			 & Cardboard
+			 & 404                                           \\
+			\hline
 
-		3
-		 & Glass
-		 & 509                                            \\
-		\hline
+			2
+			 & Paper
+			 & 601                                           \\
+			\hline
 
-		4
-		 & Plastic
-		 & 479                                            \\
-		\hline
+			3
+			 & Glass
+			 & 509                                           \\
+			\hline
 
-		5
-		 & Metal
-		 & 410                                            \\
-		\hline
+			4
+			 & Plastic
+			 & 479                                           \\
+			\hline
 
-		6
-		 & Trash
-		 & 149                                            \\
-		\hline
+			5
+			 & Metal
+			 & 410                                           \\
+			\hline
+
+			6
+			 & Trash
+			 & 149                                           \\
+			\hline
 
 
-		\textbf{Tổng cộng}
-		 &
-		 & 2552                                           \\
-		\hline
-	\end{tabular}
-
+			\textbf{Tổng cộng}
+			 &
+			 & 2552                                          \\
+			\hline
+		\end{tabular}
 	\label{tab:dataset1}
+	\end{threeparttable}
 \end{table}
 
 \begin{figure}[H]
@@ -153,7 +157,7 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 \label{sec:TACO}
 {\fontsize{13}{12} \selectfont
 
-	TACO là một tập dữ liệu hình ảnh về chất thải trong tự nhiên. Tập dữ liệu chứa các hình ảnh về rác được chụp trong nhiều môi trường khác nhau, từ những bãi biển đến đường phố London. Những hình ảnh này được gắn nhãn và phân đoạn thủ công để đào tạo và đánh giá các thuật toán phát hiện đối tượng.
+	TACO là một tập dữ liệu hình ảnh về chất thải trong tự nhiên. Tập dữ liệu chứa các hình ảnh về rác được chụp trong nhiều môi trường khác nhau, từ những bãi biển đến đường phố London. Những hình ảnh này được gắn nhãn và phân đoạn thủ công để huấn luyện và đánh giá các thuật toán phát hiện đối tượng.
 	Hiện tại bộ dữ liệu có 1.500 ảnh với 4.784 vật thể
 	và 3.918 ảnh mới cần được gán nhãn. Một số hình ảnh của tập dữ liệu ở Hình \ref{fig:dataset_taco}
 
@@ -230,32 +234,33 @@ tuy nhiên đó cũng là sự hạn chế khi có những lớp có quá ít d�
 
 \begin{table}[!ht]
 	\centering
-	\caption{Số lượng ảnh, đối tượng và tỉ lệ theo lớp của tập dữ liệu tự thu thập}
-	\begin{tabular}{|l|r|r|r|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Lớp}}
-		                  & \multicolumn{1}{c|}{\textbf{Số hình}}
-		                  & \multicolumn{1}{c|}{\textbf{Số đối tượng}}
-		                  & \multicolumn{1}{c|}{\textbf{Tỉ lệ}}
-		\\
-		\hline
+	\begin{threeparttable}
+		\caption{Số lượng ảnh, đối tượng và tỉ lệ theo lớp của tập dữ liệu tự thu thập}
+		\begin{tabular}{lrrwr{3cm}}
+			\hline
+			\multicolumn{1}{l}{\textbf{Lớp}}
+			                    & \multicolumn{1}{r}{\textbf{Số hình}}
+			                    & \multicolumn{1}{r}{\textbf{Số đối tượng}}
+			                    & \multicolumn{1}{r}{\textbf{Tỉ lệ}}
+			\\
+			\hline
 
-		Nhựa - Nilon      & 392                                        & 761 & 43,1\% \\
-		\hline
+			Nhựa - Nilon        & 392                                       & 761 & \t43,1\% \\
+			\hline
 
-		Giấy              & 339                                        & 552 & 31,3\% \\
-		\hline
+			Giấy                & 339                                       & 552 & 31,3\%   \\
+			\hline
 
-		Rác khác          & 209                                        & 350 & 19,8\% \\
-		\hline
+			Rác khác            & 209                                       & 350 & 19,8\%   \\
+			\hline
 
-		Kim loại          & 60                                         & 103 & 5,8\%  \\
-		\hline
-		Ảnh không đối tượng & 200                                        & 0   & 0      \\
-		\hline
-	\end{tabular}
-
+			Kim loại            & 60                                        & 103 & 5,8\%    \\
+			\hline
+			Ảnh không đối tượng & 200                                       & 0   & 0        \\
+			\hline
+		\end{tabular}
 	\label{tab:datasetown}
+	\end{threeparttable}
 \end{table}
 
 {\fontsize{13}{12} \selectfont
@@ -292,20 +297,22 @@ Ngoài ra nghiên cứu còn thu thập thêm 200 hình ảnh nền để tăng 
 
 \begin{table}[h]
 	\centering
-	\caption{Số lượng hình ảnh, đối tượng của tập dữ liệu sử dụng cho nghiên cứu được tổng hợp từ dữ liệu TrashNet, TACO và tự thu thập}
-	\begin{tabular}{|l|l|r|r|r|}
-		\cline{1-5}
-		\textbf{Lớp}                           &            & \textbf{TrashNet} & \textbf{TACO} & \textbf{Thu thập} \\ \cline{1-5}
-		\multirow{2}{*}{\textbf{Nhựa - nilon}} & Hình ảnh   & 495               & 604           & 392               \\ \cline{2-5}
-		                                       & Đối tượng  & 496               & 1252          & 761               \\ \cline{1-5}
-		\multirow{2}{*}{\textbf{Giấy}}         & Hình ảnh   & 591               & 349           & 339               \\ \cline{2-5}
-		                                       & Đối tượng  & 591               & 488           & 552               \\ \cline{1-5}
-		\multirow{2}{*}{\textbf{Kim loại}}     & Hình ảnh   & 409               & 221           & 60                \\ \cline{2-5}
-		                                       & Đối tượng  & 410               & 346           & 103               \\ \cline{1-5}
-		\multirow{2}{*}{\textbf{Khác}}         & Hình   ảnh & 587               & 365           & 209               \\ \cline{2-5}
-		                                       & Đối tượng  & 612               & 547           & 350               \\ \cline{1-5}
-	\end{tabular}
-	\label{tab:datasetmain}
+	\begin{threeparttable}
+		\caption{Số lượng hình ảnh, đối tượng của tập dữ liệu sử dụng cho nghiên cứu được tổng hợp từ dữ liệu TrashNet, TACO và tự thu thập}
+		\begin{tabular}{llrrr}
+			\cline{1-5}
+			\textbf{Lớp}                           &            & \textbf{TrashNet} & \textbf{TACO} & \textbf{Thu thập} \\ \cline{1-5}
+			\multirow{2}{*}{Nhựa - nilon} & Hình ảnh   & 495               & 604           & 392               \\ \cline{2-5}
+			                                       & Đối tượng  & 496               & 1252          & 761               \\ \cline{1-5}
+			\multirow{2}{*}{Giấy}         & Hình ảnh   & 591               & 349           & 339               \\ \cline{2-5}
+			                                       & Đối tượng  & 591               & 488           & 552               \\ \cline{1-5}
+			\multirow{2}{*}{Kim loại}     & Hình ảnh   & 409               & 221           & 60                \\ \cline{2-5}
+			                                       & Đối tượng  & 410               & 346           & 103               \\ \cline{1-5}
+			\multirow{2}{*}{Khác}         & Hình   ảnh & 587               & 365           & 209               \\ \cline{2-5}
+			                                       & Đối tượng  & 612               & 547           & 350               \\ \cline{1-5}
+		\end{tabular}
+		\label{tab:datasetmain}
+	\end{threeparttable}
 \end{table}
 
 
@@ -323,62 +330,65 @@ Cuối cùng kết hợp ba tập dữ liệu để hình thành bộ dữ liệ
 
 \begin{table}[!h]
 	\centering
-	\caption{Số lượng đối tượng theo từng lớp của tập huấn luyện, xác thực, thử nghiệm dùng trong nghiên cứu}
-	\begin{tabular}{|l|r|r|r|}
-		\cline{1-4}
-		\textbf{Lớp}          & \textbf{Huấn luyện} & \textbf{Xác thực} & \textbf{Thử nghiệm} \\ \cline{1-4}
-		\textbf{Nhựa - nilon} & 1656                & 618               & 235                 \\ \cline{1-4}
-		\textbf{Giấy}         & 1179                & 289               & 163                 \\ \cline{1-4}
-		\textbf{Kim loại}     & 660                 & 150               & 49                  \\ \cline{1-4}
-		\textbf{Khác}         & 999                 & 401               & 109                 \\ \cline{1-4}
-	\end{tabular}
-
+	\begin{threeparttable}
+		\caption{Số lượng đối tượng theo từng lớp của tập huấn luyện, xác thực, thử nghiệm dùng trong nghiên cứu}
+		\begin{tabular}{lrrr}
+			\cline{1-4}
+			Lớp          & \textbf{Huấn luyện} & \textbf{Xác thực} & \textbf{Thử nghiệm} \\ \cline{1-4}
+			Nhựa - nilon & 1656                & 618               & 235                 \\ \cline{1-4}
+			Giấy         & 1179                & 289               & 163                 \\ \cline{1-4}
+			Kim loại   & 660                 & 150               & 49                  \\ \cline{1-4}
+			Khác         & 999                 & 401               & 109                 \\ \cline{1-4}
+		\end{tabular}
 	\label{tab:datasettest}
+	\end{threeparttable}
 \end{table}
 
 
 \begin{table}[!h]
 	\centering
-	\caption{Bảng chuyển các lớp của TACO sang lớp của mô hình}
-	\begin{tabular}{|l|l|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{TACO}}
-		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}
-		                       & \multicolumn{1}{c|}{\textbf{TACO}}
-		                       & \multicolumn{1}{c|}{\textbf{Mô hình}}                                            \\
-		\hline
-		Aluminium foil         & Kim loại                              & Magazine paper            & Giấy         \\ \hline
-		Battery                & Kim loại                              & Tissues                   & Giấy         \\ \hline
-		Aluminium blister pack & Khác                                  & Wrapping paper            & Giấy         \\ \hline
-		Carded blister pack    & Khác                                  & Normal paper              & Giấy         \\ \hline
-		Other plastic bottle   & Nhựa - nilon                          & Paper bag                 & Giấy         \\ \hline
-		Clear plastic bottle   & Nhựa - nilon                          & Plastified paper bag      & Giấy         \\ \hline
-		Glass bottle           & Khác                                  & Plastic film              & Nhựa - nilon \\ \hline
-		Plastic bottle cap     & Nhựa - nilon                          & Six pack rings            & Khác         \\ \hline
-		Metal bottle cap       & Kim loại                              & Garbage bag               & Nhựa - nilon \\ \hline
-		Broken glass           & Khác                                  & Other plastic wrapper     & Nhựa - nilon \\ \hline
-		Food Can               & Kim loại                              & Single-use carrier bag    & Nhựa - nilon \\ \hline
-		Aerosol                & Kim loại                              & Polypropylene bag         & Nhựa - nilon \\ \hline
-		Drink can              & Kim loại                              & Crisp packet              & Khác         \\ \hline
-		Toilet tube            & Giấy                                  & Spread tub                & Nhựa - nilon \\ \hline
-		Other carton           & Giấy                                  & Tupperware                & Nhựa - nilon \\ \hline
-		Egg carton             & Giấy                                  & Disposable food container & Nhựa - nilon \\ \hline
-		Drink carton           & Giấy                                  & Foam food container       & Giấy         \\ \hline
-		Corrugated carton      & Giấy                                  & Other plastic container   & Nhựa - nilon \\ \hline
-		Meal carton            & Giấy                                  & Plastic glooves           & Nhựa - nilon \\ \hline
-		Pizza box              & Giấy                                  & Plastic utensils          & Nhựa - nilon \\ \hline
-		Paper cup              & Giấy                                  & Pop tab                   & Kim loại     \\ \hline
-		Disposable plastic cup & Nhựa - nilon                          & Rope \& strings           & Khác         \\ \hline
-		Foam cup               & Giấy                                  & Scrap metal               & Kim loại     \\ \hline
-		Glass cup              & Khác                                  & Shoe                      & Khác         \\ \hline
-		Other plastic cup      & Nhựa - nilon                          & Squeezable tube           & Khác         \\ \hline
-		Food waste             & Khác                                  & Plastic straw             & Nhựa - nilon \\ \hline
-		Glass jar              & Khác                                  & Paper straw               & Nhựa - nilon \\ \hline
-		Plastic lid            & Nhựa - nilon                          & Styrofoam piece           & Khác         \\ \hline
-		Metal lid              & Kim loại                              & Unlabeled litter          & Khác         \\ \hline
-		Other plastic          & Nhựa - nilon                          & Cigarette                 & Khác         \\ \hline
-	\end{tabular}
+	\begin{threeparttable}
+		\caption{Bảng chuyển các lớp của TACO sang lớp của mô hình}
+		\begin{tabular}{ll|ll}
+			\hline
+			\multicolumn{1}{l}{\textbf{TACO}}
+			                       & \multicolumn{1}{l}{\textbf{Mô hình}}
+			                       & \multicolumn{1}{l}{\textbf{TACO}}
+			                       & \multicolumn{1}{l}{\textbf{Mô hình}}                                            \\
+			\hline
+			Aluminium foil         & Kim loại                             & Magazine paper            & Giấy         \\ \hline
+			Battery                & Kim loại                             & Tissues                   & Giấy         \\ \hline
+			Aluminium blister pack & Khác                                 & Wrapping paper            & Giấy         \\ \hline
+			Carded blister pack    & Khác                                 & Normal paper              & Giấy         \\ \hline
+			Other plastic bottle   & Nhựa - nilon                         & Paper bag                 & Giấy         \\ \hline
+			Clear plastic bottle   & Nhựa - nilon                         & Plastified paper bag      & Giấy         \\ \hline
+			Glass bottle           & Khác                                 & Plastic film              & Nhựa - nilon \\ \hline
+			Plastic bottle cap     & Nhựa - nilon                         & Six pack rings            & Khác         \\ \hline
+			Metal bottle cap       & Kim loại                             & Garbage bag               & Nhựa - nilon \\ \hline
+			Broken glass           & Khác                                 & Other plastic wrapper     & Nhựa - nilon \\ \hline
+			Food Can               & Kim loại                             & Single-use carrier bag    & Nhựa - nilon \\ \hline
+			Aerosol                & Kim loại                             & Polypropylene bag         & Nhựa - nilon \\ \hline
+			Drink can              & Kim loại                             & Crisp packet              & Khác         \\ \hline
+			Toilet tube            & Giấy                                 & Spread tub                & Nhựa - nilon \\ \hline
+			Other carton           & Giấy                                 & Tupperware                & Nhựa - nilon \\ \hline
+			Egg carton             & Giấy                                 & Disposable food container & Nhựa - nilon \\ \hline
+			Drink carton           & Giấy                                 & Foam food container       & Giấy         \\ \hline
+			Corrugated carton      & Giấy                                 & Other plastic container   & Nhựa - nilon \\ \hline
+			Meal carton            & Giấy                                 & Plastic glooves           & Nhựa - nilon \\ \hline
+			Pizza box              & Giấy                                 & Plastic utensils          & Nhựa - nilon \\ \hline
+			Paper cup              & Giấy                                 & Pop tab                   & Kim loại     \\ \hline
+			Disposable plastic cup & Nhựa - nilon                         & Rope \& strings           & Khác         \\ \hline
+			Foam cup               & Giấy                                 & Scrap metal               & Kim loại     \\ \hline
+			Glass cup              & Khác                                 & Shoe                      & Khác         \\ \hline
+			Other plastic cup      & Nhựa - nilon                         & Squeezable tube           & Khác         \\ \hline
+			Food waste             & Khác                                 & Plastic straw             & Nhựa - nilon \\ \hline
+			Glass jar              & Khác                                 & Paper straw               & Nhựa - nilon \\ \hline
+			Plastic lid            & Nhựa - nilon                         & Styrofoam piece           & Khác         \\ \hline
+			Metal lid              & Kim loại                             & Unlabeled litter          & Khác         \\ \hline
+			Other plastic          & Nhựa - nilon                         & Cigarette                 & Khác         \\ \hline
+		\end{tabular}
 	\label{tab:taco_map}
+	\end{threeparttable}
 \end{table}
 
 \bigskip
@@ -399,22 +409,25 @@ Cuối cùng kết hợp ba tập dữ liệu để hình thành bộ dữ liệ
 }
 \begin{table}[H]
 	\centering
-	\caption{Các tham số tăng cường dữ liệu cho các mô hình}
-	\begin{tabular}{|l|p{10cm}|r|}
-		\hline
-		\textbf{Tên}
-		           & \textbf{Mô tả}
-		           & \textbf{(\%)}
-		\\ \hline
-		Lật ngang  & Lật hình ảnh từ trái sang phải, tăng tính đa dạng dữ liệu                                                                                    & 50 \\  \hline
-		Lật dọc    & Lật ngược hình ảnh, không ảnh hưởng đến đặc điểm của đối tượng                                                                               & 50 \\  \hline
-		Xoay       & Xoay hình ảnh ngẫu nhiên, cải thiện khả năng nhận dạng vật thể ở nhiều hướng                                                                 & 50 \\  \hline
-		Xê dịch    & Dịch hình ảnh theo chiều ngang và chiều dọc bằng một phần kích thước hình ảnh, hỗ trợ học cách phát hiện các vật thể nhìn thấy được một phần & 10 \\  \hline
-		Phóng đại  & Phóng to, thu nhỏ hình ảnh, mô phỏng hình ảnh với tỉ lệ khác nhau so với hình ảnh chụp                                                       & 50 \\  \hline
-		Độ bão hòa & Thay đổi độ bão hòa của hình ảnh một phần, ảnh hưởng đến cường độ màu sắc. Hữu ích cho việc mô phỏng các điều kiện môi trường khác nhau      & 70 \\ \hline
-		Độ sáng    & Sửa đổi độ sáng của hình ảnh theo một phần nhỏ, giúp mô hình hoạt động tốt trong nhiều điều kiện ánh sáng khác nhau                          & 40 \\ \hline
-	\end{tabular}
+	\begin{threeparttable}
+		\caption{Các tham số tăng cường dữ liệu cho các mô hình}
+
+		\begin{tabular}{lp{10cm}r}
+			\hline
+			\textbf{Tên}
+			           & \textbf{Mô tả}
+			           & \textbf{(\%)}
+			\\ \hline
+			Lật ngang  & Lật hình ảnh từ trái sang phải, tăng tính đa dạng dữ liệu                                                                                    & 50 \\  \hline
+			Lật dọc    & Lật ngược hình ảnh, không ảnh hưởng đến đặc điểm của đối tượng                                                                               & 50 \\  \hline
+			Xoay       & Xoay hình ảnh ngẫu nhiên, cải thiện khả năng nhận dạng vật thể ở nhiều hướng                                                                 & 50 \\  \hline
+			Xê dịch    & Dịch hình ảnh theo chiều ngang và chiều dọc bằng một phần kích thước hình ảnh, hỗ trợ học cách phát hiện các vật thể nhìn thấy được một phần & 10 \\  \hline
+			Phóng đại  & Phóng to, thu nhỏ hình ảnh, mô phỏng hình ảnh với tỉ lệ khác nhau so với hình ảnh chụp                                                       & 50 \\  \hline
+			Độ bão hòa & Thay đổi độ bão hòa của hình ảnh một phần, ảnh hưởng đến cường độ màu sắc. Hữu ích cho việc mô phỏng các điều kiện môi trường khác nhau      & 70 \\ \hline
+			Độ sáng    & Sửa đổi độ sáng của hình ảnh theo một phần nhỏ, giúp mô hình hoạt động tốt trong nhiều điều kiện ánh sáng khác nhau                          & 40 \\ \hline
+		\end{tabular}
 	\label{tab:thamso}
+	\end{threeparttable}
 \end{table}
 
 \section{Các mô hình sử dụng}
@@ -423,7 +436,8 @@ Cuối cùng kết hợp ba tập dữ liệu để hình thành bộ dữ liệ
 
 {\fontsize{13}{12} \selectfont
 
-	Nghiên cứu sử dụng các mô hình có số lượng tham số nhẹ, tốc độ xử lý nhanh là YOLOv7, YOLOv8, SSD MobileNetv2.
+	Nghiên cứu sử dụng các mô hình có số lượng tham số nhẹ, tốc độ xử lý nhanh là YOLOv7, YOLOv8, SSD MobileNetv2 thay vì các mô hình họ R-CNN vì các mô hình R-CNN có tham số mô hình lớn, khó khăn trong việc phát triển khi nghiên cứu được cung cấp thêm dữ liệu.
+	Ngoài ra nghiên cứu hướng đến việc nhận dạng theo thời gian thực nên sử dụng các mô hình như trên, đáp ứng trên các thiết bị di động với thời gian nhận dạng nhanh.
 	Các mô hình họ SSD đạt được sự cân bằng giữa tốc độ và độ chính xác, trong đó mô hình
 	SSD MobileNetv2 là mô hình ít tính toán, có kích thước nhỏ và cài đặt dễ dàng với thư viện MMdetection.
 	Gần đây những cải tiến của YOLOv8 mang lại như giảm kích thước mạng tích chập từ $6x6$ xuống $3x3$ để trừu tượng hoá hình ảnh hiệu quả, thay thế module C3 bằng module C2f tăng tốc độ xử lí, triển khai dự đoán không cần hộp neo để loại bỏ sự cần thiết của hộp neo,
@@ -436,15 +450,18 @@ Cuối cùng kết hợp ba tập dữ liệu để hình thành bộ dữ liệ
 
 \begin{table}[H]
 	\centering
-	\caption{Các tham số huấn luyện được cài đặt trong các mô hfnh}
-	\begin{tabular}{|l|r|r|r|r|}
-		\hline
-		\textbf{Mô hình} & \textbf{Batch size} & \textbf{Learning Rate} & \textbf{Tham số} & \textbf{Số hộp neo} \\ \hline
-		SSD MobiNetv2    & 16                  & 0.025                 & 15M         & 6                   \\ \hline
-		YOLOv7           & 16                  & 0.01                   & 6M          & 4                   \\ \hline
-		YOLOv8           & 16                  & 0.01                   & 3,2M        & 0                   \\ \hline
-	\end{tabular}
-	\label{tab:caidat}
+	\begin{threeparttable}
+		\caption{Các tham số huấn luyện được cài đặt trong các mô hfnh}
+
+		\begin{tabular}{lrrrr}
+			\hline
+			\textbf{Mô hình} & \textbf{Batch size} & \textbf{Learning Rate} & \textbf{Tham số} & \textbf{Số hộp neo} \\ \hline
+			SSD MobiNetv2    & 16                  & 0,0025                  & 15M              & 6                   \\ \hline
+			YOLOv7           & 16                  & 0,01                   & 6M               & 4                   \\ \hline
+			YOLOv8           & 16                  & 0,01                   & 3,2M             & 0                   \\ \hline
+		\end{tabular}
+		\label{tab:caidat}
+	\end{threeparttable}
 \end{table}
 
 \section{Sơ đồ hệ thống}

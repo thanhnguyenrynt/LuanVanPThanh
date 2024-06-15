@@ -1,25 +1,25 @@
-INFO:  latexindent.pl version 3.24, 2024-04-28, a script to indent .tex files
-       latexindent.pl lives here: D:/LaTex/scripts/latexindent/
-       Thu Jun 13 08:47:28 2024
-       Filename: d:/Thanh/LaTex/LuanVanPThanh/chapters/__latexindent_temp_chapter03.tex
+INFO:  latexindent.pl version 3.23.8, 2024-03-28, a script to indent .tex files
+       latexindent.pl lives here: F:/MiTex/scripts/latexindent/
+       Sat Jun 15 03:03:38 2024
+       Filename: f:/CodeProject/LaTex/LuanVanPThanh/chapters/__latexindent_temp_chapter03.tex
 INFO:  Processing switches:
        -y|--yaml: YAML settings specified via command line
        -c|--cruft: cruft directory
-INFO:  Directory for backup files and log file d:\Thanh\LaTex\LuanVanPThanh\indent.log:
-       d:\Thanh\LaTex\LuanVanPThanh\
+INFO:  Directory for backup files and f:/CodeProject/LaTex/LuanVanPThanh//indent.log:
+       f:/CodeProject/LaTex/LuanVanPThanh/
 INFO:  Perl modules are being loaded from the following directories:
-       D:/Strawberry/perl/lib/FindBin.pm
-       D:/Strawberry/perl/vendor/lib/YAML/Tiny.pm
-       D:/Strawberry/perl/lib/File/Copy.pm
-       D:/Strawberry/perl/lib/File/Basename.pm
-       D:/Strawberry/perl/lib/Getopt/Long.pm
-       D:/Strawberry/perl/vendor/lib/File/HomeDir.pm
+       F:/Strawberry/perl/lib/FindBin.pm
+       F:/Strawberry/perl/vendor/lib/YAML/Tiny.pm
+       F:/Strawberry/perl/lib/File/Copy.pm
+       F:/Strawberry/perl/lib/File/Basename.pm
+       F:/Strawberry/perl/lib/Getopt/Long.pm
+       F:/Strawberry/perl/vendor/lib/File/HomeDir.pm
 INFO:  LatexIndent perl modules are being loaded from, for example:
-       D:/LaTex/scripts/latexindent/LatexIndent/Document.pm
+       F:/MiTex/scripts/latexindent/LatexIndent/Document.pm
 INFO:  YAML settings read: defaultSettings.yaml
-       Reading defaultSettings.yaml from D:/LaTex/scripts/latexindent/defaultSettings.yaml
+       Reading defaultSettings.yaml from F:/MiTex/scripts/latexindent/defaultSettings.yaml
 INFO:  YAML reading settings
-       Home directory is C:\Users\Admin
+       Home directory is C:\Users\thanh
        latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
        see all possible locations: https://latexindentpl.readthedocs.io/en/latest/sec-appendices.html#indentconfig-options)
 INFO:  YAML settings read: -y switch

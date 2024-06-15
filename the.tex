@@ -49,8 +49,9 @@
 \usepackage{subfig}
 \usepackage{caption}
 \captionsetup[figure]{skip=10pt}
-\captionsetup[table]{skip=2pt}
+\captionsetup[table]{skip=2pt,singlelinecheck=false,justification=raggedright}
 \pgfplotsset{width=15cm,compat=1.8}
+\usepackage{threeparttable}
 \renewcommand{\baselinestretch}{1.2}\selectfont
 %\usepackage{showframe}% http://ctan.org/pkg/showframe
 
@@ -157,6 +158,7 @@
 \newglossaryentry{api}{name=API, description={Application Programming Interface}} 
 \newglossaryentry{coco}{name=COCO, description={Common Objects in Context}} 
 \newglossaryentry{taco}{name=TACO, description={Trash Annotations in Context}} 
+\newglossaryentry{csdl}{name= CSDL, description={Cơ sở dữ liệu}} 
 
 
 
@@ -175,7 +177,7 @@
 \pagenumbering{roman}	% Kiểu số trang: i, ii, iii, iv, v,...
 
 % \chapter*{CHẤP THUẬN CỦA HỘI ĐỒNG}
-% \subfile{chapters/hoi-dong}
+\subfile{chapters/hoi-dong}
 
 \chapter*{\centering LỜI CẢM ƠN}
 \subfile{chapters/loi-cam-on}
@@ -189,8 +191,8 @@
 \chapter*{\centering ABSTRACT}
 \subfile{chapters/abstract}
 
-% \chapter*{\centering LỜI CAM ĐOAN}
-% \subfile{chapters/loi-cam-doan}
+\chapter*{\centering LỜI CAM ĐOAN}
+\subfile{chapters/loi-cam-doan}
 
 \tableofcontents
 \listoffigures
