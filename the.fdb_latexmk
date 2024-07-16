@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex the"] 1721159064.27734 "the.aux" "the.bbl" "the" 1721159466.23094 0
+["bibtex the"] 1721159064.27734 "the.aux" "the.bbl" "the" 1721159712.68749 0
   "./refs.bib" 1718395603 21981 148a670bddcbb00bcd4a2302401450bb ""
   "F:/MiTex/bibtex/bst/ieeetran/IEEEtran.bst" 1440622569 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "the.aux" 1721159465 37470 0763ab913e3b9cc16ffc94b52a70ba92 "pdflatex"
+  "the.aux" 1721159711 37470 0763ab913e3b9cc16ffc94b52a70ba92 "pdflatex"
   (generated)
   "the.bbl"
   "the.blg"
   (rewritten before read)
-["pdflatex"] 1721159454.74522 "f:/CodeProject/LaTex/LuanVanPThanh/the.tex" "the.pdf" "the" 1721159466.23153 0
+["pdflatex"] 1721159702.08806 "f:/CodeProject/LaTex/LuanVanPThanh/the.tex" "the.pdf" "the" 1721159712.6881 0
   "C:/Users/thanh/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1718383123 89997 61e9ca8c55c47218293899912efaa0ce ""
   "C:/Users/thanh/AppData/Local/MiKTeX/fonts/tfm/public/rsfs/rsfs10.tfm" 1711471664 688 37338d6ab346c2f1466b29e195316aa4 ""
   "C:/Users/thanh/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1711471443 24219122 6d964e5fc1ee31316ebc222e1deed230 ""
@@ -305,7 +305,7 @@
   "chapters/chapter01.tex" 1721155150 12936 4fb942b58e76a1f688e361586e336afa ""
   "chapters/chapter02.tex" 1721155753 75365 40ead442ce988b3f7f92cec27522c256 ""
   "chapters/chapter03.tex" 1721145502 28595 3b1036df665aed317f1887a4de07eed5 ""
-  "chapters/chapter04.tex" 1721158947 30860 d4e4a3fdb78ada4a31d1457aa8765394 ""
+  "chapters/chapter04.tex" 1721159683 30883 acbb35027ea69be575d22cdec683544c ""
   "chapters/chapter05.tex" 1721159450 5429 16332ef20a91e16bd0e06711e5686ffa ""
   "chapters/hoi-dong.tex" 1718439883 1066 a0bd7e6da615ddea21239f094b5ff042 ""
   "chapters/loi-cam-doan.tex" 1718440294 1180 0d92ecc882109a6df14e30aab475a12d ""
@@ -371,14 +371,14 @@
   "images/yolov8_pred_nobg.jpg" 1717293831 1059554 ee90d7fbc2162ab88e190ca1187a2dc2 ""
   "in.tex" 1717685106 1306 921803755ffd80687234d003ded6dd4f ""
   "out.tex" 1717293831 1485 f1d46987ceb435ccd6bdb73b71ab8c17 ""
-  "the.aux" 1721159465 37470 0763ab913e3b9cc16ffc94b52a70ba92 "pdflatex"
+  "the.aux" 1721159711 37470 0763ab913e3b9cc16ffc94b52a70ba92 "pdflatex"
   "the.bbl" 1721159064 8694 b33ed3697577aaaf4db5be2983939fac "bibtex the"
-  "the.gls" 1718203286 2974 f5e4bc845963f65da43cb3470ea011b8 ""
-  "the.lof" 1721159465 9316 0628ad5cceb0fd3ad3be7132ed3dd1af "pdflatex"
-  "the.lot" 1721159465 2751 bc33ea4a917d859b709693b56e343ed4 "pdflatex"
-  "the.out" 1721159465 10253 0299e19726515dfa384d012370140c24 "pdflatex"
+  "the.gls" 1721159629 3010 2dcb8f302f63e9aa906033b10b6c8d5f ""
+  "the.lof" 1721159711 9316 0628ad5cceb0fd3ad3be7132ed3dd1af "pdflatex"
+  "the.lot" 1721159711 2751 bc33ea4a917d859b709693b56e343ed4 "pdflatex"
+  "the.out" 1721159711 10253 0299e19726515dfa384d012370140c24 "pdflatex"
   "the.tex" 1718441985 8281 7481be46a98e02e29c8d762dd4b7a4d2 ""
-  "the.toc" 1721159465 4822 e1b1ce48dd4310cefd4087985fb58ceb "pdflatex"
+  "the.toc" 1721159711 4822 e1b1ce48dd4310cefd4087985fb58ceb "pdflatex"
   (generated)
   "the.aux"
   "the.glo"
