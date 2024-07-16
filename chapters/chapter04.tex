@@ -88,7 +88,7 @@ và Bảng \ref{tab:thucnghiem1.2} với tập dữ liệu xác thực và tập
  {\fontsize{13}{12} \selectfont
 
   Mô hình SSD MobileNetv2 tỏ ra không hiệu quả so với hai mô hình còn lại trong Thực nghiệm 1, vì vậy trong Thực nghiệm 2 và 3, nghiên cứu tập trung vào YOLOv7-tiny và YOLOv8n.
-  Các mô hình vẫn sử dụng tham số để tăng cường dữ liệu giống như ở \ref{tab:thamso}, thực hiện trên tập dữ liệu 1 và 2 như đã đề cập ở phần \ref{sec:dataset}.
+  Các mô hình vẫn sử dụng tham số để tăng cường dữ liệu giống như ở \ref{tab:thamso}, thực hiện trên tập dữ liệu đã đề cập ở phần \ref{sec:dataset} nhưng không bổ sung hình nền.
   Đánh giá các mô hình dựa vào chỉ số mAP50 trên từng loại rác và trung bình của tất cả, kết quả đánh giá được thể hiện Bảng \ref{tab:thucnghiem2.1} và Hình \ref{fig:thucnghiem2} ở Thực nghiệm 2.
 
  }
@@ -363,10 +363,16 @@ Hơn nữa, mô hình cũng xảy ra tình trạng chồng chéo các hộp gi�
 \section{Bản đồ phân bố rác thải ở ĐBSCL}
 {\fontsize{13}{12} \selectfont 
 
+<<<<<<< HEAD
 Nghiên cứu đã xây dựng hệ thống nhận đầu vào là hình ảnh rác được thu thập trên đường phố với các tùy chọn mô hình và video (xem Hình \ref{fig:demo1.1}). 
 Hình ảnh sau đó được thay đổi kích thước thành ảnh 640x640 và tiến hành phân loại và trả kết quả cho người dùng nếu hình ảnh hợp lệ (xem Hình \ref{fig:demo1})
 Sau khi phân loại, hình ảnh, nhãn và hộp giới hạn sẽ được lưu trữ trong CSDL MongoDB để hiển thị các thông tin cần thiết lên bản đồ (xem Hình \ref{fig:demo1.2}).
 Hiện tại hệ thống chỉ ghi nhận lưu trữ hình ảnh khi chọn mô hình YOLOv8 cho việc phân loại bốn lớp và hình ảnh có thông tin về tọa độ vị trí.
+=======
+Nghiên cứu đã xây dựng hệ thống nhận đầu vào là hình ảnh và tiến hành phân loại rác thành phần, có các tùy chọn mô hình và video (xem Hình \ref{fig:demo1}). 
+Sau khi phân loại, hình ảnh, nhãn và hộp giới hạn sẽ được lưu trữ trong CSDL MongoDB.
+Hiện tại hệ thống chỉ ghi nhận lưu trữ hình ảnh khi chọn mô hình YOLOv8 cho việc phân loại bốn lớp.
+>>>>>>> 2cc461fd50e2ae17a2a17301adb3a057d75b56d8
 
 }
 
