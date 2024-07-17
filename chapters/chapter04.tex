@@ -183,7 +183,7 @@ Các đối tượng từ "Giấy" cũng dễ bị nhận nhầm với với rá
 \begin{figure}[H]
     \centering
     \includegraphics[width=1\textwidth]{results_yolo8.png}
-    \caption{Các biểu đồ biến động về các hàm mất mát trên tập huấn luyện, xác thực và các đánh giá của mô hình YOLOv8n}
+    \caption{Các biểu đồ đánh giá của mô hình YOLOv8n}
     \label{fig:thucnghiem3.2}
 \end{figure}
 
@@ -363,34 +363,45 @@ Hơn nữa, mô hình cũng xảy ra tình trạng chồng chéo các hộp gi�
 \section{Bản đồ phân bố rác thải ở ĐBSCL}
 {\fontsize{13}{12} \selectfont 
 
-Nghiên cứu đã xây dựng hệ thống nhận đầu vào là hình ảnh và tiến hành phân loại rác thành phần, có các tùy chọn mô hình và video (xem Hình \ref{fig:demo1}). 
-Sau khi phân loại, hình ảnh, nhãn và hộp giới hạn sẽ được lưu trữ trong CSDL MongoDB.
-Hiện tại hệ thống chỉ ghi nhận lưu trữ hình ảnh khi chọn mô hình YOLOv8 cho việc phân loại bốn lớp.
+Nghiên cứu đã xây dựng hệ thống nhận đầu vào là hình ảnh rác được thu thập trên đường phố với các tùy chọn mô hình và video (xem Hình \ref{fig:demo1.1}). 
+Hình ảnh sau đó được thay đổi kích thước thành ảnh 640x640 và tiến hành phân loại, sau đó trả kết quả cho người dùng nếu hình ảnh hợp lệ (xem Hình \ref{fig:demo1})
+Sau khi phân loại, hình ảnh, nhãn và hộp giới hạn sẽ được lưu trữ trong CSDL MongoDB để hiển thị các thông tin cần thiết lên bản đồ (xem Hình \ref{fig:demo1.2}).
+Hiện tại hệ thống chỉ ghi nhận lưu trữ hình ảnh khi chọn mô hình YOLOv8 cho việc phân loại bốn lớp và hình ảnh có thông tin về tọa độ vị trí.
 
 }
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width=1\textwidth]{demo1.1.png}
+    \caption{Hệ thống nhận hình ảnh là rác được chụp trên đường phố}
+    \label{fig:demo1.1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
     \includegraphics[width=1\textwidth]{demo1.png}
-    \caption{Hệ thống nhận hình ảnh chưa phân loại và tiến hành phân loại rác theo thành phần}
+    \caption{Hệ thống tiến hành phân loại rác theo thành phần và hiển thị hình ảnh kết quả}
     \label{fig:demo1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{demo1.2.png}
+    \caption{Các thông tin được lưu trữ trong CSDL của hệ thống gồm hình, địa chỉ, hộp, lớp, ngày tạo và tọa độ}
+    \label{fig:demo1.2}
 \end{figure}
 
 {\fontsize{13}{12} \selectfont 
 
 Bản đồ phân bố cung cấp thông tin về mật độ phân bố của từng loại rác ở mỗi khu vực, dữ liệu được hiển thị ở ba tỉnh Vĩnh Long, Cần Thơ, Trà Vinh như Hình \ref{fig:demo2}. 
-Các chấm tròn là đại diện của lớp rác có số lượng cao nhất được phát hiện. Mỗi chấm tròn cung cấp thông tin địa lý, hình ảnh, số lượng rác của mỗi loại mà hệ thống phát hiện được và ngày chụp hình ảnh (xem Hình \ref{fig:demo3}).
-Thông tin trên bản đồ giúp các nhà quản lý có kế hoạch thu gom rác phù hợp, tránh tình trạng rác bị tích tụ. 
-Ngoài ra, hệ thống là tiền đề phát triển thêm các chức năng như kết nối tới trung tâm giám sát để theo dõi hiệu suất và phản hồi từ người dùng bằng việc triển khải trên ứng dụng di động.
-Các dữ liệu thu thập từ người dùng sử dụng hệ thống có thể sử dụng cho mục đích tối ưu hóa mô hình, giúp tăng hiệu suất phát hiện. 
-
+Có hai tùy chọn để hiển thị là thông tin về loại rác và loại bản đồ. Người dùng có thể chọn và bỏ chọn để lọc ra các loại rác cần hiển thị, mặc định hệ thống sẽ chọn tất cả bốn loại. 
+Ngoài ra có thể chọn loại bản đồ là thông tin vị trí hoặc bản đồ nhiệt tùy theo mục đích sử dụng (xem Hình \ref{fig:demo2.1}).
 
 }
 
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{demo2.png}
+    \includegraphics[width=1\textwidth]{demo2.png}
     \caption{Bản đồ phân bố các địa điểm có rác được phân loại ở ba tỉnh Vĩnh Long, Cần Thơ, Trà Vinh}
     \label{fig:demo2}
 \end{figure}
@@ -398,9 +409,39 @@ Các dữ liệu thu thập từ người dùng sử dụng hệ thống có th�
 
 \begin{figure}[H]
     \centering
+    \includegraphics[width=1\textwidth]{demo2.1.png}
+    \caption{Tùy chọn loại rác và loại bản đồ của hệ thống}
+    \label{fig:demo2.1}
+\end{figure}
+
+{\fontsize{13}{12} \selectfont 
+
+Đối với loại bản đồ thông tin vị trí, các chấm tròn là đại diện của lớp rác có số lượng cao nhất được phát hiện. Mỗi chấm tròn cung cấp thông tin địa lý, hình ảnh, số lượng rác của mỗi loại mà hệ thống phát hiện được và ngày chụp hình ảnh, 
+như Hình \ref{fig:demo3} thể hiện thông tin số lượng với lớp nhựa - nilon là 1, giấy là 2, kim loại là 1 và 1 loại khác, ngoài ra còn có thông tin cụ thể về địa chỉ chụp ảnh và ngày chụp giúp xác định được vị trí và thời gian của hình.
+Đối với loại bản đồ nhiệt, bản đồ thể hiện mức độ tổng quan về mức độ phân bố tập trung của các loại rác, người dùng sẽ theo dõi được khu vực hiện đang tập trung nhiều rác mà hệ thống cung cấp (xem Hình \ref{fig:demo4}).
+}
+
+\begin{figure}[H]
+    \centering
     \includegraphics[width=1\textwidth]{demo3.png}
     \caption{Hình ảnh chi tiết mỗi điểm của bản đồ phân bố}
     \label{fig:demo3}
 \end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{demo4.png}
+    \caption{Hình ảnh bản đồ nhiệt về các khu vực phân bố rác}
+    \label{fig:demo4}
+\end{figure}
+
+{\fontsize{13}{12} \selectfont 
+Thông tin trên bản đồ giúp các nhà quản lý có kế hoạch thu gom rác phù hợp, tránh tình trạng rác bị tích tụ. 
+Ngoài ra, hệ thống là tiền đề phát triển thêm các chức năng như kết nối tới trung tâm giám sát để theo dõi hiệu suất và phản hồi từ người dùng bằng việc triển khải trên ứng dụng di động.
+Các dữ liệu thu thập từ người dùng sử dụng hệ thống có thể sử dụng cho mục đích tối ưu hóa mô hình, giúp tăng hiệu suất phát hiện. 
+
+}
+
 
 \end{document}

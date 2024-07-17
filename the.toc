@@ -1,25 +1,25 @@
 \contentsline {chapter}{DANH MỤC TỪ VIẾT TẮT}{xi}{section*.10}%
 \contentsline {chapter}{\numberline {1} GIỚI THIỆU}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Đặt vấn đề}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Mục tiêu của đề tài}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Phạm vi của luận văn}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Bố cục luận văn}{2}{section.1.4}%
-\contentsline {chapter}{\numberline {2} CƠ SỞ LÍ THUYẾT}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Các nghiên cứu liên quan}{4}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Thị giác máy tính}{5}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Mạng nơ-ron tích chập }{7}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Lớp tích chập}{7}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Hàm kích hoạt}{8}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Lớp gộp (Polling) và Lớp kết hợp đầy đủ (Fully Connected Layer)}{8}{subsection.2.3.3}%
-\contentsline {section}{\numberline {2.4}Phát hiện đối tượng}{9}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Thuật toán Histrogram of oriented gradient (HOG)}{9}{subsection.2.4.1}%
-\contentsline {section}{\numberline {2.5}Các mô hình phát hiện đối tượng hai giai đoạn }{10}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Mô hình R-CNN}{10}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Mô hình Fast R-CNN}{11}{subsection.2.5.2}%
-\contentsline {subsection}{\numberline {2.5.3}Mô hình Faster R-CNN}{12}{subsection.2.5.3}%
-\contentsline {section}{\numberline {2.6}Các mô hình phát hiện đối tượng một giai đoạn}{14}{section.2.6}%
+\contentsline {section}{\numberline {1.2}Mục tiêu của đề tài}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Phạm vi của luận văn}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Bố cục luận văn}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2} CƠ SỞ LÍ THUYẾT}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Các nghiên cứu liên quan}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Thị giác máy tính}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Mạng nơ-ron tích chập }{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Lớp tích chập}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Hàm kích hoạt}{9}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Lớp gộp (Polling) và Lớp kết hợp đầy đủ (Fully Connected Layer)}{9}{subsection.2.3.3}%
+\contentsline {section}{\numberline {2.4}Phát hiện đối tượng}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Thuật toán Histrogram of oriented gradient (HOG)}{10}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Các mô hình phát hiện đối tượng hai giai đoạn }{11}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Mô hình R-CNN}{11}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Mô hình Fast R-CNN}{12}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Mô hình Faster R-CNN}{13}{subsection.2.5.3}%
+\contentsline {section}{\numberline {2.6}Các mô hình phát hiện đối tượng một giai đoạn}{15}{section.2.6}%
 \contentsline {subsection}{\numberline {2.6.1}Mô hình YOLO}{15}{subsection.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.6.1.1}YOLO}{15}{subsubsection.2.6.1.1}%
+\contentsline {subsubsection}{\numberline {2.6.1.1}YOLO}{16}{subsubsection.2.6.1.1}%
 \contentsline {subsubsection}{\numberline {2.6.1.2}YOLOv7}{17}{subsubsection.2.6.1.2}%
 \contentsline {subsubsection}{\numberline {2.6.1.3}YOLOv8}{19}{subsubsection.2.6.1.3}%
 \contentsline {subsection}{\numberline {2.6.2}Mô hình SSD}{22}{subsection.2.6.2}%
@@ -28,22 +28,22 @@
 \contentsline {subsection}{\numberline {2.7.1}Phương pháp đánh giá IoU (Intersection over Union)}{24}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}Phương pháp đánh giá độ chính xác, độ nhạy, độ chính xác trung bình}{25}{subsection.2.7.2}%
 \contentsline {subsection}{\numberline {2.7.3}Phương pháp đánh giá bằng tốc độ, thông số, độ lớn của mô hình}{27}{subsection.2.7.3}%
-\contentsline {chapter}{\numberline {3} PHƯƠNG PHÁP NGHIÊN CỨU}{29}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Tập dữ liệu}{29}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}TrashNet}{29}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}TACO}{32}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Dữ liệu tự thu thập}{35}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Dữ liệu sử dụng cho mô hình}{37}{subsection.3.1.4}%
-\contentsline {section}{\numberline {3.2}Các mô hình sử dụng}{39}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{40}{section.3.3}%
-\contentsline {chapter}{\numberline {4} KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{41}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{41}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Thực nghiệm 2 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{42}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Thực nghiệm 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã bổ sung ảnh nền không có nhãn}{44}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Thảo luận}{46}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Bản đồ phân bố rác thải ở ĐBSCL}{51}{section.4.5}%
-\contentsline {chapter}{\numberline {5} KẾT LUẬN VÀ ĐỀ XUẤT}{54}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Kết luận}{54}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{54}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{54}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{54}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {3} PHƯƠNG PHÁP NGHIÊN CỨU}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tập dữ liệu}{28}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}TrashNet}{28}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}TACO}{31}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Dữ liệu tự thu thập}{34}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Dữ liệu sử dụng cho mô hình}{36}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Các mô hình sử dụng}{38}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Sơ đồ hệ thống}{39}{section.3.3}%
+\contentsline {chapter}{\numberline {4} KẾT QUẢ THỰC NGHIỆM VÀ THẢO LUẬN}{40}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Thực nghiệm 1 - Đánh giá mô hình dựa vào phát hiện rác}{40}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Thực nghiệm 2 - Đánh giá mô hình dựa vào phát hiện và phân loại rác}{41}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Thực nghiệm 3 - Đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã bổ sung ảnh nền không có nhãn}{43}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Thảo luận}{45}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Bản đồ phân bố rác thải ở ĐBSCL}{50}{section.4.5}%
+\contentsline {chapter}{\numberline {5} KẾT LUẬN VÀ ĐỀ XUẤT}{55}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Kết luận}{55}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Hạn chế và đề xuất}{55}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Hạn chế}{55}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Đề xuất}{55}{subsection.5.2.2}%
