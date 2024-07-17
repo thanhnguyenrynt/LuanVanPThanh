@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.6.3)  15 JUN 2024 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.6.3)  28 JUN 2024 10:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1387,87 +1387,87 @@ Ch\uhorn \ohorn ng 2.
 (chapters/chapter02.tex [4
 
 ]
-<images/computer_vision.PNG, id=575, 521.69907pt x 306.39468pt>
+<images/computer_vision.PNG, id=576, 521.69907pt x 306.39468pt>
 File: images/computer_vision.PNG Graphic file (type png)
 <use images/computer_vision.PNG>
 Package pdftex.def Info: images/computer_vision.PNG  used on input line 122.
 (pdftex.def)             Requested size: 441.01773pt x 259.01544pt.
  [5] [6 <./images/computer_vision.PNG>]
-<images/tichchap.png, id=595, 493.845pt x 221.32687pt>
+<images/tichchap.png, id=596, 493.845pt x 221.32687pt>
 File: images/tichchap.png Graphic file (type png)
 <use images/tichchap.png>
 Package pdftex.def Info: images/tichchap.png  used on input line 187.
 (pdftex.def)             Requested size: 441.01773pt x 197.64896pt.
  [7 <./images/tichchap.png>]
-<images/relu.png, id=607, 879.285pt x 406.51875pt>
+<images/relu.png, id=608, 879.285pt x 406.51875pt>
 File: images/relu.png Graphic file (type png)
 <use images/relu.png>
 Package pdftex.def Info: images/relu.png  used on input line 214.
 (pdftex.def)             Requested size: 441.01773pt x 203.89157pt.
-<images/lopgop.jpg, id=609, 1286.8075pt x 567.11874pt>
+<images/lopgop.jpg, id=610, 1286.8075pt x 567.11874pt>
 File: images/lopgop.jpg Graphic file (type jpg)
 <use images/lopgop.jpg>
 Package pdftex.def Info: images/lopgop.jpg  used on input line 241.
 (pdftex.def)             Requested size: 441.01773pt x 194.36679pt.
  [8 <./images/relu.png>] [9 <./images/lopgop.jpg>]
-<images/rcnn.png, id=625, 631.60968pt x 217.5628pt>
+<images/rcnn.png, id=626, 631.60968pt x 217.5628pt>
 File: images/rcnn.png Graphic file (type png)
 <use images/rcnn.png>
 Package pdftex.def Info: images/rcnn.png  used on input line 309.
 (pdftex.def)             Requested size: 441.01773pt x 151.91447pt.
  [10 <./images/rcnn.png>]
-<images/fastrcnn.png, id=638, 665.48625pt x 229.60782pt>
+<images/fastrcnn.png, id=639, 665.48625pt x 229.60782pt>
 File: images/fastrcnn.png Graphic file (type png)
 <use images/fastrcnn.png>
 Package pdftex.def Info: images/fastrcnn.png  used on input line 357.
 (pdftex.def)             Requested size: 441.01773pt x 152.16174pt.
  [11]
-<images/time_fastrcnn.png, id=646, 944.52875pt x 324.21124pt>
+<images/time_fastrcnn.png, id=647, 944.52875pt x 324.21124pt>
 File: images/time_fastrcnn.png Graphic file (type png)
 <use images/time_fastrcnn.png>
 Package pdftex.def Info: images/time_fastrcnn.png  used on input line 373.
 (pdftex.def)             Requested size: 441.01773pt x 151.37999pt.
-<images/fasterrcnn.png, id=653, 508.90125pt x 501.875pt>
+<images/fasterrcnn.png, id=654, 508.90125pt x 501.875pt>
 File: images/fasterrcnn.png Graphic file (type png)
 <use images/fasterrcnn.png>
 Package pdftex.def Info: images/fasterrcnn.png  used on input line 400.
 (pdftex.def)             Requested size: 441.01773pt x 434.94296pt.
  [12 <./images/fastrcnn.png> <./images/time_fastrcnn.png>]
-<images/RPN.png, id=665, 632.3625pt x 415.5525pt>
+<images/RPN.png, id=666, 632.3625pt x 415.5525pt>
 File: images/RPN.png Graphic file (type png)
 <use images/RPN.png>
 Package pdftex.def Info: images/RPN.png  used on input line 418.
 (pdftex.def)             Requested size: 441.01773pt x 289.8195pt.
  [13 <./images/fasterrcnn.png>] [14 <./images/RPN.png>]
-<images/timelineYolo.png, id=677, 566.115pt x 121.20282pt>
+<images/timelineYolo.png, id=678, 566.115pt x 121.20282pt>
 File: images/timelineYolo.png Graphic file (type png)
 <use images/timelineYolo.png>
 Package pdftex.def Info: images/timelineYolo.png  used on input line 452.
 (pdftex.def)             Requested size: 441.01773pt x 94.42314pt.
-<images/yolo.png, id=678, 853.1875pt x 539.01375pt>
+<images/yolo.png, id=679, 853.1875pt x 539.01375pt>
 File: images/yolo.png Graphic file (type png)
 <use images/yolo.png>
 Package pdftex.def Info: images/yolo.png  used on input line 469.
 (pdftex.def)             Requested size: 441.01773pt x 278.62737pt.
  [15 <./images/timelineYolo.png>]
-<images/yolo_a.png, id=688, 468.2861pt x 198.59561pt>
+<images/yolo_a.png, id=689, 468.2861pt x 198.59561pt>
 File: images/yolo_a.png Graphic file (type png)
 <use images/yolo_a.png>
 Package pdftex.def Info: images/yolo_a.png  used on input line 496.
 (pdftex.def)             Requested size: 441.01773pt x 187.03142pt.
  [16 <./images/yolo.png>] [17 <./images/yolo_a.png>]
-<images/yolov7_kientruc.jpg, id=711, 2569.6pt x 1526.70375pt>
+<images/yolov7_kientruc.jpg, id=712, 2569.6pt x 1526.70375pt>
 File: images/yolov7_kientruc.jpg Graphic file (type jpg)
 <use images/yolov7_kientruc.jpg>
 Package pdftex.def Info: images/yolov7_kientruc.jpg  used on input line 667.
 (pdftex.def)             Requested size: 352.81552pt x 209.61374pt.
-<images/yolov7.jpg, id=712, 1304.875pt x 552.0625pt>
+<images/yolov7.jpg, id=713, 1304.875pt x 552.0625pt>
 File: images/yolov7.jpg Graphic file (type jpg)
 <use images/yolov7.jpg>
 Package pdftex.def Info: images/yolov7.jpg  used on input line 682.
 (pdftex.def)             Requested size: 441.01773pt x 186.58682pt.
  [18 <./images/yolov7_kientruc.jpg>]
-<images/anchor-free.jpg, id=723, 1027.84pt x 618.31pt>
+<images/anchor-free.jpg, id=724, 1027.84pt x 618.31pt>
 File: images/anchor-free.jpg Graphic file (type jpg)
 <use images/anchor-free.jpg>
 Package pdftex.def Info: images/anchor-free.jpg  used on input line 704.
@@ -1477,48 +1477,48 @@ LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 71
  (D:\LaTex\tex/latex/vntex\t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<images/mosiac.png, id=734, 1944.26375pt x 943.525pt>
+<images/mosiac.png, id=735, 1944.26375pt x 943.525pt>
 File: images/mosiac.png Graphic file (type png)
 <use images/mosiac.png>
 Package pdftex.def Info: images/mosiac.png  used on input line 721.
 (pdftex.def)             Requested size: 441.01773pt x 214.0116pt.
  [20 <./images/anchor-free.jpg>]
-<images/yolov8_kientruc.jpg, id=745, 1405.25pt x 1470.49374pt>
+<images/yolov8_kientruc.jpg, id=746, 1405.25pt x 1470.49374pt>
 File: images/yolov8_kientruc.jpg Graphic file (type jpg)
 <use images/yolov8_kientruc.jpg>
 Package pdftex.def Info: images/yolov8_kientruc.jpg  used on input line 747.
 (pdftex.def)             Requested size: 352.81552pt x 369.19319pt.
  [21 <./images/mosiac.png>]
-<images/ssd.png, id=754, 448.67625pt x 137.7647pt>
+<images/ssd.png, id=755, 448.67625pt x 137.7647pt>
 File: images/ssd.png Graphic file (type png)
 <use images/ssd.png>
 Package pdftex.def Info: images/ssd.png  used on input line 766.
 (pdftex.def)             Requested size: 441.01773pt x 135.41837pt.
  [22 <./images/yolov8_kientruc.jpg>]
-<images/ssd_2.png, id=763, 403.5075pt x 155.07938pt>
+<images/ssd_2.png, id=764, 403.5075pt x 155.07938pt>
 File: images/ssd_2.png Graphic file (type png)
 <use images/ssd_2.png>
 Package pdftex.def Info: images/ssd_2.png  used on input line 783.
 (pdftex.def)             Requested size: 441.01773pt x 169.49695pt.
  [23 <./images/ssd.png> <./images/ssd_2.png>]
-<images/mobinet.png, id=776, 554.82281pt x 236.38312pt>
+<images/mobinet.png, id=777, 554.82281pt x 236.38312pt>
 File: images/mobinet.png Graphic file (type png)
 <use images/mobinet.png>
 Package pdftex.def Info: images/mobinet.png  used on input line 809.
 (pdftex.def)             Requested size: 352.81552pt x 150.31802pt.
-<images/iou.jpg, id=778, 243.15843pt x 131.74219pt>
+<images/iou.jpg, id=779, 243.15843pt x 131.74219pt>
 File: images/iou.jpg Graphic file (type jpg)
 <use images/iou.jpg>
 Package pdftex.def Info: images/iou.jpg  used on input line 887.
 (pdftex.def)             Requested size: 441.01773pt x 238.94292pt.
  [24 <./images/mobinet.png>]
-<images/nguong_iou.jpg, id=788, 1027.84pt x 418.56375pt>
+<images/nguong_iou.jpg, id=789, 1027.84pt x 418.56375pt>
 File: images/nguong_iou.jpg Graphic file (type jpg)
 <use images/nguong_iou.jpg>
 Package pdftex.def Info: images/nguong_iou.jpg  used on input line 927.
 (pdftex.def)             Requested size: 441.01773pt x 179.59569pt.
  [25 <./images/iou.jpg>]
-<images/AP.png, id=797, 468.75125pt x 461.725pt>
+<images/AP.png, id=798, 468.75125pt x 461.725pt>
 File: images/AP.png Graphic file (type png)
 <use images/AP.png>
 Package pdftex.def Info: images/AP.png  used on input line 951.
@@ -1526,7 +1526,7 @@ Package pdftex.def Info: images/AP.png  used on input line 951.
  [26 <./images/nguong_iou.jpg>] [27 <./images/AP.png>]) [28]
 Ch\uhorn \ohorn ng 3.
 (chapters/chapter03.tex
-<images/trashnet_sample.png, id=822, 1635.86156pt x 1866.22218pt>
+<images/trashnet_sample.png, id=823, 1635.86156pt x 1866.22218pt>
 File: images/trashnet_sample.png Graphic file (type png)
 <use images/trashnet_sample.png>
 Package pdftex.def Info: images/trashnet_sample.png  used on input line 91.
@@ -1537,39 +1537,39 @@ Package pdftex.def Info: images/trashnet_sample.png  used on input line 91.
 Overfull \vbox (21.65541pt too high) has occurred while \output is active []
 
  [30 <./images/trashnet_sample.png>]
-<images/trashnet_sample2.png, id=834, 2448.14626pt x 2451.1575pt>
+<images/trashnet_sample2.png, id=835, 2448.14626pt x 2451.1575pt>
 File: images/trashnet_sample2.png Graphic file (type png)
 <use images/trashnet_sample2.png>
 Package pdftex.def Info: images/trashnet_sample2.png  used on input line 151.
 (pdftex.def)             Requested size: 441.01773pt x 441.52594pt.
  [31 <./images/trashnet_sample2.png>]
-<images/Taco.png, id=842, 426.84468pt x 320.69812pt>
+<images/Taco.png, id=843, 426.84468pt x 320.69812pt>
 File: images/Taco.png Graphic file (type png)
 <use images/Taco.png>
 Package pdftex.def Info: images/Taco.png  used on input line 168.
 (pdftex.def)             Requested size: 441.01773pt x 331.36993pt.
-<images/COCO_format.png, id=847, 180.675pt x 130.98938pt>
+<images/COCO_format.png, id=848, 180.675pt x 130.98938pt>
 File: images/COCO_format.png Graphic file (type png)
 <use images/COCO_format.png>
 Package pdftex.def Info: images/COCO_format.png  used on input line 183.
 (pdftex.def)             Requested size: 220.50887pt x 159.87074pt.
  [32 <./images/Taco.png>]
-<images/COCO_full_format.png, id=853, 248.42813pt x 236.38312pt>
+<images/COCO_full_format.png, id=854, 248.42813pt x 236.38312pt>
 File: images/COCO_full_format.png Graphic file (type png)
 <use images/COCO_full_format.png>
 Package pdftex.def Info: images/COCO_full_format.png  used on input line 190.
 (pdftex.def)             Requested size: 220.50887pt x 209.82123pt.
-<images/taco_super.png, id=857, 447.3513pt x 612.1269pt>
+<images/taco_super.png, id=858, 447.3513pt x 612.1269pt>
 File: images/taco_super.png Graphic file (type png)
 <use images/taco_super.png>
 Package pdftex.def Info: images/taco_super.png  used on input line 205.
 (pdftex.def)             Requested size: 199.16928pt x 272.53104pt.
-<images/taco_cat.png, id=858, 516.7305pt x 1000.9395pt>
+<images/taco_cat.png, id=859, 516.7305pt x 1000.9395pt>
 File: images/taco_cat.png Graphic file (type png)
 <use images/taco_cat.png>
 Package pdftex.def Info: images/taco_cat.png  used on input line 207.
 (pdftex.def)             Requested size: 199.16928pt x 385.79819pt.
-<images/taco_bg.png, id=859, 419.166pt x 289.8027pt>
+<images/taco_bg.png, id=860, 419.166pt x 289.8027pt>
 File: images/taco_bg.png Graphic file (type png)
 <use images/taco_bg.png>
 Package pdftex.def Info: images/taco_bg.png  used on input line 209.
@@ -1581,13 +1581,13 @@ File: omlptm.fd
 )
 LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 248.
-<images/data_own.png, id=880, 2833.58624pt x 2112.89375pt>
+<images/data_own.png, id=881, 2833.58624pt x 2112.89375pt>
 File: images/data_own.png Graphic file (type png)
 <use images/data_own.png>
 Package pdftex.def Info: images/data_own.png  used on input line 277.
 (pdftex.def)             Requested size: 330.76329pt x 246.63692pt.
  [35]
-<images/hinh_background.png, id=887, 2112.89375pt x 2091.815pt>
+<images/hinh_background.png, id=888, 2112.89375pt x 2091.815pt>
 File: images/hinh_background.png Graphic file (type png)
 <use images/hinh_background.png>
 Package pdftex.def Info: images/hinh_background.png  used on input line 284.
@@ -1597,93 +1597,93 @@ Package pdftex.def Info: images/hinh_background.png  used on input line 284.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [37] [38] [39]
-<images/sodo.png, id=924, 565.36218pt x 550.30594pt>
+<images/sodo.png, id=925, 733.74126pt x 713.66624pt>
 File: images/sodo.png Graphic file (type png)
 <use images/sodo.png>
 Package pdftex.def Info: images/sodo.png  used on input line 484.
-(pdftex.def)             Requested size: 441.01773pt x 429.27888pt.
+(pdftex.def)             Requested size: 441.01773pt x 428.95442pt.
 ) [40 <./images/sodo.png>]
 Ch\uhorn \ohorn ng 4.
 (chapters/chapter04.tex [41
 
 ]
-<images/thucnghiem1.png, id=943, 362.007pt x 217.467pt>
+<images/thucnghiem1.png, id=944, 362.007pt x 217.467pt>
 File: images/thucnghiem1.png Graphic file (type png)
 <use images/thucnghiem1.png>
 Package pdftex.def Info: images/thucnghiem1.png  used on input line 73.
 (pdftex.def)             Requested size: 308.71106pt x 185.45172pt.
-<images/th1_data.png, id=944, 4004.9625pt x 2027.575pt>
+<images/th1_data.png, id=945, 4004.9625pt x 2027.575pt>
 File: images/th1_data.png Graphic file (type png)
 <use images/th1_data.png>
 Package pdftex.def Info: images/th1_data.png  used on input line 81.
 (pdftex.def)             Requested size: 441.01773pt x 223.2505pt.
  [42 <./images/thucnghiem1.png> <./images/th1_data.png>]
-<images/thucnghiem2.1.jpg, id=956, 364.74524pt x 219.23517pt>
+<images/thucnghiem2.1.jpg, id=957, 364.74524pt x 219.23517pt>
 File: images/thucnghiem2.1.jpg Graphic file (type jpg)
 <use images/thucnghiem2.1.jpg>
 Package pdftex.def Info: images/thucnghiem2.1.jpg  used on input line 118.
 (pdftex.def)             Requested size: 352.81552pt x 212.07912pt.
-<images/matrix_tn2.png, id=958, 867.24pt x 650.43pt>
+<images/matrix_tn2.png, id=959, 867.24pt x 650.43pt>
 File: images/matrix_tn2.png Graphic file (type png)
 <use images/matrix_tn2.png>
 Package pdftex.def Info: images/matrix_tn2.png  used on input line 136.
 (pdftex.def)             Requested size: 396.91325pt x 297.68294pt.
  [43 <./images/thucnghiem2.1.jpg>]
-<images/thucnghiem3.1.jpg, id=967, 364.74524pt x 219.23517pt>
+<images/thucnghiem3.1.jpg, id=968, 364.74524pt x 219.23517pt>
 File: images/thucnghiem3.1.jpg Graphic file (type jpg)
 <use images/thucnghiem3.1.jpg>
 Package pdftex.def Info: images/thucnghiem3.1.jpg  used on input line 171.
 (pdftex.def)             Requested size: 352.81552pt x 212.07912pt.
  [44 <./images/matrix_tn2.png>]
-<images/matrix_tn3.png, id=974, 867.24pt x 650.43pt>
+<images/matrix_tn3.png, id=975, 867.24pt x 650.43pt>
 File: images/matrix_tn3.png Graphic file (type png)
 <use images/matrix_tn3.png>
 Package pdftex.def Info: images/matrix_tn3.png  used on input line 178.
 (pdftex.def)             Requested size: 441.01773pt x 330.76213pt.
-<images/results_yolo8.png, id=975, 867.24pt x 433.62pt>
+<images/results_yolo8.png, id=976, 867.24pt x 433.62pt>
 File: images/results_yolo8.png Graphic file (type png)
 <use images/results_yolo8.png>
 Package pdftex.def Info: images/results_yolo8.png  used on input line 185.
 (pdftex.def)             Requested size: 441.01773pt x 220.50809pt.
  [45 <./images/thucnghiem3.1.jpg> <./images/matrix_tn3.png>] [46 <./images/results_yolo8.png>]
-<images/yolov8_label.jpg, id=996, 1927.2pt x 1927.2pt>
+<images/yolov8_label.jpg, id=997, 1927.2pt x 1927.2pt>
 File: images/yolov8_label.jpg Graphic file (type jpg)
 <use images/yolov8_label.jpg>
 Package pdftex.def Info: images/yolov8_label.jpg  used on input line 243.
 (pdftex.def)             Requested size: 284.52756pt x 284.50949pt.
-<images/yolov8_pred_nobg.jpg, id=997, 1927.2pt x 1927.2pt>
+<images/yolov8_pred_nobg.jpg, id=998, 1927.2pt x 1927.2pt>
 File: images/yolov8_pred_nobg.jpg Graphic file (type jpg)
 <use images/yolov8_pred_nobg.jpg>
 Package pdftex.def Info: images/yolov8_pred_nobg.jpg  used on input line 245.
 (pdftex.def)             Requested size: 199.16928pt x 199.14194pt.
-<images/yolov8_pred.jpg, id=998, 1927.2pt x 1927.2pt>
+<images/yolov8_pred.jpg, id=999, 1927.2pt x 1927.2pt>
 File: images/yolov8_pred.jpg Graphic file (type jpg)
 <use images/yolov8_pred.jpg>
 Package pdftex.def Info: images/yolov8_pred.jpg  used on input line 247.
 (pdftex.def)             Requested size: 199.16928pt x 199.14194pt.
  [47]
-<images/realwaste_test.png, id=1004, 1967.35pt x 1967.35pt>
+<images/realwaste_test.png, id=1005, 1967.35pt x 1967.35pt>
 File: images/realwaste_test.png Graphic file (type png)
 <use images/realwaste_test.png>
 Package pdftex.def Info: images/realwaste_test.png  used on input line 255.
 (pdftex.def)             Requested size: 441.01773pt x 441.01361pt.
  [48 <./images/yolov8_label.jpg> <./images/yolov8_pred_nobg.jpg> <./images/yolov8_pred.jpg>]
-<images/result_sai2.jpg, id=1017, 642.4pt x 642.4pt>
+<images/result_sai2.jpg, id=1018, 642.4pt x 642.4pt>
 File: images/result_sai2.jpg Graphic file (type jpg)
 <use images/result_sai2.jpg>
 Package pdftex.def Info: images/result_sai2.jpg  used on input line 272.
 (pdftex.def)             Requested size: 199.16928pt x 199.17134pt.
-<images/result_sai4.jpg, id=1018, 642.4pt x 642.4pt>
+<images/result_sai4.jpg, id=1019, 642.4pt x 642.4pt>
 File: images/result_sai4.jpg Graphic file (type jpg)
 <use images/result_sai4.jpg>
 Package pdftex.def Info: images/result_sai4.jpg  used on input line 274.
 (pdftex.def)             Requested size: 199.16928pt x 199.17134pt.
-<images/result_sai1.jpg, id=1019, 642.4pt x 642.4pt>
+<images/result_sai1.jpg, id=1020, 642.4pt x 642.4pt>
 File: images/result_sai1.jpg Graphic file (type jpg)
 <use images/result_sai1.jpg>
 Package pdftex.def Info: images/result_sai1.jpg  used on input line 276.
 (pdftex.def)             Requested size: 199.16928pt x 199.17134pt.
-<images/result_sai3.jpg, id=1020, 642.4pt x 642.4pt>
+<images/result_sai3.jpg, id=1021, 642.4pt x 642.4pt>
 File: images/result_sai3.jpg Graphic file (type jpg)
 <use images/result_sai3.jpg>
 Package pdftex.def Info: images/result_sai3.jpg  used on input line 278.
@@ -1814,18 +1814,18 @@ Underfull \hbox (badness 2790) in paragraph at lines 348--348
  []
 
 [50 <./images/result_sai2.jpg> <./images/result_sai4.jpg> <./images/result_sai1.jpg> <./images/result_sai3.jpg>]
-<images/demo1.png, id=1060, 1146.53343pt x 560.0925pt>
+<images/demo1.png, id=1061, 1146.53343pt x 560.0925pt>
 File: images/demo1.png Graphic file (type png)
 <use images/demo1.png>
 Package pdftex.def Info: images/demo1.png  used on input line 374.
 (pdftex.def)             Requested size: 441.01773pt x 215.44398pt.
  [51]
-<images/demo2.png, id=1068, 1137.4997pt x 669.2503pt>
+<images/demo2.png, id=1069, 1137.4997pt x 669.2503pt>
 File: images/demo2.png Graphic file (type png)
 <use images/demo2.png>
 Package pdftex.def Info: images/demo2.png  used on input line 393.
 (pdftex.def)             Requested size: 352.81552pt x 207.57777pt.
-<images/demo3.png, id=1069, 1123.94907pt x 663.98062pt>
+<images/demo3.png, id=1070, 1123.94907pt x 663.98062pt>
 File: images/demo3.png Graphic file (type png)
 <use images/demo3.png>
 Package pdftex.def Info: images/demo3.png  used on input line 401.
@@ -1842,11 +1842,11 @@ LaTeX2e <2023-11-01>
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `the.out' has not changed.
-(rerunfilecheck)             Checksum: 0299E19726515DFA384D012370140C24;10253.
+(rerunfilecheck)             Checksum: 76E745908024F96A8FA5EA8AB03ED647;10254.
  ) 
 Here is how much of TeX's memory you used:
- 43320 strings out of 474485
- 920586 string characters out of 5760619
+ 43321 strings out of 474485
+ 920603 string characters out of 5760619
  1952528 words of memory out of 5000000
  64446 multiletter control sequences out of 15000+600000
  644041 words of font info for 157 fonts, out of 8000000 for 9000
@@ -1868,9 +1868,9 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 <D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/LaTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmb8v.pfb><D:/LaTex/fonts/type1/urw/times/utmr8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmr8v.pfb><D:/LaTex/fonts/type1/urw/times/utmri8a.pfb><D:/LaTex/fonts/type1/vntex/urwvn/utmri8v.pfb><D:/LaTex/fonts/type1/vntex/vnr/vntt10.pfb>
-Output written on the.pdf (70 pages, 64156600 bytes).
+Output written on the.pdf (70 pages, 64155752 bytes).
 PDF statistics:
- 1214 PDF objects out of 1440 (max. 8388607)
- 274 named destinations out of 1000 (max. 500000)
+ 1215 PDF objects out of 1440 (max. 8388607)
+ 275 named destinations out of 1000 (max. 500000)
  737 words of extra memory for PDF output out of 10000 (max. 10000000)
 
