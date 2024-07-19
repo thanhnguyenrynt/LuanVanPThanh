@@ -40,7 +40,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Ahmad \etal. \cite{ahmad2020intelligent} đã áp dụng các phương pháp kết hợp sớm, kết hợp muộn
+	Ahmad và các cộng sự \cite{ahmad2020intelligent} đã áp dụng các phương pháp kết hợp sớm, kết hợp muộn
 	và kết hợp kép các mô hình học sâu trên tập dự liệu 2.527 hình ảnh được cung cấp bởi Kaggle, tập dữ liệu
 	được chia làm sáu lớp giống như nghiên cứu của Yang và Thung \cite{yang2016classification}.
 	Nghiên cứu đạt kết quả cao vì áp dụng các phương pháp kết hợp thích hợp các mô hình CNN.
@@ -80,7 +80,7 @@ Chương này sẽ trình bày các nghiên cứu có liên quan, khái niệm v
 
 {\fontsize{13}{12} \selectfont
 
-	Mô hình YOLOv3 \cite{redmon2018yolov3} được Carolis \etal \cite{9122693} sử dụng cho việc phát hiện và phân loại rác chia làm bốn lớp: thùng rác lớn, thùng rác nhỏ, túi rác, và rác tập hợp.
+	Mô hình YOLOv3 \cite{redmon2018yolov3} được nhóm Carolis \cite{9122693} sử dụng cho việc phát hiện và phân loại rác chia làm bốn lớp: thùng rác lớn, thùng rác nhỏ, túi rác, và rác tập hợp.
 	Nghiên cứu đạt mAP50 là 59,59\% với kết quả của các lớp là túi rác (40,56\%), thùng rác lớn (64,57\%), thùng rác nhỏ (65,01\%) và rác tập hợp (68,18\%).
 	Các lớp của mô hình chủ yếu là các vật thể có kích thước lớn giúp mô hình dễ nhận dạng, nhóm nghiên cứu chỉ gặp khó khăn khi nhận dạng lớp rác tập hợp.
 	Vì vậy, tác giả đã sử dụng thuật toán riêng để gộp các hộp giới hạn bị chồng chéo có cùng lớp, việc này giúp ít trong việc đánh giá kết quả của lớp rác tập hợp.
@@ -247,19 +247,12 @@ Bộ lọc ở những lớp tích chập đầu tiên sẽ dùng để phát hi
 
   Phát hiện đối tượng là một kỹ thuật quan trọng trong lĩnh vực Thị giác máy tính. Không chỉ nhận ra một đối tượng,
   phát hiện đối tượng sẽ vẽ các hộp giới hạn xung quanh các đối tượng được phát hiện, từ đó
-  cho phép xác định vị trí và nhãn của chúng.
+  cho phép xác định vị trí và nhãn của chúng. Phát hiện đối tượng được sử dụng rộng rãi trong nhiều lĩnh vực, tiêu biểu như trong công nghệ xe tự hành,
+  cần lên lộ trình bằng cách xác định các vị trí của phương tiện di chuyển, người đi đường, đường xá và các vật cản trong các ảnh được thu về từ video. Hay các hệ thống an ninh cần phát hiện các mục tiêu bất thường, ví dụ như các đối tượng xâm nhập bất hợp pháp.
+  Ngoài các thuật toán phát hiện đối tượng truyền thống, hiện nay các mô hình phát hiện đối tượng được phân làm 2 loại chính là mô hình phát hiện đối tượng hai giai đoạn và mô hình phát hiện đối tượng một giai đoạn.
 
  }
 
-\bigskip
-
-{\fontsize{13}{12} \selectfont
-
-	Phát hiện đối tượng được sử dụng rộng rãi trong nhiều lĩnh vực, tiêu biểu như trong công nghệ xe tự hành,
-	cần lên lộ trình bằng cách xác định các vị trí của phương tiện di chuyển, người đi đường, đường xá và các vật cản trong các ảnh được thu về từ video. Hay các hệ thống an ninh cần phát hiện các mục tiêu bất thường, ví dụ như các đối tượng xâm nhập bất hợp pháp.
-	Ngoài các thuật toán phát hiện đối tượng truyền thống, hiện nay các mô hình phát hiện đối tượng được phân làm 2 loại chính là mô hình phát hiện đối tượng hai giai đoạn và mô hình phát hiện đối tượng một giai đoạn.
-
-}
 \subsection{Thuật toán Histrogram of oriented gradient (HOG)}
 {\fontsize{13}{12} \selectfont
 
@@ -780,7 +773,7 @@ Kiến trúc được thể hiện ở Hình \ref{fig:ssd2}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{ssd_2.png}
+	\includegraphics[width=1\textwidth]{ssd_2.png}
 	\caption{Kiến trúc mô hình SSD \cite{Liu_2016}}
 	\label{fig:ssd2}
 \end{figure}
@@ -796,10 +789,10 @@ Trong các ứng dụng quan trọng về độ chính xác, việc bỏ qua t�
 \subsection{Mô hình SSD MobileNetv2}
 {\fontsize{13}{12} \selectfont
 
-	Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô hình SSD. Mô hình SSD MobileNetv2 sử dụng MobiNetv2 \cite{sandler2019mobilenetv2} làm mạng cơ sở thay vì VGG-16 như Hình \ref{fig:ssd2} giúp tối ưu hóa cho các thiết bị di động. MobileNetv2 có nhiệm vụ trích xuất các tính năng từ ảnh, sau đó được xử lí thông qua các lớp dự đoán của SSD để giảm kích thước hình ảnh, giúp nhận ra các đối tượng ở tỉ lệ khác nhau (xem Hình \ref{fig:mobinet}).
-	Mô hình MobiNet ra đời dựa vào nhu cầu tăng cao về các mô hình có trọng số nhẹ, giải quyết bài toán sử dụng trên các thiết bị hạn chế về tài nguyên tính toán như mobile, IoT. MobiNet có độ chính xác không chênh lệch so với mạng cơ sở VGG, nên việc thay thế trong kiến trúc của SSD giúp cho mô hình vừa nhỏ gọn vừa đạt độ chính xác cao.
-	Điểm cải tiến của MobiNet là việc sử dụng tích chập tách biệt chiều sâu thay vì tích chập thông thường. Quá trình được phân chia làm hai bước tuần tự là tích chập chiều sâu và tích chập điểm.
-	MobiNetv2 được nhóm tác giả giới thiệu với module mới được gọi là Inverted Residual Block đi ngược lại với các Residual Block thông thường vì nó tăng độ sâu trước khi học các đặc trưng, MobileNetv2 còn sử dụng hàm kích hoạt tuyến tính thay vì hàm kích hoạt phi tuyến.
+	Phần \ref{sec:ssd} đã giới thiệu về kiến trúc tổng quan của mô hình SSD. Mô hình SSD MobileNetv2 sử dụng MobileNetv2 \cite{sandler2019mobilenetv2} làm mạng cơ sở thay vì VGG-16 như Hình \ref{fig:ssd2} giúp tối ưu hóa cho các thiết bị di động. MobileNetv2 có nhiệm vụ trích xuất các tính năng từ ảnh, sau đó được xử lí thông qua các lớp dự đoán của SSD để giảm kích thước hình ảnh, giúp nhận ra các đối tượng ở tỉ lệ khác nhau (xem Hình \ref{fig:mobinet}).
+	Mô hình MobileNet ra đời dựa vào nhu cầu tăng cao về các mô hình có trọng số nhẹ, giải quyết bài toán sử dụng trên các thiết bị hạn chế về tài nguyên tính toán như mobile, IoT. MobileNet có độ chính xác không chênh lệch so với mạng cơ sở VGG, nên việc thay thế trong kiến trúc của SSD giúp cho mô hình vừa nhỏ gọn vừa đạt độ chính xác cao.
+	Điểm cải tiến của MobileNet là việc sử dụng tích chập tách biệt chiều sâu thay vì tích chập thông thường. Quá trình được phân chia làm hai bước tuần tự là tích chập chiều sâu và tích chập điểm.
+	MobileNetv2 được nhóm tác giả giới thiệu với module mới được gọi là Inverted Residual Block đi ngược lại với các Residual Block thông thường vì nó tăng độ sâu trước khi học các đặc trưng, MobileNetv2 còn sử dụng hàm kích hoạt tuyến tính thay vì hàm kích hoạt phi tuyến.
 
 }
 
@@ -940,7 +933,7 @@ Chỉ số độ chính xác trung bình - Average Precision (AP) là diện tí
 
 {\fontsize{13}{12} \selectfont
 
-	mAP (mean average precision) là trung bình của AP. Trong một số trường hợp chúng ta tính AP cho mỗi lớp và lấy trung bình. Nhưng trong một số trường hợp khác AP và mAP lại giống nhau phụ thuộc vào từng bài toán.
+	Chỉ số mAP (mean average precision) là trung bình của AP. Trong một số trường hợp chúng ta tính AP cho mỗi lớp và lấy trung bình. Nhưng trong một số trường hợp khác AP và mAP lại giống nhau phụ thuộc vào từng bài toán.
 	Trong PASCAL VOC2007, AP cho một lớp được tính cho một ngưỡng IoU. Do đó mAP là trung bình của AP trên toàn bộ các lớp.
 	Còn trong COCO 2017, mAP là trung bình trên toàn bộ các lớp và với mười ngưỡng IoU.
 

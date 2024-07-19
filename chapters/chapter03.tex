@@ -2,7 +2,7 @@
 \begin{document}
 {\fontsize{13}{12} \selectfont
 
-Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SSD MobileNet. Mục \ref{sec:dataset} mô tả về tập dữ liệu. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng và sơ đồ hệ thống ở Mục \ref{sec:sodo}
+Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SSD MobileNet. Mục \ref{sec:dataset} mô tả về tập dữ liệu. Mục \ref{sec:model} giới thiệu về các mô hình được sử dụng và sơ đồ hệ thống ở Mục \ref{sec:sodo}.
 
 }
 \section{Tập dữ liệu}
@@ -14,9 +14,9 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 	Tham khảo việc phân loại rác của Yan \cite{yang2016classification} và quá trình thu thập dữ liệu thực tế nhận thấy các loại rác bằng thủy tinh ở môi trường bên ngoài rất thường là các mảnh kính trong suốt nhìn thấy nên hoặc có độ phản chiếu ánh sáng cao nên rất khó phát hiện, vì vậy các thủy tinh sẽ được gom vào các loại rác khác.
 	Lớp giấy và thùng giấy sẽ được gom lại vì cùng chất liệu. Cuối cùng mô hình sẽ phân các loại ra làm các lớp:
 	\begin{itemize}
-		\item Kim loại gồm chủ yếu là các nắp bia, các vỏ bình làm bằng kim loại.
+		\item Kim loại: các nắp bia, các vỏ bình làm bằng kim loại.
 		\item Nhựa - nilon rất phổ biến, gồm các vật liệu làm từ nhựa như ly nhựa, các túi nilon.
-		\item Giấy gồm các vật liệu từ giấy, các thùng giấy, vỏ gói thuốc lá, hộp giấy.
+		\item Giấy: vật liệu từ giấy, các thùng giấy, vỏ gói thuốc lá, hộp giấy.
 		\item Rác khác là các loại rác còn lại với từng loại xuất hiện ít hoặc khó phát hiện như thủy tinh, các vỏ gói đa sắc,
 		      mút, vải,\dots
 	\end{itemize}
@@ -26,7 +26,7 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 \label{sec:trashnet}
 {\fontsize{13}{12} \selectfont
 
-	TrashNet là tập dữ liệu được giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như Bảng \ref{tab:dataset}. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình, một số hình ảnh ở tập Trashnet ở hình
+	TrashNet là tập dữ liệu được giới thiệu trong bài nghiên cứu của \cite{yang2016classification} bao gồm các lớp và số lượng như Bảng \ref{tab:dataset}. Tất cả hình ảnh được chụp bằng điện thoại Iphone7 sử dụng ánh sáng mặt trời hoặc ánh sáng phòng, các đối tượng được chụp trong nền trắng hoặc bao quát toàn bộ khung hình, một số hình ảnh ở tập TrashNet ở hình
 	\ref{fig:dataset_0}.
 	Do mục đích ban đầu của tập dữ liệu dùng để phân lớp nên nghiên cứu phải thực hiện gán hộp giới hạn cho bộ dữ liệu để phù hợp với nhu cầu phát hiện đối tượng. Tập dữ liệu TrashNet bao gồm các đối tượng có kích thước lớn và rõ ràng, mục đích sử dụng tăng độ nhận dạng cho mô hình. Bảng \ref{tab:dataset1} thể hiện số lượng đối tượng sau khi đã gán hộp giới hạn cho tập dữ liệu, hình
 	\ref{fig:dataset_1} mô tả tập dữ liệu TrashNet khi được gán hộp giới hạn.
@@ -159,7 +159,7 @@ Trong phạm vi nghiên cứu này sẽ sử dụng mô hình YOLOv7, YOLOv8, SS
 
 	TACO là một tập dữ liệu hình ảnh về chất thải trong tự nhiên. Tập dữ liệu chứa các hình ảnh về rác được chụp trong nhiều môi trường khác nhau, từ những bãi biển đến đường phố London. Những hình ảnh này được gắn nhãn và phân đoạn thủ công để huấn luyện và đánh giá các thuật toán phát hiện đối tượng.
 	Hiện tại bộ dữ liệu có 1.500 ảnh với 4.784 vật thể
-	và 3.918 ảnh mới cần được gán nhãn. Một số hình ảnh của tập dữ liệu ở Hình \ref{fig:dataset_taco}
+	và 3.918 ảnh mới cần được gán nhãn. Một số hình ảnh của tập dữ liệu ở Hình \ref{fig:dataset_taco}.
 
 }
 
@@ -456,7 +456,7 @@ Cuối cùng kết hợp ba tập dữ liệu để hình thành bộ dữ liệ
 		\begin{tabular}{lrrrr}
 			\hline
 			\textbf{Mô hình} & \textbf{Batch size} & \textbf{Learning Rate} & \textbf{Tham số} & \textbf{Số hộp neo} \\ \hline
-			SSD MobiNetv2    & 16                  & 0,0025                  & 15M              & 6                   \\ \hline
+			SSD MobileNetv2    & 16                  & 0,0025                  & 15M              & 6                   \\ \hline
 			YOLOv7           & 16                  & 0,01                   & 6M               & 4                   \\ \hline
 			YOLOv8           & 16                  & 0,01                   & 3,2M             & 0                   \\ \hline
 		\end{tabular}

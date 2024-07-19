@@ -1,18 +1,6 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Dự báo lượng chất thải đô thị toàn cầu phát sinh vào các năm 2030, 2040 và 2050}}{2}{figure.caption.11}%
 \addvspace {10\p@ }
-<<<<<<< HEAD
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Hệ thống thị giác của con người và máy tính}}{6}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ví dụ về tích chập}}{7}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Hàm kích hoạt Relu}}{8}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Minh họa về gộp cực đại và gộp trung bình}}{9}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Mô hình CNN \cite {girshick2014rich}}}{10}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Mô hình Fast R-CNN \cite {girshick2015fast}}}{12}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Thời gian huấn luyện R-CNN, SPP-NET \cite {He_2014}, Fast R-CNN \cite {testtimefastrcnn}}}{12}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Mô hình Faster R-CNN \cite {ren2016faster}}}{13}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Cấu trúc mạng RPN}}{14}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Dòng thời gian phát triển của YOLO}}{15}{figure.caption.21}%
-=======
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Hệ thống thị giác của con người và máy tính}}{7}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Ví dụ về tích chập}}{8}{figure.caption.13}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Hàm kích hoạt Relu}}{9}{figure.caption.14}%
@@ -23,7 +11,6 @@
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Mô hình Faster R-CNN \cite {ren2016faster}}}{14}{figure.caption.19}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Cấu trúc mạng RPN}}{15}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces Dòng thời gian phát triển của YOLO}}{16}{figure.caption.21}%
->>>>>>> 4ab93ab95c93feaedaade676538d0cdd30147a5a
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Mô hình hệ thống YOLO}}{16}{figure.caption.22}%
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Kiến trúc mạng YOLO}}{17}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Kiến trúc mô hình YOLOv7}}{18}{figure.caption.24}%
@@ -34,43 +21,6 @@
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Kiến trúc mô hình SSD MobileNetv2}}{24}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.21}{\ignorespaces Chỉ số đánh giá IoU}}{25}{figure.caption.32}%
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Ví dụ về việc thay đổi ngưỡng IoU}}{26}{figure.caption.33}%
-<<<<<<< HEAD
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Precision Recall Curve được vẽ với ngưỡng IoU chạy từ 0 đến 1}}{27}{figure.caption.34}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Ví dụ về hình ảnh của tập dữ liệu TrashNet}}{30}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Ví dụ về hình ảnh của tập dữ liệu TrashNet được gán hộp giới hạn}}{31}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Ví dụ về hình ảnh của bộ dữ liệu TACO \cite {proença2020taco}}}{32}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Cấu trúc tệp theo chuẩn COCO của dữ liệu TACO}}{33}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Cấu trúc lưu trữ thông tin một đối tượng được gán nhãn trong bộ dữ liệu TACO}}{33}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Các thống kê theo danh mục lớn, danh mục nhỏ, tỉ lệ nền của bộ dữ liệu TACO}}{34}{figure.caption.44}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục lớn }}}}{34}{subfigure.6.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Danh mục nhỏ}}}}{34}{subfigure.6.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Tỉ lệ nền}}}}{34}{subfigure.6.3}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Các hình ảnh dữ liệu thu thập khi được chú thích hộp giới hạn}}{36}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Các hình nền không có chú thích để tăng cường dữ liệu}}{36}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sơ đồ hệ thống}}{40}{figure.caption.59}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Biểu đồ kết quả Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác}}{42}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Hình ảnh dự đoán của mô hình YOLOv8n. Bên trái là hình được gán nhãn, bên phải là hình được phát hiện bởi mô hình}}{42}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Biểu đồ kết quả Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}}{43}{figure.caption.68}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm của mô hình YOLOv8n trong việc phát hiện và phân loại rác}}{44}{figure.caption.69}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Biểu đồ kết quả Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã bổ sung ảnh nền không có nhãn}}{45}{figure.caption.72}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Ma trận nhầm lẫn chuẩn hóa trên tập dữ liệu thử nghiệm mô hình YOLOv8n trọng việc phát hiện và phân loại rác khi bổ sung ảnh nền không có nhãn}}{45}{figure.caption.73}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Các biểu đồ biến động về các hàm mất mát trên tập huấn luyện, xác thực và các đánh giá của mô hình YOLOv8n}}{46}{figure.caption.74}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Hình ảnh so sánh kết quả phát hiện và phân loại rác khi tăng cường dữ liệu}}{48}{figure.caption.77}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh của tập dữ liệu được gán nhãn }}}}{48}{subfigure.8.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi chưa tăng cường ảnh nền}}}}{48}{subfigure.8.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Hình ảnh phát hiện khi tăng cường ảnh nền}}}}{48}{subfigure.8.3}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Hình ảnh mô hình nhận dạng trên tập dữ liệu RealWaste}}{49}{figure.caption.78}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Hình ảnh mô hình nhận dạng sai với các đối tượng ngoài tự nhiên}}{50}{figure.caption.79}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Bỏ qua không phát hiện đối tượng }}}}{50}{subfigure.10.1}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Phân loại không đúng}}}}{50}{subfigure.10.2}%
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Phát hiện dư và hộp không bao hết đối tượng}}}}{50}{subfigure.10.3}%
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\centering {\fontsize {11}{10} \selectfont Nhiều hộp cho một đối tượng, đối tượng có nhiều lớp}}}}{50}{subfigure.10.4}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Hệ thống nhận hình ảnh chưa phân loại và tiến hành phân loại rác theo thành phần}}{52}{figure.caption.82}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Bản đồ phân bố các địa điểm có rác được phân loại ở ba tỉnh Vĩnh Long, Cần Thơ, Trà Vinh}}{52}{figure.caption.83}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Hình ảnh chi tiết mỗi điểm của bản đồ phân bố}}{53}{figure.caption.84}%
-=======
 \contentsline {figure}{\numberline {2.23}{\ignorespaces Hình ảnh minh họa đường cong Precision Recall}}{27}{figure.caption.34}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Ví dụ về hình ảnh của tập dữ liệu TrashNet}}{29}{figure.caption.37}%
@@ -107,8 +57,7 @@
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Hệ thống tiến hành phân loại rác theo thành phần và hiển thị hình ảnh kết quả}}{51}{figure.caption.83}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Các thông tin được lưu trữ trong CSDL của hệ thống gồm hình, địa chỉ, hộp, lớp, ngày tạo và tọa độ}}{52}{figure.caption.84}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Bản đồ phân bố các địa điểm có rác được phân loại ở ba tỉnh Vĩnh Long, Cần Thơ, Trà Vinh}}{52}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Tùy chọn loại rác và loại bản đồ của hệ thống}}{53}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Hình ảnh về các tùy chọn loại rác và loại bản đồ của hệ thống}}{53}{figure.caption.86}%
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Hình ảnh chi tiết mỗi điểm của bản đồ phân bố}}{53}{figure.caption.87}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Hình ảnh bản đồ nhiệt về các khu vực phân bố rác}}{54}{figure.caption.88}%
->>>>>>> 4ab93ab95c93feaedaade676538d0cdd30147a5a
 \addvspace {10\p@ }

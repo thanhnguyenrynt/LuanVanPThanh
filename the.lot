@@ -1,23 +1,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-<<<<<<< HEAD
-\contentsline {table}{\numberline {3.1}{\ignorespaces Số lượng ảnh theo lớp của tập dữ liệu TrashNet}}{30}{table.caption.36}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Số lượng ảnh theo lớp của tập dữ liệu TrashNet khi được gán hộp giới hạn}}{31}{table.caption.39}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Số lượng ảnh, đối tượng và tỉ lệ theo lớp của tập dữ liệu tự thu thập}}{35}{table.caption.46}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Số lượng hình ảnh, đối tượng của tập dữ liệu sử dụng cho nghiên cứu được tổng hợp từ dữ liệu TrashNet, TACO và tự thu thập}}{37}{table.caption.50}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Số lượng đối tượng theo từng lớp của tập huấn luyện, xác thực, thử nghiệm dùng trong nghiên cứu}}{37}{table.caption.52}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Bảng chuyển các lớp của TACO sang lớp của mô hình}}{38}{table.caption.54}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Các tham số tăng cường dữ liệu cho các mô hình}}{39}{table.caption.56}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Các tham số huấn luyện được cài đặt trong các mô hfnh}}{39}{table.caption.58}%
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Kết quả thực hiện Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác với tập xác thực}}{41}{table.caption.61}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Kết quả thực hiện Thực nghiệm 1 - đánh giá mô hình dựa vào phát hiện rác với tập thử nghiệm}}{41}{table.caption.63}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Kết quả thực hiện trên tập xác thực và thử nghiệm ở Thực nghiệm 2 - đánh giá mô hình dựa vào phát hiện và phân loại rác}}{43}{table.caption.67}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Kết quả thực hiện Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã bổ sung ảnh nền không có nhãn}}{44}{table.caption.71}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Kết quả thể hiện độ cải thiện của mô hình YOLOv8 khi bổ sung ảnh nền}}{46}{table.caption.76}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Mô tả các nghiên cứu liên quan ở mục \ref {sec:nnlq} và kết quả của đề tài}}{51}{table.caption.81}%
-=======
 \contentsline {table}{\numberline {3.1}{\ignorespaces Số lượng ảnh theo lớp của tập dữ liệu TrashNet}}{29}{table.caption.36}%
 \contentsline {table}{\numberline {3.2}{\ignorespaces Số lượng ảnh theo lớp của tập dữ liệu TrashNet khi được gán hộp giới hạn}}{30}{table.caption.39}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces Số lượng ảnh, đối tượng và tỉ lệ theo lớp của tập dữ liệu tự thu thập}}{34}{table.caption.46}%
@@ -33,5 +16,4 @@
 \contentsline {table}{\numberline {4.4}{\ignorespaces Kết quả thực hiện Thực nghiệm 3 - đánh giá mô hình dựa vào phát hiện và phân loại rác trên tập dữ liệu đã bổ sung ảnh nền không có nhãn}}{43}{table.caption.71}%
 \contentsline {table}{\numberline {4.5}{\ignorespaces Kết quả thể hiện độ cải thiện của mô hình YOLOv8 khi bổ sung ảnh nền}}{45}{table.caption.76}%
 \contentsline {table}{\numberline {4.6}{\ignorespaces Mô tả các nghiên cứu liên quan ở mục \ref {sec:nnlq} và kết quả của đề tài}}{50}{table.caption.81}%
->>>>>>> 4ab93ab95c93feaedaade676538d0cdd30147a5a
 \addvspace {10\p@ }
