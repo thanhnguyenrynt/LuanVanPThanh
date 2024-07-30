@@ -1,4 +1,4 @@
-\contentsline {chapter}{DANH MỤC TỪ VIẾT TẮT}{x}{section*.9}%
+\contentsline {chapter}{DANH MỤC TỪ VIẾT TẮT}{x}{section*.6}%
 \contentsline {chapter}{\numberline {1} GIỚI THIỆU}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Đặt vấn đề}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Mục tiêu của đề tài}{3}{section.1.2}%
