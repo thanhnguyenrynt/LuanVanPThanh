@@ -2,58 +2,58 @@
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax \glsresetentrylist %
 \glossentry{ai}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{C}\relax \glsresetentrylist %
 \glossentry{cctv}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{cnn}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{coco}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{csdl}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{csp}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{F}\relax \glsresetentrylist %
 \glossentry{fn}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{fp}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{H}\relax \glsresetentrylist %
 \glossentry{hog}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{I}\relax \glsresetentrylist %
 \glossentry{iou}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{N}\relax \glsresetentrylist %
 \glossentry{nms}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{P}\relax \glsresetentrylist %
 \glossentry{panet}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{R}\relax \glsresetentrylist %
 \glossentry{rgb}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{roi}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{rpn}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{S}\relax \glsresetentrylist %
 \glossentry{spp}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{svm}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{T}\relax \glsresetentrylist %
 \glossentry{taco}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{tn}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \glossentry{tp}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{Y}\relax \glsresetentrylist %
 \glossentry{yolo}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}\glsgroupskip
+		\setentrycounter[]{page}\glsnumberformat{x}}}\glsgroupskip
 \glsgroupheading{Ä}\relax \glsresetentrylist %
 \glossentry{dbscl}{\glossaryentrynumbers{\relax 
-		\setentrycounter[]{page}\glsnumberformat{ix}}}%
+		\setentrycounter[]{page}\glsnumberformat{x}}}%
 \end{theglossary}\glossarypostamble
