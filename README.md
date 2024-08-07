@@ -10,6 +10,7 @@
 
 > Các trích dẫn nằm ở file refs.bib. Tìm các trích dẫn ở google scolar hoặc các web bài báo.
 
+> Link [Github] (https://github.com/thanhnguyenrynt/LuanVanPThanh)
 ## CÁC LƯU Ý KHI FORMAT
 
 > [!TIP] 
