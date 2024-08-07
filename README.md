@@ -10,7 +10,8 @@
 
 ## CÁC LƯU Ý KHI FORMAT
 
-> [!TIP] Cần có khoảng cách khi viết một đoạn. Các đoạn sử dụng \bigskip
+> [!TIP] 
+> Cần có khoảng cách khi viết một đoạn. Các đoạn sử dụng \bigskip
 ```latex
  {\fontsize{13}{12} \selectfont 
     
@@ -18,11 +19,12 @@
 
     }
     
-    \bigskip
+\bigskip
 ```
 
->[!TIP] Ví đụ về một hình ảnh
-```
+>[!TIP] 
+>Ví đụ về một hình ảnh
+```latex
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{mobinet.png}
