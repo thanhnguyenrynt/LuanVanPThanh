@@ -11,7 +11,7 @@
 ## CÁC LƯU Ý KHI FORMAT
 
 > [!TIP] Cần có khoảng cách khi viết một đoạn. Các đoạn sử dụng \bigskip
->```latex
+```latex
  {\fontsize{13}{12} \selectfont 
     
     Đây là một đoạn văn
@@ -22,7 +22,7 @@
 ```
 
 >[!TIP] Ví đụ về một hình ảnh
->```
+```
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{mobinet.png}
